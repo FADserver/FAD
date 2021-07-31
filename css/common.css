@@ -1,0 +1,415 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN";
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: #060940;
+  position :fixed;
+  top: 0;
+  z-index: 10;
+}
+
+/* Page TOP */
+.page_top{
+  width: 90px;
+  height: 90px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  opacity: 0.6;
+}
+.page_top a{
+  position: relative;
+  display: block;
+  width: 90px;
+  height: 90px;
+  text-decoration: none;
+}
+.page_top a::before{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f102';
+  font-size: 25px;
+  color: #226B7D;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -40px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+.page_top a::after{
+  content: 'PAGE TOP';
+  font-size: 13px;
+  color: #fff;
+  position: absolute;
+  top: 45px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+  color: #226B7D;
+}
+.page_top a:hover::before {
+  color: #90E7FC;
+}
+.page_top a:hover::after {
+  color: #90E7FC;
+}
+/* ここまで */
+
+.logo {
+  width: 124px;
+  margin-top: 10px;
+}
+
+.header-left {
+  float: left;
+}
+
+/* ハンバーガーメニュー */
+/* ハンバーガーメニューのサイズ */
+.menu-btn {
+  position: fixed;
+  top: 5px;
+  right: 10px;
+  display: flex;
+  height:  55px;
+  width: 55px;
+  justify-content: center;
+  align-items: center;
+  z-index: 90;
+  background-color: #3D4073;
+}
+/* メニュー線（before、afterで3本表示する。） */
+/* 真ん中の線 */
+.menu-btn span,
+/* 上の線 */
+.menu-btn span:before,
+/* 下の線 */
+.menu-btn span:after {
+  /* 20*3の白線 */
+  content: '';
+  display: block;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  position: absolute;
+}
+/* before を少し上にずらして描画 */
+.menu-btn span:before {
+  bottom: 8px;
+}
+/* after を少し下にずらして描画 */
+.menu-btn span:after {
+  top: 8px;
+}
+/* メニューをオープンしたら三本線を×にする */
+#menu-btn-check:checked ~ .menu-btn span {
+  /* メニューオープン時は三本線の真ん中の線を透明にする */
+  background-color: rgba(255, 255, 255, 0);
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+  /* メニューオープン時は三本線の上の線を 45 度傾ける */
+  bottom: 0;
+  transform: rotate(45deg);
+  transition: 0.3s;
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+  /* メニューオープン時は三本線の下の線を -45 度傾ける */
+  top: 0;
+  transform: rotate(-45deg);
+  transition: 0.3s;
+}
+/* メニュー装飾 */
+.menu-content {
+  width: 87%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  /* メニュー自体を画面外へ */
+  left: 100%;
+  z-index: 80;
+  background-color: #3D4073;
+  /* アニメーション設定 */
+  transition: all 0.5s;
+}
+#menu-btn-check:checked ~ .menu-content {
+  left: 13%;/*メニューを画面内へ*/
+}
+.menu-content ul {
+  padding: 70px 10px 0;
+}
+.menu-content ul li {
+/* 下線 */
+  border-bottom: solid 1px #ffffff;
+  list-style: none;
+}
+.menu-content ul li a {
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  box-sizing: border-box;
+  color:#ffffff;
+  text-decoration: none;
+  padding: 9px 15px 10px 0;
+  position: relative;
+  margin-left: 10px;
+}
+.menu-content ul li a::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-top: solid 2px #ffffff;
+  border-right: solid 2px #ffffff;
+  transform: rotate(45deg);
+  position: absolute;
+  right: 13px;
+  top: 16px;
+}
+.menu-content ul li a:hover {
+  color: #8d16fd;
+}
+.hamburger-menu menu-content fas fa-question-circle {
+  color: #ffffff;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-size: 10px;
+}
+#menu-btn-check {
+  display: none;
+}
+
+/* SNS */
+.hamburger-sns {
+  position: fixed;
+  width: 87%;
+  text-align: center;
+  max-height: 100%;
+  bottom: 50px;
+  /* メニュー自体を画面外へ */
+  left: 100%;
+  z-index: 100;
+  background-color: #3D4073;
+  /* アニメーション設定 */
+  transition: all 0.5s;
+}
+#menu-btn-check:checked ~ .hamburger-sns {
+  left: 13%;/*メニューを画面内へ*/
+}
+.hamburger-follow-me {
+  list-style: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.hamburger-follow-me li {
+  display: inline;
+}
+.hamburger-follow-me li a::before {
+  color: #ffffff;
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-size: 30px;
+  -webkit-font-smoothing: antialiased;
+  padding: 9px 15px 10px 0;
+}
+
+.hamburger-follow-me li a[href*="facebook.com"]::before             { content: "\f09a"; }
+.hamburger-follow-me li a[href*="github.com"]::before               { content: "\f09b"; }
+.hamburger-follow-me li a[href*="instagram.com"]::before            { content: "\f16d"; }
+.hamburger-follow-me li a[href*="nicovideo.jp"]::before             { content: "\f047"; font-family: blogicon; }
+.hamburger-follow-me li a[href*="twitch.tv"]::before                { content: "\f1e8"; }
+.hamburger-follow-me li a[href*="twitter.com"]::before              { content: "\f099"; }
+.hamburger-follow-me li a[href*="youtube.com"]::before              { content: "\f167"; }
+.hamburger-follow-me li a[href*="lin.ee"]::before                   { content: "\f3c0"; }
+
+.hamburger-follow-me li a[href*="facebook.com"]:hover::before       { color: #3b5998; }
+.hamburger-follow-me li a[href*="github.com"]:hover::before         { color: #181717; }
+.hamburger-follow-me li a[href*="instagram.com"]:hover::before      { color: #125688; }
+.hamburger-follow-me li a[href*="nicovideo.jp"]:hover::before       { color: #eaeaea; }
+.hamburger-follow-me li a[href*="twitch.tv"]:hover::before          { color: #6441a5; }
+.hamburger-follow-me li a[href*="twitter.com"]:hover::before        { color: #55acee; }
+.hamburger-follow-me li a[href*="youtube.com"]:hover::before        { color: #cd201f; }
+.hamburger-follow-me li a[href*="/lin.ee"]:hover::before            { color: #00C300; }
+
+.hamburger-sns_p {
+  color: #ffffff;
+  margin-top: 20px;
+  font-size: 20px;
+}
+/* SNS */
+/* ここまで */
+
+/* SNS */
+.sns {
+  text-align: right;
+  margin-bottom: 30px;
+}
+.follow-me {
+  list-style: none;
+  margin: 0 0 -8px;
+  overflow: hidden;
+  padding-left: 0;
+}
+.follow-me li {
+  display: inline;
+  float: 0 auto;
+  margin: 0 8px 8px 0px;
+  padding: 0;
+}
+.follow-me li a::before {
+  background-color: #eee;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  color: #333;
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-size: 20px;
+  height: 40px; /* Button height */
+  line-height: 40px; /* Button height */
+  width: 40px; /* Button width */
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  text-align: center;
+}
+.follow-me li a:hover::before {
+  color: #fff;
+}
+
+.follow-me li a[href*="facebook.com"]::before             { content: "\f09a"; }
+.follow-me li a[href*="github.com"]::before               { content: "\f09b"; }
+.follow-me li a[href*="instagram.com"]::before            { content: "\f16d"; }
+.follow-me li a[href*="nicovideo.jp"]::before             { content: "\f047"; font-family: blogicon; }
+.follow-me li a[href*="twitch.tv"]::before                { content: "\f1e8"; }
+.follow-me li a[href*="twitter.com"]::before              { content: "\f099"; }
+.follow-me li a[href*="youtube.com"]::before              { content: "\f167"; }
+.follow-me li a[href*="lin.ee"]::before                   { content: "\f3c0"; }
+
+.follow-me li a[href*="facebook.com"]:hover::before       { background-color: #3b5998; }
+.follow-me li a[href*="github.com"]:hover::before         { background-color: #181717; }
+.follow-me li a[href*="instagram.com"]:hover::before      { background-color: #125688; }
+.follow-me li a[href*="nicovideo.jp"]:hover::before       { background-color: #eaeaea; }
+.follow-me li a[href*="twitch.tv"]:hover::before          { background-color: #6441a5; }
+.follow-me li a[href*="twitter.com"]:hover::before        { background-color: #55acee; }
+.follow-me li a[href*="youtube.com"]:hover::before        { background-color: #cd201f; }
+.follow-me li a[href*="/lin.ee"]:hover::before            { background-color: #00C300; }
+
+.sns_p {
+  color: #000000;
+  margin-top: 20px;
+  font-size: 13px;
+}
+/* SNS */
+
+.footer_bar p {
+  text-align: center;
+  color: #000000;
+  font-size: 14px;
+}
+
+.footer_logo {
+  text-align: left;
+}
+
+.contact {
+text-align: right;
+margin-bottom: 30px;
+margin: 0 8px 8px 0px;
+}
+.contact a::before{
+  background-color: #eee;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  color: #333;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-size: 20px;
+  height: 40px; /* Button height */
+  line-height: 40px; /* Button height */
+  width: 200px; /* Button width */
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  text-align: center;
+  content: "\f059　お問い合わせ";
+}
+.contact a:hover::before {
+  color: #fff;
+  background-color: #1d1c1c;
+}
+
+footer img {
+  width: 125px;
+}
+
+footer p {
+  color: #8C8C8C;
+  font-size: 12px;
+}
+
+footer {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  display: none;
+}
+
+@media all and (max-width: 1000px) {
+  .lesson {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+
+  .lesson-wrapper {
+    height: 990px;
+  }
+
+  footer {
+    text-align: left;
+  }
+}
+
+@media all and (max-width: 670px) {
+  .header-right {
+    display: none;
+  }
+}
