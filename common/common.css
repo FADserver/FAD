@@ -12,7 +12,7 @@ a {
 }
 
 header {
-  height: 90px;
+  height: 65px;
   width: 100%;
   background-color: #060940;
   position :fixed;
@@ -22,7 +22,7 @@ header {
 
 .logo {
   width: 124px;
-  margin-top: 18px;
+  margin-top: 10px;
 }
 
 .header-left {
@@ -32,11 +32,11 @@ header {
 /* ハンバーガーメニューのサイズ */
 .menu-btn {
   position: fixed;
-  top: 14px;
+  top: 5px;
   right: 10px;
   display: flex;
-  height: 60px;
-  width: 60px;
+  height:  55px;
+  width: 55px;
   justify-content: center;
   align-items: center;
   z-index: 90;
@@ -85,7 +85,7 @@ header {
 }
 /* メニュー装飾 */
 .menu-content {
-  width: 100%;
+  width: 87%;
   height: 100%;
   position: fixed;
   top: 0;
@@ -97,7 +97,7 @@ header {
   transition: all 0.5s;
 }
 #menu-btn-check:checked ~ .menu-content {
-  left: 0;/*メニューを画面内へ*/
+  left: 13%;/*メニューを画面内へ*/
 }
 .menu-content ul {
   padding: 70px 10px 0;
@@ -126,8 +126,11 @@ header {
   border-right: solid 2px #ffffff;
   transform: rotate(45deg);
   position: absolute;
-  right: 11px;
+  right: 13px;
   top: 16px;
+}
+.menu-content ul li a:hover {
+  color: #8d16fd;
 }
 .hamburger-menu menu-content fas fa-question-circle {
   color: #ffffff;
@@ -137,11 +140,75 @@ header {
   font-variant: normal;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
-  font-size: 20px;
+  font-size: 10px;
 }
 #menu-btn-check {
   display: none;
 }
+
+/* SNS */
+.hamburger-sns {
+  position: absolute;
+  width: 87%;
+  top: 900%;
+  text-align: center;
+  /* メニュー自体を画面外へ */
+  left: 100%;
+  z-index: 100;
+  background-color: #3D4073;
+  /* アニメーション設定 */
+  transition: all 0.5s;
+}
+#menu-btn-check:checked ~ .hamburger-sns {
+  left: 13%;/*メニューを画面内へ*/
+}
+.hamburger-follow-me {
+  list-style: none;
+  overflow: hidden;
+}
+.hamburger-follow-me {
+  margin: 0;
+  padding: 0;
+}
+.hamburger-follow-me li {
+  display: inline;
+}
+.hamburger-follow-me li a::before {
+  color: #ffffff;
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-size: 30px;
+  -webkit-font-smoothing: antialiased;
+  padding: 9px 15px 10px 0;
+}
+
+.hamburger-follow-me li a[href*="facebook.com"]::before             { content: "\f09a"; }
+.hamburger-follow-me li a[href*="github.com"]::before               { content: "\f09b"; }
+.hamburger-follow-me li a[href*="instagram.com"]::before            { content: "\f16d"; }
+.hamburger-follow-me li a[href*="nicovideo.jp"]::before             { content: "\f047"; font-family: blogicon; }
+.hamburger-follow-me li a[href*="twitch.tv"]::before                { content: "\f1e8"; }
+.hamburger-follow-me li a[href*="twitter.com"]::before              { content: "\f099"; }
+.hamburger-follow-me li a[href*="youtube.com"]::before              { content: "\f167"; }
+.hamburger-follow-me li a[href*="lin.ee"]::before                   { content: "\f3c0"; }
+
+.hamburger-follow-me li a[href*="facebook.com"]:hover::before       { color: #3b5998; }
+.hamburger-follow-me li a[href*="github.com"]:hover::before         { color: #181717; }
+.hamburger-follow-me li a[href*="instagram.com"]:hover::before      { color: #125688; }
+.hamburger-follow-me li a[href*="nicovideo.jp"]:hover::before       { color: #eaeaea; }
+.hamburger-follow-me li a[href*="twitch.tv"]:hover::before          { color: #6441a5; }
+.hamburger-follow-me li a[href*="twitter.com"]:hover::before        { color: #55acee; }
+.hamburger-follow-me li a[href*="youtube.com"]:hover::before        { color: #cd201f; }
+.hamburger-follow-me li a[href*="/lin.ee"]:hover::before            { color: #00C300; }
+
+.hamburger-sns_p {
+  color: #ffffff;
+  margin-top: 20px;
+  font-size: 20px;
+}
+/* SNS */
 /* ここまで */
 
 /* SNS */
@@ -223,6 +290,7 @@ header {
 .contact {
 text-align: right;
 margin-bottom: 30px;
+margin: 0 8px 8px 0px;
 }
 .contact a::before{
   background-color: #eee;
@@ -239,7 +307,7 @@ margin-bottom: 30px;
   font-size: 20px;
   height: 40px; /* Button height */
   line-height: 40px; /* Button height */
-  width: 209px; /* Button width */
+  width: 200px; /* Button width */
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
   text-align: center;
