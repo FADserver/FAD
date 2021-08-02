@@ -1,0 +1,591 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN";
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: #060940;
+  position :fixed;
+  top: 0;
+  z-index: 10;
+}
+
+/* パンくずリスト */
+.pan {
+  position: fixed;
+  top: 70px;
+  z-index: 2;
+}
+
+.breadcrumb {
+  margin-top: 0;
+  margin-left: 18px;
+  padding: 0;
+  list-style: none;
+
+}
+
+.breadcrumb li {
+  display: inline;/*横に並ぶように*/
+  list-style: none;
+  font-weight: bold;/*太字*/
+}
+
+.breadcrumb li:after {/* ▶を表示*/
+  font-family: "Font Awesome 5 Free";
+  content: '\f054';
+  font-weight: 900;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-size: 20px;
+  -webkit-font-smoothing: antialiased;
+  padding: 0 0.2em;
+  color: silver;
+}
+
+.breadcrumb li:last-child:after {
+  content: '';
+}
+
+.breadcrumb li a {
+  text-decoration: none;
+  color: #888;
+}
+
+.breadcrumb li:first-child a:before {
+  /*家アイコン*/
+  font-family: "Font Awesome 5 Free";
+  content: '\f015';
+  font-weight: 900;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-size: 30px;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.1em;
+  color: #f3948f;
+}
+
+.breadcrumb li a:hover {
+  text-decoration: underline;
+}
+/* ここまで */
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* Page TOP */
+.page_top{
+  width: 90px;
+  height: 90px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  opacity: 0.6;
+}
+.page_top a{
+  position: relative;
+  display: block;
+  width: 90px;
+  height: 90px;
+  text-decoration: none;
+}
+.page_top a::before{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f102';
+  font-size: 25px;
+  color: #226B7D;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -40px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+.page_top a::after{
+  content: 'PAGE TOP';
+  font-size: 13px;
+  color: #fff;
+  position: absolute;
+  top: 45px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+  color: #226B7D;
+}
+.page_top a:hover::before {
+  color: #90E7FC;
+}
+.page_top a:hover::after {
+  color: #90E7FC;
+}
+/* ここまで */
+
+.logo {
+  width: 124px;
+  margin-top: 10px;
+}
+
+.header-left {
+  float: left;
+}
+
+/* ハンバーガーメニュー */
+/* ハンバーガーメニューのサイズ */
+.menu-btn {
+  position: fixed;
+  top: 5px;
+  right: 0;
+  display: flex;
+  height:  55px;
+  width: 55px;
+  justify-content: center;
+  align-items: center;
+  z-index: 90;
+  background-color: #3D4073;
+}
+/* メニュー線（before、afterで3本表示する。） */
+/* 真ん中の線 */
+.menu-btn span,
+/* 上の線 */
+.menu-btn span:before,
+/* 下の線 */
+.menu-btn span:after {
+  /* 20*3の白線 */
+  content: '';
+  display: block;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  position: absolute;
+  /* アニメーション設定 */
+  transition: all 0.5s;
+}
+/* before を少し上にずらして描画 */
+.menu-btn span:before {
+  bottom: 8px;
+}
+/* after を少し下にずらして描画 */
+.menu-btn span:after {
+  top: 8px;
+}
+/* メニューをオープンしたら三本線を×にする */
+#menu-btn-check:checked ~ .menu-btn span {
+  /* メニューオープン時は三本線の真ん中の線を透明にする */
+  background-color: rgba(255, 255, 255, 0);
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+  /* メニューオープン時は三本線の上の線を 45 度傾ける */
+  bottom: 0;
+  transform: rotate(45deg);
+  transition: 0.3s;
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+  /* メニューオープン時は三本線の下の線を -45 度傾ける */
+  top: 0;
+  transform: rotate(-45deg);
+  transition: 0.3s;
+}
+
+/* 画面外クリックで収納 */
+@keyframes fadeout { /*animation-nameで設定した値を書く*/
+  0% {opacity: 0} /*アニメーション開始時は不透明度0%*/
+  50% {opacity: 1} /*アニメーション終了時は不透明度100%*/
+}
+.out-close {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  margin-left: -13%;
+  top: 0;
+  /* メニュー自体を画面外へ */
+  left: 113%;
+  z-index: 80;
+  background-color: #000000;
+  opacity: 0.5;
+  /* アニメーション設定 */
+  animation: fadeout 0.2s ease 0.3s 1 normal;
+}
+#menu-btn-check:checked ~ .out-close {
+  left: 13%;/*メニューを画面内へ*/
+}
+
+/* メニュー装飾 */
+.menu-content {
+  width: 87%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  /* メニュー自体を画面外へ */
+  left: 100%;
+  z-index: 80;
+  background-color: #3D4073;
+  /* アニメーション設定 */
+  transition: all 0.5s;
+}
+#menu-btn-check:checked ~ .menu-content {
+  left: 13%;/*メニューを画面内へ*/
+}
+.menu-content ul {
+  padding: 70px 10px 0;
+}
+.menu-content ul li {
+/* 下線 */
+  border-bottom: solid 1px #ffffff;
+  list-style: none;
+}
+.menu-content ul li a {
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  box-sizing: border-box;
+  color:#ffffff;
+  text-decoration: none;
+  padding: 9px 15px 10px 0;
+  position: relative;
+  margin-left: 10px;
+  transition: all 0.3s;
+}
+.menu-content ul li a::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-top: solid 2px #ffffff;
+  border-right: solid 2px #ffffff;
+  transform: rotate(45deg);
+  position: absolute;
+  right: 20px;
+  top: 16px;
+  transition: all 0.3s;
+}
+.menu-content ul li:hover {
+  background-color: #ffffff;
+  transition: all 0.3s;
+}
+.menu-content ul li a:hover {
+  color: #3D4073;
+  transition: all 0.3s;
+}
+.menu-content ul li a:hover::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-top: solid 2px #3D4073;
+  border-right: solid 2px #3D4073;
+  transform: rotate(45deg);
+  position: absolute;
+  right: 20px;
+  top: 16px;
+  transition: all 0.3s;
+}
+.hamburger-menu menu-content fas fa-question-circle {
+  color: #ffffff;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-size: 10px;
+}
+#menu-btn-check {
+  display: none;
+}
+
+.hamburger-menu-tag {
+  width: 87%;
+  height: 55px;
+  background-color: #F5F5F5;
+  position: fixed;
+  top: 5px;
+  /* メニュー自体を画面外へ */
+  left: 100%;
+  z-index: 80;
+  /* アニメーション設定 */
+  transition: all 0.5s;
+}
+.hamburger-menu-tag::before{
+  position: absolute;
+  content: "MENU";
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #3D4073;
+  font-size: 30px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+#menu-btn-check:checked ~ .hamburger-menu-tag {
+  left: 13%;/*メニューを画面内へ*/
+}
+
+/* SNS */
+.hamburger-sns {
+  position: fixed;
+  width: 87%;
+  text-align: center;
+  max-height: 100%;
+  bottom: 50px;
+  /* メニュー自体を画面外へ */
+  left: 100%;
+  z-index: 100;
+  background-color: #F5F5F5;
+  /* アニメーション設定 */
+  transition: all 0.5s;
+}
+#menu-btn-check:checked ~ .hamburger-sns {
+  left: 13%;/*メニューを画面内へ*/
+}
+.hamburger-follow-me {
+  list-style: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 15px;
+}
+.hamburger-follow-me li {
+  display: inline;
+}
+.hamburger-follow-me li a::before {
+  color: #000000;
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-size: 30px;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 9px 15px 10px 0;
+  transition: all 0.3s;
+}
+
+.hamburger-follow-me li a[href*="facebook.com"]::before             { content: "\f09a"; }
+.hamburger-follow-me li a[href*="github.com"]::before               { content: "\f09b"; }
+.hamburger-follow-me li a[href*="instagram.com"]::before            { content: "\f16d"; }
+.hamburger-follow-me li a[href*="nicovideo.jp"]::before             { content: "\f047"; font-family: blogicon; }
+.hamburger-follow-me li a[href*="twitch.tv"]::before                { content: "\f1e8"; }
+.hamburger-follow-me li a[href*="twitter.com"]::before              { content: "\f099"; }
+.hamburger-follow-me li a[href*="youtube.com"]::before              { content: "\f167"; }
+.hamburger-follow-me li a[href*="lin.ee"]::before                   { content: "\f3c0"; }
+
+.hamburger-follow-me li a[href*="facebook.com"]:hover::before       { color: #3b5998; }
+.hamburger-follow-me li a[href*="github.com"]:hover::before         { color: #181717; }
+.hamburger-follow-me li a[href*="instagram.com"]:hover::before      { color: #125688; }
+.hamburger-follow-me li a[href*="nicovideo.jp"]:hover::before       { color: #eaeaea; }
+.hamburger-follow-me li a[href*="twitch.tv"]:hover::before          { color: #6441a5; }
+.hamburger-follow-me li a[href*="twitter.com"]:hover::before        { color: #55acee; }
+.hamburger-follow-me li a[href*="youtube.com"]:hover::before        { color: #cd201f; }
+.hamburger-follow-me li a[href*="/lin.ee"]:hover::before            { color: #00C300; }
+
+.hamburger-sns_p {
+  padding-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.hamburger-sns_p::before {
+  content: "＼ follow me! ／";
+  color: #000000;
+}
+/* SNS */
+/* ここまで */
+
+/* SNS */
+.sns {
+  text-align: right;
+  margin-bottom: 30px;
+}
+.follow-me {
+  list-style: none;
+  margin: 0 0 -8px;
+  overflow: hidden;
+  padding-left: 0;
+}
+.follow-me li {
+  display: inline;
+  float: 0 auto;
+  margin: 0 8px 8px 0px;
+  padding: 0;
+}
+.follow-me li a::before {
+  background-color: #eee;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  color: #333;
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-size: 20px;
+  height: 40px; /* Button height */
+  line-height: 40px; /* Button height */
+  width: 40px; /* Button width */
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  text-align: center;
+}
+.follow-me li a:hover::before {
+  color: #fff;
+}
+
+.follow-me li a[href*="facebook.com"]::before             { content: "\f09a"; }
+.follow-me li a[href*="github.com"]::before               { content: "\f09b"; }
+.follow-me li a[href*="instagram.com"]::before            { content: "\f16d"; }
+.follow-me li a[href*="nicovideo.jp"]::before             { content: "\f047"; font-family: blogicon; }
+.follow-me li a[href*="twitch.tv"]::before                { content: "\f1e8"; }
+.follow-me li a[href*="twitter.com"]::before              { content: "\f099"; }
+.follow-me li a[href*="youtube.com"]::before              { content: "\f167"; }
+.follow-me li a[href*="lin.ee"]::before                   { content: "\f3c0"; }
+
+.follow-me li a[href*="facebook.com"]:hover::before       { background-color: #3b5998; }
+.follow-me li a[href*="github.com"]:hover::before         { background-color: #181717; }
+.follow-me li a[href*="instagram.com"]:hover::before      { background-color: #125688; }
+.follow-me li a[href*="nicovideo.jp"]:hover::before       { background-color: #eaeaea; }
+.follow-me li a[href*="twitch.tv"]:hover::before          { background-color: #6441a5; }
+.follow-me li a[href*="twitter.com"]:hover::before        { background-color: #55acee; }
+.follow-me li a[href*="youtube.com"]:hover::before        { background-color: #cd201f; }
+.follow-me li a[href*="/lin.ee"]:hover::before            { background-color: #00C300; }
+
+.sns_p {
+  color: #000000;
+  margin-top: 20px;
+  font-size: 13px;
+}
+/* SNS */
+
+.footer_bar {
+  text-align: center;
+  color: #000000;
+  font-size: 14px;
+}
+.footer_bar-p {
+  text-align: center;
+  color: #000000;
+  font-size: 14px;
+}
+
+.footer_logo {
+  color: #8C8C8C;
+  font-size: 12px;
+}
+
+footer a {
+  color: #8C8C8C;
+}
+
+.footer-p {
+  color: #8C8C8C;
+}
+
+footer a:hover {
+  color: #000000;
+}
+
+.footer_logo {
+  text-align: left;
+}
+
+.contact {
+text-align: right;
+margin-bottom: 30px;
+margin: 0 8px 8px 0px;
+}
+.contact a::before{
+  background-color: #eee;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  color: #333;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-size: 20px;
+  height: 40px; /* Button height */
+  line-height: 40px; /* Button height */
+  width: 200px; /* Button width */
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  text-align: center;
+  content: "\f059　お問い合わせ";
+}
+.contact a:hover::before {
+  color: #fff;
+  background-color: #1d1c1c;
+}
+
+.fotter_bar a:hover{
+  text-decoration: none;
+  color: #8C8C8C;
+}
+.fotter_bar a:hover{
+  color: #ffb184;
+}
+
+footer img {
+  width: 125px;
+}
+
+footer {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  display: none;
+}
+
+.footer-line {
+  border-bottom: 1px solid #8C8C8C;
+  margin-bottom: 30px;
+}
+
+
+@media all and (max-width: 1000px) {
+  .lesson {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+
+  .lesson-wrapper {
+    height: 990px;
+  }
+
+  footer {
+    text-align: left;
+  }
+}
+
+@media all and (max-width: 670px) {
+  .header-right {
+    display: none;
+  }
+}
