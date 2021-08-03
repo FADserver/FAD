@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+.about {
+  margin-top: 60px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.about p {
+  line-height: 2;
+}
+
+.history_tytle {
+  padding: 1rem 2rem;
+  border-top: 3px solid #000;
+  background: #f4f4f4;
+}
+
+.history_youtube::after {
+  content: "\f35d";
+  color: #FF0000;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-size: 10px;
+}
+
+.history_LINE::after {
+  content: "\f35d";
+  color: #00C300;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-size: 10px;
+}
+
+.torikesi {
+  display: inline;
+  text-decoration: line-through;
+}
+
+.privacy_policy_a {
+  color: #000000;
+}
+.privacy_policy_a:hover {
+  color: #8C8C8C;
+}
