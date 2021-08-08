@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+.news {
+  margin-top: 60px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.news-list {
+  padding: 0;
+}
+.news-list li,.news-list ol li {
+  color: #404040;
+  border-left: solid 6px #1fa67a;/*左側の線*/
+  border-bottom: solid 2px #dadada;/*下に灰色線*/
+  background: whitesmoke;
+  margin-bottom: 25px;/*下のバーとの余白*/
+  line-height: 1.5;
+  padding: 0.5em;
+  list-style-type: none!important;/*ポチ消す*/
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.news-list a::before {
+  content: " \f1c1";
+  color: #EC1C24;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-size: 25px;
+  padding-right: 10px;
+}
+.news-list a::after {
+  content: " \f35d ";
+  color: #000000;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-size: 10px;
+}
+
+.news-list a {
+  color: #000000;
+}
+.news-list a:hover {
+  color: #8C8C8C;
+}
+.news-list a:hover::after {
+  color: #8C8C8C;
+}
