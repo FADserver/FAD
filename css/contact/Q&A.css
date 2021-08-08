@@ -153,6 +153,9 @@
 .btn-social-flat-icon--line {
   background:#00C300;
 }
+.btn-social-flat-icon--twitch {
+  background: #9146FF;
+}
 .btn-social-flat-text::after {
   content: "　\f35d";
   font-family: "Font Awesome 5 Free";
