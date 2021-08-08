@@ -257,7 +257,7 @@ h1:before {
 /* メニュー装飾 */
 .menu-content {
   width: 87%;
-  height: 100%;
+  height: 91%;
   position: fixed;
   top: 0;
   /* メニュー自体を画面外へ */
@@ -270,6 +270,42 @@ h1:before {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
 }
+
+@media all and (min-width: 768px) {
+  .menu-content {
+    width: 87%;
+    height: 93%;
+    position: fixed;
+    top: 0;
+    /* メニュー自体を画面外へ */
+    left: 100%;
+    z-index: 80;
+    background-color: #3D4073;
+    /* アニメーション設定 */
+    transition: all 0.5s;
+    /* スクロール */
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+@media all and (min-width: 1024px) {
+  .menu-content {
+    width: 87%;
+    height: 95%;
+    position: fixed;
+    top: 0;
+    /* メニュー自体を画面外へ */
+    left: 100%;
+    z-index: 80;
+    background-color: #3D4073;
+    /* アニメーション設定 */
+    transition: all 0.5s;
+    /* スクロール */
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
 #menu-btn-check:checked ~ .menu-content {
   left: 13%;/*メニューを画面内へ*/
 }
