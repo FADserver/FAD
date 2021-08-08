@@ -115,6 +115,7 @@ h1:before {
   right: 0;
   bottom: 0;
   opacity: 0.6;
+  z-index: 5;
 }
 .page_top a {
   transition: 0.3s;
