@@ -266,6 +266,9 @@ h1:before {
   background-color: #3D4073;
   /* アニメーション設定 */
   transition: all 0.5s;
+  /* スクロール */
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
 }
 #menu-btn-check:checked ~ .menu-content {
   left: 13%;/*メニューを画面内へ*/
@@ -428,6 +431,7 @@ input {
   background-color: #ffffff;
   transition: all 0.3s;
 }
+
 .menu ul li a {
   font-size: 15px;
 }
