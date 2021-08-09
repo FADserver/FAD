@@ -244,7 +244,7 @@ h1:before {
   top: 0;
   /* メニュー自体を画面外へ */
   left: 113%;
-  z-index: 80;
+  z-index: 70;
   background-color: #000000;
   opacity: 0.5;
   /* アニメーション設定 */
@@ -263,7 +263,7 @@ h1:before {
   padding-bottom: 70px;
   /* メニュー自体を画面外へ */
   left: 100%;
-  z-index: 80;
+  z-index: 70;
   background-color: #3D4073;
   /* アニメーション設定 */
   transition: all 0.5s;
@@ -461,6 +461,21 @@ input {
   margin-top: 10px;
 }
 #menu-btn-check:checked ~ .hamburger-menu-tag {
+  left: 13%;/*メニューを画面内へ*/
+}
+
+.hamburger-menu-top {
+  width: 87%;
+  height: 60px;
+  background-color: #3D4073;
+  position: fixed;
+  /* メニュー自体を画面外へ */
+  left: 100%;
+  z-index: 75;
+  /* アニメーション設定 */
+  transition: all 0.5s;
+}
+#menu-btn-check:checked ~ .hamburger-menu-top {
   left: 13%;/*メニューを画面内へ*/
 }
 

@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+.rules {
+  margin-top: 60px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.rules p {
+  line-height: 2;
+  font-size: 15px;
+}
+.rules_tytle {
+  padding: 1rem 2rem;
+  border-left: 5px solid #000;
+  background: #f4f4f4;
+}
+.rules_a {
+  color: #000000;
+}
+.rules_a:hover {
+  color: #8C8C8C;
+}
+
+.rules_blank {
+  margin-top: 30px;
+}
+
+.rules_btn2{
+  display: inline;
+}
+
+.rules-wrapper {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.rules_message {
+  padding: 15px 40px;
+  background-color: #595959;
+  cursor: pointer;
+  box-shadow: 0px 7px #0D0D0D;
+}
+
+.rules_message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+.rules_btn {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  width: 270px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.rules_btn:hover {
+  opacity: 1;
+}
+
+.rules_blank br{
+  margin-bottom: 20px;
+}
