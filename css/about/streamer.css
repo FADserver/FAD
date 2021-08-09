@@ -72,18 +72,25 @@
   display: inline-block;
 }
 .description:before{
-  border-left: solid 1px #5767bf;
-  border-top: solid 1px #5767bf;
+  border-left: solid 1px #3D4073;
+  border-top: solid 1px #3D4073;
   top:0;
   left: 0;
 }
 .description:after{
-  border-right: solid 1px #5767bf;
-  border-bottom: solid 1px #5767bf;
+  border-right: solid 1px #3D4073;
+  border-bottom: solid 1px #3D4073;
   bottom:0;
   right: 0;
 }
 .description p {
   margin: 0; 
   padding: 0;
+}
+
+.streamer_a {
+  color: #060940!important;
+}
+.streamer_a:hover {
+  color: #8C8C8C!important;
 }
