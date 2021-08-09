@@ -101,6 +101,7 @@
 .headline2_QA span {
   position: relative;
   z-index: 1;
+  color: #333333;
 }
 .QA:hover {
   color: #333333;
