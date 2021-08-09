@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+.about {
+  margin-top: 60px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.about p {
+  line-height: 2;
+  font-size: 15px;
+}
+.about_tytle {
+  padding: 1rem 2rem;
+  border-left: 5px solid #333333;
+  background: #f4f4f4;
+}
+.about_a {
+  color: #333333;
+}
+.about_a:hover {
+  color: #8C8C8C;
+}

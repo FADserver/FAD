@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+.history_tytle {
+  padding: 1rem 2rem;
+  border-top: 3px solid #333333;
+  background: #f4f4f4;
+  font-size: 20px;
+}
+
+.history_a::after {
+  content: " \f35d ";
+  color: #8C8C8C;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-size: 10px;
+}
+.torikesi {
+  display: inline;
+  text-decoration: line-through;
+}
+
+.history_a {
+  color: #333333;
+}
+.history_a:hover {
+  color: #8C8C8C;
+}
