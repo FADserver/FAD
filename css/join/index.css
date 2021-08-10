@@ -1,238 +1,214 @@
-* {
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="{{site:.github.url}}" charset="utf-8"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-20WYH91PKW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-.join {
-  margin-top: 60px;
-  margin-left: 2%;
-  margin-right: 2%;
-}
+  gtag('config', 'G-20WYH91PKW');
+</script>
+<meta name="google-site-verification" content="tM6OhG06tjVq45exqgC2VTiGWzlAYUfrsjqhTrYrydQ" />
+  
+  <title>FADサーバー | 参加方法</title>
+  <link rel="stylesheet" type="text/css" href="../css/common.css">
+  <link rel="stylesheet" type="text/css" href="../css/join/index.css">
+  <link rel="apple-touch-icon" sizes="57x57" href="../icon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../icon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../icon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../icon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../icon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../icon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../icon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../icon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../icon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="../icon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../icon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../icon/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="../icon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 
-.join img {
-  width: 70%;
-  display: block;
-  margin: auto;
-  border: 2px solid #8C8C8C;
-}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
 
-a.anchor{
-  display: block;
-  padding-top: 70px;
-  margin-top: -70px;
-}
+  <script src="https://kit.fontawesome.com/eb72676e1c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- パンくずリスト -->
+  <div class="pan">
+    <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+      <!-- 1つめ -->
+      <li itemprop="itemListElement" itemscope
+          itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="https://fadserver.github.io/FAD/">
+            <span itemprop="name">ホーム</span>
+        </a>
+        <meta itemprop="position" content="1" />
+      </li>
 
-.join_tytle {
-  position: relative;
-  overflow: hidden;
-  padding: 0.7rem 1rem 0.7rem 150px;
-  border: 2px solid #000;
-  font-size: 20px;
-  color: #333333;
-}
+      <!-- 2つめ -->
+      <li itemprop="itemListElement" itemscope
+          itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="https://fadserver.github.io/FAD/join/">
+            <span itemprop="name">参加方法</span>
+        </a>
+        <meta itemprop="position" content="2" />
+      </li>
+    </ol>
+  </div>
 
-.join_tytle::before {
-  position: absolute;
-  top: -150%;
-  left: -100px;
-  width: 200px;
-  height: 400%;
-  content: '';
-  -webkit-transform: rotate(25deg);
-  transform: rotate(25deg);
-  background: #000;
-}
+  <div class="page_top"><a href="index.html#top"></a></div>
+  <header>
+    <div class="container">
+      <div class="header-left">
+        <a href="../index.html"><img class="logo" src="../image/logo_head.png" alt="Full-Automatic-Dungeon"></a>
+      </div>
 
-.join_tytle span {
-  font-size: 25px;
-  font-size: 3rem;
-  position: absolute;
-  z-index: 1;
-  top: -10px;
-  left: 0.3%;
-  display: block;
-  padding-top: 3px;
-  padding-left: 16px;
-  color: #fff;
-}
+      <div class="hamburger-menu">
+        <input type="checkbox" id="menu-btn-check">
+        <label for="menu-btn-check" class="menu-btn"><span></span></label>
+        <label for="menu-btn-check" class="out-close">
+        </label>
+        <div class="menu-content">
+          <ul>
+            <li class="menu-li"><a href="../index.html">トップ</a></li>
+            <div class="menu">
+              <label class="menu-label" for="menu_bar01">FADサーバーのミニゲームモード</label>
+              <input type="checkbox" id="menu_bar01" />
+              <ul id="links01">
+                  <li><a href="">FADシステム</a></li>
+                  <li><a href="">脱出迷路MODE</a></li>
+                  <li><a href="">鬼ごっこMODE</a></li>
+                  <li><a href="">バトロアMODE</a></li>
+              </ul>
+              <label class="menu-label" for="menu_bar02">FADサーバーについて</label>
+              <input type="checkbox" id="menu_bar02" />
+              <ul id="links02">
+                  <li><a href="../about/index.html">FADサーバー概要</a></li>
+                  <li><a href="../about/history.html">沿革</a></li>
+                  <li><a href="../about/streamer.html">ストリーマーの皆様へ</a></li>
+                  <li><a href="../about/server_rule.html">FADサーバー利用規約</a></li>
+                  <li><a href="../about/resourcepack.html">リソースパック利用約款</a></li>
+                  <li><a href="../about/privacy_policy.html">プライバシーポリシー</a></li>
+                  <li><a href="../about/disclaimer.html">免責事項</a></li>
+              </ul>
+          </div>
+            <li class="menu-li"><a href="index.html">参加する</a></li>
+            <li class="menu-li"><a href="../news/index.html">お知らせ</a></li>
+            <li class="menu-li"><a href="../contact/Q&A.html">Q&A</a></li>
+            <li class="menu-li"><a href="../contact/index.html"><i class="fas fa-question-circle"></i> お問い合わせ</a></li>
+          </ul>
+        </div>
+        <div class="hamburger-menu-tag"></div>
+        <div class="hamburger-menu-top"></div>
+        <div class="hamburger-sns">
+          <ul class="hamburger-follow-me">
+            <p class="hamburger-sns_p"></p>
+            <li><a href="https://www.youtube.com/channel/UCTK8mNBz6xS_U81KIg79I2A" target="_blank"></a></li>
+            <li><a href="https://twitter.com/FADserver" target="_blank"></a></li>
+            <li><a href="https://www.twitch.tv/major_exe" target="_blank"></a></li>
+            <li><a href="https://lin.ee/eZ3sGPj" target="_blank"></a></li>
+         </ul>
+       </div>
+      </div>
 
-.point_tytle {
-  position: relative;
-  border-top: solid 2px #80c8d1;
-  border-bottom: solid 2px #80c8d1;
-  background: #f4f4f4;
-  line-height: 1.4;
-  padding: 0.4em 0.5em;
-  margin: 2em 0 3em;
-  font-size: 15px;
-}
+    </div>
+  </header>
+  
+  <div class="container">
+   <h1 id="top"><span>参加方法</span></h1>
+    <div class="join"> 
+      <ol class="join_content">
+        <p>　目　次</p>
+        <li><a href="index.html#download"> マインクラフトのダウンロード</a></li>
+        <li><a href="index.html#join"> FADサーバーに入る</a></li>
+        <li><a href="index.html#resourcepack"> リソースパックのダウンロードと追加</a></li>
+      </ol>
+      <a id="download" class="anchor"></a>
+      <h2 class="join_tytle"><span>01</span>マインクラフトのダウンロード</h2>
+      <p>マインクラフト<span class="big"> <u>Java Edition</u> </span>を購入しましょう！</p>
+      <img src="../image/step0-1.jpg">
+      <p><u><a class="join_a" href="https://www.minecraft.net/ja-jp" target="_blank">Minecraft公式サイト</a></u>へとんで<span class="big">「MINECRAFT を購入」</span>をクリック。</p>
+      <img src="../image/step0-2.jpg">
+      <p><span class="big">「パソコン版」</span>を選ぶ。</p>
+      <h3 class="point_tytle">FADサーバーはパソコン版のJava Editionでのみ参加できます。
+        <br>購入時に間違わないように注意してください。
+      </h3>
+      <img src="../image/step0-3.jpg">
+      <p>自分の使っているOSを選択する。</p>
+      <img src="../image/step0-4.jpg">
+      <p><span class="big">「MINECRAFT:JAVA EDITION」</span>を選択する。絶対、<span class="big">「MINECRAFT:JAVA EDITION」</span>を選択する。</p>
+     <h3 class="point_tytle">ここで「MINECRAFT:WINDOWS 10 EDITION」を購入するとFADサーバーでは遊べません。</h3>
+     <img src="../image/step0-5.jpg">
+     <p><span class="big">「MINECRAFT を購入」</span>をクリックして、あとは画面の指示に従って購入する。</p>
+     <a id="join" class="anchor"></a>
+     <h2 class="join_tytle"><span>02</span>FADサーバーに入る</h2>
+     <h3 class="point_tytle">まだMinecraftを持っていない方は、<u><a href="index.html#download">01. マインクラフトのダウンロード</a></u>から見てください。</h3>
+     <img src="../image/step1-1.jpg">
+     <p><span class="big">「プレイ」</span>をクリック</p>
+     <img src="../image/step1-2.jpg">
+     <p><span class="big">「マルチプレイ」</span>をクリック</p>
+     <img src="../image/step1-3.jpg">
+     <p><span class="big">「サーバーを追加」</span>をクリック</p>
+     <img src="../image/step1-4.jpg">
+     <p><span class="big">「サーバーアドレス」</span>に<span class="big">「FAD.f5.si」</span>を入力し、「完了」をクリック</p>
+     <img src="../image/step1-5.jpg">
+     <p><span class="big">「Minecraftサーバー」</span>をクリック</p>
+     <a id="resourcepack" class="anchor"></a>
+     <h2 class="join_tytle"><span>03</span>リソースパックのダウンロードと追加</h2>
+     <p>下のボタンからリソースパックをダウンロードします。</p>
+     <br><u><a href="../about/resourcepack.html">リソースパック利用規約</a></u>をご確認の上適用してください。
+     <div class="ResourcePack-wrapper">
+      <div class="ResourcePack_blank">
+        <a href="https://download1492.mediafire.com/j492her290lg/t2xvosbk2s72o7x/FAD_Official_ResourcePack.zip"><span class="ResourcePack_btn join_message">リソースパックをダウンロードする</span></a>
+      </div>
+     </div>
+     <img src="../image/step1-2.jpg">
+     <p><span class="big">「設定...」</span>をクリック</p>
+     <img src="../image/step2-2.jpg">
+     <p><span class="big">「リソースパック...」</span>をクリック</p>
+     <img src="../image/step2-3.jpg">
+     <p><span class="big">「リソースパックフォルダーを開く」</span>をクリックし、開いたフォルダの中に先ほどダウンロードしたリソースパックを入れる。</p>
+     <img src="../image/step2-4.jpg">
+     <p>FAD_Official_ResourcePackにカーソルを合わせて<span class="big">「▶」</span>をクリックしてリソースパックを適用させる。</p>
+    </div>
+  </div>
 
-.point_tytle:after {
-  /*タブ*/
-  position: absolute;
-  font-family: "Font Awesome 5 Free",'Quicksand','Avenir','Arial',sans-serif;
-  font-weight: 900;
-  content: '　\f0a7\ POINT　';
-  background: #80c8d1;
-  color: #fff;
-  left: 0px;
-  bottom: 100%;
-  border-radius: 5px 5px 0 0;
-  padding: 5px 7px 3px;
-  font-size: 0.7em;
-  line-height: 1;
-  letter-spacing: 0.05em;
-  font-size: 15px;;
-}
-
-.join_content p {
-  font-size: 20px !important;
-  line-height: 2 !important;
-  color: #333333;
-}
-
-.join_content {
-  counter-reset:number; /*数字をリセット*/
-  list-style-type: none!important; /*数字を一旦消す*/
-  padding:0.5em;
-  background: #f5f8ff;
-}
-.join_content li {
-  position: relative;
-  padding-left: 30px;
-  line-height: 1.5em;
-  padding: 0.5em 0.5em 0.5em 30px;
-}
-
-.join_content li:before{
-  /* 以下数字をつける */
-  position: absolute;
-  counter-increment: number;
-  content: counter(number);
-  /*以下数字のデザイン変える*/
-  display:inline-block;
-  background: #3D4073;
-  color: white;
-  font-family: 'Avenir','Arial Black','Arial',sans-serif;
-  font-weight:bold;
-  font-size: 15px;
-  border-radius: 50%;
-  left: 0;
-  width: 25px;
-  height: 25px;
-  line-height: 25px;
-  text-align: center;
-  /*以下 上下中央寄せのため*/
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.big {
-  font-size: 25px!important;
-  margin: 0;
-  color: rgb(255, 79, 79);
-  display: inline;
-}
-
-.join p {
-  line-height: 5;
-  font-size: 16px;
-  display: inline;
-  color: #333333;
-}
-
-.join_a::after {
-  content: " \f35d ";
-  color: #8C8C8C;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  font-size: 10px;
-}
-
-.join a {
-  color: #333333;
-}
-.join a:hover {
-  color: #8C8C8C;
-}
-
-.ResourcePack_blank {
-  margin-top: 30px;
-}
-
-.ResourcePack-wrapper {
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.join_message {
-  padding: 15px 40px;
-  background-color: #5dca88;
-  cursor: pointer;
-  box-shadow: 0px 7px #1a7940;
-}
-
-.join_message:active {
-  position: relative;
-  top: 7px;
-  box-shadow: none;
-}
-.ResourcePack_btn {
-  padding: 8px 24px;
-  color: white;
-  display: inline-block;
-  opacity: 0.8;
-  border-radius: 4px;
-  text-align: center;
-}
-
-.ResourcePack_btn:hover {
-  opacity: 1;
-}
-
-@media all and (max-width: 750px) {
-  .join img {
-    width: 98%;
-    display: block;
-    margin: auto;
-    border: 2px solid #8C8C8C;
-  }
-  .join p {
-    line-height: 1.5;
-    font-size: 16px;
-    display: inline;
-  }
-}
-
-@media all and (max-width: 768px) {
-  .join img {
-    width: 98%;
-    display: block;
-    margin: auto;
-    border: 2px solid #8C8C8C;
-  }
-  .join p {
-    line-height: 1.5;
-    font-size: 16px;
-    display: inline;
-  }
-}
-
-@media all and (max-width: 670px) {
-  .join img {
-    width: 98%;
-    display: block;
-    margin: auto;
-    border: 2px solid #8C8C8C;
-  }
-  .join p {
-    line-height: 1.5;
-    font-size: 16px;
-    display: inline;
-  }
-}
+  <footer>
+    <hr class="footer-line">
+    <div class="container">
+      <div class="sns">
+        <!--<p class="sns_p">FAD公式アカウントです。ぜひご確認ください。</p> -->
+        <ul class="follow-me">
+          <li><a href="https://www.youtube.com/channel/UCTK8mNBz6xS_U81KIg79I2A" target="_blank"></a></li>
+          <li><a href="https://twitter.com/FADserver" target="_blank"></a></li>
+          <li><a href="https://www.twitch.tv/major_exe" target="_blank"></a></li>
+          <li><a href="https://lin.ee/eZ3sGPj" target="_blank"></a></li>
+        </ul>
+      </div>
+      <div class="contact">
+        <a href="../contact/index.html" target="_blank"></a>
+      </div>
+      <div class="footer_bar">
+        <p class="footer-p"><a href="../about/index.html">FAD概要</a> | <a href="../about/rules.html">規約など</a> | <a href="../about/streamer.html">ストリーマーの皆様へ</a> | <a href="../contact/index.html">お問い合わせ</a> | サイトマップ</p>
+      </div>
+      <div class="footer_logo">
+      <a href="../index.html" tytle="Full-Automatic-Dungeon" alt="Full-Automatic-Dungeon"><img src="../image/logo_footer.png"></a>
+      <p>■ このホームページに掲載されている一切の文書・図版・写真等を、手段や形態を問わず複製、転載することを禁じます。
+        <br>■ このホームページにある要素を直リンクしないでください。
+        <br>© 2021- Full Automatic Dungeon-server. All Right Reserved.
+      </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
