@@ -11,6 +11,7 @@
   line-height: 2;
   font-size: 15px;
   color: #333333;
+  display: inline;
 }
 .operation_tytle {
   padding: 1rem 2rem;
@@ -27,13 +28,6 @@
 
 .operation_img {
   width: 100px;
-}
-
-.twitter {
-  width: 50%;
-  margin: 0 auto;
-  margin-top: 20px;
-  
 }
 
 /* SNSラベル */
@@ -94,3 +88,8 @@
   font-size: 10px;
 }
 /* SNSラベル */
+
+.torikesi {
+  display: inline;
+  text-decoration: line-through;
+}
