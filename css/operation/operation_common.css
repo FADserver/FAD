@@ -28,7 +28,7 @@
 
 .operation_img {
   width: 100px;
-  text-align: center;
+  margin:  0 auto;
 }
 
 /* SNSラベル */
