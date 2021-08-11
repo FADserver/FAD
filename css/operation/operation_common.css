@@ -26,9 +26,12 @@
   color: #8C8C8C;
 }
 
+.operation_img_div {
+  text-align: center;
+}
+
 .operation_img {
   width: 100px;
-  margin:  0 auto;
 }
 
 /* SNSラベル */
