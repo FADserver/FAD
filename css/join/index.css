@@ -172,9 +172,21 @@ a.anchor{
 
 .join_message {
   padding: 15px 40px;
-  background-color: #5dca88;
+  background-color: #005ECC;
   cursor: pointer;
-  box-shadow: 0px 7px #1a7940;
+  box-shadow: 0px 7px #003B7F;
+}
+
+.join_message::after {
+  content: "　\f56d";
+  color: #ffffff;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-size: 20px;
 }
 
 .join_message:active {
