@@ -12,7 +12,7 @@
 
 .history_a::after {
   content: " \f35d ";
-  color: #8C8C8C;
+  color: #333333;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-style: normal;
@@ -21,6 +21,10 @@
   -webkit-font-smoothing: antialiased;
   font-size: 10px;
 }
+.history_a:hover::after {
+  color: #8C8C8C;
+}
+
 .torikesi {
   display: inline;
   text-decoration: line-through;
