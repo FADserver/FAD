@@ -11,6 +11,7 @@
   line-height: 2;
   font-size: 15px;
   color: #333333;
+  overflow-wrap: break-word;
 }
 .about_tytle {
   padding: 1rem 2rem;
