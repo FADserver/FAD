@@ -20,7 +20,9 @@
   font-size: 20px;
   color: #333333;
 }
-.fas {
+
+/* ↓ 対応中 ↓ */
+.fa-exclamation-triangle {
   color: #333333;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -36,3 +38,4 @@
 .maintenance_a:hover {
   color: #8C8C8C;
 }
+/* ↑ 対応中 ↑ */
