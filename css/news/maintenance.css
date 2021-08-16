@@ -21,7 +21,7 @@
   color: #333333;
 }
 
-/* ↓ 対応中 ↓ */
+/* ↓ 発見済み ↓ */
 .fa-exclamation-triangle {
   color: #333333;
   font-family: "Font Awesome 5 Free";
@@ -32,10 +32,52 @@
   -webkit-font-smoothing: antialiased;
   font-size: 20px;
 }
-.maintenance_a {
+/* ↑ 発見済み ↑ */
+
+/* ↓ 対応中 ↓ */
+.fa-tools {
   color: #333333;
-}
-.maintenance_a:hover {
-  color: #8C8C8C;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-size: 20px;
 }
 /* ↑ 対応中 ↑ */
+
+/* ↓ 対応済み ↓ */
+.fa-check-square {
+  color: #333333;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-size: 20px;
+}
+/* ↑ 対応中済み ↑ */
+
+ul {
+  box-shadow :0px 0px 3px silver;
+  border: solid 1px whitesmoke;
+  padding: 0.5em 1em 0.5em 2.3em;
+  position: relative;
+  background: #fafafa;
+}
+
+ul li {
+  line-height: 1.5;
+  padding: 0.5em 0;
+  list-style-type: none!important;
+}
+
+ul li:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f0da";
+  position: absolute;
+  left : 1em; /*左端からのアイコンまで*/
+  color: gray; /*アイコン色*/
+}
