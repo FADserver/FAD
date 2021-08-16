@@ -60,7 +60,7 @@
 }
 /* ↑ 対応中済み ↑ */
 
-ul {
+.exsample {
   box-shadow :0px 0px 3px silver;
   border: solid 1px whitesmoke;
   padding: 0.5em 1em 0.5em 2.3em;
@@ -68,13 +68,13 @@ ul {
   background: #fafafa;
 }
 
-ul li {
+.exsample li {
   line-height: 1.5;
   padding: 0.5em 0;
   list-style-type: none!important;
 }
 
-ul li:before {
+.exsample li:before {
   font-family: "Font Awesome 5 Free";
   content: "\f0da";
   position: absolute;
