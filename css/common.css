@@ -566,7 +566,7 @@ input {
   margin: 0 8px 8px 0px;
   padding: 0;
 }
-.follow-me li a::before {
+.sns_icon::before {
   background-color: #eee;
   -webkit-border-radius: 2px;
   border-radius: 2px;
@@ -586,27 +586,53 @@ input {
   transition: all .3s ease;
   text-align: center;
 }
-.follow-me li a:hover::before {
+.sns_icon:hover::before {
   color: #fff;
 }
 
-.follow-me li a[href*="facebook.com"]::before             { content: "\f09a"; }
-.follow-me li a[href*="github.com"]::before               { content: "\f09b"; }
-.follow-me li a[href*="instagram.com"]::before            { content: "\f16d"; }
-.follow-me li a[href*="nicovideo.jp"]::before             { content: "\f047"; font-family: blogicon; }
-.follow-me li a[href*="twitch.tv"]::before                { content: "\f1e8"; }
-.follow-me li a[href*="twitter.com"]::before              { content: "\f099"; }
-.follow-me li a[href*="youtube.com"]::before              { content: "\f167"; }
-.follow-me li a[href*="lin.ee"]::before                   { content: "\f3c0"; }
+.contact::before {
+  content: "\f059";
+  background-color: #eee;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  color: #333;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-size: 20px;
+  height: 40px; /* Button height */
+  line-height: 40px; /* Button height */
+  width: 40px; /* Button width */
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  text-align: center;
+}
+.contact:hover::before {
+  color: #fff;
+}
 
-.follow-me li a[href*="facebook.com"]:hover::before       { background-color: #3b5998; }
-.follow-me li a[href*="github.com"]:hover::before         { background-color: #181717; }
-.follow-me li a[href*="instagram.com"]:hover::before      { background-color: #125688; }
-.follow-me li a[href*="nicovideo.jp"]:hover::before       { background-color: #eaeaea; }
-.follow-me li a[href*="twitch.tv"]:hover::before          { background-color: #6441a5; }
-.follow-me li a[href*="twitter.com"]:hover::before        { background-color: #55acee; }
-.follow-me li a[href*="youtube.com"]:hover::before        { background-color: #cd201f; }
-.follow-me li a[href*="/lin.ee"]:hover::before            { background-color: #00C300; }
+.sns_icon[href*="facebook.com"]::before             { content: "\f09a"; }
+.sns_icon[href*="github.com"]::before               { content: "\f09b"; }
+.sns_icon[href*="instagram.com"]::before            { content: "\f16d"; }
+.sns_icon[href*="nicovideo.jp"]::before             { content: "\f047"; font-family: blogicon; }
+.sns_icon[href*="twitch.tv"]::before                { content: "\f1e8"; }
+.sns_icon[href*="twitter.com"]::before              { content: "\f099"; }
+.sns_icon[href*="youtube.com"]::before              { content: "\f167"; }
+.sns_icon[href*="lin.ee"]::before                   { content: "\f3c0"; }
+
+.sns_icon[href*="facebook.com"]:hover::before       { background-color: #3b5998; }
+.sns_icon[href*="github.com"]:hover::before         { background-color: #181717; }
+.sns_icon[href*="instagram.com"]:hover::before      { background-color: #125688; }
+.sns_icon[href*="nicovideo.jp"]:hover::before       { background-color: #eaeaea; }
+.sns_icon[href*="twitch.tv"]:hover::before          { background-color: #6441a5; }
+.sns_icon[href*="twitter.com"]:hover::before        { background-color: #55acee; }
+.sns_icon[href*="youtube.com"]:hover::before        { background-color: #cd201f; }
+.sns_icon[href*="/lin.ee"]:hover::before            { background-color: #00C300; }
+.contact:hover::before                                    { background-color: #1d1c1c; }
 
 .sns_p {
   color: #333333;
@@ -645,37 +671,6 @@ footer a:hover {
 
 .footer_logo {
   text-align: left;
-}
-
-.contact {
-text-align: right;
-margin-bottom: 30px;
-margin: 0 8px 8px 0px;
-}
-.contact a::before{
-  background-color: #eee;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-  color: #333;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  font-size: 20px;
-  height: 40px; /* Button height */
-  line-height: 40px; /* Button height */
-  width: 200px; /* Button width */
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
-  text-align: center;
-  content: "\f059　お問い合わせ";
-}
-.contact a:hover::before {
-  color: #fff;
-  background-color: #1d1c1c;
 }
 
 .fotter_bar a:hover{
