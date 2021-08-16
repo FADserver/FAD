@@ -20,6 +20,18 @@
   font-size: 20px;
   color: #333333;
 }
+.maintenance a {
+  line-height: 2;
+  font-size: 15px;
+  color: #333333;
+  overflow-wrap: break-word;
+}
+.maintenance a:hover {
+  line-height: 2;
+  font-size: 15px;
+  color: #8C8C8C;
+  overflow-wrap: break-word;
+}
 
 /* ↓ 発見済み ↓ */
 .fa-exclamation-triangle {
