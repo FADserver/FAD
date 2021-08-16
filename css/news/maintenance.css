@@ -58,7 +58,20 @@
   -webkit-font-smoothing: antialiased;
   font-size: 20px;
 }
-/* ↑ 対応中済み ↑ */
+/* ↑ 対応済み ↑ */
+
+/* ↓ 対応不可 ↓ */
+.fa-flag {
+  color: #333333;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-size: 20px;
+}
+/* ↑ 対応不可 ↑ */
 
 .exsample {
   box-shadow :0px 0px 3px silver;
