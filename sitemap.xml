@@ -3,75 +3,86 @@
 
 <!--  created with free sitemap generation system www.sitemapxml.jp  --> 
 <url>
-  <loc>https://fadserver.github.io/FAD/index.html</loc>
-  <lastmod>2021-08-11T09:09:03+09:00</lastmod>
+  <loc>https://fadserver.github.io/FAD/</loc>
+  <lastmod>2021-08-19T22:54:19+09:00</lastmod>
+</url>
+<url>
+  <loc>https://fadserver.github.io/FAD/mode/system/index.html</loc>
+  <lastmod>2021-08-19T22:54:19+09:00</lastmod>
+</url>
+<url>
+  <loc>https://fadserver.github.io/FAD/mode/maze/index.html</loc>
+  <lastmod>2021-08-19T22:54:19+09:00</lastmod>
+</url>
+<url>
+  <loc>https://fadserver.github.io/FAD/mode/oni/index.html</loc>
+  <lastmod>2021-08-19T22:54:19+09:00</lastmod>
+</url>
+<url>
+  <loc>https://fadserver.github.io/FAD/mode/battle_royale/index.html</loc>
+  <lastmod>2021-08-19T22:54:19+09:00</lastmod>
 </url>
 <url>
   <loc>https://fadserver.github.io/FAD/about/index.html</loc>
-  <lastmod>2021-08-11T09:09:03+09:00</lastmod>
+  <lastmod>2021-08-19T22:54:19+09:00</lastmod>
 </url>
 <url>
   <loc>https://fadserver.github.io/FAD/about/history.html</loc>
-  <lastmod>2021-08-11T09:09:03+09:00</lastmod>
+  <lastmod>2021-08-19T22:54:19+09:00</lastmod>
 </url>
 <url>
   <loc>https://fadserver.github.io/FAD/about/streamer.html</loc>
-  <lastmod>2021-08-11T09:09:03+09:00</lastmod>
+  <lastmod>2021-08-19T22:54:19+09:00</lastmod>
 </url>
 <url>
   <loc>https://fadserver.github.io/FAD/about/server_rule.html</loc>
-  <lastmod>2021-08-11T09:09:03+09:00</lastmod>
+  <lastmod>2021-08-19T22:54:19+09:00</lastmod>
 </url>
 <url>
   <loc>https://fadserver.github.io/FAD/about/resourcepack.html</loc>
-  <lastmod>2021-08-11T09:09:03+09:00</lastmod>
+  <lastmod>2021-08-19T22:54:19+09:00</lastmod>
 </url>
 <url>
   <loc>https://fadserver.github.io/FAD/about/privacy_policy.html</loc>
-  <lastmod>2021-08-11T09:09:03+09:00</lastmod>
+  <lastmod>2021-08-19T22:54:19+09:00</lastmod>
 </url>
 <url>
   <loc>https://fadserver.github.io/FAD/about/disclaimer.html</loc>
-  <lastmod>2021-08-11T09:09:03+09:00</lastmod>
+  <lastmod>2021-08-19T22:54:19+09:00</lastmod>
 </url>
 <url>
   <loc>https://fadserver.github.io/FAD/operation/operations.html</loc>
-  <lastmod>2021-08-11T09:09:03+09:00</lastmod>
+  <lastmod>2021-08-19T22:54:19+09:00</lastmod>
 </url>
 <url>
   <loc>https://fadserver.github.io/FAD/join/index.html</loc>
-  <lastmod>2021-08-11T09:09:03+09:00</lastmod>
+  <lastmod>2021-08-19T22:54:19+09:00</lastmod>
 </url>
 <url>
   <loc>https://fadserver.github.io/FAD/news/index.html</loc>
-  <lastmod>2021-08-11T09:09:03+09:00</lastmod>
+  <lastmod>2021-08-19T22:54:19+09:00</lastmod>
+</url>
+<url>
+  <loc>https://fadserver.github.io/FAD/news/maintenance.html</loc>
+  <lastmod>2021-08-19T22:54:19+09:00</lastmod>
 </url>
 <url>
   <loc>https://fadserver.github.io/FAD/contact/Q&amp;A.html</loc>
 </url>
 <url>
   <loc>https://fadserver.github.io/FAD/contact/index.html</loc>
-  <lastmod>2021-08-11T09:09:03+09:00</lastmod>
+  <lastmod>2021-08-19T22:54:19+09:00</lastmod>
 </url>
 <url>
   <loc>https://fadserver.github.io/FAD/about/rules.html</loc>
-  <lastmod>2021-08-11T09:09:03+09:00</lastmod>
+  <lastmod>2021-08-19T22:54:19+09:00</lastmod>
 </url>
 <url>
-  <loc>https://fadserver.github.io/FAD/about/index.html</loc>
-  <lastmod>2021-08-11T09:09:03+09:00</lastmod>
+  <loc>https://fadserver.github.io/FAD/mode/index.html</loc>
+  <lastmod>2021-08-19T22:54:19+09:00</lastmod>
 </url>
 <url>
-  <loc>https://fadserver.github.io/FAD/operation/major_exe/index.html</loc>
-  <lastmod>2021-08-11T09:09:03+09:00</lastmod>
-</url>
-<url>
-  <loc>https://fadserver.github.io/FAD/operation/hopig/index.html</loc>
-  <lastmod>2021-08-11T09:09:03+09:00</lastmod>
-</url>
-<url>
-  <loc>https://fadserver.github.io/FAD/operation/huwapenn/index.html</loc>
-  <lastmod>2021-08-11T09:09:03+09:00</lastmod>
+  <loc>https://fadserver.github.io/FAD/mode/modes.html</loc>
 </url>
 
 </urlset>
