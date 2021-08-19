@@ -32,9 +32,12 @@
   color: #8C8C8C;
   overflow-wrap: break-word;
 }
+.disclaimer {
+  font-size: 11px !important;
+}
 
-/* ↓ 発見済み ↓ */
-.fa-exclamation-triangle {
+/* ↓ icon ↓ */
+.fa-exclamation-triangle, .fa-tools, .fa-check-square, .fa-wrench, .fa-flag {
   color: #333333;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -44,59 +47,7 @@
   -webkit-font-smoothing: antialiased;
   font-size: 20px;
 }
-/* ↑ 発見済み ↑ */
-
-/* ↓ 対応中 ↓ */
-.fa-tools {
-  color: #333333;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  font-size: 20px;
-}
-/* ↑ 対応中 ↑ */
-
-/* ↓ 対応済み ↓ */
-.fa-check-square {
-  color: #333333;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  font-size: 20px;
-}
-/* ↑ 対応済み ↑ */
-
-/* ↓ メンテナンス ↓ */
-.fa-wrench {
-  color: #333333;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  font-size: 20px;
-}
-/* ↑ メンテナンス ↑ */
-
-/* ↓ 対応不可 ↓ */
-.fa-flag {
-  color: #333333;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  font-size: 20px;
-}
-/* ↑ 対応不可 ↑ */
+/* ↑ icon ↑ */
 
 .exsample {
   box-shadow :0px 0px 3px silver;
@@ -107,15 +58,19 @@
 }
 
 .exsample li {
+  color: #333333;
   line-height: 1.5;
   padding: 0.5em 0;
   list-style-type: none!important;
 }
 
-.exsample li:before {
-  font-family: "Font Awesome 5 Free";
+.exsample li::before {
+  color: #333333; /*アイコン色*/
   content: "\f0da";
-  position: absolute;
-  left : 1em; /*左端からのアイコンまで*/
-  color: gray; /*アイコン色*/
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
 }
