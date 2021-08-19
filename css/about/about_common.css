@@ -25,3 +25,21 @@
 .about_a:hover {
   color: #8C8C8C;
 }
+
+.about_blank_a::after {
+  content: " \f35d ";
+  color: #333333;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-size: 10px;
+}
+.about_blank_a{
+  color: #333333;
+}
+.about_blank_a:hover, .about_blank_a:hover::after {
+  color: #8C8C8C;
+}

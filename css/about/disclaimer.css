@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+.about ol li, .about ol li ol li{
+  line-height: 2;
+  font-size: 15px;
+  color: #333333;
+  overflow-wrap: break-word;
+}
+
+.secound {
+  list-style-type: lower-alpha;
+}
+
+.about a {
+  color: #333333;
+}
+.about a:hover {
+  color: #8C8C8C;
+}
