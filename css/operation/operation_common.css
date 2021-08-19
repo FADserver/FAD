@@ -87,7 +87,7 @@
 .btn-social-flat-icon--want {
   background: #00448C;
 }
-.btn-social-flat-text::after {
+.btn-social-flat-text::after, .btn-social-flat-text-want::after {
   content: "　\f35d";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
