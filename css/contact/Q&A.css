@@ -6,12 +6,13 @@
   margin-top: 100px;
   color: #333333;
 }
-.QaA a {
+.QaA a, .QA, .btn-social-flat-text {
   color: #333333;
 }
-.QaA a:hover {
+.QaA a:hover, .QA:hover, .btn-social-flat-text:hover {
   color: #8C8C8C;
 }
+
 /* Q&Aスタイル */
 .QaA {
   margin-left: 2%;
@@ -108,13 +109,6 @@
   position: relative;
   z-index: 1;
   color: #333333;
-}
-.QA:hover {
-  color: #333333;
-
-}
-.QA {
-  color: #8C8C8C;
 }
 /* ここまで */
 
