@@ -48,9 +48,46 @@
   font-size: 10px;
 }
 .mode img {
-  width: 30%;
+  width: 500px;
   border: 2px solid #8C8C8C;
 }
+@media all and (max-width: 768px) and (max-width: 1024px) {
+  .mode img {
+    width: 500px;
+    border: 2px solid #8C8C8C;
+  }
+}
+@media all and (max-width: 670px) {
+  .mode img {
+    width: 300px;
+    border: 2px solid #8C8C8C;
+  }
+}
+@media all and (max-width: 414px) {
+  .mode img {
+    width: 350px;
+    border: 2px solid #8C8C8C;
+  }
+}
+@media all and (max-width: 375px) {
+  .mode img {
+    width: 300px;
+    border: 2px solid #8C8C8C;
+  }
+}
+@media all and (max-width: 320px) {
+  .mode img {
+    width: 250px;
+    border: 2px solid #8C8C8C;
+  }
+}
+@media all and (max-width: 280px) {
+  .mode img {
+    width: 200px;
+    border: 2px solid #8C8C8C;
+  }
+}
+
 .img_center {
   width: 70% !important;;
   display: block !important;
