@@ -248,6 +248,10 @@ table td{
 /* ↑ テーブル ↑ */
 
 /* ↓ ボタン ↓ */
+.ResourcePack_blank {
+  margin-top: 30px;
+}
+
 .ResourcePack-wrapper {
   padding-bottom: 20px;
   margin-bottom: 20px;
