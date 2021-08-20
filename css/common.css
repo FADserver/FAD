@@ -36,6 +36,14 @@ a {
   color:#8C8C8C;
 }
 
+.big {
+  font-size: 20px!important;
+  font-weight: bold !important;
+  margin: 0;
+  background: linear-gradient(transparent 50%, yellow 50%);
+  display: inline;
+}
+
 header {
   height: 65px;
   width: 100%;

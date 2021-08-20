@@ -129,14 +129,6 @@ a.anchor{
   transform: translateY(-50%);
 }
 
-.big {
-  font-size: 20px!important;
-  font-weight: bold !important;
-  margin: 0;
-  background: linear-gradient(transparent 50%, yellow 50%);
-  display: inline;
-}
-
 .join p {
   line-height: 5;
   font-size: 15px;

@@ -71,13 +71,6 @@
   text-align: center;
 }
 
-.big {
-  font-size: 20px!important;
-  margin: 0;
-  color: rgb(255, 79, 79);
-  display: inline;
-}
-
 .icon {
   width: 30px !important;;
   display: inline !important;
