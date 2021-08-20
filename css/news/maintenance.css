@@ -60,7 +60,6 @@
 .exsample li {
   color: #333333;
   line-height: 1.5;
-  padding: 0.5em 0;
   list-style-type: none!important;
 }
 
@@ -73,4 +72,5 @@
   font-variant: normal;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
+  padding-right: 10px;
 }
