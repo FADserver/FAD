@@ -16,7 +16,7 @@ a {
   text-decoration: underline;
 }
 .a_blank::after {
-  content: " \f35d ";
+  content: " \f35d  ";
   color: #333333;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -681,12 +681,7 @@ input {
 .footer_bar {
   text-align: center;
   color: #333333;
-  font-size: 14px;
-}
-.footer_bar-p {
-  text-align: center;
-  color: #333333;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .footer_logo {
@@ -707,6 +702,11 @@ footer a:hover {
 
 .footer_logo {
   text-align: left;
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+}
+.footer_logo img {
+  width: 125px;
 }
 
 .fotter_bar a:hover{
@@ -737,7 +737,7 @@ footer {
 .footer-line {
   border-bottom: 0px solid #8C8C8C;
   margin-bottom: 30px;
-  width: 96%;
+  width: 97%;
 }
 
 /* FADサーバーで遊ぶ */
