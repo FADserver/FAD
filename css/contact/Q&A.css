@@ -6,10 +6,10 @@
   margin-top: 100px;
   color: #333333;
 }
-.QaA a, .QA, .btn-social-flat-text {
+.btn-social-flat-text {
   color: #333333;
 }
-.QaA a:hover, .QA:hover, .btn-social-flat-text:hover {
+.btn-social-flat-text:hover {
   color: #8C8C8C;
 }
 

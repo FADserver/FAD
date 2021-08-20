@@ -63,14 +63,6 @@
   text-align: center;
 }
 
-.QA:hover {
-  color: #333333;
-
-}
-.QA {
-  color: #8C8C8C;
-}
-
 @media all and (min-width: 360px) {
   .form iframe {
   width: 100%;

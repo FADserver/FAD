@@ -2,11 +2,23 @@
   box-sizing: border-box;
 }
 
-.streamer_ul a {
-  color: #333333;
+.streamer_a_blank, .streamer_a {
+  color:#060940;
+  text-decoration: underline;
 }
-.streamer_ul a:hover {
-  color: #8C8C8C;
+.streamer_a_blank::after {
+  content: " \f35d ";
+  color: #060940;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-size: 10px;
+}
+.streamer_a_blank:hover, .streamer_a_blank:hover::after, .streamer_a:hover {
+  color:#8C8C8C;
 }
 
 .streamer_ul{

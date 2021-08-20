@@ -141,36 +141,6 @@ a.anchor{
   color: #333333;
 }
 
-.join_a::after {
-  content: " \f35d ";
-  color: #333333;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  font-size: 10px;
-}
-.join_a:hover::after {
-  content: " \f35d ";
-  color: #8C8C8C;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  font-size: 10px;
-}
-
-.join a {
-  color: #333333;
-}
-.join a:hover {
-  color: #8C8C8C;
-}
-
 /* ↓ ボタン ↓ */
 .ResourcePack_blank {
   margin-top: 30px;

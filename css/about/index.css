@@ -19,32 +19,3 @@
   font-size: 20px;
   color: #333333;
 }
-
-.about-a {
-  color: #333333;
-}
-.about-a:hover {
-  color: #8C8C8C;
-}
-.about-a::after {
-  content: " \f35d ";
-  color: #333333;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  font-size: 10px;
-}
-.about-a:hover::after {
-  content: " \f35d ";
-  color: #8C8C8C;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  font-size: 10px;
-}

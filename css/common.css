@@ -11,6 +11,25 @@ a {
   text-decoration: none;
 }
 
+.a_blank, .a {
+  color:#333333;
+  text-decoration: underline;
+}
+.a_blank::after {
+  content: " \f35d ";
+  color: #333333;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-size: 10px;
+}
+.a_blank:hover, .a_blank:hover::after, .a:hover {
+  color:#8C8C8C;
+}
+
 header {
   height: 65px;
   width: 100%;
@@ -660,13 +679,12 @@ input {
 footer a {
   color: #8C8C8C;
 }
+footer a:hover {
+  color: #333333;
+}
 
 .footer-p {
   color: #8C8C8C;
-}
-
-footer a:hover {
-  color: #333333;
 }
 
 .footer_logo {

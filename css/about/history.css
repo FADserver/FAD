@@ -14,10 +14,3 @@
   display: inline;
   text-decoration: line-through;
 }
-
-.history_a {
-  color: #333333;
-}
-.history_a:hover {
-  color: #8C8C8C;
-}

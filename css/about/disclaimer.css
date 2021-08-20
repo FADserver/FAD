@@ -12,10 +12,3 @@
 .secound {
   list-style-type: lower-alpha;
 }
-
-.about a {
-  color: #333333;
-}
-.about a:hover {
-  color: #8C8C8C;
-}

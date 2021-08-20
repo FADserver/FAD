@@ -19,34 +19,7 @@
   background: #f4f4f4;
   color: #333333;
 }
-.mode_a {
-  color: #333333;
-}
-.mode_a:hover {
-  color: #8C8C8C;
-}
-.blank::after {
-  content: " \f35d ";
-  color: #333333;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  font-size: 10px;
-}
-.blank:hover::after {
-  content: " \f35d ";
-  color: #8C8C8C;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  font-size: 10px;
-}
+
 .mode img {
   width: 500px;
   border: 2px solid #8C8C8C;

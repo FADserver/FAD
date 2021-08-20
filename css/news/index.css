@@ -24,7 +24,10 @@
   font-size: 15px;
 }
 
-.news-list a::before {
+.a_nounder {
+  color: #333333;
+}
+.a_nounder::before {
   content: " \f1c1";
   color: #EC1C24;
   font-family: "Font Awesome 5 Free";
@@ -36,7 +39,7 @@
   font-size: 25px;
   padding-right: 10px;
 }
-.news-list a::after {
+.a_nounder::after {
   content: " \f35d ";
   color: #333333;
   font-family: "Font Awesome 5 Free";
@@ -47,13 +50,6 @@
   -webkit-font-smoothing: antialiased;
   font-size: 10px;
 }
-
-.news-list a {
-  color: #333333;
-}
-.news-list a:hover {
-  color: #8C8C8C;
-}
-.news-list a:hover::after {
-  color: #8C8C8C;
+.a_nounder:hover, .a_nounder:hover::after {
+  color:#8C8C8C;
 }
