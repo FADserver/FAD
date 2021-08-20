@@ -64,6 +64,10 @@ h1:before {
   position: relative;
   top: 70px;
   z-index: 2;
+  /* スクロール */
+  overflow: scroll;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
 }
 
 .breadcrumb {
@@ -89,7 +93,7 @@ h1:before {
   font-size: 12px;
   -webkit-font-smoothing: antialiased;
   padding: 0 0.2em;
-  color: silver;
+  color: #8C8C8C;
 }
 
 .breadcrumb li:last-child:after {
@@ -98,7 +102,7 @@ h1:before {
 
 .breadcrumb li a {
   text-decoration: none;
-  color: #888;
+  color: #8C8C8C;
   font-size: 12px
 }
 
