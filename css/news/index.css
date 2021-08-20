@@ -47,3 +47,7 @@
   -webkit-font-smoothing: antialiased;
   font-size: 10px;
 }
+
+.size {
+  font-size: 11px;
+}
