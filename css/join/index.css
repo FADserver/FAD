@@ -64,6 +64,8 @@ a.anchor{
   padding: 0.4em 0.5em;
   margin: 2em 0 3em;
   font-size: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .point_tytle:after {
@@ -128,15 +130,16 @@ a.anchor{
 }
 
 .big {
-  font-size: 25px!important;
+  font-size: 20px!important;
+  font-weight: bold !important;
   margin: 0;
-  color: rgb(255, 79, 79);
+  background: linear-gradient(transparent 50%, yellow 50%);
   display: inline;
 }
 
 .join p {
   line-height: 5;
-  font-size: 16px;
+  font-size: 15px;
   display: inline;
   color: #333333;
 }

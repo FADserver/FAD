@@ -24,9 +24,6 @@
   font-size: 15px;
 }
 
-.a_nounder {
-  color: #333333;
-}
 .a_nounder::before {
   content: " \f1c1";
   color: #EC1C24;
@@ -49,7 +46,4 @@
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   font-size: 10px;
-}
-.a_nounder:hover, .a_nounder:hover::after {
-  color:#8C8C8C;
 }
