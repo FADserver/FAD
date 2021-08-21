@@ -139,12 +139,6 @@ h1:before {
 }
 /* ここまで */
 
-.container {
-  width: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
 /* Page TOP */
 .page_top{
   width: 90px;
