@@ -2,34 +2,6 @@
   background-color: #F1F1F1;
 }
 
-@media (max-width: 640px) {
-  #parent {
-    display: flex;
-  }
-  #child1 {
-    flex-grow: 0;
-    width: 100%;
-  }
-  #child2 {
-    display: none;
-  }
-}
-@media (min-width: 640px) {
-  #parent {
-    display: flex;
-  }
-  #child1 {
-    flex-grow: 1;
-  }
-  #child2 {
-    flex-grow: 1;
-    padding-left: 10px;
-    padding-right: 10px;
-    min-width: 500px;
-    max-width: 500px;
-  }
-}
-
 .twitter {
   margin: 0 auto;
   margin-top: 50px;
@@ -88,12 +60,14 @@
   font-size: 22px;
   color: white;
 }
-.ribbon11-wrapper p::before {
+.comment {
+  margin-right: 8px;
+  margin-left: 8px;
+}
+.comment p::before {
   content: "今は、あまり活動してません。";
   font-size: 15px;
   color: white;
-  padding-left: 5px;
-  padding-right: 5px;
 }
 
 .ribbon12 {
@@ -105,7 +79,7 @@
   width: calc(100% + 20px);
   font-size: 22px;
   color: white;
-  background: #7de76c;
+  background: #6cdf5b;
 }
 .ribbon12::before {
   position: absolute;
@@ -114,7 +88,7 @@
   left: 0;
   border: none;
   border-bottom: solid 15px transparent;
-  border-right: solid 20px #45BF55;
+  border-right: solid 20px #34b445;
 }
 .ribbon12 span::before {
   content: "アップデート";
@@ -123,8 +97,6 @@
 }
 .ribbon12-wrapper p::before {
   white-space: pre-wrap;
-  padding-left: 5px;
-  padding-right: 5px;
   content: "ロビーで詰んだ時に手持ちのダイアモンドでTPできるようになりました！\Aサイトにサイドバーができました！";
   font-size: 15px;
   color: white;
@@ -160,6 +132,53 @@
   content: "不定期開催です。";
   font-size: 15px;
   color: white;
-  padding-left: 5px;
-  padding-right: 5px;
+}
+
+@media (max-width: 1200px) {
+  #parent {
+    display: flex;
+  }
+  #child1 {
+    flex-grow: 0;
+    width: 100%;
+  }
+  #child2 {
+    display: none;
+  }
+  #child3 {
+    display: block;
+  }
+  .ribbon11 span::before, .ribbon12 span::before, .ribbon13 span::before {
+    font-size: 18px;
+  }
+  .fa-calendar-alt, .fa-bullhorn, .fa-sync-alt {
+    content: " \f35d";
+    color: white;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  #parent {
+    display: flex;
+  }
+  #child1 {
+    flex-grow: 1;
+  }
+  #child2 {
+    flex-grow: 1;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-width: 400px;
+    max-width: 400px;
+  }
+  #child3 {
+    display: none;
+  }
 }
