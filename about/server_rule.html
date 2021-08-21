@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <base href="{{site:.github.url}}" charset="utf-8"/>
+  <base href="{{site:.github.url}}" charset="utf-8" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-20WYH91PKW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-20WYH91PKW');
-</script>
-<meta name="google-site-verification" content="tM6OhG06tjVq45exqgC2VTiGWzlAYUfrsjqhTrYrydQ" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-20WYH91PKW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
   
+    gtag('config', 'G-20WYH91PKW');
+  </script>
+  <meta name="google-site-verification" content="tM6OhG06tjVq45exqgC2VTiGWzlAYUfrsjqhTrYrydQ" />
+
   <title>FADサーバー | FADサーバー利用規約</title>
   <link rel="stylesheet" type="text/css" href="../css/common.css">
   <link rel="stylesheet" type="text/css" href="../css/about/about_common.css">
@@ -29,7 +29,7 @@
   <link rel="apple-touch-icon" sizes="144x144" href="../icon/apple-icon-144x144.png">
   <link rel="apple-touch-icon" sizes="152x152" href="../icon/apple-icon-152x152.png">
   <link rel="apple-touch-icon" sizes="180x180" href="../icon/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="../icon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../icon/android-icon-192x192.png">
   <link rel="icon" type="image/png" sizes="32x32" href="../icon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="96x96" href="../icon/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../icon/favicon-16x16.png">
@@ -48,16 +48,14 @@
   <div class="pan">
     <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
       <!-- 1つめ -->
-      <li itemprop="itemListElement" itemscope
-          itemtype="https://schema.org/ListItem">
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
         <a itemprop="item" href="https://fadserver.github.io/FAD/index.html">
             <span itemprop="name">ホーム</span>
         </a>
         <meta itemprop="position" content="1" />
       </li>
       <!-- 2つめ -->
-      <li itemprop="itemListElement" itemscope
-          itemtype="https://schema.org/ListItem">
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
         <a itemprop="item" href="https://fadserver.github.io/FAD/about/server_rule.html">
             <span itemprop="name">FADサーバー利用規約</span>
         </a>
@@ -78,6 +76,7 @@
         <label for="menu-btn-check" class="menu-btn"><span></span></label>
         <label for="menu-btn-check" class="out-close">
         </label>
+
         <div class="menu-content">
           <ul>
             <li class="menu-li"><a href="../index.html">トップ</a></li>
@@ -85,27 +84,29 @@
               <label class="menu-label" for="menu_bar01">FADサーバーのミニゲームモード</label>
               <input type="checkbox" id="menu_bar01" />
               <ul id="links01">
-                  <li><a href="../mode/system/index.html">FADシステム</a></li>
-                  <li><a href="../mode/maze/index.html">脱出迷路MODE</a></li>
-                  <li><a href="../mode/oni/index.html">鬼ごっこMODE</a></li>
-                  <li><a href="../mode/battle_royale/index.html">バトロアMODE</a></li>
+                <li><a href="../mode/system/index.html">FADシステム</a></li>
+                <li><a href="../mode/maze/index.html">脱出迷路MODE</a></li>
+                <li><a href="../mode/oni/index.html">鬼ごっこMODE</a></li>
+                <li><a href="../mode/battle_royale/index.html">バトロアMODE</a></li>
               </ul>
-              <label class="menu-label" for="menu_bar02">FADサーバーについて</label>
-              <input type="checkbox" id="menu_bar02" />
-              <ul id="links02">
-                  <li><a href="index.html">FADサーバー概要</a></li>
-                  <li><a href="history.html">沿革</a></li>
-                  <li><a href="streamer.html">ストリーマーの皆様へ</a></li>
-                  <li><a href="server_rule.html">FADサーバー利用規約</a></li>
-                  <li><a href="resourcepack.html">リソースパック利用約款</a></li>
-                  <li><a href="privacy_policy.html">プライバシーポリシー</a></li>
-                  <li><a href="disclaimer.html">免責事項</a></li>
-                  <li><a href="../operation/operations.html">運営紹介</a></li>
-              </ul>
-          </div>
+            </div>
             <li class="menu-li"><a href="../join/index.html">参加する</a></li>
+            <li class="menu-li"><a href="../operation/operations.html">運営紹介</a></li>
             <li class="menu-li"><a href="../news/index.html">お知らせ</a></li>
             <li class="menu-li"><a href="../news/maintenance.html">障害・メンテナンス情報</a></li>
+            <div class="menu">
+              <label class="menu-label" for="menu_bar02">その他規約等</label>
+              <input type="checkbox" id="menu_bar02" />
+              <ul id="links02">
+                <li><a href="index.html">FADサーバー概要</a></li>
+                <li><a href="history.html">沿革</a></li>
+                <li><a href="streamer.html">ストリーマーの皆様へ</a></li>
+                <li><a href="server_rule.html">FADサーバー利用規約</a></li>
+                <li><a href="resourcepack.html">リソースパック利用約款</a></li>
+                <li><a href="privacy_policy.html">プライバシーポリシー</a></li>
+                <li><a href="disclaimer.html">免責事項</a></li>
+              </ul>
+            </div>
             <li class="menu-li"><a href="../contact/Q&A.html">Q&A</a></li>
             <li class="menu-li"><a href="../contact/index.html"><i class="fas fa-question-circle"></i> お問い合わせ</a></li>
           </ul>
@@ -119,16 +120,16 @@
             <li><a href="https://twitter.com/FADserver" target="_blank"></a></li>
             <li><a href="https://www.twitch.tv/major_exe" target="_blank"></a></li>
             <li><a href="https://lin.ee/eZ3sGPj" target="_blank"></a></li>
-         </ul>
-       </div>
+          </ul>
+        </div>
       </div>
 
     </div>
   </header>
-  
+
   <div class="container">
-   <h1 id="top"><span>FADサーバー利用規約</span></h1>
-    <div class="about"> 
+    <h1 id="top"><span>FADサーバー利用規約</span></h1>
+    <div class="about">
       <h2 class="about_tytle">第一条 定義</h2>
       <p>以下、「FADサーバー利用規約」のことを「当利用規約」、「Minecraft内におけるFADサーバー」のことを「当サーバー」、FADサーバーの管理者及び、運営者を「運営」、運営が管理し提供するサイト、LINE等の情報等、運営が管理するアカウント等によって当サーバー及び、サービスを宣伝し又は、当サーバーの事業を行っているところを配信し又は、録画し又は、文書等にて公開すること等、運営がご利用者様に有形無形を問わず提供するものを「当サービス」、本サービスを利用する者を「利用者」、当サービスに関連する運営が定める規約、ポリシー等を「規約等」、日本国の法令、条例その他規則を「準拠法」という。
       </p>
@@ -137,51 +138,51 @@
       </p>
       <h2 class="about_tytle">第三条 禁止事項</h2>
       <p>当サーバー内において、以下に掲げる行為を禁止する。利用者の行為が以下に掲げるいずれか又は、全部に該当した場合、運営の判断により、事前に通知することなく、当該行為の一部又は、全部を停止させ、当該違反行為を行った利用者を排除する法的処置を含めあらゆる処置を講じる。
-      <br>
-      <br>第一項 軽量化MOD以外のMODを使用すること
-      <br>第二項 運営が提供するリソースパック以外のリソースパックの適用すること
-      <br>第三項 当サーバーへの過多な負担をかける行為
-      <br>第四項 他の利用者に迷惑がかかる行為
-      <br>第五項 他の利用者のプライバシーもしくは肖像権を侵害する行為
-      <br>第六項 運営、当サービス、その他第三者の名誉もしくは信用を毀損する行為
-      <br>第七項 当サーバー又は、他者の情報を改ざん、消去する行為
-      <br>第八項 個人情報を、他の利用者や第三者に漏洩する行為
-      <br>第九項 他人になりすまして当サービスを利用する行為
-      <br>第一〇項 政治活動、宗教活動、またはそれらにつながる行為あるいは公序良俗に反する行為
-      <br>第一一項 許可なく当サーバーの名称又は、明らかにその内容が含まれた名称を使用する行為
-      <br>第一二項 当サーバーの運営を妨害しようとする行為
-      <br>第一三項 本サーバーの目的に反し、犯罪に結びつく行為
-      <br>第一四項 規約等に抵触する行為
-      <br>第一五項 その他、理由の如何を問わず運営が不適切と判断する行為
+        <br>
+        <br>第一項 軽量化MOD以外のMODを使用すること
+        <br>第二項 運営が提供するリソースパック以外のリソースパックの適用すること
+        <br>第三項 当サーバーへの過多な負担をかける行為
+        <br>第四項 他の利用者に迷惑がかかる行為
+        <br>第五項 他の利用者のプライバシーもしくは肖像権を侵害する行為
+        <br>第六項 運営、当サービス、その他第三者の名誉もしくは信用を毀損する行為
+        <br>第七項 当サーバー又は、他者の情報を改ざん、消去する行為
+        <br>第八項 個人情報を、他の利用者や第三者に漏洩する行為
+        <br>第九項 他人になりすまして当サービスを利用する行為
+        <br>第一〇項 政治活動、宗教活動、またはそれらにつながる行為あるいは公序良俗に反する行為
+        <br>第一一項 許可なく当サーバーの名称又は、明らかにその内容が含まれた名称を使用する行為
+        <br>第一二項 当サーバーの運営を妨害しようとする行為
+        <br>第一三項 本サーバーの目的に反し、犯罪に結びつく行為
+        <br>第一四項 規約等に抵触する行為
+        <br>第一五項 その他、理由の如何を問わず運営が不適切と判断する行為
       </p>
       <h2 class="about_tytle">第四条 当サーバーの変更と終了</h2>
       <p>当サーバーは、利用者への事前の通知なく、当サーバーの内容・名称の変更を行うことができる。ただし、当サーバーの終了（以下総称して「変更等」という。）する場合には、運営がFAD公式サイトで、事前に利用者へ公表する。当サーバーは変更等によって利用者又は、他者が被った損害について、規約等で特に定める場合を除き、一切の責任を負わない。
       </p>
       <h2 class="about_tytle">第五条 当サーバーの中断又は、停止</h2>
       <p>当サーバーは、以下に掲げる事由が生じた場合、利用者に事前に通知することなく、一時的に当サーバーを中断または停止することがある。当サーバーは、以下に掲げるいずれか又は、その他の事由により当サーバーの提供の遅延または中断、停止などが発生したとしても、利用者または他者が被った損害について、規約等で特に定める場合を除き、運営は一切の責任を負わない。
-      <br>
-      <br>第一項 当サーバー等用設備などの保守を定期的に又は、緊急に行う場合
-      <br>第二項 火災、停電、自然災害、紛争、暴動、労働争議等の不可抗力により当サーバー等の提供ができなくなった場合
-      <br>第三項 その他、運用上又は、技術上又は、当サーバーの都合により、運営が当サービスの一時的な中断が必要と判断した場合
+        <br>
+        <br>第一項 当サーバー等用設備などの保守を定期的に又は、緊急に行う場合
+        <br>第二項 火災、停電、自然災害、紛争、暴動、労働争議等の不可抗力により当サーバー等の提供ができなくなった場合
+        <br>第三項 その他、運用上又は、技術上又は、当サーバーの都合により、運営が当サービスの一時的な中断が必要と判断した場合
       </p>
       <h2 class="about_tytle">第六条 免責</h2>
       <p>運営は、当サーバーの利用に際して利用者に生じた不利益や損害などに対して、一切の責任を負わない。利用者が、当サーバーから得る情報などについての一切は、利用者の責任において判断するものとし、運営は、いかなる保証も行なわない。利用者が使用する機器およびソフトウェアについて、当サーバーは、運営は、その動作保証は一切行なわない。
       </p>
       <h2 class="about_tytle">第七条 利用者資格の取消</h2>
       <p>利用者が以下に掲げるいずれか又は、全部に該当する場合、運営は、当該利用者に事前に通知を行うことなく当サーバーの使用を一時停止し又は、永久に停止することができる。
-      <br>
-      <br>第一項 第三条に定める条項の禁止事項のいずれかに該当し又は、その他当利用規約に違反することが判明した場合
-      <br>第二項 当サーバーの運営を妨害した場合
-      <br>第三項 反社会的勢力であるか、もしくはそうした勢力と関係がある、もしくは過去に関係があった場合
-      <br>第四項 準拠法に違反している、犯罪もしくは、それらのおそれのある行為をした場合、または刑事事件に関与している疑いがあり、当利用規約を継続することによって当サーバーの信用が害されるおそれがある場合
-      <br>第五項 その他、当サーバーが利用者として不適当と判断した場合
+        <br>
+        <br>第一項 第三条に定める条項の禁止事項のいずれかに該当し又は、その他当利用規約に違反することが判明した場合
+        <br>第二項 当サーバーの運営を妨害した場合
+        <br>第三項 反社会的勢力であるか、もしくはそうした勢力と関係がある、もしくは過去に関係があった場合
+        <br>第四項 準拠法に違反している、犯罪もしくは、それらのおそれのある行為をした場合、または刑事事件に関与している疑いがあり、当利用規約を継続することによって当サーバーの信用が害されるおそれがある場合
+        <br>第五項 その他、当サーバーが利用者として不適当と判断した場合
       </p>
       <h2 class="about_tytle">第八条 損害賠償</h2>
       <p>利用者は、当サービスにより当サーバー又は、他の利用者に対して損害を与えた場合、自己の責任と費用を以ってこれに対応する。
       </p>
       <h2 class="about_tytle">第九条 著作権</h2>
       <p>当サービスに掲載された情報、写真、その他の著作物は、運営もしくは著作物の著作者または著作権者に帰属する。
-      <br>第一項 会員は、当サービスの著作物について複製、転用、公衆送信、譲渡等の著作権、商標権等を侵害する行為を禁止する。
+        <br>第一項 会員は、当サービスの著作物について複製、転用、公衆送信、譲渡等の著作権、商標権等を侵害する行為を禁止する。
       </p>
       <h2 class="about_tytle">第一〇条 当利用規約の変更</h2>
       <p>運営は、必要と判断した際、利用者の承諾なしに当利用規約を変更することができる。ただし、変更した場合の利用条件は変更後の当利用規約に基づく。
@@ -221,14 +222,14 @@
       </div>
 
       <div class="footer_bar">
-        <p class="footer-p"><a href="index.html">FAD概要</a> | <a href="rules.html">規約など</a> | <a href="streamer.html">ストリーマーの皆様へ</a> | <a href="../contact/index.html">お問い合わせ</a> | サイトマップ</p>
+        <p class="footer-p"><a href="../mode/index.html">FADのミニゲームモード</a> | <a href="rules.html">規約など</a> | <a href="streamer.html">ストリーマーの皆様へ</a> | <a href="../contact/index.html">お問い合わせ</a>          | サイトマップ</p>
       </div>
       <div class="footer_logo">
-      <a href="../index.html" tytle="Full-Automatic-Dungeon" alt="Full-Automatic-Dungeon"><img src="../image/logo_footer.png"></a>
-      <p>■ このホームページに掲載されている一切の文書・図版・写真等を、手段や形態を問わず複製、転載することを禁じます。
-        <br>■ このホームページにある要素を直リンクしないでください。
-        <br>© 2021- Full Automatic Dungeon-server. All Right Reserved.
-      </p>
+        <a href="../index.html" tytle="Full-Automatic-Dungeon" alt="Full-Automatic-Dungeon"><img src="../image/logo_footer.png"></a>
+        <p>■ このホームページに掲載されている一切の文書・図版・写真等を、手段や形態を問わず複製、転載することを禁じます。
+          <br>■ このホームページにある要素を直リンクしないでください。
+          <br>© 2021- Full Automatic Dungeon-server. All Right Reserved.
+        </p>
       </div>
     </div>
   </footer>

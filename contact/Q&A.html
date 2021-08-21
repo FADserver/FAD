@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <base href="{{site:.github.url}}" charset="utf-8"/>
+  <base href="{{site:.github.url}}" charset="utf-8" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-20WYH91PKW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-20WYH91PKW');
-</script>
-<meta name="google-site-verification" content="tM6OhG06tjVq45exqgC2VTiGWzlAYUfrsjqhTrYrydQ" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-20WYH91PKW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
   
+    gtag('config', 'G-20WYH91PKW');
+  </script>
+  <meta name="google-site-verification" content="tM6OhG06tjVq45exqgC2VTiGWzlAYUfrsjqhTrYrydQ" />
+
   <title>FADサーバー | Q&A</title>
   <link rel="stylesheet" type="text/css" href="../css/common.css">
   <link rel="stylesheet" type="text/css" href="../css/contact/Q&A.css">
@@ -29,7 +29,7 @@
   <link rel="apple-touch-icon" sizes="144x144" href="../icon/apple-icon-144x144.png">
   <link rel="apple-touch-icon" sizes="152x152" href="../icon/apple-icon-152x152.png">
   <link rel="apple-touch-icon" sizes="180x180" href="../icon/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="../icon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../icon/android-icon-192x192.png">
   <link rel="icon" type="image/png" sizes="32x32" href="../icon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="96x96" href="../icon/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../icon/favicon-16x16.png">
@@ -48,16 +48,14 @@
   <div class="pan">
     <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
       <!-- 1つめ -->
-      <li itemprop="itemListElement" itemscope
-          itemtype="https://schema.org/ListItem">
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
         <a itemprop="item" href="https://fadserver.github.io/FAD/index.html">
             <span itemprop="name">ホーム</span>
         </a>
         <meta itemprop="position" content="1" />
       </li>
       <!-- 2つめ -->
-      <li itemprop="itemListElement" itemscope
-          itemtype="https://schema.org/ListItem">
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
         <a itemprop="item" href="https://fadserver.github.io/FAD/contact/Q&A.html">
             <span itemprop="name">Q&A</span>
         </a>
@@ -78,6 +76,7 @@
         <label for="menu-btn-check" class="menu-btn"><span></span></label>
         <label for="menu-btn-check" class="out-close">
         </label>
+
         <div class="menu-content">
           <ul>
             <li class="menu-li"><a href="../index.html">トップ</a></li>
@@ -85,27 +84,29 @@
               <label class="menu-label" for="menu_bar01">FADサーバーのミニゲームモード</label>
               <input type="checkbox" id="menu_bar01" />
               <ul id="links01">
-                  <li><a href="../mode/system/index.html">FADシステム</a></li>
-                  <li><a href="../mode/maze/index.html">脱出迷路MODE</a></li>
-                  <li><a href="../mode/oni/index.html">鬼ごっこMODE</a></li>
-                  <li><a href="../mode/battle_royale/index.html">バトロアMODE</a></li>
+                <li><a href="../mode/system/index.html">FADシステム</a></li>
+                <li><a href="../mode/maze/index.html">脱出迷路MODE</a></li>
+                <li><a href="../mode/oni/index.html">鬼ごっこMODE</a></li>
+                <li><a href="../mode/battle_royale/index.html">バトロアMODE</a></li>
               </ul>
-              <label class="menu-label" for="menu_bar02">FADサーバーについて</label>
-              <input type="checkbox" id="menu_bar02" />
-              <ul id="links02">
-                  <li><a href="../about/index.html">FADサーバー概要</a></li>
-                  <li><a href="../about/history.html">沿革</a></li>
-                  <li><a href="../about/streamer.html">ストリーマーの皆様へ</a></li>
-                  <li><a href="../about/server_rule.html">FADサーバー利用規約</a></li>
-                  <li><a href="../about/resourcepack.html">リソースパック利用約款</a></li>
-                  <li><a href="../about/privacy_policy.html">プライバシーポリシー</a></li>
-                  <li><a href="../about/disclaimer.html">免責事項</a></li>
-                  <li><a href="../operation/operations.html">運営紹介</a></li>
-              </ul>
-          </div>
+            </div>
             <li class="menu-li"><a href="../join/index.html">参加する</a></li>
+            <li class="menu-li"><a href="../operation/operations.html">運営紹介</a></li>
             <li class="menu-li"><a href="../news/index.html">お知らせ</a></li>
             <li class="menu-li"><a href="../news/maintenance.html">障害・メンテナンス情報</a></li>
+            <div class="menu">
+              <label class="menu-label" for="menu_bar02">その他規約等</label>
+              <input type="checkbox" id="menu_bar02" />
+              <ul id="links02">
+                <li><a href="../about/index.html">FADサーバー概要</a></li>
+                <li><a href="../about/history.html">沿革</a></li>
+                <li><a href="../about/streamer.html">ストリーマーの皆様へ</a></li>
+                <li><a href="../about/server_rule.html">FADサーバー利用規約</a></li>
+                <li><a href="../about/resourcepack.html">リソースパック利用約款</a></li>
+                <li><a href="../about/privacy_policy.html">プライバシーポリシー</a></li>
+                <li><a href="../about/disclaimer.html">免責事項</a></li>
+              </ul>
+            </div>
             <li class="menu-li"><a href="Q&A.html">Q&A</a></li>
             <li class="menu-li"><a href="index.html"><i class="fas fa-question-circle"></i> お問い合わせ</a></li>
           </ul>
@@ -119,41 +120,47 @@
             <li><a href="https://twitter.com/FADserver" target="_blank"></a></li>
             <li><a href="https://www.twitch.tv/major_exe" target="_blank"></a></li>
             <li><a href="https://lin.ee/eZ3sGPj" target="_blank"></a></li>
-         </ul>
-       </div>
+          </ul>
+        </div>
       </div>
 
     </div>
   </header>
-  
+
   <div class="container">
     <h1 id="top"><span>Q&A</span></h1>
-      <div class="h2_QA">
-        <h2 class="headline2_QA"><i class="far fa-lightbulb"></i><span>お問い合わせは<a class="a" href="index.html">こちら</a>から</span></h2>
-   </div>
-   <div class="QaA">
-    <dl class="faq">
-      <dt class="faq__dt"><p>FADサーバーってなんですか？</p></dt>
-      <dd class="faq__dd"><p>FADサーバーは、自動で毎回ランダムで生成されるダンジョンで鬼ごっこや脱出マップ、バトロアなどをするMinecraft JavaEdition1.12.2サーバーです。</p></dd>
-      <dt class="faq__dt"><p>FADサーバーをLIVE配信、動画投稿したいのですが…？</p></dt>
-      <dd class="faq__dd"><p>全然かまいません！むしろお願いします！配信のルールなどは<a class="a" href="../about/streamer.html">こちら</a>をご確認ください。</p></dd>
-      <dt class="faq__dt"><p>公式アカウントはどれですか？</p></dt>
-      <dd class="faq__dd"><p>以下が公式アカウントです。ぜひフォローしてください。</p>
-        <p>FADサーバーの公式アカウント</p><div class="SNS-QaA">
-          <a href="https://twitter.com/FADserver" class="btn-social-flat" target="_blank">
+    <div class="h2_QA">
+      <h2 class="headline2_QA"><i class="far fa-lightbulb"></i><span>お問い合わせは<a class="a" href="index.html">こちら</a>から</span></h2>
+    </div>
+    <div class="QaA">
+      <dl class="faq">
+        <dt class="faq__dt"><p>FADサーバーってなんですか？</p></dt>
+        <dd class="faq__dd">
+          <p>FADサーバーは、自動で毎回ランダムで生成されるダンジョンで鬼ごっこや脱出マップ、バトロアなどをするMinecraft JavaEdition1.12.2サーバーです。</p>
+        </dd>
+        <dt class="faq__dt"><p>FADサーバーをLIVE配信、動画投稿したいのですが…？</p></dt>
+        <dd class="faq__dd">
+          <p>全然かまいません！むしろお願いします！配信のルールなどは<a class="a" href="../about/streamer.html">こちら</a>をご確認ください。</p>
+        </dd>
+        <dt class="faq__dt"><p>公式アカウントはどれですか？</p></dt>
+        <dd class="faq__dd">
+          <p>以下が公式アカウントです。ぜひフォローしてください。</p>
+          <p>FADサーバーの公式アカウント</p>
+          <div class="SNS-QaA">
+            <a href="https://twitter.com/FADserver" class="btn-social-flat" target="_blank">
             <span class="btn-social-flat-icon btn-social-flat-icon--twitter">
               <i class="fab fa-twitter"></i>
             </span>
             <span class="btn-social-flat-text">@FADserver</span>
           </a>
-          <a href="https://lin.ee/eZ3sGPj" class="btn-social-flat" target="_blank">
+            <a href="https://lin.ee/eZ3sGPj" class="btn-social-flat" target="_blank">
             <span class="btn-social-flat-icon btn-social-flat-icon--line">
               <i class="fab fa-line"></i>
             </span>
             <span class="btn-social-flat-text">FAD公式LINE</span>
           </a>
-        </div>
-        <p>少佐.exeのアカウント</p>
+          </div>
+          <p>少佐.exeのアカウント</p>
           <a href="https://twitter.com/Major_exe_info" class="btn-social-flat" target="_blank">
             <span class="btn-social-flat-icon btn-social-flat-icon--twitter">
               <i class="fab fa-twitter"></i>
@@ -172,27 +179,27 @@
            </span>
           <span class="btn-social-flat-text">Major_exe</span>
        </a>
-        <p>ホウプのアカウント</p>
-        <div class="SNS-QaA">
-          <a href="https://twitter.com/hope_Commander" class="btn-social-flat" target="_blank">
+          <p>ホウプのアカウント</p>
+          <div class="SNS-QaA">
+            <a href="https://twitter.com/hope_Commander" class="btn-social-flat" target="_blank">
             <span class="btn-social-flat-icon btn-social-flat-icon--twitter">
               <i class="fab fa-twitter"></i>
             </span>
             <span class="btn-social-flat-text">@hope_Commander</span>
           </a>
-        </div>
-        <p>ふわぺんのアカウント</p>
-        <div class="SNS-QaA">
-          <a href="https://twitter.com/huwapenn" class="btn-social-flat" target="_blank">
+          </div>
+          <p>ふわぺんのアカウント</p>
+          <div class="SNS-QaA">
+            <a href="https://twitter.com/huwapenn" class="btn-social-flat" target="_blank">
             <span class="btn-social-flat-icon btn-social-flat-icon--twitter">
               <i class="fab fa-twitter"></i>
             </span>
             <span class="btn-social-flat-text">@huwapenn</span>
           </a>
-        </div>
-      </dd>
-    </dl>
-   </div>
+          </div>
+        </dd>
+      </dl>
+    </div>
 
     <div class="message-wrapper">
       <div class="container">
@@ -218,14 +225,14 @@
       </div>
 
       <div class="footer_bar">
-        <p class="footer-p"><a href="../about/index.html">FAD概要</a> | <a href="../about/rules.html">規約など</a> | <a href="../about/streamer.html">ストリーマーの皆様へ</a> | <a href="index.html">お問い合わせ</a> | サイトマップ</p>
+        <p class="footer-p"><a href="../mode/index.html">FADのミニゲームモード</a> | <a href="../about/rules.html">規約など</a> | <a href="../about/streamer.html">ストリーマーの皆様へ</a> | <a href="index.html">お問い合わせ</a> | サイトマップ</p>
       </div>
       <div class="footer_logo">
-      <a href="../index.html" tytle="Full-Automatic-Dungeon" alt="Full-Automatic-Dungeon"><img src="../image/logo_footer.png"></a>
-      <p>■ このホームページに掲載されている一切の文書・図版・写真等を、手段や形態を問わず複製、転載することを禁じます。
-        <br>■ このホームページにある要素を直リンクしないでください。
-        <br>© 2021- Full Automatic Dungeon-server. All Right Reserved.
-      </p>
+        <a href="../index.html" tytle="Full-Automatic-Dungeon" alt="Full-Automatic-Dungeon"><img src="../image/logo_footer.png"></a>
+        <p>■ このホームページに掲載されている一切の文書・図版・写真等を、手段や形態を問わず複製、転載することを禁じます。
+          <br>■ このホームページにある要素を直リンクしないでください。
+          <br>© 2021- Full Automatic Dungeon-server. All Right Reserved.
+        </p>
       </div>
     </div>
   </footer>
