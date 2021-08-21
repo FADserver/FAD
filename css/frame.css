@@ -122,11 +122,13 @@
   color: white;
 }
 .ribbon12-wrapper p::before {
-  content: "ロビーで詰んだ時に手持ちのダイアモンドでTPできるようになりました！";
-  font-size: 15px;
-  color: white;
+  white-space: pre-wrap;
   padding-left: 5px;
   padding-right: 5px;
+  content: "ロビーで詰んだ時に手持ちのダイアモンドでTPできるようになりました！\Aサイトにサイドバーができました！";
+  font-size: 15px;
+  color: white;
+
 }
 
 .ribbon13 {
