@@ -320,11 +320,11 @@ h1:before {
 /* 下線 */
   border-bottom: solid 1px #ffffff;
   list-style: none;
+  font-size: 15px;
 }
 .menu-content ul li a {
   display: block;
   width: 100%;
-  font-size: 15px;
   box-sizing: border-box;
   color:#ffffff;
   text-decoration: none;
