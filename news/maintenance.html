@@ -19,6 +19,7 @@
   <title>FADサーバー | 障害・メンテナンス情報</title>
   <link rel="stylesheet" type="text/css" href="../css/common.css">
   <link rel="stylesheet" type="text/css" href="../css/news/maintenance.css">
+  <link rel="stylesheet" type="text/css" href="../css/frame.css">
   <link rel="icon" href="../icon/favicon.ico">
   <link rel="apple-touch-icon" sizes="57x57" href="../icon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="../icon/apple-icon-60x60.png">
@@ -128,39 +129,66 @@
   </header>
 
   <div class="container">
-    <h1>障害･メンテナンス情報</h1>
-    <div class="maintenance">
 
-      <ul class="exsample">
-        <li>発見済み………　<i class="fas fa-exclamation-triangle"></i></li>
-        <li>対応中…………　<i class="fas fa-tools"></i></li>
-        <li>対応済み………　<i class="fas fa-check-square"></i></li>
-        <li>メンテナンス…　<i class="fas fa-wrench"></i></li>
-        <li>対応不可………　<i class="far fa-flag"></i> （白旗上げます...）</li>
-      </ul>
+    <div id="parent">
+      <div id="child1">
 
-      <h2 class="maintenance_tytle"><i class="fas fa-tools"></i>　2021年8月16日　17：00</h2>
-      <p>■ 内容（2021/8/16 17:00発見　同刻対応）
-        <br>Norton社様が提供している「ノートン セーフウェブ」にて、当サイトの評価が「注意」と評価されていることに関して、FADサーバー運営としましては、現在再評価をお願いしているところです。当サイトはGitHubを用いてSSL化しておりますので安全に閲覧できます。ご安心ください。
-      </p>
-      <p>
-        ■ 追記（2021/8/19）
-        <br>評価が「未評価」になりました。
-      </p>
-      <p class="disclaimer">「Norton」及び、「ノートン セーフウェブ」は、NortonLifeLock Inc. または関連会社の米国およびその他の国における商標または登録商標、サービス名です。</p>
-      <h2 class="maintenance_tytle"><i class="far fa-flag"></i>　2020年6月14日</h2>
-      <p>■ 内容（2020/6/14 発見）
-        <br>一部のご利用者でリソースパックが自動で適用されない事象が確認されています。お手数ですが、<a class="a" href="../join/index.html#resourcepack">リソースパックのダウンロードと追加</a>をご覧の上適用してください。
-      </p>
-    </div>
-    <div class="message-wrapper">
-      <div class="container">
-        <div class="heading">
-          <h2>さぁ、あなたも完全ランダムなダンジョンへ</h2>
-          <h3>Let's enjoy FAD!</h3>
+        <h1>障害･メンテナンス情報</h1>
+        <div class="maintenance">
+
+          <ul class="exsample">
+            <li>発見済み………　<i class="fas fa-exclamation-triangle"></i></li>
+            <li>対応中…………　<i class="fas fa-tools"></i></li>
+            <li>対応済み………　<i class="fas fa-check-square"></i></li>
+            <li>メンテナンス…　<i class="fas fa-wrench"></i></li>
+            <li>対応不可………　<i class="far fa-flag"></i> （白旗上げます...）</li>
+          </ul>
+
+          <h2 class="maintenance_tytle"><i class="fas fa-tools"></i>　2021年8月16日　17：00</h2>
+          <p>■ 内容（2021/8/16 17:00発見　同刻対応）
+            <br>Norton社様が提供している「ノートン セーフウェブ」にて、当サイトの評価が「注意」と評価されていることに関して、FADサーバー運営としましては、現在再評価をお願いしているところです。当サイトはGitHubを用いてSSL化しておりますので安全に閲覧できます。ご安心ください。
+          </p>
+          <p>
+            ■ 追記（2021/8/19）
+            <br>評価が「未評価」になりました。
+          </p>
+          <p class="disclaimer">「Norton」及び、「ノートン セーフウェブ」は、NortonLifeLock Inc. または関連会社の米国およびその他の国における商標または登録商標、サービス名です。</p>
+          <h2 class="maintenance_tytle"><i class="far fa-flag"></i>　2020年6月14日</h2>
+          <p>■ 内容（2020/6/14 発見）
+            <br>一部のご利用者でリソースパックが自動で適用されない事象が確認されています。お手数ですが、<a class="a" href="../join/index.html#resourcepack">リソースパックのダウンロードと追加</a>をご覧の上適用してください。
+          </p>
         </div>
-        <a href="../join/index.html#join"><span class="btn message">FADサーバーで遊ぶ</span></a>
       </div>
+
+      <div id="child2">
+        <div class="twitter">
+          <a class="twitter-timeline" data-lang="ja" data-height="900" href="https://twitter.com/FADserver?ref_src=twsrc%5Etfw">Tweets by FADserver</a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="ribbon11-wrapper">
+          <h3 class="ribbon11"><i class="fas fa-bullhorn"></i><span></span></h3>
+          <p></p>
+        </div>
+        <div class="ribbon12-wrapper">
+          <h3 class="ribbon12"><i class="fas fa-sync-alt"></i><span></span></h3>
+          <p></p>
+        </div>
+        <div class="ribbon13-wrapper">
+          <h3 class="ribbon13"><i class="fas fa-calendar-alt"></i><span></span></h3>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="message-wrapper">
+    <div class="container">
+      <div class="heading">
+        <h2>さぁ、あなたも完全ランダムなダンジョンへ</h2>
+        <h3>Let's enjoy FAD!</h3>
+      </div>
+      <a href="../join/index.html#join"><span class="btn message">FADサーバーで遊ぶ</span></a>
     </div>
   </div>
 
@@ -177,7 +205,7 @@
       </div>
 
       <div class="footer_bar">
-        <p class="footer-p"><a href="../mode/index.html">FADのミニゲームモード</a> | <a href="../about/rules.html">規約など</a> | <a href="../about/streamer.html">ストリーマーの皆様へ</a> | <a href="../contact/index.html">お問い合わせ</a> | サイトマップ</p>
+        <p class="footer-p"><a href="../mode/index.html">FADのミニゲームモード</a> | <a href="../about/rules.html">規約など</a> | <a href="../about/streamer.html">ストリーマーの皆様へ</a>          | <a href="../contact/index.html">お問い合わせ</a> | サイトマップ</p>
       </div>
       <div class="footer_logo">
         <a href="../index.html" tytle="Full-Automatic-Dungeon" alt="Full-Automatic-Dungeon"><img src="../image/logo_footer.png"></a>
