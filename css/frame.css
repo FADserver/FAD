@@ -5,10 +5,10 @@
 .twitter {
   margin: 0 auto;
   margin-top: 50px;
-  width: 95%;
+  width: 98%;
 }
 .twitter-timeline {
-  width: 95%;
+  width: 98%;
 }
 
 .fa-calendar-alt, .fa-bullhorn, .fa-sync-alt {
@@ -160,12 +160,10 @@
     display: flex;
   }
   #child1 {
-    flex-grow: 1;
     display: block;
     width: 100%;
   }
   #child2 {
-    flex-grow: 1;
     display: block;
   }
   .twitter {
