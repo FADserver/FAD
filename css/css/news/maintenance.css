@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+.maintenance {
+  margin-top: 60px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.maintenance p {
+  line-height: 2;
+  font-size: 15px;
+  color: #333333;
+  overflow-wrap: break-word;
+}
+.maintenance_tytle {
+  padding: 1rem 2rem;
+  border-top: 3px solid #000000;
+  background: #f4f4f4;
+  font-size: 20px;
+  color: #333333;
+}
+.maintenance a {
+  line-height: 2;
+  font-size: 15px;
+  color: #333333;
+  overflow-wrap: break-word;
+}
+.maintenance a:hover {
+  line-height: 2;
+  font-size: 15px;
+  color: #8C8C8C;
+  overflow-wrap: break-word;
+}
+.disclaimer {
+  font-size: 11px !important;
+}
+
+/* ↓ icon ↓ */
+.fa-exclamation-triangle, .fa-tools, .fa-check-square, .fa-wrench, .fa-flag {
+  color: #333333;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-size: 20px;
+}
+/* ↑ icon ↑ */
+
+.exsample {
+  box-shadow :0px 0px 3px silver;
+  border: solid 1px whitesmoke;
+  padding: 0.5em 1em 0.5em 2.3em;
+  position: relative;
+  background: #fafafa;
+}
+
+.exsample li {
+  color: #333333;
+  line-height: 1.5;
+  list-style-type: none!important;
+}
+
+.exsample li::before {
+  color: #333333; /*アイコン色*/
+  content: "\f0da";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  padding-right: 10px;
+}

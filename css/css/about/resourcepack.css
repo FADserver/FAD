@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+.resourcepack_tytle_3 {
+  padding: 1rem 2rem;
+  margin-left: 20px;
+  border-left: 4px solid #000;
+}
+
+.resourcepack p {
+  margin-left: 20px;
+  overflow-wrap: break-word;
+}
