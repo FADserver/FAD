@@ -30,7 +30,9 @@
 }
 .comment p{
   color: white;
+  line-height: 2;
   font-size: 15px;
+  overflow-wrap: break-word;
 }
 
 .ribbon11-wrapper, .ribbon12-wrapper, .ribbon13-wrapper {
