@@ -160,11 +160,10 @@
     display: flex;
   }
   #child1 {
-    display: block;
-    width: 100%;
+    display: block !important;
   }
   #child2 {
-    display: block;
+    display: block !important;
   }
   .twitter {
     display: none;
