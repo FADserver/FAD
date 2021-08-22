@@ -1,5 +1,5 @@
 User-agent: *
-Disallow: https://fadserver.github.io/FAD/header.html
-Disallow: https://fadserver.github.io/FAD/sidebar.html
-Disallow: https://fadserver.github.io/FAD/footer.html
+Disallow: https://fadserver.github.io/FAD/common/header.html
+Disallow: https://fadserver.github.io/FAD/common/sidebar.html
+Disallow: https://fadserver.github.io/FAD/common/footer.html
 Sitemap: https://fadserver.github.io/FAD/sitemap.xml

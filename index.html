@@ -44,6 +44,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
 
   <script src="https://kit.fontawesome.com/eb72676e1c.js" crossorigin="anonymous"></script>
+
+  <!--jQueryをダウンロードし、名前を付けてjsファイルを保存。scriptで呼び出し-->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 <body>
     <!-- パンくずリスト -->
@@ -61,66 +64,15 @@
     </div>
 
   <div class="page_top"><a href="index.html"></a></div>
-  <header>
-    <div class="container">
-      <div class="header-left">
-        <a href="index.html"><img class="logo" src="image/logo_head.png" alt="Full-Automatic-Dungeon"></a>
-      </div>
 
-      <div class="hamburger-menu">
-        <input type="checkbox" id="menu-btn-check">
-        <label for="menu-btn-check" class="menu-btn"><span></span></label>
-        <label for="menu-btn-check" class="out-close">
-        </label>
-        <div class="menu-content">
-          <ul>
-            <li class="menu-li"><a href="index.html">トップ</a></li>
-            <div class="menu">
-              <label class="menu-label" for="menu_bar01">FADサーバーのミニゲームモード</label>
-              <input type="checkbox" id="menu_bar01" />
-              <ul id="links01">
-                  <li><a href="mode/system/index.html">FADシステム</a></li>
-                  <li><a href="mode/maze/index.html">脱出迷路MODE</a></li>
-                  <li><a href="mode/oni/index.html">鬼ごっこMODE</a></li>
-                  <li><a href="mode/battle_royale/index.html">バトロアMODE</a></li>
-              </ul>
-          </div>
-            <li class="menu-li"><a href="join/index.html">参加する</a></li>
-            <li class="menu-li"><a href="operation/operations.html">運営紹介</a></li>
-            <li class="menu-li"><a href="news/index.html">お知らせ</a></li>
-            <li class="menu-li"><a href="news/maintenance.html">障害・メンテナンス情報</a></li>
-            <div class="menu">
-              <label class="menu-label" for="menu_bar02">その他規約等</label>
-              <input type="checkbox" id="menu_bar02" />
-              <ul id="links02">
-                  <li><a href="about/index.html">FADサーバー概要</a></li>
-                  <li><a href="about/history.html">沿革</a></li>
-                  <li><a href="about/streamer.html">ストリーマーの皆様へ</a></li>
-                  <li><a href="about/server_rule.html">FADサーバー利用規約</a></li>
-                  <li><a href="about/resourcepack.html">リソースパック利用約款</a></li>
-                  <li><a href="about/privacy_policy.html">プライバシーポリシー</a></li>
-                  <li><a href="about/disclaimer.html">免責事項</a></li>
-              </ul>
-          </div>
-            <li class="menu-li"><a href="contact/Q&A.html">Q&A</a></li>
-            <li class="menu-li"><a href="contact/index.html"><i class="fas fa-question-circle"></i> お問い合わせ</a></li>
-          </ul>
-        </div>
-        <div class="hamburger-menu-tag"></div>
-        <div class="hamburger-menu-top"></div>
-        <div class="hamburger-sns">
-          <ul class="hamburger-follow-me">
-            <p class="hamburger-sns_p"></p>
-            <li><a href="https://www.youtube.com/channel/UCTK8mNBz6xS_U81KIg79I2A" target="_blank"></a></li>
-            <li><a href="https://twitter.com/FADserver" target="_blank"></a></li>
-            <li><a href="https://www.twitch.tv/major_exe" target="_blank"></a></li>
-            <li><a href="https://lin.ee/eZ3sGPj" target="_blank"></a></li>
-         </ul>
-       </div>
-      </div>
-
-    </div>
-  </header>
+  <!--サイドバーの内容があった場所-->
+  <div id="header"></div>
+  <!--外部HTMLを読み込む-->
+  <script>
+    $(document).ready(function(){
+  $("#header").load("common/header.html");
+  });
+  </script>
 
 <!--
 ----------------------------------------------------------------------------------------------------------------------------------
@@ -211,29 +163,13 @@
     </div>
   </div>
 
-  <footer>
-    <hr class="footer-line">
-    <div class="container">
-      <div class="sns">
-        <ul class="follow-me">
-          <li><a class="sns_icon" href="https://www.youtube.com/channel/UCTK8mNBz6xS_U81KIg79I2A" target="_blank"></a></li>
-          <li><a class="sns_icon" href="https://twitter.com/FADserver" target="_blank"></a></li>
-          <li><a class="sns_icon" href="https://lin.ee/eZ3sGPj" target="_blank"></a></li>
-          <li><a class="contact" href="contact/index.html" target="_blank"></a></li>
-        </ul>
-      </div>
-
-      <div class="footer_bar">
-        <p class="footer-p"><a href="mode/index.html">FADのミニゲーム</a> | <a href="about/rules.html">規約など</a> | <a href="about/streamer.html">ストリーマーの皆様へ</a> | <a href="contact/index.html">お問い合わせ</a> | サイトマップ</p>
-      </div>
-      <div class="footer_logo">
-      <a href="index.html" tytle="Full-Automatic-Dungeon" alt="Full-Automatic-Dungeon"><img src="image/logo_footer.png"></a>
-      <p>■ このホームページに掲載されている一切の文書・図版・写真等を、手段や形態を問わず複製、転載することを禁じます。
-        <br>■ このホームページにある要素を直リンクしないでください。
-        <br>© 2021- Full Automatic Dungeon-server. All Right Reserved.
-      </p>
-      </div>
-    </div>
-  </footer>
+  <!--サイドバーの内容があった場所-->
+  <div id="footer"></div>
+  <!--外部HTMLを読み込む-->
+  <script>
+    $(document).ready(function(){
+  $("#footer").load("common/footer.html");
+  });
+  </script>
 </body>
 </html>

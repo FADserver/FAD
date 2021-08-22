@@ -24,6 +24,15 @@
   margin-right: 10px;
 }
 
+.comment {
+  margin-right: 8px;
+  margin-left: 8px;
+}
+.comment p{
+  color: white;
+  font-size: 15px;
+}
+
 .ribbon11-wrapper, .ribbon12-wrapper, .ribbon13-wrapper {
   display: block;
   position: relative;
@@ -55,20 +64,6 @@
   border-bottom: solid 15px transparent;
   border-right: solid 20px #54a7df;
 }
-.ribbon11 span::before {
-  content: "お知らせ";
-  font-size: 22px;
-  color: white;
-}
-.comment {
-  margin-right: 8px;
-  margin-left: 8px;
-}
-.comment p::before {
-  content: "今は、あまり活動してません。";
-  font-size: 15px;
-  color: white;
-}
 
 .ribbon12 {
   display: inline-block;
@@ -90,18 +85,6 @@
   border-bottom: solid 15px transparent;
   border-right: solid 20px #34b445;
 }
-.ribbon12 span::before {
-  content: "アップデート";
-  font-size: 22px;
-  color: white;
-}
-.ribbon12-wrapper p::before {
-  white-space: pre-wrap;
-  content: "ロビーで詰んだ時に手持ちのダイアモンドでTPできるようになりました！\Aサイトにサイドバーができました！";
-  font-size: 15px;
-  color: white;
-
-}
 
 .ribbon13 {
   display: inline-block;
@@ -122,16 +105,6 @@
   border: none;
   border-bottom: solid 15px transparent;
   border-right: solid 20px #FF0000;
-}
-.ribbon13 span::before {
-  content: "開催日";
-  font-size: 22px;
-  color: white;
-}
-.ribbon13-wrapper p::before {
-  content: "不定期開催です。";
-  font-size: 15px;
-  color: white;
 }
 
 @media (max-width: 1200px) {
