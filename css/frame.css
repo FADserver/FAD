@@ -149,24 +149,15 @@
     padding: 0 15px 0 15px;
     margin: 0 auto;
   }
+  
+  .twitter {
+    display: none;
+  }
 
   .youtube-archive {
     width: 98%;
     height: auto;
     margin: 0 auto;
-  }
-
-  #parent {
-    display: flex;
-  }
-  #child1 {
-    display: block !important;
-  }
-  #child2 {
-    display: block !important;
-  }
-  .twitter {
-    display: none;
   }
 
   .fa-calendar-alt, .fa-bullhorn, .fa-sync-alt {
@@ -190,6 +181,16 @@
     -webkit-font-smoothing: antialiased;
     font-size: 20px;
     margin-right: 10px;
+  }
+
+  #parent {
+    display: flex;
+  }
+  #child1 {
+    flex-grow: 1;
+  }
+  #child2 {
+    flex-grow: 1;
   }
 }
 
