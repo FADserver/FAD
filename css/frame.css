@@ -23,7 +23,7 @@
   margin-right: 10px;
 }
 
-.fa-calendar-alt, .fa-bullhorn, .fa-youtube {
+.fa-youtube {
   color: white;
   font-family: "Font Awesome 5 Brands";
   font-weight: 400;
@@ -140,14 +140,15 @@
   border-bottom: solid 15px transparent;
   border-right: solid 20px #FF0000;
 }
-.youtube-archive {
-  margin: 0 auto;
-}
 
 @media (max-width: 1200px) {
   .container {
     width: 100%;
     padding: 0 15px 0 15px;
+    margin: 0 auto;
+  }
+  .youtube-archive {
+    width: 98%;
     margin: 0 auto;
   }
   #parent {
@@ -163,14 +164,22 @@
   #child3 {
     display: block;
   }
-  .ribbon11 span::before, .ribbon12 span::before, .ribbon13 span::before {
-    font-size: 18px;
-  }
   .fa-calendar-alt, .fa-bullhorn, .fa-sync-alt {
-    content: " \f35d";
     color: white;
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  .fa-youtube {
+    color: white;
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
     font-style: normal;
     font-variant: normal;
     text-rendering: auto;
@@ -183,6 +192,13 @@
   .container {
     width: 100%;
     padding-left: 15px;
+    margin: 0 auto;
+  }
+  .youtube-archive {
+    max-width: 326px;
+    min-width: 326px;
+    max-height: 185px;
+    min-height: 185px;
     margin: 0 auto;
   }
   #parent {
