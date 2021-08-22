@@ -12,10 +12,21 @@
 }
 
 .fa-calendar-alt, .fa-bullhorn, .fa-sync-alt {
-  content: " \f35d";
   color: white;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.fa-calendar-alt, .fa-bullhorn, .fa-youtube {
+  color: white;
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
@@ -30,12 +41,12 @@
 }
 .comment p{
   color: white;
-  line-height: 1;
+  line-height: 1.5;
   font-size: 15px;
   overflow-wrap: break-word;
 }
 
-.ribbon11-wrapper, .ribbon12-wrapper, .ribbon13-wrapper {
+.info-wrapper, .update-wrapper, .open-wrapper, .youtube-wrapper {
   display: block;
   position: relative;
   margin: 0 auto;
@@ -46,7 +57,7 @@
   background: #8C8C8C;
 }
 
-.ribbon11 {
+.info {
   display: inline-block;
   position: relative;
   box-sizing: border-box;
@@ -57,7 +68,7 @@
   color: white;
   background: #70c7ff;
 }
-.ribbon11::before {
+.info::before {
   position: absolute;
   content: '';
   top: 100%;
@@ -67,7 +78,7 @@
   border-right: solid 20px #54a7df;
 }
 
-.ribbon12 {
+.update {
   display: inline-block;
   position: relative;
   box-sizing: border-box;
@@ -78,7 +89,7 @@
   color: white;
   background: #6cdf5b;
 }
-.ribbon12::before {
+.update::before {
   position: absolute;
   content: '';
   top: 100%;
@@ -88,7 +99,28 @@
   border-right: solid 20px #34b445;
 }
 
-.ribbon13 {
+.open {
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 0 0 0 -20px;
+  width: calc(100% + 20px);
+  font-size: 22px;
+  color: white;
+  background: #F2BC1B;
+}
+.open::before {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 0;
+  border: none;
+  border-bottom: solid 15px transparent;
+  border-right: solid 20px #F2A30F;
+}
+
+.youtube {
   display: inline-block;
   position: relative;
   box-sizing: border-box;
@@ -99,7 +131,7 @@
   color: white;
   background: #ff6868;
 }
-.ribbon13::before {
+.youtube::before {
   position: absolute;
   content: '';
   top: 100%;
@@ -107,6 +139,10 @@
   border: none;
   border-bottom: solid 15px transparent;
   border-right: solid 20px #FF0000;
+}
+.youtube-archive {
+  min-width: 95%;
+  max-width: 95%;
 }
 
 @media (max-width: 1200px) {
