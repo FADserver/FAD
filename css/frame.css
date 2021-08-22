@@ -5,10 +5,10 @@
 .twitter {
   margin: 0 auto;
   margin-top: 50px;
-  width: 98%;
+  width: 95%;
 }
 .twitter-timeline {
-  width: 98%;
+  width: 95%;
 }
 
 .fa-calendar-alt, .fa-bullhorn, .fa-sync-alt {
@@ -141,23 +141,33 @@
   border-right: solid 20px #FF0000;
 }
 
-
-/* スマホ用 */
 @media (max-width: 1200px) {
   .container {
     width: 100%;
     padding: 0 15px 0 15px;
     margin: 0 auto;
   }
-  
-  .twitter {
-    display: none;
-  }
-
   .youtube-archive {
     width: 98%;
     height: auto;
     margin: 0 auto;
+  }
+  #parent {
+    display: flex;
+  }
+  #child1 {
+    flex-grow: 0;
+    width: 100%;
+  }
+  #child2 {
+    display: none;
+  }
+  #child3 {
+    display: block;
+  }
+
+  .twitter {
+    display: none;
   }
 
   .fa-calendar-alt, .fa-bullhorn, .fa-sync-alt {
@@ -170,7 +180,8 @@
     -webkit-font-smoothing: antialiased;
     font-size: 20px;
     margin-right: 10px;
-  }  
+  }
+  
   .fa-youtube {
     color: white;
     font-family: "Font Awesome 5 Brands";
@@ -182,18 +193,7 @@
     font-size: 20px;
     margin-right: 10px;
   }
-
-  #parent {
-    display: flex;
-  }
-  #child1 {
-    flex-grow: 1;
-  }
-  #child2 {
-    flex-grow: 1;
-  }
 }
-
 @media (min-width: 1200px) {
   .container {
     width: 100%;
@@ -219,5 +219,8 @@
     padding-right: 10px;
     min-width: 400px;
     max-width: 400px;
+  }
+  #child3 {
+    display: none;
   }
 }
