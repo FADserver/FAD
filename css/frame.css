@@ -149,6 +149,7 @@
   }
   .youtube-archive {
     width: 98%;
+    height: auto;
     margin: 0 auto;
   }
   #parent {
