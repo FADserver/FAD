@@ -158,11 +158,11 @@
     display: flex;
   }
   #child1 {
-    flex-grow: 1;
+    flex-grow: 0;
     width: 100%;
   }
   #child2 {
-    flex-grow: 1;
+    flex-grow: 0;
     width: 100%;
   }
   .twitter {
