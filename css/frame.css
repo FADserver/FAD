@@ -162,6 +162,7 @@
   #child1 {
     flex-grow: 1;
     display: block;
+    width: 100%;
   }
   #child2 {
     flex-grow: 1;
