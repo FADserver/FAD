@@ -70,7 +70,6 @@
   $("#header").load("../header.html");
   });
 	</script>
-  
 
   <div class="container">
 
@@ -144,9 +143,17 @@
         </div>
       </div>
 
-    <div id="child2">
-    <script type="text/javascript"> writeSidebar(""); </script>
-    </div>
+    <!--サイドバーの内容があった場所-->
+	<header id="child2"></header>
+	<!--jQueryをダウンロードし、名前を付けてjsファイルを保存。scriptで呼び出し-->
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<!--外部HTMLを読み込む-->
+	<script>
+	  $(document).ready(function(){
+  $("#child2").load("../footer.html");
+  });
+	</script>
+    
 
     </div>
 
@@ -181,26 +188,16 @@
     </div>
   </div>
 
-  <footer>
-    <hr class="footer-line">
-    <div class="container">
-      <div class="sns">
-        <ul class="follow-me">
-          <li><a class="sns_icon" href="https://www.youtube.com/channel/UCTK8mNBz6xS_U81KIg79I2A" target="_blank"></a></li>
-          <li><a class="sns_icon" href="https://twitter.com/FADserver" target="_blank"></a></li>
-          <li><a class="sns_icon" href="https://lin.ee/eZ3sGPj" target="_blank"></a></li>
-          <li><a class="contact" href="../contact/index.html" target="_blank"></a></li>
-        </ul>
-      </div>
-      <div class="footer_bar">
-        <p class="footer-p"><a href="../mode/index.html">FADのミニゲーム</a> | <a href="rules.html">規約など</a> | <a href="streamer.html">ストリーマーの皆様へ</a>          | <a href="../contact/index.html">お問い合わせ</a> | サイトマップ</p>
-      </div>
-      <div class="footer_logo"> <a href="../index.html" tytle="Full-Automatic-Dungeon" alt="Full-Automatic-Dungeon"><img src="../image/logo_footer.png"></a>
-        <p>■ このホームページに掲載されている一切の文書・図版・写真等を、手段や形態を問わず複製、転載することを禁じます。 <br>■ このホームページにある要素を直リンクしないでください。 <br>© 2021- Full Automatic
-          Dungeon-server. All Right Reserved. </p>
-      </div>
-    </div>
-  </footer>
+  <!--サイドバーの内容があった場所-->
+	<header id="footer"></header>
+	<!--jQueryをダウンロードし、名前を付けてjsファイルを保存。scriptで呼び出し-->
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<!--外部HTMLを読み込む-->
+	<script>
+	  $(document).ready(function(){
+  $("#footer").load("../footer.html");
+  });
+	</script>
 
   <script type="text/javascript" src="../frame.js"></script>
 </body>
