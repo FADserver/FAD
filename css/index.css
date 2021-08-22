@@ -6,6 +6,11 @@
   font-size: 60%;
 }
 
+.container {
+  width: 100%;
+  padding: 0 15px 0 15px;
+}
+
 .top-wrapper {
   padding: 180px 0 100px 0;
   background-image: url(../image/top.png);
