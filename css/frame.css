@@ -149,23 +149,28 @@
     padding: 0 15px 0 15px;
     margin: 0 auto;
   }
+
   .youtube-archive {
     width: 98%;
     height: auto;
     margin: 0 auto;
   }
+
   #parent {
     display: flex;
   }
   #child1 {
     flex-grow: 1;
+    display: block;
   }
   #child2 {
     flex-grow: 1;
+    display: block;
   }
   .twitter {
     display: none;
   }
+
   .fa-calendar-alt, .fa-bullhorn, .fa-sync-alt {
     color: white;
     font-family: "Font Awesome 5 Free";
@@ -176,8 +181,7 @@
     -webkit-font-smoothing: antialiased;
     font-size: 20px;
     margin-right: 10px;
-  }
-  
+  }  
   .fa-youtube {
     color: white;
     font-family: "Font Awesome 5 Brands";
