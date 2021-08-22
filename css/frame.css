@@ -158,12 +158,10 @@
     display: flex;
   }
   #child1 {
-    flex-grow: 0;
-    width: 100%;
+    flex-grow: 1;
   }
   #child2 {
-    flex-grow: 0;
-    width: 100%;
+    flex-grow: 1;
   }
   .twitter {
     display: none;
@@ -192,6 +190,7 @@
     margin-right: 10px;
   }
 }
+
 @media (min-width: 1200px) {
   .container {
     width: 100%;
