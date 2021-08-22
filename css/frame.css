@@ -141,6 +141,8 @@
   border-right: solid 20px #FF0000;
 }
 
+
+/* スマホ用 */
 @media (max-width: 1200px) {
   .container {
     width: 100%;
@@ -156,14 +158,15 @@
     display: flex;
   }
   #child1 {
-    flex-grow: 0;
+    flex-grow: 1;
     width: 100%;
   }
   #child2 {
-    display: none;
+    flex-grow: 1;
+    width: 100%;
   }
-  #child3 {
-    display: block;
+  .twitter {
+    display: none;
   }
   .fa-calendar-alt, .fa-bullhorn, .fa-sync-alt {
     color: white;
@@ -214,8 +217,5 @@
     padding-right: 10px;
     min-width: 400px;
     max-width: 400px;
-  }
-  #child3 {
-    display: none;
   }
 }
