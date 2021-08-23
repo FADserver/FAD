@@ -141,6 +141,7 @@
   border-right: solid 20px #FF0000;
 }
 
+/* ↓ スマホ用 ↓ */
 @media (max-width: 1200px) {
   .container {
     width: 100%;
@@ -194,6 +195,8 @@
     margin-right: 10px;
   }
 }
+/* ↑ スマホ用 ↑ */
+/* ↓ PC用 ↓ */
 @media (min-width: 1200px) {
   .container {
     width: 100%;
@@ -224,3 +227,4 @@
     display: none;
   }
 }
+/* ↑ PC用 ↑ */

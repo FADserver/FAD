@@ -702,8 +702,11 @@ footer a:hover {
 .footer_logo img {
   width: 125px;
 }
-.footer_logo p {
+
+.footer-1::before {
+  white-space:pre-wrap;
   font-size: 9px;
+  content: "■ このホームページに掲載されている一切の文書・図版・写真等を、手段や形態を問わず複製、転載することを禁じます。\A■ このホームページにある要素を直リンクしないでください。\A© 2019-2021 Full Automatic Dungeon-server. All Right Reserved.";
 }
 
 footer {
