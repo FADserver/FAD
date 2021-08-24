@@ -16,7 +16,7 @@
   display: inline-block;
   margin: 1.5em 0;
   padding: 7px 10px;
-  min-width: 120px;
+  min-width: 100%;
   max-width: 100%;
   color: #ffffff;
   font-size: 18px;
