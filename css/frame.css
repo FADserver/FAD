@@ -116,7 +116,7 @@
   border-right: solid 20px #34b445;
 }
 .update-icon::before {
-  content: "\f2f1";
+  content: "\f021";
 }
 
 .open {
@@ -140,7 +140,7 @@
   border-right: solid 20px #F2A30F;
 }
 .open-icon::before {
-  content: "\f021";
+  content: "\f073";
 }
 
 .youtube {
