@@ -106,3 +106,43 @@
 .streamer_a:hover {
   color: #8C8C8C!important;
 }
+
+.remarks {
+  position: relative;
+  padding-left: 40px;
+  margin-top: 50px;
+  font-weight: bold;
+}
+.remarks:before {
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  content: "\f0eb";
+  background: #ffca2c;
+  color: white;
+  font-weight: 900;
+  font-size: 15px;
+  border-radius: 50%;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.remarks:after {
+  /*吹き出しのちょこんと出た部分*/
+  content: '';
+  display: block;
+  position: absolute;
+  left: 20px;
+  height: 0;
+  width: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 12px solid #ffca2c;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
