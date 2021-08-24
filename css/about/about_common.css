@@ -25,3 +25,30 @@
   margin: auto;
   border: 2px solid #8C8C8C;
 }
+
+.first, .second, .third, .fourth {
+  line-height: 2;
+  font-size: 15px;
+  color: #333333;
+  overflow-wrap: break-word;
+}
+.first {
+  list-style-type: upper-roman;
+}
+.second {
+  list-style-type: upper-alpha;
+}
+.third {
+  list-style-type: lower-alpha;
+}
+
+.fourth {
+  list-style-type: lower-roman;
+}
+.bold {
+  font-weight: bold;
+}
+
+.resourcepack_tytle_3_p {
+  padding-right: 10px;
+}
