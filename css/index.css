@@ -63,6 +63,12 @@
 
 .mode-icon {
   position: relative;
+  transform: scale(1,1);
+  transition: 0.3s all;
+}
+.mode-icon:hover {
+  transform: scale(1.1,1.1);
+  transition: 0.3s all;
 }
 
 .mode-icon p {
