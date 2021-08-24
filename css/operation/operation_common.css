@@ -25,7 +25,10 @@
 }
 
 .operation_img {
-  width: 100px;
+  height: 200px;
+}
+.operation_img2 {
+  margin-left: 10%;
 }
 
 /* SNSラベル */
