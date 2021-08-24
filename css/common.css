@@ -44,6 +44,11 @@ a {
   display: inline;
 }
 
+.torikesi {
+  display: inline;
+  text-decoration: line-through;
+}
+
 header {
   height: 65px;
   width: 100%;
