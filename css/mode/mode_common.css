@@ -242,7 +242,7 @@ a.anchor{
   display: none;
 }
 .acd-label{
-  background: #0068b7;
+  background: #3D4073;
   color: #fff;
   display: block;
   margin-bottom: 1px;
@@ -250,9 +250,9 @@ a.anchor{
   position: relative;
 }
 .acd-label:after{
-  background: #00479d;
+  background: #060940;
   box-sizing: border-box;
-  content: '\f067';
+  content: '\f078';
   display: block;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -261,10 +261,10 @@ a.anchor{
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   height: 44px;
-  padding: 10px 20px;
+  padding: 20px 20px;
   position: absolute;
   right: 0;
-  top: 0px;
+  top: 0;
 }
 .acd-content{
   border: 1px solid #333;
