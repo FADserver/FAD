@@ -153,18 +153,6 @@
 
   background:#cd201f;
 }
-.btn-social-flat-icon--youtube::before {
-  content: "\f167";
-  font-family: "Font Awesome 5 Brands";
-  font-weight: 400;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  display: inline;
-  font-size: 15px;
-}
 .btn-social-flat-icon--line {
   background:#00C300;
 }

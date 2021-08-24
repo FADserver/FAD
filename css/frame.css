@@ -37,22 +37,10 @@
   text-align: center;
 }
 
-.fa-calendar-alt, .fa-bullhorn, .fa-sync-alt {
+.info-icon::before, .updates-icon::before, .open-icon::before {
   color: white;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  font-size: 25px;
-  margin-right: 10px;
-}
-
-.icon {
-  color: white;
-  font-family: "Font Awesome 5 Brands";
-  font-weight: 400;
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
@@ -103,6 +91,9 @@
   border-bottom: solid 15px transparent;
   border-right: solid 20px #54a7df;
 }
+.info-icon::before {
+  content: "\f0a1";
+}
 
 .update {
   display: inline-block;
@@ -123,6 +114,9 @@
   border: none;
   border-bottom: solid 15px transparent;
   border-right: solid 20px #34b445;
+}
+.update-icon::before {
+  content: "\f021";
 }
 
 .open {
@@ -145,6 +139,9 @@
   border-bottom: solid 15px transparent;
   border-right: solid 20px #F2A30F;
 }
+.open-icon::before {
+  content: "\f021";
+}
 
 .youtube {
   display: inline-block;
@@ -165,6 +162,18 @@
   border: none;
   border-bottom: solid 15px transparent;
   border-right: solid 20px #FF0000;
+}
+.youtube-icon::before {
+  content: "\f167";
+  color: white;
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-size: 25px;
+  margin-right: 10px;
 }
 
 /* ↓ スマホ用 ↓ */
