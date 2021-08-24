@@ -208,29 +208,88 @@ a.anchor{
   font-size: 15px;
 }
 
-.potion_table {
+.potion_table, .gun_table {
   width: 100%;
   text-align: center;
   border-collapse: collapse;
   border-spacing: 0;
   border-top: solid 1px #060940;
 }
-.potion_table tr:nth-child(2n+1) {
+.potion_table tr:nth-child(2n+1), .gun_table tr:nth-child(2n+1) {
   background: #e9faf9;
 }
-.potion_table th, .potion_table td {
+.potion_table th, .potion_table td, .gun_table th, .gun_table td {
   padding: 3px;
   border-bottom: solid 1px #3D4073;
 }
 .potion_table img {
   margin-top: 3px;
+  width: 100%;
+  max-width: 80px;
+}
+.gun_table img {
+  margin-top: 3px;
   width: 50%;
   max-width: 80px;
 }
-.potion_table td {
+
+.potion_table td, .gun_table td {
   font-size: 15px;
 }
 /* ↑ テーブル ↑ */
+
+.acd-check{
+  display: none;
+}
+.acd-label{
+  background: #0068b7;
+  color: #fff;
+  display: block;
+  margin-bottom: 1px;
+  padding: 10px;
+  position: relative;
+}
+.acd-label:after{
+  background: #00479d;
+  box-sizing: border-box;
+  content: '\f067';
+  display: block;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  height: 44px;
+  padding: 10px 20px;
+  position: absolute;
+  right: 0;
+  top: 0px;
+}
+.acd-content{
+  border: 1px solid #333;
+  display: block;
+  height: 0;
+  opacity: 0;
+  padding: 0 10px;
+  transition: .5s;
+  visibility: hidden;
+}
+.acd-check:checked + .acd-label:after{
+  content: '\f068';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+.acd-check:checked + .acd-label + .acd-content{
+  height: auto;
+  opacity: 1;
+  padding: 10px;
+  visibility: visible;
+}
 
 /* ↓ ボタン ↓ */
 .ResourcePack_blank {
