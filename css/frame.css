@@ -37,7 +37,7 @@
   text-align: center;
 }
 
-.info-icon::before, .updates-icon::before, .open-icon::before {
+.info-icon::before, .update-icon::before, .open-icon::before {
   color: white;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
