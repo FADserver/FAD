@@ -215,6 +215,9 @@ a.anchor{
   border-spacing: 0;
   border-top: solid 1px #060940;
 }
+.potion_table tr:nth-child(2n), .gun_table tr:nth-child(n) {
+  background: #ffffff;
+}
 .potion_table tr:nth-child(2n+1), .gun_table tr:nth-child(2n+1) {
   background: #e9faf9;
 }
@@ -267,7 +270,8 @@ a.anchor{
   top: 0;
 }
 .acd-content{
-  border: 1px solid #333;
+  background-color: #F1F1F1;
+  margin-bottom: 10px;
   display: block;
   height: 0;
   opacity: 0;
