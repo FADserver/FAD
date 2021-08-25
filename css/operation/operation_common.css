@@ -49,12 +49,16 @@
   height: 25px;
   text-align: center;
   color: white;
-}
-.btn-social-flat-icon i {
+
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
   font-size: 15px;
-  line-height: 25px;
-  transition: .3s;
-} 
+}
+
 .btn-social-flat-text {
   display: inline-block;
   width: 200px;
@@ -69,9 +73,6 @@
 .btn-social-flat-icon--twitter {
   background:#1da1f3;
 }
-.btn-social-flat-icon--facebook {
-  background:#3b75d4;
-}
 .btn-social-flat-icon--youtube {
   background:#cd201f;
 }
@@ -84,7 +85,20 @@
 .btn-social-flat-icon--want {
   background: #00448C;
 }
-.btn-social-flat-text::after, .btn-social-flat-text-want::after {
+.btn-social-flat-icon--twitter::before {
+  content: "\f099";
+}
+.btn-social-flat-icon--youtube::before {
+  content: "\f167";
+}
+.btn-social-flat-icon--line::before {
+  content: "\f3c0";
+}
+.btn-social-flat-icon--twitch::before {
+  content: "\f1e8";
+}
+
+.btn-social-flat-text::after {
   content: "　\f35d";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
