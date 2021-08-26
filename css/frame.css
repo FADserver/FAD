@@ -194,7 +194,7 @@
   -webkit-font-smoothing: antialiased;
   font-size: 10px;
 }
-.a_blank_open:hover, .a_blank_open::after:hover {
+.a_blank_open:hover, .a_blank_open:hover::after {
   color:#FF0000;
 }
 
