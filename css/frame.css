@@ -180,12 +180,12 @@
 }
 
 .a_blank_open {
-  color:#FF0000;
+  color:#FFFFFF;
   text-decoration: underline;
 }
 .a_blank_open::after {
   content: " \f35d  ";
-  color: #FF0000;
+  color: #FFFFFF;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-style: normal;
@@ -194,8 +194,8 @@
   -webkit-font-smoothing: antialiased;
   font-size: 10px;
 }
-.a_blank_open:hover {
-  color:#ffffff;
+.a_blank_open:hover, .a_blank_open::after:hover {
+  color:#FF0000;
 }
 
 /* ↓ スマホ用 ↓ */
