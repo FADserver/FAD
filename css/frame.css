@@ -69,6 +69,7 @@
   margin-bottom: 10px;
   width: 90%;
   background: #8C8C8C;
+  font-weight: bold;
 }
 
 .info {
@@ -174,6 +175,25 @@
   -webkit-font-smoothing: antialiased;
   font-size: 25px;
   margin-right: 10px;
+}
+
+.a_blank_open {
+  color:#FF0000;
+  text-decoration: underline;
+}
+.a_blank_open::after {
+  content: " \f35d  ";
+  color: #333333;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-size: 10px;
+}
+.a_blank_open:hover {
+  color:#8C8C8C;
 }
 
 /* ↓ スマホ用 ↓ */
