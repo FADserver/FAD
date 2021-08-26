@@ -204,12 +204,12 @@
     width: 100%;
     padding: 0 15px 0 15px;
     margin: 0 auto;
-    text-align: center;
   }
   .youtube-archive {
     width: 98%;
     height: auto;
     margin: 0 auto;
+    text-align: center;
   }
   #parent {
     display: flex;
