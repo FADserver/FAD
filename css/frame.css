@@ -11,32 +11,6 @@
   width: 95%;
 }
 
-.balloon1 {
-  position: relative;
-  display: inline-block;
-  margin: 1.5em 0;
-  padding: 7px 10px;
-  min-width: 100%;
-  max-width: 100%;
-  color: #ffffff;
-  font-size: 18px;
-  background: #333333;
-}
-.balloon1:before {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -15px;
-  border: 15px solid transparent;
-  border-top: 15px solid #333333;
-}
-.balloon1 p {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
 .info-icon::before, .update-icon::before, .open-icon::before {
   color: white;
   font-family: "Font Awesome 5 Free";
@@ -223,34 +197,11 @@
   }
   #child3 {
     display: block;
+    width: 100%;
   }
 
   .twitter {
     display: none;
-  }
-
-  .fa-calendar-alt, .fa-bullhorn, .fa-sync-alt {
-    color: white;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    font-size: 20px;
-    margin-right: 10px;
-  }
-  
-  .fa-youtube {
-    color: white;
-    font-family: "Font Awesome 5 Brands";
-    font-weight: 400;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    font-size: 20px;
-    margin-right: 10px;
   }
 }
 /* ↑ スマホ用 ↑ */
