@@ -7,11 +7,10 @@
   display: inline-block;
   margin: 1.5em 0;
   padding: 7px 10px;
-  min-width: 120px;
-  max-width: 100%;
-  color: #333333;
+  width: 98%;
+  color: #ffffff;
   font-size: 15px;
-  background: #e0edff;
+  background: #333333;
 }
 .balloon1 p {
   text-align: center;
@@ -23,7 +22,7 @@
   left: 50%;
   margin-left: -15px;
   border: 15px solid transparent;
-  border-top: 15px solid #e0edff;
+  border-top: 15px solid #333333;
 }
 
 .balloon1 p {
