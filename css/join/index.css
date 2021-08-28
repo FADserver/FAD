@@ -43,8 +43,7 @@ a.anchor{
 }
 
 .join_tytle span {
-  font-size: 25px;
-  font-size: 3rem;
+  font-size: 3rem !important;
   position: absolute;
   z-index: 1;
   top: -10px;
