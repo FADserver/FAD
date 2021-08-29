@@ -37,8 +37,6 @@
   <meta name="msapplication-TileImage" content="../../icon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
-  <script async src="https://cse.google.com/cse.js?cx=cb9ebecc711306428"></script>
-
   <meta name="twitter:card" content="summary" /> <!--カードの種類-->
   <meta name="twitter:site" content="@FADserver" /> <!--ユーザーネーム-->
   <meta property="og:url" content="https://fadserver.github.io/FAD/about/rules/disclaimer.html" /> <!--URL-->
@@ -171,11 +169,15 @@
       </div>
 
       <!--サイドバーの内容があった場所-->
-      <div id="child2"></div>
+      <div id="child2">
+        <div id="child4"></div>
+        <script async src="https://cse.google.com/cse.js?cx=cb9ebecc711306428"></script>
+        <div class="gcse-searchbox-only"></div>
+      </div>
       <!--外部HTMLを読み込む-->
       <script>
         $(document).ready(function(){
-        $("#child2").load("../../common/sidebar.html");
+        $("#child4").load("../../common/sidebar.html");
       });
       </script>
 
