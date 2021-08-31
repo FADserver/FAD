@@ -1,4 +1,4 @@
-#child2, #child3 {
+#child2 {
   background-color: #F1F1F1;
 }
 
@@ -39,7 +39,7 @@
   width: 95%;
 }
 
-.info-icon::before, .update-icon::before, .open-icon::before {
+.info-icon::before, .update-icon::before, .open-icon::before, .ip-address-icon::before {
   color: white;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -62,7 +62,7 @@
   overflow-wrap: break-word;
 }
 
-.info-wrapper, .update-wrapper, .open-wrapper, .youtube-wrapper {
+.sidebar-wrapper {
   display: block;
   position: relative;
   margin: 0 auto;
@@ -71,6 +71,31 @@
   margin-bottom: 10px;
   width: 90%;
   background: #8C8C8C;
+}
+
+.ip-address {
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  font-weight: bold;
+  padding: 10px;
+  margin: 0 0 0 -20px;
+  width: calc(100% + 20px);
+  font-size: 22px;
+  color: white;
+  background: #3D4073;
+}
+.ip-address::before {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 0;
+  border: none;
+  border-bottom: solid 15px transparent;
+  border-right: solid 20px #060940;
+}
+.ip-address-icon::before {
+  content: "\f108";
 }
 
 .info {
