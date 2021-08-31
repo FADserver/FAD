@@ -100,8 +100,7 @@
 .ip-address_p {
   font-weight: bold !important;
   text-align: center;
-  margin: 0 !important;
-  margin-top: 10px;
+  margin: 10px 0 0 0 !important;
   padding: 0 !important;
 }
 .rules {
