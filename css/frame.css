@@ -62,7 +62,7 @@
   overflow-wrap: break-word;
 }
 
-.info-wrapper, .update-wrapper, .open-wrapper, .youtube-wrapper, .ip-address-wrapper {
+.sidebar-wrapper {
   display: block;
   position: relative;
   margin: 0 auto;
@@ -98,8 +98,9 @@
   content: "\f108";
 }
 .ip-address_p {
-  font-size: 22px !important;
+  font-size: 28px !important;
   font-weight: bold !important;
+  text-align: center;
 }
 
 .info {
