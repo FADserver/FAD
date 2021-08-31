@@ -103,6 +103,9 @@
   margin: 0 !important;
   padding: 0 !important;
 }
+.rules {
+  font-size: 11px !important;
+}
 
 .info {
   display: inline-block;
