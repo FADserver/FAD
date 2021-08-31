@@ -98,9 +98,10 @@
   content: "\f108";
 }
 .ip-address_p {
-  font-size: 28px !important;
   font-weight: bold !important;
   text-align: center;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .info {
@@ -211,7 +212,7 @@
   margin-right: 10px;
 }
 
-.a_blank_open {
+.a_blank_open, .a_sidebar {
   color:#FFFFFF;
   text-decoration: underline;
 }
@@ -228,6 +229,9 @@
 }
 .a_blank_open:hover, .a_blank_open:hover::after {
   color:#FF0000;
+}
+.a_sidebar {
+  color: #333333;
 }
 
 /* ↓ スマホ用 ↓ */
@@ -261,6 +265,10 @@
   .twitter {
     display: none;
   }
+
+  .ip-address_p {
+    font-size: 28px !important;
+  }
 }
 /* ↑ スマホ用 ↑ */
 /* ↓ PC用 ↓ */
@@ -292,6 +300,10 @@
   }
   #child3 {
     display: none;
+  }
+
+  .ip-address_p {
+    font-size: 35px !important;
   }
 }
 /* ↑ PC用 ↑ */
