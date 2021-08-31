@@ -233,7 +233,7 @@
 .a_blank_open:hover, .a_blank_open:hover::after {
   color:#FF0000;
 }
-.a_sidebar {
+.a_sidebar:hover {
   color: #333333;
 }
 
