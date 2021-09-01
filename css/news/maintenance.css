@@ -37,7 +37,7 @@
 }
 
 /* ↓ icon ↓ */
-.fa-exclamation-triangle, .fa-tools, .fa-check-square, .fa-wrench, .fa-flag {
+.fas {
   color: #333333;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
