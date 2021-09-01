@@ -38,12 +38,18 @@
   <meta name="msapplication-TileImage" content="../../icon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
-  <meta name="twitter:card" content="summary" /> <!--カードの種類-->
-  <meta name="twitter:site" content="@FADserver" /> <!--ユーザーネーム-->
-  <meta property="og:url" content="https://fadserver.github.io/FAD/mode/maze/index.html" /> <!--URL-->
-  <meta property="og:title" content="FADサーバー　脱出迷路MODE" /> <!--タイトル-->
-  <meta property="og:description" content="FADサーバーのミニゲームモード「脱出迷路MODE」です！" /> <!--要約-->
-  <meta property="og:image" content="https://fadserver.github.io/FAD/image/logo.png" /> <!--画像のURL-->
+  <meta name="twitter:card" content="summary" />
+  <!--カードの種類-->
+  <meta name="twitter:site" content="@FADserver" />
+  <!--ユーザーネーム-->
+  <meta property="og:url" content="https://fadserver.github.io/FAD/mode/maze/index.html" />
+  <!--URL-->
+  <meta property="og:title" content="FADサーバー　脱出迷路MODE" />
+  <!--タイトル-->
+  <meta property="og:description" content="FADサーバーのミニゲームモード「脱出迷路MODE」です！" />
+  <!--要約-->
+  <meta property="og:image" content="https://fadserver.github.io/FAD/image/logo.png" />
+  <!--画像のURL-->
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -117,459 +123,447 @@
           <h3 class="role">鬼</h3>
 
           <h2 class="mode_tytle">チェストの中身</h2>
-          <input id="acd-check1" class="acd-check" type="checkbox">
-          <label class="acd-label" for="acd-check1">ポーションを見る</label>
-          <div class="acd-content">
-            <table class="potion_table">
-              <tr>
-                <th>名　称</th>
-                <th>画　像</th>
-                <th>効　果</th>
-              </tr>
 
-              <td colspan="3">ポーション</td>
+          <table class="potion_table">
+            <tr>
+              <th>名　称</th>
+              <th>画　像</th>
+              <th>効　果</th>
+            </tr>
 
-              <tr>
-                <td>金インゴット</td>
-                <td><img src="../../image/gold.jpg"></td>
-                <td>村人と「脱出ピッケル」などを購入するときに使用する。</td>
-              </tr>
-              <tr>
-                <td>暗視のポーション</td>
-                <td><img src="../../image/item/ansi(5min).png"></td>
-                <td>暗視（5分）</td>
-              </tr>
-              <tr>
-                <td>無敵のポーション</td>
-                <td><img src="../../image/item/muteki(10sec).png"></td>
-                <td>無敵耐性（10秒）</td>
-              </tr>
-              <tr>
-                <td>可視透明のポーション</td>
-                <td><img src="../../image/item/kasitoumei(1min).png"></td>
-                <td>透明化（1分）もやもやが鬼に見える。</td>
-              </tr>
-              <tr>
-                <td>体力増強のポーション</td>
-                <td><img src="../../image/item/tairyokuzokyo(30min).png"></td>
-                <td>体力増強Ⅲ（30分　最大体力が+12）</td>
-              </tr>
-              <tr>
-                <td>無酸素のポーション</td>
-                <td><img src="../../image/item/musannso(30min).png"></td>
-                <td>火炎耐性（30分）・水中呼吸Ⅱ</td>
-              </tr>
-              <tr>
-                <td>エリクサー</td>
-                <td><img src="../../image/item/erikusa-.png"></td>
-                <td>即時全回復</td>
-              </tr>
-              <tr>
-                <td>ウサギのポーション</td>
-                <td><img src="../../image/item/usagi(30min).png"></td>
-                <td>跳躍力上昇Ⅱ（30分）</td>
-              </tr>
-              <tr>
-                <td>効率のポーション</td>
-                <td><img src="../../image/item/koritu(1min).jpg"></td>
-                <td>採掘速度上昇（1分）</td>
-              </tr>
-              <tr>
-                <td>吐き気・盲目解除のポーション</td>
-                <td><img src="../../image/item/kaijo.jpg"></td>
-                <td>吐き気・盲目解除</td>
-              </tr>
-              <tr>
-                <td>静脈血</td>
-                <td><img src="../../image/item/joumyaku(2min).jpg"></td>
-                <td>攻撃力上昇（2分　攻撃力+3）</td>
-              </tr>
-              <tr>
-                <td>自由のポーション</td>
-                <td><img src="../../image/item/jiyuu.jpg"></td>
-                <td>鈍化から解放される</td>
-              </tr>
-              <tr>
-                <td>ふわふわのポーション</td>
-                <td><img src="../../image/item/huwahuwa(1min).jpg"></td>
-                <td>浮遊（1分）</td>
-              </tr>
-              <tr>
-                <td>跳躍のポーション</td>
-                <td><img src="../../image/item/tyoyaku(1min).jpg"></td>
-                <td>跳躍力上昇（1分）</td>
-              </tr>
-              <tr>
-                <td>動脈血</td>
-                <td><img src="../../image/item/domyaku(45sec).jpg"></td>
-                <td>攻撃力上昇Ⅱ（45秒　攻撃力+6）</td>
-              </tr>
-              <tr>
-                <td>再生のポーション</td>
-                <td><img src="../../image/item/saisei(1min).jpg"></td>
-                <td>再生能力（1分）</td>
-              </tr>
-              <tr>
-                <td>対消滅のポーション</td>
-                <td><img src="../../image/item/tuisyoumetu(10sec).jpg"></td>
-                <td>採掘速度上昇（10秒）　爆発は起きません。</td>
-              </tr>
-              <tr>
-                <td>衝撃吸収のポーション</td>
-                <td><img src="../../image/item/syougekikyuusyuu(30min).jpg"></td>
-                <td>衝撃吸収（30分）</td>
-              </tr>
-              <tr>
-                <td>神隠し　のポーション</td>
-                <td><img src="../../image/item/kamikakusi.jpg"></td>
-                <td>鬼のスキル「壱里眼」で見えなくなる。</td>
-              </tr>
-              <tr>
-                <td>不可視透明のポーション</td>
-                <td><img src="../../image/item/hukasitoumei(1min).jpg"></td>
-                <td>透明化（1分）もやもやが鬼に見えない。
-                </td>
-              </tr>
-            </table>
+            <td colspan="3">お助けアイテム</td>
+
+            <tr>
+              <td>金インゴット</td>
+              <td><img src="../../image/gold.jpg"></td>
+              <td>村人と「脱出ピッケル」などを購入するときに使用する。</td>
+            </tr>
+          </table>
+
+          <div class="acbox"><input id="ac-1" type="checkbox" />
+            <label for="ac-1">ポーションを見る</label>
+            <div class="acbox-under">
+              <table class="potion_table">
+                <tr>
+                  <th>名　称</th>
+                  <th>画　像</th>
+                  <th>効　果</th>
+                </tr>
+
+                <td colspan="3">ポーション</td>
+
+                <tr>
+                  <td>暗視のポーション</td>
+                  <td><img src="../../image/item/ansi(5min).png"></td>
+                  <td>暗視（5分）</td>
+                </tr>
+                <tr>
+                  <td>無敵のポーション</td>
+                  <td><img src="../../image/item/muteki(10sec).png"></td>
+                  <td>無敵耐性（10秒）</td>
+                </tr>
+                <tr>
+                  <td>可視透明のポーション</td>
+                  <td><img src="../../image/item/kasitoumei(1min).png"></td>
+                  <td>透明化（1分）もやもやが鬼に見える。</td>
+                </tr>
+                <tr>
+                  <td>体力増強のポーション</td>
+                  <td><img src="../../image/item/tairyokuzokyo(30min).png"></td>
+                  <td>体力増強Ⅲ（30分　最大体力が+12）</td>
+                </tr>
+                <tr>
+                  <td>無酸素のポーション</td>
+                  <td><img src="../../image/item/musannso(30min).png"></td>
+                  <td>火炎耐性（30分）・水中呼吸Ⅱ</td>
+                </tr>
+                <tr>
+                  <td>エリクサー</td>
+                  <td><img src="../../image/item/erikusa-.png"></td>
+                  <td>即時全回復</td>
+                </tr>
+                <tr>
+                  <td>ウサギのポーション</td>
+                  <td><img src="../../image/item/usagi(30min).png"></td>
+                  <td>跳躍力上昇Ⅱ（30分）</td>
+                </tr>
+                <tr>
+                  <td>効率のポーション</td>
+                  <td><img src="../../image/item/koritu(1min).jpg"></td>
+                  <td>採掘速度上昇（1分）</td>
+                </tr>
+                <tr>
+                  <td>吐き気・盲目解除のポーション</td>
+                  <td><img src="../../image/item/kaijo.jpg"></td>
+                  <td>吐き気・盲目解除</td>
+                </tr>
+                <tr>
+                  <td>静脈血</td>
+                  <td><img src="../../image/item/joumyaku(2min).jpg"></td>
+                  <td>攻撃力上昇（2分　攻撃力+3）</td>
+                </tr>
+                <tr>
+                  <td>自由のポーション</td>
+                  <td><img src="../../image/item/jiyuu.jpg"></td>
+                  <td>鈍化から解放される</td>
+                </tr>
+                <tr>
+                  <td>ふわふわのポーション</td>
+                  <td><img src="../../image/item/huwahuwa(1min).jpg"></td>
+                  <td>浮遊（1分）</td>
+                </tr>
+                <tr>
+                  <td>跳躍のポーション</td>
+                  <td><img src="../../image/item/tyoyaku(1min).jpg"></td>
+                  <td>跳躍力上昇（1分）</td>
+                </tr>
+                <tr>
+                  <td>動脈血</td>
+                  <td><img src="../../image/item/domyaku(45sec).jpg"></td>
+                  <td>攻撃力上昇Ⅱ（45秒　攻撃力+6）</td>
+                </tr>
+                <tr>
+                  <td>再生のポーション</td>
+                  <td><img src="../../image/item/saisei(1min).jpg"></td>
+                  <td>再生能力（1分）</td>
+                </tr>
+                <tr>
+                  <td>対消滅のポーション</td>
+                  <td><img src="../../image/item/tuisyoumetu(10sec).jpg"></td>
+                  <td>採掘速度上昇（10秒）　爆発は起きません。</td>
+                </tr>
+                <tr>
+                  <td>衝撃吸収のポーション</td>
+                  <td><img src="../../image/item/syougekikyuusyuu(30min).jpg"></td>
+                  <td>衝撃吸収（30分）</td>
+                </tr>
+                <tr>
+                  <td>神隠しのポーション</td>
+                  <td><img src="../../image/item/kamikakusi.jpg"></td>
+                  <td>鬼のスキル「壱里眼」で見えなくなる。</td>
+                </tr>
+                <tr>
+                  <td>不可視透明のポーション</td>
+                  <td><img src="../../image/item/hukasitoumei(1min).jpg"></td>
+                  <td>透明化（1分）もやもやが鬼に見えない。
+                  </td>
+                </tr>
+              </table>
+            </div>
           </div>
 
-          <input id="acd-check2" class="acd-check" type="checkbox">
-          <label class="acd-label" for="acd-check2">スプラッシュポーションを見る</label>
-          <div class="acd-content">
-            <table class="potion_table">
-              <tr>
-                <th>名　称</th>
-                <th>画　像</th>
-                <th>効　果</th>
-              </tr>
+          <div class="acbox"><input id="ac-2" type="checkbox" />
+            <label for="ac-2">スプラッシュポーションを見る</label>
+            <div class="acbox-under">
+              <table class="potion_table">
+                <tr>
+                  <th>名　称</th>
+                  <th>画　像</th>
+                  <th>効　果</th>
+                </tr>
 
-              <td colspan="3">スプラッシュポーション</td>
+                <td colspan="3">スプラッシュポーション</td>
 
-              <tr>
-                <td>水のスプラッシュポーション</td>
-                <td><img src="../../image/item/mizu.jpg"></td>
-                <td>効果はない。
-                </td>
-              </tr>
-              <tr>
-                <td>足止めのスプラッシュポーション</td>
-                <td><img src="../../image/item/asidome(1min).jpg"></td>
-                <td>移動速度低下（1分　移動速度上昇-15%）
-                </td>
-              </tr>
-              <tr>
-                <td>凍結のスプラッシュポーション</td>
-                <td><img src="../../image/item/touketu(10sec).jpg"></td>
-                <td>移動速度低下（10秒　移動速度上昇-105%）
-                </td>
-              </tr>
-              <tr>
-                <td>吐き気のスプラッシュポーション</td>
-                <td><img src="../../image/item/hakike(1min).jpg"></td>
-                <td>吐き気（1分）
-                </td>
-              </tr>
-              <tr>
-                <td>吐き気のスプラッシュポーション</td>
-                <td><img src="../../image/item/hakike(3min).jpg"></td>
-                <td>吐き気（3分）
-                </td>
-              </tr>
-              <tr>
-                <td>盲目のスプラッシュポーション</td>
-                <td><img src="../../image/item/moumoku(1min).jpg"></td>
-                <td>盲目（1分）
-                </td>
-              </tr>
-              <tr>
-                <td>盲目のスプラッシュポーション</td>
-                <td><img src="../../image/item/momoku(3min).jpg"></td>
-                <td>盲目（3分）
-                </td>
-              </tr>
-              <tr>
-                <td>弱体化のスプラッシュポーション</td>
-                <td><img src="../../image/item/jakutai(18sec).jpg"></td>
-                <td>弱体化（18秒）
-                </td>
-              </tr>
-              <tr>
-                <td>退行のスプラッシュポーション</td>
-                <td><img src="../../image/item/taikou(30sec).jpg"></td>
-                <td>弱体化（30秒　攻撃力-36）
-                </td>
-              </tr>
-              <tr>
-                <td>老化のスプラッシュポーション</td>
-                <td><img src="../../image/item/rouka(30sec).jpg"></td>
-                <td>弱体化（30秒　攻撃力-20）
-                </td>
-              </tr>
-              <tr>
-                <td>負傷のスプラッシュポーション強</td>
-                <td><img src="../../image/item/husyou.jpg"></td>
-                <td>即時ダメージⅡ
-                </td>
-              </tr>
-              <tr>
-                <td>昇天のスプラッシュポーション</td>
-                <td><img src="../../image/item/syouten(10sec).jpg"></td>
-                <td>浮遊（10秒）
-                </td>
-              </tr>
-              <tr>
-                <td>空腹のスプラッシュポーション</td>
-                <td><img src="../../image/item/kuhuku.jpg"></td>
-                <td>空腹（3分）
-                </td>
-              </tr>
-              <tr>
-                <td>無敵のスプラッシュポーション</td>
-                <td><img src="../../image/item/muteki(10sec)-S.jpg"></td>
-                <td>耐性（10秒）
-                </td>
-              </tr>
-              <tr>
-                <td>即時回復薬</td>
-                <td><img src="../../image/item/sokujikaihuku.jpg"></td>
-                <td>即時回復
-                </td>
-              </tr>
-              <tr>
-                <td>蟠桃汁</td>
-                <td><img src="../../image/item/bantou.jpg"></td>
-                <td>即時回復
-                </td>
-              </tr>
-              <tr>
-                <td>パナケイアのスプラッシュポーション</td>
-                <td><img src="../../image/item/panakeia(10sec).jpg"></td>
-                <td>再生能力（10秒）
-                </td>
-              </tr>
-              <tr>
-                <td>フグ毒</td>
-                <td><img src="../../image/item/hugu.jpg"></td>
-                <td>吐き気Ⅱ（15秒）・空腹Ⅲ（15秒）・毒（1分）
-                </td>
-              </tr>
-              <tr>
-                <td>失明のスプラッシュポーション</td>
-                <td><img src="../../image/item/jakutai(18sec).jpg"></td>
-                <td>吐き気（1分）・盲目（1分）
-                </td>
-              </tr>
-              <tr>
-                <td>アルミン酸ストロンチウム蛍光体のスプラッシュポーション</td>
-                <td><img src="../../image/item/arumin(1min).jpg"></td>
-                <td>発光（1分）
-                </td>
-              </tr>
-              <tr>
-                <td>発光のスプラッシュポーションＢ型</td>
-                <td><img src="../../image/item/hakkouB(3min).jpg"></td>
-                <td>発光Ⅱ（3分）
-                </td>
-              </tr>
-              <tr>
-                <td>発光のスプラッシュポーションＣ型</td>
-                <td><img src="../../image/item/hakkouC(18sec).jpg"></td>
-                <td>透明化・発光Ⅱ（18秒）
-                </td>
-              </tr>
-              <tr>
-                <td>鈍化のスプラッシュポーションＣ型</td>
-                <td><img src="../../image/item/donkaC(18sec).jpg"></td>
-                <td>移動速度低下（18秒　移動速度上昇-105%）
-                </td>
-              </tr>
-              <tr>
-                <td>浮遊のスプラッシュポーションＡ型</td>
-                <td><img src="../../image/item/huyuuA(3min).jpg"></td>
-                <td>浮遊（3分）
-                </td>
-              </tr>
-              <tr>
-                <td>浮遊のスプラッシュポーションＢ型</td>
-                <td><img src="../../image/item/huyuuB(18sec).jpg"></td>
-                <td>浮遊（18秒）
-                </td>
-              </tr>
-              <tr>
-                <td>空腹のスプラッシュポーションＣ型</td>
-                <td><img src="../../image/item/kuhuku.jpg"></td>
-                <td>空腹（18秒）
-                </td>
-              </tr>
-              <tr>
-                <td>毒のスプラッシュポーションＢ型</td>
-                <td><img src="../../image/item/dokuB(3min).jpg"></td>
-                <td>毒Ⅲ（3分）
-                </td>
-              </tr>
-              <tr>
-                <td>毒のスプラッシュポーションＣ型</td>
-                <td><img src="../../image/item/dokuC(18sec).jpg"></td>
-                <td>毒（18秒）
-                </td>
-              </tr>
-            </table>
+                <tr>
+                  <td>水のスプラッシュポーション</td>
+                  <td><img src="../../image/item/mizu.jpg"></td>
+                  <td>効果はない。</td>
+                </tr>
+                <tr>
+                  <td>足止めのスプラッシュポーション</td>
+                  <td><img src="../../image/item/asidome(1min).jpg"></td>
+                  <td>移動速度低下（1分　移動速度上昇-15%）</td>
+                </tr>
+                <tr>
+                  <td>凍結のスプラッシュポーション</td>
+                  <td><img src="../../image/item/touketu(10sec).jpg"></td>
+                  <td>移動速度低下（10秒　移動速度上昇-105%）</td>
+                </tr>
+                <tr>
+                  <td>吐き気のスプラッシュポーション</td>
+                  <td><img src="../../image/item/hakike(1min).jpg"></td>
+                  <td>吐き気（1分）</td>
+                </tr>
+                <tr>
+                  <td>吐き気のスプラッシュポーション</td>
+                  <td><img src="../../image/item/hakike(3min).jpg"></td>
+                  <td>吐き気（3分）</td>
+                </tr>
+                <tr>
+                  <td>盲目のスプラッシュポーション</td>
+                  <td><img src="../../image/item/moumoku(1min).jpg"></td>
+                  <td>盲目（1分）</td>
+                </tr>
+                <tr>
+                  <td>盲目のスプラッシュポーション</td>
+                  <td><img src="../../image/item/momoku(3min).jpg"></td>
+                  <td>盲目（3分）</td>
+                </tr>
+                <tr>
+                  <td>弱体化のスプラッシュポーション</td>
+                  <td><img src="../../image/item/jakutai(18sec).jpg"></td>
+                  <td>弱体化（18秒）</td>
+                </tr>
+                <tr>
+                  <td>退行のスプラッシュポーション</td>
+                  <td><img src="../../image/item/taikou(30sec).jpg"></td>
+                  <td>弱体化（30秒　攻撃力-36）</td>
+                </tr>
+                <tr>
+                  <td>老化のスプラッシュポーション</td>
+                  <td><img src="../../image/item/rouka(30sec).jpg"></td>
+                  <td>弱体化（30秒　攻撃力-20）</td>
+                </tr>
+                <tr>
+                  <td>負傷のスプラッシュポーション強</td>
+                  <td><img src="../../image/item/husyou.jpg"></td>
+                  <td>即時ダメージⅡ</td>
+                </tr>
+                <tr>
+                  <td>昇天のスプラッシュポーション</td>
+                  <td><img src="../../image/item/syouten(10sec).jpg"></td>
+                  <td>浮遊（10秒）</td>
+                </tr>
+                <tr>
+                  <td>空腹のスプラッシュポーション</td>
+                  <td><img src="../../image/item/kuhuku.jpg"></td>
+                  <td>空腹（3分）</td>
+                </tr>
+                <tr>
+                  <td>無敵のスプラッシュポーション</td>
+                  <td><img src="../../image/item/muteki(10sec)-S.jpg"></td>
+                  <td>耐性（10秒）</td>
+                </tr>
+                <tr>
+                  <td>即時回復薬</td>
+                  <td><img src="../../image/item/sokujikaihuku.jpg"></td>
+                  <td>即時回復</td>
+                </tr>
+                <tr>
+                  <td>蟠桃汁</td>
+                  <td><img src="../../image/item/bantou.jpg"></td>
+                  <td>即時回復</td>
+                </tr>
+                <tr>
+                  <td>パナケイアのスプラッシュポーション</td>
+                  <td><img src="../../image/item/panakeia(10sec).jpg"></td>
+                  <td>再生能力（10秒）</td>
+                </tr>
+                <tr>
+                  <td>フグ毒</td>
+                  <td><img src="../../image/item/hugu.jpg"></td>
+                  <td>吐き気Ⅱ（15秒）・空腹Ⅲ（15秒）・毒（1分）</td>
+                </tr>
+                <tr>
+                  <td>失明のスプラッシュポーション</td>
+                  <td><img src="../../image/item/jakutai(18sec).jpg"></td>
+                  <td>吐き気（1分）・盲目（1分）</td>
+                </tr>
+                <tr>
+                  <td>アルミン酸ストロンチウム蛍光体のスプラッシュポーション</td>
+                  <td><img src="../../image/item/arumin(1min).jpg"></td>
+                  <td>発光（1分）</td>
+                </tr>
+                <tr>
+                  <td>発光のスプラッシュポーションＢ型</td>
+                  <td><img src="../../image/item/hakkouB(3min).jpg"></td>
+                  <td>発光Ⅱ（3分）</td>
+                </tr>
+                <tr>
+                  <td>発光のスプラッシュポーションＣ型</td>
+                  <td><img src="../../image/item/hakkouC(18sec).jpg"></td>
+                  <td>透明化・発光Ⅱ（18秒）</td>
+                </tr>
+                <tr>
+                  <td>鈍化のスプラッシュポーションＣ型</td>
+                  <td><img src="../../image/item/donkaC(18sec).jpg"></td>
+                  <td>移動速度低下（18秒　移動速度上昇-105%）</td>
+                </tr>
+                <tr>
+                  <td>浮遊のスプラッシュポーションＡ型</td>
+                  <td><img src="../../image/item/huyuuA(3min).jpg"></td>
+                  <td>浮遊（3分）</td>
+                </tr>
+                <tr>
+                  <td>浮遊のスプラッシュポーションＢ型</td>
+                  <td><img src="../../image/item/huyuuB(18sec).jpg"></td>
+                  <td>浮遊（18秒）</td>
+                </tr>
+                <tr>
+                  <td>空腹のスプラッシュポーションＣ型</td>
+                  <td><img src="../../image/item/kuhuku.jpg"></td>
+                  <td>空腹（18秒）</td>
+                </tr>
+                <tr>
+                  <td>毒のスプラッシュポーションＢ型</td>
+                  <td><img src="../../image/item/dokuB(3min).jpg"></td>
+                  <td>毒Ⅲ（3分）</td>
+                </tr>
+                <tr>
+                  <td>毒のスプラッシュポーションＣ型</td>
+                  <td><img src="../../image/item/dokuC(18sec).jpg"></td>
+                  <td>毒（18秒）</td>
+                </tr>
+              </table>
+            </div>
           </div>
 
-          <input id="acd-check3" class="acd-check" type="checkbox">
-          <label class="acd-label" for="acd-check3">残留ポーションを見る</label>
-          <div class="acd-content">
-            <table class="potion_table">
-              <tr>
-                <th>名　称</th>
-                <th>画　像</th>
-                <th>効　果</th>
-              </tr>
+          <div class="acbox"><input id="ac-3" type="checkbox" />
+            <label for="ac-3">残留ポーションを見る</label>
+            <div class="acbox-under">
+              <table class="potion_table">
+                <tr>
+                  <th>名　称</th>
+                  <th>画　像</th>
+                  <th>効　果</th>
+                </tr>
 
-              <td colspan="3">残留ポーション</td>
+                <td colspan="3">残留ポーション</td>
 
-              <tr>
-                <td>目薬</td>
-                <td><img src="../../image/item/megusuri(1min15sec).jpg"></td>
-                <td>暗視（1分15秒）
-                </td>
-              </tr>
-              <tr>
-                <td>負傷残留の残留ポーション</td>
-                <td><img src="../../image/item/husyouzannryuu.jpg"></td>
-                <td>即時ダメージ
-                </td>
-              </tr>
-              <tr>
-                <td>凍結の残留ポーション</td>
-                <td><img src="../../image/item/touketu(1sec).jpg"></td>
-                <td>移動速度低下（1秒　移動速度上昇-105%）
-                </td>
-              </tr>
-              <tr>
-                <td>耐性の残留ポーション</td>
-                <td><img src="../../image/item/taisei(2sec).jpg"></td>
-                <td>耐性（2秒）
-                </td>
-              </tr>
-              <tr>
-                <td>金リンゴの残留ポーション</td>
-                <td><img src="../../image/item/kinnrinngo(5sec).jpg"></td>
-                <td>再生能力Ⅲ（5秒）
-                </td>
-              </tr>
-              <tr>
-                <td>メタノール</td>
-                <td><img src="../../image/item/metano-ru.jpg"></td>
-                <td> 吐き気（15秒）・盲目（15秒）・弱体化（15秒）・衰弱（7分30秒）逃走者がかかったらいずれ死ぬ
-                </td>
-              </tr>
-              <tr>
-                <td>平和な残留ポーション</td>
-                <td><img src="../../image/item/heiwa.jpg"></td>
-                <td> 移動速度成果・吐き気・再生能力Ⅲ（5秒）・耐性（5秒）・盲目・弱体化（5秒）（移動速度上昇-990%　攻撃力-44）
-                </td>
-              </tr>
-            </table>
+                <tr>
+                  <td>目薬</td>
+                  <td><img src="../../image/item/megusuri(1min15sec).jpg"></td>
+                  <td>暗視（1分15秒）
+                  </td>
+                </tr>
+                <tr>
+                  <td>負傷残留の残留ポーション</td>
+                  <td><img src="../../image/item/husyouzannryuu.jpg"></td>
+                  <td>即時ダメージ
+                  </td>
+                </tr>
+                <tr>
+                  <td>凍結の残留ポーション</td>
+                  <td><img src="../../image/item/touketu(1sec).jpg"></td>
+                  <td>移動速度低下（1秒　移動速度上昇-105%）
+                  </td>
+                </tr>
+                <tr>
+                  <td>耐性の残留ポーション</td>
+                  <td><img src="../../image/item/taisei(2sec).jpg"></td>
+                  <td>耐性（2秒）
+                  </td>
+                </tr>
+                <tr>
+                  <td>金リンゴの残留ポーション</td>
+                  <td><img src="../../image/item/kinnrinngo(5sec).jpg"></td>
+                  <td>再生能力Ⅲ（5秒）
+                  </td>
+                </tr>
+                <tr>
+                  <td>メタノール</td>
+                  <td><img src="../../image/item/metano-ru.jpg"></td>
+                  <td> 吐き気（15秒）・盲目（15秒）・弱体化（15秒）・衰弱（7分30秒）逃走者がかかったらいずれ死ぬ
+                  </td>
+                </tr>
+                <tr>
+                  <td>平和な残留ポーション</td>
+                  <td><img src="../../image/item/heiwa.jpg"></td>
+                  <td> 移動速度成果・吐き気・再生能力Ⅲ（5秒）・耐性（5秒）・盲目・弱体化（5秒）（移動速度上昇-990%　攻撃力-44）
+                  </td>
+                </tr>
+              </table>
+            </div>
           </div>
 
-          <input id="acd-check4" class="acd-check" type="checkbox">
-          <label class="acd-label" for="acd-check4">銃を見る</label>
-          <div class="acd-content">
-            <table class="gun_table">
+          <div class="acbox"><input id="ac-4" type="checkbox" />
+            <label for="ac-4">銃関係を見る</label>
+            <div class="acbox-under">
+              <table class="gun_table">
 
-              <tr>
-                <th>名　称</th>
-                <th>画　像</th>
-              </tr>
+                <tr>
+                  <th>名　称</th>
+                  <th>画　像</th>
+                </tr>
 
-              <td colspan="2">銃</td>
+                <td colspan="2">銃</td>
 
-              <tr>
-                <td>弾丸</td>
-                <td><img src="../../image/item/danngann.jpg"></td>
-              </tr>
-              <tr>
-                <td>刀α　Major_exe</td>
-                <td><img src="../../image/item/katana.jpg"></td>
-              </tr>
-              <tr>
-                <td>刀α　hopig</td>
-                <td><img src="../../image/item/katana.jpg"></td>
-              </tr>
-              <tr>
-                <td>AK-47</td>
-                <td><img src="../../image/item/AK-47.jpg"></td>
-              </tr>
-              <tr>
-                <td>サブマシンガン</td>
-                <td><img src="../../image/item/Submachinegun.jpg"></td>
-              </tr>
-              <tr>
-                <td>ショットガン</td>
-                <td><img src="../../image/item/shotgun.jpg"></td>
-              </tr>
-              <tr>
-                <td>スナイパーライフル</td>
-                <td><img src="../../image/item/sniperrifle.jpg"></td>
-              </tr>
-              <tr>
-                <td>アサルトライフルⅡ</td>
-                <td><img src="../../image/item/Assaultrifle.jpg"></td>
-              </tr>
-              <tr>
-                <td>ナイフ</td>
-                <td><img src="../../image/item/knife.jpg"></td>
-              </tr>
-              <tr>
-                <td>グレネードランチャー</td>
-                <td><img src="../../image/item/GrenadeLauncher.jpg"></td>
-              </tr>
-              <tr>
-                <td>ハンドガン</td>
-                <td><img src="../../image/item/Handgun.jpg"></td>
-              </tr>
-              <tr>
-                <td>アサルトライフル=Type-89=</td>
-                <td><img src="../../image/item/Assaultrifle(Type89).jpg"></td>
-              </tr>
-              <tr>
-                <td>ロケットランチャー</td>
-                <td><img src="../../image/item/Rocketlauncher.jpg"></td>
-              </tr>
-              <tr>
-                <td>アサルトライフル=FAMAS=</td>
-                <td><img src="../../image/item/Assaultrifle-FAMAS-.jpg"></td>
-              </tr>
-              <tr>
-                <td>マシンガン</td>
-                <td><img src="../../image/item/Machinegun.jpg"></td>
-              </tr>
-              <tr>
-                <td>ミニガン</td>
-                <td><img src="../../image/item/Minigun.jpg"></td>
-              </tr>
-              <tr>
-                <td>アサルトライフル=SCAR=</td>
-                <td><img src="../../image/item/Assaultrifle-SCAR-.jpg"></td>
-              </tr>
-              <tr>
-                <td>HOWA　5.56mm</td>
-                <td><img src="../../image/item/HOWA5.56mm.jpg"></td>
-              </tr>
-              <tr>
-                <td>=M89=　スナイパーライフル</td>
-                <td><img src="../../image/item/-M89-Sniperrifle.jpg"></td>
-              </tr>
-              <tr>
-                <td>戦斧</td>
-                <td><img src="../../image/item/senpu.jpg"></td>
-              </tr>
-              <tr>
-                <td>アサルトライフルⅠ</td>
-                <td><img src="../../image/item/Assaultrifle.jpg"></td>
-              </tr>
-            </table>
+                <tr>
+                  <td>弾丸</td>
+                  <td><img src="../../image/item/danngann.jpg"></td>
+                </tr>
+                <tr>
+                  <td>刀α　Major_exe</td>
+                  <td><img src="../../image/item/katana.jpg"></td>
+                </tr>
+                <tr>
+                  <td>刀α　hopig</td>
+                  <td><img src="../../image/item/katana.jpg"></td>
+                </tr>
+                <tr>
+                  <td>AK-47</td>
+                  <td><img src="../../image/item/AK-47.jpg"></td>
+                </tr>
+                <tr>
+                  <td>サブマシンガン</td>
+                  <td><img src="../../image/item/Submachinegun.jpg"></td>
+                </tr>
+                <tr>
+                  <td>ショットガン</td>
+                  <td><img src="../../image/item/shotgun.jpg"></td>
+                </tr>
+                <tr>
+                  <td>スナイパーライフル</td>
+                  <td><img src="../../image/item/sniperrifle.jpg"></td>
+                </tr>
+                <tr>
+                  <td>アサルトライフルⅡ</td>
+                  <td><img src="../../image/item/Assaultrifle.jpg"></td>
+                </tr>
+                <tr>
+                  <td>ナイフ</td>
+                  <td><img src="../../image/item/knife.jpg"></td>
+                </tr>
+                <tr>
+                  <td>グレネードランチャー</td>
+                  <td><img src="../../image/item/GrenadeLauncher.jpg"></td>
+                </tr>
+                <tr>
+                  <td>ハンドガン</td>
+                  <td><img src="../../image/item/Handgun.jpg"></td>
+                </tr>
+                <tr>
+                  <td>アサルトライフル=Type-89=</td>
+                  <td><img src="../../image/item/Assaultrifle(Type89).jpg"></td>
+                </tr>
+                <tr>
+                  <td>ロケットランチャー</td>
+                  <td><img src="../../image/item/Rocketlauncher.jpg"></td>
+                </tr>
+                <tr>
+                  <td>アサルトライフル=FAMAS=</td>
+                  <td><img src="../../image/item/Assaultrifle-FAMAS-.jpg"></td>
+                </tr>
+                <tr>
+                  <td>マシンガン</td>
+                  <td><img src="../../image/item/Machinegun.jpg"></td>
+                </tr>
+                <tr>
+                  <td>ミニガン</td>
+                  <td><img src="../../image/item/Minigun.jpg"></td>
+                </tr>
+                <tr>
+                  <td>アサルトライフル=SCAR=</td>
+                  <td><img src="../../image/item/Assaultrifle-SCAR-.jpg"></td>
+                </tr>
+                <tr>
+                  <td>HOWA　5.56mm</td>
+                  <td><img src="../../image/item/HOWA5.56mm.jpg"></td>
+                </tr>
+                <tr>
+                  <td>=M89=　スナイパーライフル</td>
+                  <td><img src="../../image/item/-M89-Sniperrifle.jpg"></td>
+                </tr>
+                <tr>
+                  <td>戦斧</td>
+                  <td><img src="../../image/item/senpu.jpg"></td>
+                </tr>
+                <tr>
+                  <td>アサルトライフルⅠ</td>
+                  <td><img src="../../image/item/Assaultrifle.jpg"></td>
+                </tr>
+              </table>
+            </div>
           </div>
 
           <h2 class="mode_tytle">Crack Shot</h2>

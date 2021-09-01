@@ -241,58 +241,70 @@ a.anchor{
 }
 /* ↑ テーブル ↑ */
 
-.acd-check{
+/* アコーディオンボックス*/
+.acbox{
+  width: auto;
+  font-size:0px; /* ラベルと開く部分を分離する時は数値を入れる */
+  margin:10px 10px; /* ボックス全体の位置調整 */
+}
+
+.acbox label{
+  width: auto;
+  font-size: 16px; /* ラベルの文字サイズ */
+  font-weight: bold;
+  text-align: center;
+  background: #3D4073; /* ラベルの背景色 */
+  position: relative;
+  display: block;
+  padding:8px;
+  border-radius: 4px; /* ラベルの角の丸み */
+  cursor: pointer;
+  color: #fff;
+}
+
+.acbox label:hover{
+  background: #060940; /* ラベルにマウスを乗せた時の背景色 */
+}
+
+.acbox input{
   display: none;
 }
-.acd-label{
-  background: #3D4073;
+
+.acbox label:after{
   color: #fff;
-  display: block;
-  margin-bottom: 1px;
-  padding: 10px;
-  position: relative;
-}
-.acd-label:after{
-  background: #060940;
-  box-sizing: border-box;
-  content: '\f078';
-  display: block;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  height: 44px;
-  padding: 20px 20px;
+  content:"▼"; /* ラベルのアイコン */
   position: absolute;
-  right: 0;
-  top: 0;
+  top: 50%;
+  right: 15px;
+  margin-top: -14px;
 }
-.acd-content{
-  background-color: #F1F1F1;
-  margin-bottom: 10px;
-  display: block;
-  height: 0;
+
+.acbox input:checked ~ label::after {
+  content:"▲"; /* ラベルをクリックした後のアイコン */
+}
+
+.acbox div{
+  height: 0px;
+  overflow: hidden;
   opacity: 0;
-  padding: 0 10px;
-  transition: .5s;
-  visibility: hidden;
+  transition: 0.15s; /* 開閉スピードの設定 */
 }
-.acd-check:checked + .acd-label:after{
-  content: '\f068';
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-}
-.acd-check:checked + .acd-label + .acd-content{
+
+.acbox input:checked ~ div{
   height: auto;
+  padding: 18px; /* 開いた部分の枠内の余白 */
+  border-radius: 0px;
+  background: #F3F4F5; /* 開いた部分の背景色 */
   opacity: 1;
-  padding: 10px;
-  visibility: visible;
+}
+
+.acbox input:checked ~ label {
+  background: #3D4073; /* クリック後のラベルの背景色 */
+}
+
+.acbox-under{
+  font-size: 15px; /* 開いた部分の文字サイズ */
+  color: #333333; /* 開いた部分の文字色 */
 }
 
 /* ↓ ボタン ↓ */
