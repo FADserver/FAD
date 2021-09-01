@@ -1,4 +1,4 @@
-#child2, #child3 {
+#child2 {
   background-color: #F1F1F1;
 }
 
@@ -39,7 +39,7 @@
   width: 95%;
 }
 
-.info-icon::before, .update-icon::before, .open-icon::before {
+.info-icon::before, .update-icon::before, .open-icon::before, .ip-address-icon::before {
   color: white;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -62,7 +62,7 @@
   overflow-wrap: break-word;
 }
 
-.info-wrapper, .update-wrapper, .open-wrapper, .youtube-wrapper {
+.sidebar-wrapper {
   display: block;
   position: relative;
   margin: 0 auto;
@@ -71,6 +71,40 @@
   margin-bottom: 10px;
   width: 90%;
   background: #8C8C8C;
+}
+
+.ip-address {
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  font-weight: bold;
+  padding: 10px;
+  margin: 0 0 0 -20px;
+  width: calc(100% + 20px);
+  font-size: 22px;
+  color: white;
+  background: #3D4073;
+}
+.ip-address::before {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 0;
+  border: none;
+  border-bottom: solid 15px transparent;
+  border-right: solid 20px #060940;
+}
+.ip-address-icon::before {
+  content: "\f108";
+}
+.ip-address_p {
+  font-weight: bold !important;
+  text-align: center;
+  margin: 10px 0 0 0 !important;
+  padding: 0 !important;
+}
+.rules {
+  font-size: 11px !important;
 }
 
 .info {
@@ -152,6 +186,7 @@
   display: inline-block;
   position: relative;
   box-sizing: border-box;
+  font-weight: bold;
   padding: 10px;
   margin: 0 0 0 -20px;
   width: calc(100% + 20px);
@@ -181,7 +216,7 @@
   margin-right: 10px;
 }
 
-.a_blank_open {
+.a_blank_open, .a_sidebar {
   color:#FFFFFF;
   text-decoration: underline;
 }
@@ -199,11 +234,15 @@
 .a_blank_open:hover, .a_blank_open:hover::after {
   color:#FF0000;
 }
+.a_sidebar:hover {
+  color: #333333;
+}
 
 /* ↓ スマホ用 ↓ */
 @media (max-width: 1200px) {
   .container {
     width: 100%;
+    max-width: 1920px;
     padding: 0 15px 0 15px;
     margin: 0 auto;
   }
@@ -231,12 +270,17 @@
   .twitter {
     display: none;
   }
+
+  .ip-address_p {
+    font-size: 28px !important;
+  }
 }
 /* ↑ スマホ用 ↑ */
 /* ↓ PC用 ↓ */
 @media (min-width: 1200px) {
   .container {
     width: 100%;
+    max-width: 1920px;
     padding-left: 15px;
     margin: 0 auto;
   }
@@ -262,6 +306,10 @@
   }
   #child3 {
     display: none;
+  }
+
+  .ip-address_p {
+    font-size: 35px !important;
   }
 }
 /* ↑ PC用 ↑ */
