@@ -304,6 +304,7 @@
     padding-right: 10px;
     min-width: 200px;
     max-width: 200px;
+    box-sizing: border-box;
   }
   #child3 {
     display: none;
@@ -342,6 +343,7 @@
     padding-right: 10px;
     min-width: 300px;
     max-width: 300px;
+    box-sizing: border-box;
   }
   #child3 {
     display: none;
