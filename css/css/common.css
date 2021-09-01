@@ -44,11 +44,6 @@ a {
   display: inline;
 }
 
-.torikesi {
-  display: inline;
-  text-decoration: line-through;
-}
-
 header {
   height: 65px;
   width: 100%;
@@ -680,7 +675,7 @@ input {
 .footer_bar {
   text-align: center;
   color: #333333;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 footer a {
@@ -707,11 +702,8 @@ footer a:hover {
 .footer_logo img {
   width: 125px;
 }
-
-.footer-1::before {
-  white-space:pre-wrap;
-  font-size: 10px;
-  content: "■ このホームページに掲載されている一切の文書・図版・写真等を、手段や形態を問わず複製、転載することを禁じます。\A■ このホームページにある要素を直リンクしないでください。\A© 2019-2021 Full Automatic Dungeon-server. All Right Reserved.";
+.footer_logo p {
+  font-size: 9px;
 }
 
 footer {

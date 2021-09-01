@@ -8,3 +8,7 @@
   color: #333333;
   overflow-wrap: break-word;
 }
+
+.secound {
+  list-style-type: lower-alpha;
+}

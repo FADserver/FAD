@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+}
+
+.join {
+  margin-top: 60px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.join img {
+  width: 70%;
+  display: block;
+  margin: auto;
+  border: 2px solid #8C8C8C;
+}
+
+a.anchor{
+  display: block;
+  padding-top: 70px;
+  margin-top: -70px;
+}
+
+.join_tytle {
+  position: relative;
+  overflow: hidden;
+  padding: 0.7rem 1rem 0.7rem 150px;
+  border: 2px solid #000;
+  font-size: 20px;
+  color: #333333;
+}
+
+.join_tytle::before {
+  position: absolute;
+  top: -150%;
+  left: -100px;
+  width: 200px;
+  height: 400%;
+  content: '';
+  -webkit-transform: rotate(25deg);
+  transform: rotate(25deg);
+  background: #000;
+}
+
+.join_tytle span {
+  font-size: 25px;
+  font-size: 3rem;
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  left: 0.3%;
+  display: block;
+  padding-top: 3px;
+  padding-left: 16px;
+  color: #fff;
+}
+
+.point_tytle {
+  position: relative;
+  border-top: solid 2px #80c8d1;
+  border-bottom: solid 2px #80c8d1;
+  background: #f4f4f4;
+  line-height: 1.4;
+  padding: 0.4em 0.5em;
+  margin: 2em 0 3em;
+  font-size: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.point_tytle:after {
+  /*タブ*/
+  position: absolute;
+  font-family: "Font Awesome 5 Free",'Quicksand','Avenir','Arial',sans-serif;
+  font-weight: 900;
+  content: '　\f0a7\ POINT　';
+  background: #80c8d1;
+  color: #fff;
+  left: 0px;
+  bottom: 100%;
+  border-radius: 5px 5px 0 0;
+  padding: 5px 7px 3px;
+  font-size: 0.7em;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  font-size: 15px;;
+}
+
+.join_content p {
+  font-size: 20px !important;
+  line-height: 2 !important;
+  color: #333333;
+}
+
+.join_content {
+  counter-reset:number; /*数字をリセット*/
+  list-style-type: none!important; /*数字を一旦消す*/
+  padding:0.5em;
+  background: #f5f8ff;
+}
+.join_content li {
+  position: relative;
+  padding-left: 30px;
+  line-height: 1.5em;
+  padding: 0.5em 0.5em 0.5em 30px;
+}
+
+.join_content li:before{
+  /* 以下数字をつける */
+  position: absolute;
+  counter-increment: number;
+  content: counter(number);
+  /*以下数字のデザイン変える*/
+  display:inline-block;
+  background: #3D4073;
+  color: white;
+  font-family: 'Avenir','Arial Black','Arial',sans-serif;
+  font-weight:bold;
+  font-size: 15px;
+  border-radius: 50%;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  /*以下 上下中央寄せのため*/
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.join p {
+  line-height: 5;
+  font-size: 15px;
+  display: inline;
+  color: #333333;
+}
+
+/* ↓ ボタン ↓ */
+.ResourcePack_blank {
+  margin-top: 30px;
+}
+
+.ResourcePack-wrapper {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.join_message {
+  padding: 15px 40px;
+  background-color: #005ECC;
+  cursor: pointer;
+  box-shadow: 0px 7px #003B7F;
+}
+
+.join_message::after {
+  content: "　\f56d";
+  color: #ffffff;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-size: 20px;
+}
+
+.join_message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+.ResourcePack_btn {
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.ResourcePack_btn:hover {
+  opacity: 1;
+}
+/* ↑ ボタン ↑ */
+
+@media all and (max-width: 750px) {
+  .join img {
+    width: 98%;
+    display: block;
+    margin: auto;
+    border: 2px solid #8C8C8C;
+  }
+  .join p {
+    line-height: 1.5;
+    font-size: 16px;
+    display: inline;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .join img {
+    width: 98%;
+    display: block;
+    margin: auto;
+    border: 2px solid #8C8C8C;
+  }
+  .join p {
+    line-height: 1.5;
+    font-size: 16px;
+    display: inline;
+  }
+}
+
+@media all and (max-width: 670px) {
+  .join img {
+    width: 98%;
+    display: block;
+    margin: auto;
+    border: 2px solid #8C8C8C;
+  }
+  .join p {
+    line-height: 1.5;
+    font-size: 16px;
+    display: inline;
+  }
+}

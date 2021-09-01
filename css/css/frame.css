@@ -2,47 +2,31 @@
   background-color: #F1F1F1;
 }
 
-.balloon1 {
-  position: relative;
-  display: inline-block;
-  margin: 1.5em 0;
-  padding: 7px 10px;
-  width: 98%;
-  color: #ffffff;
-  font-size: 15px;
-  background: #333333;
-}
-.balloon1 p {
-  text-align: center;
-}
-.balloon1:before {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -15px;
-  border: 15px solid transparent;
-  border-top: 15px solid #333333;
-}
-
-.balloon1 p {
-  margin: 0;
-  padding: 0;
-}
-
 .twitter {
   margin: 0 auto;
   margin-top: 50px;
-  width: 95%;
+  width: 98%;
 }
 .twitter-timeline {
-  width: 95%;
+  width: 98%;
 }
 
-.info-icon::before, .update-icon::before, .open-icon::before {
+.fa-calendar-alt, .fa-bullhorn, .fa-sync-alt {
   color: white;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.icon {
+  color: white;
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
@@ -67,7 +51,7 @@
   position: relative;
   margin: 0 auto;
   margin-top: 25px;
-  padding: 10px 0;
+  padding: 10px 0;  
   margin-bottom: 10px;
   width: 90%;
   background: #8C8C8C;
@@ -77,7 +61,6 @@
   display: inline-block;
   position: relative;
   box-sizing: border-box;
-  font-weight: bold;
   padding: 10px;
   margin: 0 0 0 -20px;
   width: calc(100% + 20px);
@@ -94,15 +77,11 @@
   border-bottom: solid 15px transparent;
   border-right: solid 20px #54a7df;
 }
-.info-icon::before {
-  content: "\f0a1";
-}
 
 .update {
   display: inline-block;
   position: relative;
   box-sizing: border-box;
-  font-weight: bold;
   padding: 10px;
   margin: 0 0 0 -20px;
   width: calc(100% + 20px);
@@ -119,15 +98,11 @@
   border-bottom: solid 15px transparent;
   border-right: solid 20px #34b445;
 }
-.update-icon::before {
-  content: "\f2f1";
-}
 
 .open {
   display: inline-block;
   position: relative;
   box-sizing: border-box;
-  font-weight: bold;
   padding: 10px;
   margin: 0 0 0 -20px;
   width: calc(100% + 20px);
@@ -143,9 +118,6 @@
   border: none;
   border-bottom: solid 15px transparent;
   border-right: solid 20px #F2A30F;
-}
-.open-icon::before {
-  content: "\f073";
 }
 
 .youtube {
@@ -168,72 +140,60 @@
   border-bottom: solid 15px transparent;
   border-right: solid 20px #FF0000;
 }
-.youtube-icon::before {
-  content: "\f167";
-  color: white;
-  font-family: "Font Awesome 5 Brands";
-  font-weight: 400;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  font-size: 25px;
-  margin-right: 10px;
-}
 
-.a_blank_open {
-  color:#FFFFFF;
-  text-decoration: underline;
-}
-.a_blank_open::after {
-  content: " \f35d  ";
-  color: #FFFFFF;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  font-size: 10px;
-}
-.a_blank_open:hover, .a_blank_open:hover::after {
-  color:#FF0000;
-}
 
-/* ↓ スマホ用 ↓ */
+/* スマホ用 */
 @media (max-width: 1200px) {
   .container {
     width: 100%;
     padding: 0 15px 0 15px;
     margin: 0 auto;
   }
+
   .youtube-archive {
     width: 98%;
     height: auto;
     margin: 0 auto;
-    text-align: center;
   }
+
   #parent {
     display: flex;
   }
   #child1 {
-    flex-grow: 0;
-    width: 100%;
-  }
-  #child2 {
-    display: none;
-  }
-  #child3 {
     display: block;
     width: 100%;
   }
-
+  #child2 {
+    display: block;
+  }
   .twitter {
     display: none;
   }
+
+  .fa-calendar-alt, .fa-bullhorn, .fa-sync-alt {
+    color: white;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-size: 20px;
+    margin-right: 10px;
+  }  
+  .fa-youtube {
+    color: white;
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-size: 20px;
+    margin-right: 10px;
+  }
 }
-/* ↑ スマホ用 ↑ */
-/* ↓ PC用 ↓ */
+
 @media (min-width: 1200px) {
   .container {
     width: 100%;
@@ -260,8 +220,4 @@
     min-width: 400px;
     max-width: 400px;
   }
-  #child3 {
-    display: none;
-  }
 }
-/* ↑ PC用 ↑ */
