@@ -238,7 +238,7 @@
   color: #333333;
 }
 
-/* ↓ 1024px未満用 ↓ */
+/* ↓ 768px未満用 ↓ */
 @media all and (max-width: 767px) {
   .container {
     width: 100%;
@@ -279,8 +279,8 @@
     font-size: 28px !important;
   }
 }
-/* ↑ 1024px未満用 ↑ */
-/* ↓ 1024px以上用 ↓ */
+/* ↑ 768px未満用 ↑ */
+/* ↓ 768px以上用 ↓ */
 @media all and (min-width: 768px) {
   .container {
     width: 100%;
@@ -320,4 +320,4 @@
     font-size: 35px !important;
   }
 }
-/* ↑ 1024px以上用 ↑ */
+/* ↑ 768px以上用 ↑ */

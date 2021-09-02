@@ -52,6 +52,11 @@
   color: #5f5d60;
 }
 
+.message-wrapper {
+  padding: 0 15px 80px 15px;
+  text-align: center;
+}
+
 .heading h2 {
   font-weight: normal;
 }
