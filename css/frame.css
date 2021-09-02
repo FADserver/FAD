@@ -280,8 +280,49 @@
   }
 }
 /* ↑ 768px未満用 ↑ */
-/* ↓ 768px以上用 ↓ */
-@media all and (min-width: 768px) {
+/* ↓ 768px用 ↓ */
+@media all and (width: 768px) {
+  .container {
+    width: 100%;
+    max-width: 1920px;
+    padding-left: 15px;
+    margin: 0 auto;
+  }
+  .message-wrapper {
+    padding: 0 15px 80px 0;
+    text-align: center;
+  }
+  .youtube-archive {
+    max-width: 220px;
+    min-width: 220px;
+    max-height: 125px;
+    min-height: 125px;
+    margin: 0 auto;
+  }
+  #parent {
+    display: flex;
+  }
+  #child1 {
+    flex-grow: 1;
+  }
+  #child2 {
+    flex-grow: 1;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-width: 250px;
+    max-width: 250px;
+  }
+  #child3 {
+    display: none;
+  }
+
+  .ip-address_p {
+    font-size: 35px !important;
+  }
+}
+/* ↑ 768px用 ↑ */
+/* ↓ 769px以上用 ↓ */
+@media all and (min-width: 769px) {
   .container {
     width: 100%;
     max-width: 1920px;
@@ -320,4 +361,4 @@
     font-size: 35px !important;
   }
 }
-/* ↑ 768px以上用 ↑ */
+/* ↑ 769px以上用 ↑ */
