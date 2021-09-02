@@ -239,7 +239,7 @@
 }
 
 /* ↓ 768px未満用 ↓ */
-@media all and (max-width: 833px) {
+@media all and (max-width: 767px) {
   .container {
     width: 100%;
     max-width: 1920px;
@@ -279,9 +279,9 @@
     font-size: 28px !important;
   }
 }
-/* ↑ 834px未満用 ↑ */
-/* ↓ 834px用 ↓ */
-@media all and (width: 834px) {
+/* ↑ 768px未満用 ↑ */
+/* ↓ 768px 834px用 ↓ */
+@media all and (width: 768px) and (width: 834px){
   .container {
     width: 100%;
     max-width: 1920px;
@@ -320,9 +320,9 @@
     font-size: 35px !important;
   }
 }
-/* ↑ 768px用 ↑ */
-/* ↓ 834px以上用 ↓ */
-@media all and (min-width: 834px) {
+/* ↑ 768px 834px用 ↑ */
+/* ↓ 768px以上用 ↓ */
+@media all and (min-width: 768px) {
   .container {
     width: 100%;
     max-width: 1920px;
@@ -361,4 +361,4 @@
     font-size: 35px !important;
   }
 }
-/* ↑ 834px以上用 ↑ */
+/* ↑ 768px以上用 ↑ */
