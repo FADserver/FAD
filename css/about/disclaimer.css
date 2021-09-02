@@ -2,33 +2,20 @@
   box-sizing: border-box;
 }
 
-.about ol li, .about ol li ol li{
-  line-height: 2;
-  font-size: 15px;
-  color: #333333;
-  overflow-wrap: break-word;
-}
-
-table{
+.browser {
   width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
   display: block;
   overflow-x: auto;
-  white-space: nowrap;
   -webkit-overflow-scrolling: touch;
 }
-
-table th,table td{
+.browser th,.browser td{
   border: solid 1px;
   padding: 10px 5px 10px 5px;
   text-align: center;
 }
-table th {
-  width: 400px;
-}
-
-table tr:nth-child(odd){
+.browser tr:nth-child(odd){
   background-color: #eee
 }
 
@@ -53,5 +40,5 @@ table tr:nth-child(odd){
   content: "\f267";
 }
 .Microsoft-Edge::before {
-  content: "\f282"
+  content: "\f282";
 }
