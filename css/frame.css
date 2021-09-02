@@ -309,8 +309,8 @@
     flex-grow: 1;
     padding-left: 10px;
     padding-right: 10px;
-    min-width: 250px;
-    max-width: 250px;
+    min-width: 270px;
+    max-width: 270px;
   }
   #child3 {
     display: none;
@@ -348,8 +348,8 @@
     flex-grow: 1;
     padding-left: 10px;
     padding-right: 10px;
-    min-width: 250px;
-    max-width: 250px;
+    min-width: 270px;
+    max-width: 270px;
   }
   #child3 {
     display: none;
