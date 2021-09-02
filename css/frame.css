@@ -322,7 +322,7 @@
 }
 /* ↑ 768px 834px用 ↑ */
 /* ↓ 768px以上用 ↓ */
-@media all and (min-width: 768px) {
+@media all and (min-width: 769px) {
   .container {
     width: 100%;
     max-width: 1920px;
