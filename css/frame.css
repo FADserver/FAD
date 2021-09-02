@@ -239,7 +239,7 @@
 }
 
 /* ↓ 1024px未満用 ↓ */
-@media all and (max-width: 1023px) {
+@media all and (max-width: 767px) {
   .container {
     width: 100%;
     max-width: 1920px;
@@ -281,7 +281,7 @@
 }
 /* ↑ 1024px未満用 ↑ */
 /* ↓ 1024px以上用 ↓ */
-@media all and (min-width: 1023px) {
+@media all and (min-width: 768px) {
   .container {
     width: 100%;
     max-width: 1920px;
