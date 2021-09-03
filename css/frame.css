@@ -486,7 +486,7 @@
   left: 50%;
   transform : translate(-50%,-50%);
   /* スクロール */
-  overflow-x: scroll;
+  overflow: auto;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
 }
