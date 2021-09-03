@@ -39,7 +39,7 @@
   width: 95%;
 }
 
-.info-icon::before, .update-icon::before, .open-icon::before, .ip-address-icon::before, .news-banner_p::before {
+.info-icon::before, .update-icon::before, .open-icon::before, .ip-address-icon::before {
   color: white;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -427,7 +427,7 @@
   color:#ffffff;
   text-decoration: underline;
 }
-.a_blank::after {
+.a_news-bar_blank::after {
   content: " \f35d  ";
   color: #ffffff;
   font-family: "Font Awesome 5 Free";
@@ -481,16 +481,18 @@
 
 .news-banner {
   position: absolute;
+  width: 100%;
   top: 50%;
   left: 50%;
   transform : translate(-50%,-50%);
   /* スクロール */
-  overflow: auto;
+  overflow-x: scroll;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
 }
 .news-banner_p {
   text-align: center;/*一応BOX内の文字も中央寄せ*/
+  line-height: 2;
   font-size: 15px;
   font-weight: bold;
   color: #ffffff;

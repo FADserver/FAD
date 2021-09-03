@@ -29,6 +29,7 @@
   position: relative;
   padding-left: 24px;
   margin-bottom: 25px; /* 各Q&Aの下に余白 */
+  color: #333333;
 }
 
 .faq__dt::before, .faq__dd::before {
@@ -36,6 +37,11 @@
   position: absolute;
   left: 0;
   top: 0;
+  color: #333333;
+}
+
+.faq__dd p {
+  color: #333333;
 }
 
 .faq__dt {

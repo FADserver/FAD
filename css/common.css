@@ -593,7 +593,7 @@ input {
 }
 .follow-me {
   list-style: none;
-  margin-right: 10px;
+  margin-right: 2%;
   overflow: hidden;
   padding-left: 0;
 }
