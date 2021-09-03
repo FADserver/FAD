@@ -42,6 +42,7 @@ a {
   margin: 0;
   background: linear-gradient(transparent 50%, yellow 50%);
   display: inline;
+  color: #333333;
 }
 
 .torikesi {
@@ -592,7 +593,7 @@ input {
 }
 .follow-me {
   list-style: none;
-  margin: 0 0 -8px;
+  margin-right: 10px;
   overflow: hidden;
   padding-left: 0;
 }

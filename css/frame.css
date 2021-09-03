@@ -410,3 +410,30 @@
   }
 }
 /* ↑ 768px以上用 ↑ */
+
+/* ↓ お知らせバナー ↓ */
+#news-bar {
+  display: block;
+}
+.news-banner-margin {
+  position: relative;
+  display: block;
+  margin-top: 65px;
+  width: 100%;
+  height: 80px;
+  color: #000000;
+  background-color: #980003;
+}
+.news-banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform : translate(-50%,-50%);
+}
+.news-banner_p {
+  text-align: center;/*一応BOX内の文字も中央寄せ*/
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+}
+/* ↑ お知らせバナー ↑ */

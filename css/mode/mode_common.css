@@ -245,11 +245,11 @@ a.anchor{
 .acbox{
   width: auto;
   font-size:0px; /* ラベルと開く部分を分離する時は数値を入れる */
-  margin:10px 10px; /* ボックス全体の位置調整 */
+  margin:10px 0 10px 0; /* ボックス全体の位置調整 */
 }
 
 .acbox label{
-  width: auto;
+  width: 100%;
   font-size: 16px; /* ラベルの文字サイズ */
   font-weight: bold;
   text-align: center;
