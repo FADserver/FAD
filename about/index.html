@@ -55,6 +55,14 @@
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 <body>
+
+  <div id="news-bar"></div>
+  <script>
+    $(document).ready(function(){
+  $("#news-bar").load("../common/news-bar.html");
+  });
+  </script>
+
   <!-- パンくずリスト -->
   <div class="pan">
     <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
@@ -78,7 +86,7 @@
 
   <div class="page_top"><a href="index.html#top"></a></div>
 
-  <!--サイドバーの内容があった場所-->
+  <!--ヘッダーの内容があった場所-->
   <div id="header"></div>
   <!--外部HTMLを読み込む-->
   <script>

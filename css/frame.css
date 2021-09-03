@@ -413,7 +413,7 @@
 
 /* ↓ お知らせバナー ↓ */
 #news-bar {
-  display: block;
+  display: none;
 }
 .news-banner-margin {
   position: relative;
@@ -435,5 +435,8 @@
   font-size: 20px;
   font-weight: bold;
   color: #ffffff;
+}
+.news-bar-margin-bottom {
+  margin-bottom: -40px;
 }
 /* ↑ お知らせバナー ↑ */
