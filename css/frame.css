@@ -423,6 +423,18 @@
   height: 80px;
 }
 
+.news-banner_p::before {
+  color: white;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-size: 15px;
+  margin-right: 10px;
+}
+
 /* 緊急連絡 */
 /*.news-banner-margin {
   background-color: #980003;
@@ -453,17 +465,16 @@
   top: 50%;
   left: 50%;
   transform : translate(-50%,-50%);
-}
-.news-banner_p {
-  text-align: center;/*一応BOX内の文字も中央寄せ*/
-  font-size: 20px;
-  font-weight: bold;
-  color: #ffffff;
-
   /* スクロール */
   overflow: auto;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
+}
+.news-banner_p {
+  text-align: center;/*一応BOX内の文字も中央寄せ*/
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
 }
 .news-bar-margin-bottom {
   margin-bottom: -40px;
