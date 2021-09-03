@@ -423,6 +423,25 @@
   height: 80px;
 }
 
+.a_news-bar_blank, .a_news-bar {
+  color:#ffffff;
+  text-decoration: underline;
+}
+.a_blank::after {
+  content: " \f35d  ";
+  color: #ffffff;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-size: 10px;
+}
+.a_news-bar_blank:hover, .a_news-bar_blank:hover::after, .a_news-bar:hover {
+  color:#8C8C8C;
+}
+
 .news-banner_p::before {
   color: white;
   font-family: "Font Awesome 5 Free";
