@@ -413,7 +413,7 @@
 
 /* ↓ お知らせバナー ↓ */
 #news-bar {
-  display: block;
+  display: none;
 }
 .news-banner-margin {
   position: relative;
@@ -473,12 +473,12 @@
 }*/
 
 /* 規約変更連絡 */
-.news-banner-margin {
+/*.news-banner-margin {
   background-color: #5B7876;
 }
 .news-banner_p::before {
   content: "\f02d";
-}
+}*/
 
 .news-banner {
   position: absolute;
