@@ -200,8 +200,14 @@
   background-image: url("../../image/JapanMinecraftServer.png");
 }
 
-.SNS-QaA ol {
+.ol {
+  margin: 7px 0 0 24px;
+}
+.ol ol {
   font-size: 13px;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
 }
 
 .btn-social-flat-text::after {
