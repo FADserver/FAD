@@ -1,4 +1,4 @@
-* {
+ * {
   box-sizing: border-box;
 }
 
@@ -78,6 +78,44 @@ h1:before {
   background: #060940;
 }
 /* ここまで */
+
+/* ↓ 公開日・更新日 ↓ */
+#update-day {
+  text-align: right;
+  margin: 0 2% 0 2%;
+}
+#update-day p {
+  display: inline;
+  color: #8C8C8C;
+  font-size: 13px
+}
+#released::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-size: 12px;
+  -webkit-font-smoothing: antialiased;
+  color: #8C8C8C;
+  margin-right: 5px;
+  content: "\f017";
+}
+#updated::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-size: 12px;
+  -webkit-font-smoothing: antialiased;
+  color: #8C8C8C;
+  margin: 0 5px 0 15px;
+  content: "\f1da";
+  display: inline-block;
+  transform: scaleX(-1);
+}
+/* ↑ 公開日・更新日 ↑ */
 
 /* パンくずリスト */
 .pan {
