@@ -193,7 +193,6 @@
 }
 .btn-social-flat-icon--JapanMinecraftServer::before {
   content: "　";
-  margin-top: 50%;
   background-repeat:  no-repeat;
   background-image: url("../../image/JapanMinecraftServer.png");
 }
