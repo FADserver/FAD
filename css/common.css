@@ -100,6 +100,7 @@ h1:before {
   color: #8C8C8C;
   margin-right: 5px;
   content: "\f017";
+  transform: scaleX(-1);
 }
 #updated::before {
   font-family: "Font Awesome 5 Free";
@@ -112,7 +113,6 @@ h1:before {
   color: #8C8C8C;
   margin: 0 5px 0 15px;
   content: "\f1da";
-  display: inline-block;
   transform: scaleX(-1);
 }
 /* ↑ 公開日・更新日 ↑ */
