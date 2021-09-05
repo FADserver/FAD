@@ -1,18 +1,7 @@
-.mode {
-  margin-top: 60px;
-  margin-left: 2%;
-  margin-right: 2%;
-}
 .mode p {
   display: block;
   line-height: 2;
   font-size: 15px;
-  color: #333333;
-}
-.mode_tytle {
-  padding: 1rem 2rem;
-  border-left: 5px solid #000000;
-  background: #f4f4f4;
   color: #333333;
 }
 

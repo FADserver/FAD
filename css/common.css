@@ -3,6 +3,13 @@
   -webkit-appearance: none;
   -webkit-text-size-adjust: 100%;
 }
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN";
+}
+a {
+  text-decoration: none;
+}
 
 .AweSomeFont-Free {
   font-family: "Font Awesome 5 Free";
@@ -21,13 +28,31 @@
   -webkit-font-smoothing: antialiased;
 }
 
-body {
-  margin: 0;
-  font-family: "Hiragino Kaku Gothic ProN";
+.normal_tytle {
+  padding: 1rem 2rem;
+  border-left: 5px solid #060940;
+  background: #f4f4f4;
+  color: #333333;
 }
 
-a {
-  text-decoration: none;
+.normal_margin {
+  margin-top: 60px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.big {
+  font-size: 20px!important;
+  font-weight: bold !important;
+  margin: 0;
+  background: linear-gradient(transparent 50%, yellow 50%);
+  display: inline;
+  color: #333333;
+}
+
+.torikesi {
+  display: inline;
+  text-decoration: line-through;
 }
 
 .a_blank, .a {
@@ -69,20 +94,6 @@ a {
   background-attachment: local;
 }
 /* ↑ テーブルのscroll分かりやすくするやつ ↑ */
-
-.big {
-  font-size: 20px!important;
-  font-weight: bold !important;
-  margin: 0;
-  background: linear-gradient(transparent 50%, yellow 50%);
-  display: inline;
-  color: #333333;
-}
-
-.torikesi {
-  display: inline;
-  text-decoration: line-through;
-}
 
 header {
   height: 65px;

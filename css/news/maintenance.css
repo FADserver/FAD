@@ -1,20 +1,8 @@
-.maintenance {
-  margin-top: 60px;
-  margin-left: 2%;
-  margin-right: 2%;
-}
 .maintenance p {
   line-height: 2;
   font-size: 15px;
   color: #333333;
   overflow-wrap: break-word;
-}
-.maintenance_tytle {
-  padding: 1rem 2rem;
-  border-top: 3px solid #000000;
-  background: #f4f4f4;
-  font-size: 20px;
-  color: #333333;
 }
 .maintenance a {
   line-height: 2;
