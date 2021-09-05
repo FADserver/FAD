@@ -309,6 +309,7 @@
   }
   #child1 {
     flex-grow: 1;
+    width: calc(100% - 270px);
   }
   #child2 {
     flex-grow: 1;
@@ -344,6 +345,7 @@
   }
   #child1 {
     flex-grow: 1;
+    width: calc(100% - 270px);
   }
   #child2 {
     flex-grow: 1;
@@ -381,6 +383,7 @@
   }
   #child1 {
     flex-grow: 1;
+    width: calc(100% - 400px);
   }
   #child2 {
     flex-grow: 1;

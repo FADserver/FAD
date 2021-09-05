@@ -1,19 +1,22 @@
-* {
-  box-sizing: border-box;
-}
-
 .browser {
-  position: relative;
-  width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
   display: block;
   white-space: nowrap;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  font-size: 15px;
-  color: #333333;
+  padding-bottom: 3px;
 }
+.browser::-webkit-scrollbar {
+  height:5px;
+}/*バーの太さ*/
+.browser::-webkit-scrollbar-track {
+  background:#dddddd;
+}/*バーの背景色*/
+.browser::-webkit-scrollbar-thumb {
+  background:#333333;
+}/*バーの色*/
+
 .browser th,.browser td{
   border: solid 1px;
   padding: 10px 5px 10px 5px;

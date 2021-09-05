@@ -1,7 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
 .mode {
   margin-top: 60px;
   margin-left: 2%;
@@ -26,11 +22,11 @@
 }
 @media all and (max-width: 768px) and (max-width: 1024px) {
   .mode_img {
-    width: 500px;
+    width: 400px;
     border: 2px solid #8C8C8C;
   }
   .mode_img2 {
-    width: 490px;
+    width: 390px;
     border: 2px solid #8C8C8C;
   }
 }
@@ -212,26 +208,35 @@ a.anchor{
   color: #8C8C8C;
 }
 
-.lebel {
+.level {
   /* スクロール */
   overflow-x: auto;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
 }
+.level::-webkit-scrollbar {
+  height:5px;
+}/*バーの太さ*/
+.level::-webkit-scrollbar-track {
+  background:#dddddd;
+}/*バーの背景色*/
+.level::-webkit-scrollbar-thumb {
+  background:#333333;
+}/*バーの色*/
 
 /* ↓ テーブル ↓ */
-.lebel_table {
-  position: relative;
+.level_table {
   border-spacing: 0;
   margin: 0 auto;
+  padding-bottom: 3px;
 }
-.lebel_table th{
+.level_table th{
   min-width: 120px;
   border-bottom: solid 2px #fb5144;
   padding: 10px 0;
   font-size: 15px;
 }
-.lebel_table td{
+.level_table td{
   border-bottom: solid 2px #ddd;
   text-align: center;
   padding: 10px 0;
@@ -239,7 +244,6 @@ a.anchor{
 }
 
 .command_table {
-  position: relative;
   overflow: auto;
   overflow-y: hidden;
   width: 750px;
@@ -259,7 +263,7 @@ a.anchor{
 }
 
 .potion_table, .gun_table {
-  position: relative;
+  width: 100%;
   text-align: center;
   border-collapse: collapse;
   border-spacing: 0;
