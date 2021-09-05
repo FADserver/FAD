@@ -809,6 +809,12 @@ footer {
   width: 97%;
 }
 
+.footer_box {
+  width: 100%;
+  max-width: 1920px;
+  padding: 0 15px 0 15px;
+}
+
 /* フッターリンク */
 .nav {
   list-style: none;
