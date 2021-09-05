@@ -257,6 +257,7 @@
   -webkit-font-smoothing: antialiased;
   font-size: 18px;
   margin-right: 10px;
+  padding-left: 3px;
 }
 .Google-Chrome::before {
   content: "\f268";
