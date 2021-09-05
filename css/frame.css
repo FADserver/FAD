@@ -247,7 +247,7 @@
     margin: 0 auto;
   }
   .message-wrapper {
-    padding: 0 15px 80px 15px;
+    padding-bottom:80px;
     text-align: center;
   }
   .youtube_window {
@@ -298,7 +298,8 @@
     margin: 0 auto;
   }
   .message-wrapper {
-    padding: 0 15px 80px 0;
+    padding-bottom:80px;
+    padding-right: 2%;
     text-align: center;
   }
   .youtube-archive {
@@ -337,7 +338,8 @@
     margin: 0 auto;
   }
   .message-wrapper {
-    padding: 0 15px 80px 0;
+    padding-bottom:80px;
+    padding-right: 2%;
     text-align: center;
   }
   .youtube-archive {
@@ -378,7 +380,8 @@
     margin: 0 auto;
   }
   .message-wrapper {
-    padding: 0 15px 80px 0;
+    padding-bottom:80px;
+    padding-right: 2%;
     text-align: center;
   }
   .youtube-archive {
