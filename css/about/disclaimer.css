@@ -48,6 +48,9 @@
 .safari::before {
   content: "\f267";
 }
+.Opera::before {
+  content: "\f26a";
+}
 .Microsoft-Edge::before {
   content: "\f282";
 }
