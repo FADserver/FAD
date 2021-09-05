@@ -22,15 +22,17 @@
   margin: 0;
 }
 
-.faq__dt, .faq__dd {
+.faq__dt {
+  position: relative;
+  padding-left: 24px;
+  color: #333333;
+}
+.faq__dd {
   position: relative;
   padding-left: 24px;
   margin-bottom: 25px; /* 各Q&Aの下に余白 */
   color: #333333;
-}
-
-.faq__dd {
-  margin-top: -20px;
+  margin-left: 24px;
 }
 
 .faq__dt::before, .faq__dd::before {
