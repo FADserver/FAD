@@ -212,6 +212,7 @@ a.anchor{
 .level_table {
   display: block;
   white-space: nowrap;
+  border-spacing: 0;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   padding-bottom: 3px;
