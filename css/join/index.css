@@ -1,4 +1,4 @@
-.join img {
+.normal_margin img {
   width: 70%;
   display: block;
   margin: auto;
@@ -169,13 +169,13 @@ a.anchor{
 /* ↑ ボタン ↑ */
 
 @media all and (max-width: 750px) {
-  .join img {
+  .normal_margin img {
     width: 98%;
     display: block;
     margin: auto;
     border: 2px solid #8C8C8C;
   }
-  .join p {
+  .normal_margin p {
     line-height: 1.5;
     font-size: 16px;
     display: inline;
@@ -183,13 +183,13 @@ a.anchor{
 }
 
 @media all and (max-width: 768px) {
-  .join img {
+  .normal_margin img {
     width: 98%;
     display: block;
     margin: auto;
     border: 2px solid #8C8C8C;
   }
-  .join p {
+  .normal_margin p {
     line-height: 1.5;
     font-size: 16px;
     display: inline;
@@ -197,13 +197,13 @@ a.anchor{
 }
 
 @media all and (max-width: 670px) {
-  .join img {
+  .normal_margin img {
     width: 98%;
     display: block;
     margin: auto;
     border: 2px solid #8C8C8C;
   }
-  .join p {
+  .normal_margin p {
     line-height: 3;
     font-size: 16px;
     display: inline;
