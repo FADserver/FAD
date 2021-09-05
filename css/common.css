@@ -37,6 +37,21 @@ a {
   color:#8C8C8C;
 }
 
+/* ↓ テーブルのscroll分かりやすくするやつ ↓ */
+.table-wrap {
+  overflow: auto;
+
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.2)) 0 0/20px 100%, linear-gradient(to right, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.2)) right/20px 100%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+.table-wrap table {
+  background: linear-gradient(to left, hsla(0,0%,100%,0), white 15px) 0 0 / 50px 100%, linear-gradient(to right, hsla(0,0%,100%,0), white 15px) right / 50px 100%;
+  background-repeat: no-repeat;
+  background-attachment: local;
+}
+/* ↑ テーブルのscroll分かりやすくするやつ ↑ */
+
 .big {
   font-size: 20px!important;
   font-weight: bold !important;

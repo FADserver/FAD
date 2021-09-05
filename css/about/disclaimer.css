@@ -9,15 +9,6 @@
   font-size: 15px;
   color: #333333;
 }
-.browser::-webkit-scrollbar {
-  height:5px;
-}/*バーの太さ*/
-.browser::-webkit-scrollbar-track {
-  background:#dddddd;
-}/*バーの背景色*/
-.browser::-webkit-scrollbar-thumb {
-  background:#333333;
-}/*バーの色*/
 
 .browser th,.browser td{
   border: solid 1px;

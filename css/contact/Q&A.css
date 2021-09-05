@@ -215,6 +215,36 @@
   display: inline;
   font-size: 10px;
 }
+
+
+/* ↓ テーブル ↓ */
+.version_table {
+  width: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+  display: block;
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 3px;
+  font-size: 15px;
+  color: #333333;
+}
+.version_table th{
+  min-width: 200px;
+  border-bottom: solid 2px #c80021;
+  padding: 10px 0;
+  font-size: 15px;
+  text-align: center;
+}
+.version_table td{
+  border-bottom: solid 2px #ddd;
+  padding: 10px 0;
+  font-size: 15px;
+  text-align: left;
+}
+
+
 /* SNSラベル */
 
 .icon::before {

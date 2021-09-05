@@ -208,27 +208,15 @@ a.anchor{
   color: #8C8C8C;
 }
 
-.level {
-  /* スクロール */
-  overflow-x: auto;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
-}
-.level::-webkit-scrollbar {
-  height:5px;
-}/*バーの太さ*/
-.level::-webkit-scrollbar-track {
-  background:#dddddd;
-}/*バーの背景色*/
-.level::-webkit-scrollbar-thumb {
-  background:#333333;
-}/*バーの色*/
-
 /* ↓ テーブル ↓ */
 .level_table {
-  border-spacing: 0;
-  margin: 0 auto;
+  display: block;
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   padding-bottom: 3px;
+  font-size: 15px;
+  color: #333333;
 }
 .level_table th{
   min-width: 120px;
