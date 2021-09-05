@@ -16,7 +16,7 @@
   text-align: center;
 }
 .browser tr:nth-child(odd){
-  background-color: #eee
+  background-color: #f4f4f4;
 }
 
 .icon::before {
