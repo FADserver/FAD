@@ -821,13 +821,15 @@ footer {
   margin: 0;
   padding: 0;
 }
- 
 .nav a {
   display: block;
   padding: 0 20px;
-  color: #8C8C8C;
+  color: #333333;
   font-size: 13px;
   text-align: center;
+}
+.nav a:hover {
+  color: #060940;
 }
 /* PC */
 @media all and (min-width: 834px) {
@@ -842,9 +844,6 @@ footer {
     -ms-flex-pack: center;
     justify-content: center;
     padding: 20px 0;
-  }
-  .nav a:hover {
-    color: #060940;
   }
   .border {
     border-right: solid 1px #8C8C8C;
@@ -861,9 +860,6 @@ footer {
   }
   .nav li:last-child {
     border-bottom: 1px solid #8C8C8C;
-  }
-  .nav a:hover {
-    color: #060940;
   }
   .nav li a {
     padding: 13px 8px;
