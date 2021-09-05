@@ -29,6 +29,10 @@
   color: #333333;
 }
 
+.faq__dd {
+  margin-top: -20px;
+}
+
 .faq__dt::before, .faq__dd::before {
   font-weight: bold;
   position: absolute;
@@ -37,7 +41,7 @@
   color: #333333;
 }
 
-.faq__dt {
+.faq__dt p {
   font-weight: bold; /* 質問文は太字にしてみました */
   border-bottom: 1px solid #999;
   margin-bottom: 4px; /* 下にちょい余白 */
@@ -46,11 +50,13 @@
 .faq__dt::before {
   content: 'Q.';
   color: #0085C8; /* 「Q」の文字色 */
+  margin-top: 4px;
 }
 
 .faq__dd::before {
   content: 'A.';
   color: #c80021; /* 「A」の文字色 */
+  margin-top: 4px;
 }
 /* ここまで */
 

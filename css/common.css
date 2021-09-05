@@ -4,6 +4,23 @@
   -webkit-text-size-adjust: 100%;
 }
 
+.AweSomeFont-Free {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+.AweSomeFont-Brands {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
 body {
   margin: 0;
   font-family: "Hiragino Kaku Gothic ProN";
