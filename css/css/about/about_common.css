@@ -1,0 +1,56 @@
+.about {
+  margin-top: 60px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.about p {
+  line-height: 2;
+  font-size: 15px;
+  color: #333333;
+  overflow-wrap: break-word;
+}
+.about_tytle {
+  padding: 1rem 2rem;
+  border-left: 5px solid #000000;
+  background: #f4f4f4;
+  color: #333333;
+}
+.about_img {
+  width: 70%;
+  display: block;
+  margin: auto;
+  border: 2px solid #8C8C8C;
+}
+
+.about ol li, .about ol li ol li{
+  line-height: 2;
+  font-size: 15px;
+  color: #333333;
+  overflow-wrap: break-word;
+}
+.first, .second, .third, .fourth {
+  line-height: 2;
+  font-size: 15px;
+  color: #333333;
+  overflow-wrap: break-word;
+}
+.first {
+  list-style-type: upper-roman;
+}
+.second {
+  list-style-type: upper-alpha;
+}
+.third {
+  list-style-type: lower-alpha;
+}
+
+.fourth {
+  list-style-type: lower-roman;
+}
+.bold {
+  font-weight: bold;
+}
+
+.resourcepack_tytle_3_p {
+  padding-right: 10px;
+}
