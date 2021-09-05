@@ -829,7 +829,7 @@ footer {
   text-align: center;
 }
 .nav a:hover {
-  color: #060940;
+  color: #8C8C8C;
 }
 /* PC */
 @media all and (min-width: 834px) {
