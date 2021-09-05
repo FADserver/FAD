@@ -492,7 +492,7 @@
 }
 .news-banner_p {
   text-align: center;/*一応BOX内の文字も中央寄せ*/
-  line-height: 2;
+  line-height: 1.5;
   font-size: 15px;
   font-weight: bold;
   color: #ffffff;
