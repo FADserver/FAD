@@ -83,7 +83,7 @@ a {
 /* ↓ テーブルのscroll分かりやすくするやつ ↓ */
 .table-wrap {
   overflow: auto;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.2)) 0 0/20px 100%, linear-gradient(to right, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.2)) right/20px 100%;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.4)) 0 0/20px 100%, linear-gradient(to right, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.4)) right/20px 100%;
   background-repeat: no-repeat;
 }
 
