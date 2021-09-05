@@ -20,43 +20,43 @@
   color: #333333;
 }
 
-.mode img {
+.mode_img {
   width: 500px;
   border: 2px solid #8C8C8C;
 }
 @media all and (max-width: 768px) and (max-width: 1024px) {
-  .mode img {
-    width: 500px;
+  .mode_img {
+    width: 490px;
     border: 2px solid #8C8C8C;
   }
 }
 @media all and (max-width: 670px) {
-  .mode img {
-    width: 300px;
+  .mode_img {
+    width: 290px;
     border: 2px solid #8C8C8C;
   }
 }
 @media all and (max-width: 414px) {
-  .mode img {
-    width: 350px;
+  .mode_img {
+    width: 340px;
     border: 2px solid #8C8C8C;
   }
 }
 @media all and (max-width: 375px) {
-  .mode img {
-    width: 300px;
+  .mode_img {
+    width: 290px;
     border: 2px solid #8C8C8C;
   }
 }
 @media all and (max-width: 320px) {
-  .mode img {
-    width: 250px;
+  .mode_img {
+    width: 240px;
     border: 2px solid #8C8C8C;
   }
 }
 @media all and (max-width: 280px) {
-  .mode img {
-    width: 200px;
+  .mode_img {
+    width: 190px;
     border: 2px solid #8C8C8C;
   }
 }
@@ -329,11 +329,6 @@ a.anchor{
 .acbox-under{
   font-size: 15px; /* 開いた部分の文字サイズ */
   color: #333333; /* 開いた部分の文字色 */
-}
-
-.acbox-under img {
-  width: 500px;
-  border: 2px solid #8C8C8C;
 }
 
 /* ↓ ボタン ↓ */
