@@ -822,8 +822,9 @@ footer {
   color: #8C8C8C;
   font-size: 13px;
   text-align: center;
-} 
-@media all and (min-width: 641px) {
+}
+/* PC */
+@media all and (min-width: 834px) {
   .nav {
     display: flex;
     -webkit-box-align: center;
@@ -843,7 +844,8 @@ footer {
     border-right: solid 1px #8C8C8C;
   }
 }
-@media all and (max-width: 640px) {
+/* スマホ */
+@media all and (max-width: 833px) {
   .nav {
     text-align: center;
     margin-bottom: 20px;
