@@ -1,7 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
 .h2_QA {
   margin-top: 100px;
   color: #333333;
@@ -21,8 +17,9 @@
 }
 
 .QaA p {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  line-height: 2;
+  color: #333333;
+  margin: 0;
 }
 
 .faq__dt, .faq__dd {
@@ -37,10 +34,6 @@
   position: absolute;
   left: 0;
   top: 0;
-  color: #333333;
-}
-
-.faq__dd p {
   color: #333333;
 }
 
@@ -203,7 +196,7 @@
 .ol {
   margin: 7px 0 0 24px;
 }
-.ol ol {
+.ol ol, .supplement {
   font-size: 13px;
   margin: 0;
   padding: 0;
@@ -223,3 +216,30 @@
   font-size: 10px;
 }
 /* SNSラベル */
+
+.icon::before {
+  color: #333333;
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-size: 18px;
+  margin-right: 10px;
+}
+.Google-Chrome::before {
+  content: "\f268";
+}
+.Mozilla-Firefox::before {
+  content: "\e007";
+}
+.safari::before {
+  content: "\f267";
+}
+.Opera::before {
+  content: "\f26a";
+}
+.Microsoft-Edge::before {
+  content: "\f282";
+}
