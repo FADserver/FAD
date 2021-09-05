@@ -3,12 +3,16 @@
 }
 
 .browser {
+  position: relative;
+  width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
   display: block;
   white-space: nowrap;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+  font-size: 15px;
+  color: #333333;
 }
 .browser th,.browser td{
   border: solid 1px;

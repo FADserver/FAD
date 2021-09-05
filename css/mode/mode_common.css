@@ -221,6 +221,7 @@ a.anchor{
 
 /* ↓ テーブル ↓ */
 .lebel_table {
+  position: relative;
   border-spacing: 0;
   margin: 0 auto;
 }
@@ -238,6 +239,7 @@ a.anchor{
 }
 
 .command_table {
+  position: relative;
   overflow: auto;
   overflow-y: hidden;
   width: 750px;
@@ -257,7 +259,7 @@ a.anchor{
 }
 
 .potion_table, .gun_table {
-  width: 100%;
+  position: relative;
   text-align: center;
   border-collapse: collapse;
   border-spacing: 0;
