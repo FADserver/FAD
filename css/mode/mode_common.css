@@ -8,10 +8,10 @@
   margin-right: 2%;
 }
 .mode p {
+  display: block;
   line-height: 2;
   font-size: 15px;
   color: #333333;
-  display: inline;
 }
 .mode_tytle {
   padding: 1rem 2rem;
@@ -133,10 +133,10 @@ a.anchor{
   position: relative;/*相対位置*/
   padding: 0.5em 0.5em 0.5em 1.5em;/*アイコン分のスペース*/
   line-height: 1.4;/*行高*/
-  color: #3D4073;/*文字色*/
+  color: #333333;/*文字色*/
   border-top: dotted 1px gray;
   border-bottom: dotted 1px gray;
-  background: #fffff4;
+  background: #f4f4f4;
 }
 .role:before {
   font-family: "Font Awesome 5 Free";/*忘れずに*/
@@ -146,7 +146,7 @@ a.anchor{
   font-size: 1em;/*サイズ*/
   left: 0.25em;/*アイコンの位置*/
   top: 0.5em;/*アイコンの位置*/
-  color: #3D4073; /*アイコン色*/
+  color: #333333; /*アイコン色*/
 }
 /* ↑ 目次 ↑ */
 
@@ -188,7 +188,31 @@ a.anchor{
   color: #8C8C8C;
 }
 
+.lebel {
+  /* スクロール */
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
 /* ↓ テーブル ↓ */
+.lebel_table {
+  border-spacing: 0;
+  margin: 0 auto;
+}
+.lebel_table th{
+  min-width: 120px;
+  border-bottom: solid 2px #fb5144;
+  padding: 10px 0;
+  font-size: 15px;
+}
+.lebel_table td{
+  border-bottom: solid 2px #ddd;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 15px;
+}
+
 .command_table {
   overflow: auto;
   overflow-y: hidden;
@@ -305,6 +329,11 @@ a.anchor{
 .acbox-under{
   font-size: 15px; /* 開いた部分の文字サイズ */
   color: #333333; /* 開いた部分の文字色 */
+}
+
+.acbox-under img {
+  width: 500px;
+  border: 2px solid #8C8C8C;
 }
 
 /* ↓ ボタン ↓ */

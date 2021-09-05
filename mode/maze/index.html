@@ -115,7 +115,8 @@
         <h1 id="top"><span>脱出迷路MODE</span></h1>
 
         <div id="update-day">
-          <p id="released">2021.8.12</p><p id="updated">2021.9.3</p>
+          <p id="released">2021.8.12</p>
+          <p id="updated">2021.9.5</p>
         </div>
 
         <div class="mode">
@@ -126,22 +127,108 @@
             <img class="icon" src="../../image/MENU.jpg">」、「<span class="big"> TNT破壊ツール </span><img class="icon" src="../../image/TNT.jpg">」が配られます。
             <br>
             <br>「鍵<img class="icon" src="../../image/kye.jpg">」・・・ダンジョン内にあるチェストをあけることができます。中にはいろいろなお助けアイテムを入手できます！
-            <br>「MENU<img class="icon" src="../../image/MENU.jpg">」・・・銃の弾丸が買えます！
-            <br>「TNT破壊ツール<img class="icon" src="../../image/TNT.jpg">」・・・ダンジョンの中にあるTNT部屋のTNTを破壊できます！
             <br>
+            <br>「MENU<img class="icon" src="../../image/MENU.jpg">」・・・銃の弾丸が買えます！
             <br>左から「<span class="big"> 弾丸1個 </span>」、「<span class="big"> 弾丸4個 </span>」、「<span class="big"> 弾丸16個 </span>」、「
             <span class="big"> 今のMPで買える最高個数 </span>」が買えます。
             <br><img src="../../image/run_menu.png">
+            <br>
+            <br>「TNT破壊ツール<img class="icon" src="../../image/TNT.jpg">」・・・ダンジョンの中にあるTNT部屋のTNTを破壊できます！
+            <br>
           </p>
           <h3 class="role">鬼</h3>
+          <p>「MENU<img class="icon" src="../../image/MENU.jpg">」・・・お助けアイテムが買えます！
+            <br>左から「<span class="big"> 壱里眼 </span>」、「<span class="big"> 強力な自然繊維 </span>」、「<span class="big"> 壁抜け </span>」、「<span class="big"> 村人移動 </span>」が買えます。
+            <br><img src="../../image/oni_menu.png">
+          </p>
+
+          <div class="acbox"><input id="ac-oni1" type="checkbox" />
+            <label for="ac-oni1">お助けアイテムを見る</label>
+            <div class="acbox-under">
+              <p>「壱里眼」
+                <br>最寄りの逃走者を発光させる。
+                <br><img src="../../image/eye.png">
+              </p>
+              <p>「強力な自然繊維」
+                <br>設置できる蜘蛛の巣を入手。鬼は遅くならない。
+                <br><img src="../../image/web.png">
+              </p>
+              <p>「壁抜け」
+                <br>壁をMP消費で一定秒抜けられるようになる。
+                <br><img src="../../image/wall.png">
+              </p>
+              <p>「村人移動」
+                <br>村人の位置をランダムに移動させる。
+                <br><img src="../../image/villager.png">
+              </p>
+            </div>
+          </div>
+          <div class="lebel">
+            <table class="lebel_table">
+              <th>Lv.</th>
+              <th>攻撃力</th>
+              <th>防御</th>
+              <th>速度</th>
+              <th>脱出ピッケルのコスト</th>
+              <tr>
+                <td>100</td>
+                <td>+4</td>
+                <td>+12</td>
+                <td>-50%</td>
+                <td>16</td>
+              </tr>
+              <tr>
+                <td>200</td>
+                <td>+6</td>
+                <td>+15</td>
+                <td>-20%</td>
+                <td>24</td>
+              </tr>
+              <tr>
+                <td>300</td>
+                <td>+9</td>
+                <td>+18</td>
+                <td>逃走者と同速度</td>
+                <td>32</td>
+              </tr>
+              <tr>
+                <td>400</td>
+                <td>+13</td>
+                <td>+21</td>
+                <td>+20%</td>
+                <td>40</td>
+              </tr>
+              <tr>
+                <td>500</td>
+                <td>+18</td>
+                <td>+24</td>
+                <td>+50%</td>
+                <td>48</td>
+              </tr>
+              <tr>
+                <td>600</td>
+                <td>+24</td>
+                <td>+27</td>
+                <td>+100%</td>
+                <td>56</td>
+              </tr>
+              <tr>
+                <td>700</td>
+                <td>ワンパン</td>
+                <td>+30</td>
+                <td>+180%</td>
+                <td>64</td>
+              </tr>
+            </table>
+          </div>
 
           <h2 class="mode_tytle">チェストの中身</h2>
 
           <table class="potion_table">
             <tr>
-              <th>名　称</th>
-              <th>画　像</th>
-              <th>効　果</th>
+              <th>名称</th>
+              <th>画像</th>
+              <th>効果</th>
             </tr>
 
             <td colspan="3">お助けアイテム</td>
@@ -158,9 +245,9 @@
             <div class="acbox-under">
               <table class="potion_table">
                 <tr>
-                  <th>名　称</th>
-                  <th>画　像</th>
-                  <th>効　果</th>
+                  <th>名称</th>
+                  <th>画像</th>
+                  <th>効果</th>
                 </tr>
 
                 <td colspan="3">ポーション</td>
@@ -270,9 +357,9 @@
             <div class="acbox-under">
               <table class="potion_table">
                 <tr>
-                  <th>名　称</th>
-                  <th>画　像</th>
-                  <th>効　果</th>
+                  <th>名称</th>
+                  <th>画像</th>
+                  <th>効果</th>
                 </tr>
 
                 <td colspan="3">スプラッシュポーション</td>
@@ -426,9 +513,9 @@
             <div class="acbox-under">
               <table class="potion_table">
                 <tr>
-                  <th>名　称</th>
-                  <th>画　像</th>
-                  <th>効　果</th>
+                  <th>名称</th>
+                  <th>画像</th>
+                  <th>効果</th>
                 </tr>
 
                 <td colspan="3">残留ポーション</td>
@@ -485,8 +572,8 @@
               <table class="gun_table">
 
                 <tr>
-                  <th>名　称</th>
-                  <th>画　像</th>
+                  <th>名称</th>
+                  <th>画像</th>
                 </tr>
 
                 <td colspan="2">銃</td>
