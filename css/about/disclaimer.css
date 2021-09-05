@@ -6,6 +6,8 @@
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   padding-bottom: 3px;
+  font-size: 15px;
+  color: #333333;
 }
 .browser::-webkit-scrollbar {
   height:5px;
