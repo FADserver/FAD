@@ -1,0 +1,47 @@
+.browser {
+  border-collapse: collapse;
+  border-spacing: 0;
+  display: block;
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 3px;
+  font-size: 15px;
+  color: #333333;
+}
+
+.browser th,.browser td{
+  border: solid 1px;
+  padding: 10px 5px 10px 5px;
+  text-align: center;
+}
+.browser tr:nth-child(odd){
+  background-color: #eee
+}
+
+.icon::before {
+  color: #333333;
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-size: 18px;
+  margin-right: 10px;
+}
+.Google-Chrome::before {
+  content: "\f268";
+}
+.Mozilla-Firefox::before {
+  content: "\e007";
+}
+.safari::before {
+  content: "\f267";
+}
+.Opera::before {
+  content: "\f26a";
+}
+.Microsoft-Edge::before {
+  content: "\f282";
+}
