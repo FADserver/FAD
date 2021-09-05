@@ -809,6 +809,61 @@ footer {
   width: 97%;
 }
 
+/* フッターリンク */
+.nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ 
+.nav a {
+  display: block;
+  padding: 0 20px;
+  color: #8C8C8C;
+  font-size: 13px;
+  text-align: center;
+} 
+@media all and (min-width: 641px) {
+  .nav {
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 20px 0;
+  }
+  .nav a:hover {
+    color: #060940;
+  }
+  .border {
+    border-right: solid 1px #8C8C8C;
+  }
+}
+@media all and (max-width: 640px) {
+  .nav {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .nav li {
+    border-top: 1px solid #8C8C8C;
+  }
+  .nav li:last-child {
+    border-bottom: 1px solid #8C8C8C;
+  }
+  .nav a:hover {
+    color: #060940;
+  }
+  .nav li a {
+    padding: 13px 8px;
+    text-align: left;
+  }
+}
+/* フッターリンク */
+
 /* FADサーバーで遊ぶ */
 .message {
   padding: 15px 40px;
