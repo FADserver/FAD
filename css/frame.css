@@ -14,6 +14,7 @@
 }
 .balloon1 p {
   text-align: center;
+  color: #ffffff;
 }
 .balloon1:before {
   content: "";
