@@ -272,6 +272,9 @@
   font-size: 15px;
   text-align: left;
 }
+.none {
+  text-align: center !important;
+}
 
 
 /* SNSラベル */
