@@ -126,6 +126,7 @@ a {
 
 .acbox input:checked ~ label::after {
   content:"▲"; /* ラベルをクリックした後のアイコン */
+  color: #333333;
 }
 
 .acbox div{
@@ -144,7 +145,9 @@ a {
 }
 
 .acbox input:checked ~ label {
-  background: #3D4073; /* クリック後のラベルの背景色 */
+  background: #ffffff; /* クリック後のラベルの背景色 */
+  border: 1px solid #3D4073;
+  color: #333333;
 }
 
 .acbox-under{
