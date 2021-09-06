@@ -168,13 +168,7 @@
   color: white;
 }
 .btn-social-flat-icon::before {
-  font-family: "Font Awesome 5 Brands";
-  font-weight: 400;
   display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
   display: inline;
   font-size: 15px;
 }
@@ -283,12 +277,6 @@
 /* SNSラベル */
 .icon::before {
   color: #333333;
-  font-family: "Font Awesome 5 Brands";
-  font-weight: 400;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
   font-size: 18px;
   margin-right: 10px;
   padding-left: 3px;

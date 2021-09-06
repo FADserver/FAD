@@ -23,12 +23,6 @@
 
 .icon::before {
   color: #333333;
-  font-family: "Font Awesome 5 Brands";
-  font-weight: 400;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
   font-size: 18px;
   margin-right: 10px;
 }
