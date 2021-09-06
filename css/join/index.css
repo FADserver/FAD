@@ -140,12 +140,6 @@ a.anchor{
 .join_message::after {
   content: "　\f56d";
   color: #ffffff;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
   font-size: 20px;
 }
 
