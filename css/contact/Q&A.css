@@ -134,7 +134,7 @@
     border: 2px solid #8C8C8C;
   }
   .QaA_imag2 {
-    height: 30%
+    height: 20%
     display: block;
     margin: auto;
     border: 2px solid #8C8C8C;
@@ -148,28 +148,6 @@
     margin: auto;
     border: 2px solid #8C8C8C;
   }
-  .QaA_imag2 {
-    height: 20%
-    display: block;
-    margin: auto;
-    border: 2px solid #8C8C8C;
-
-}
-
-@media all and (max-width: 670px) {
-  .QaA_imag {
-    width: 98%;
-    display: block;
-    margin: auto;
-    border: 2px solid #8C8C8C;
-  }
-  .QaA_imag2 {
-    height: 30%
-    display: block;
-    margin: auto;
-    border: 2px solid #8C8C8C;
-
-}
 
 /* SNSラベル */
 .btn-social-flat { 
