@@ -42,6 +42,11 @@
   text-align: center;
 }
 
+.explain {
+  color: #ffffff;
+  font-weight: bold;
+}
+
 .heading {
   padding-top: 80px;
   padding-bottom: 50px;
@@ -51,10 +56,6 @@
 .message-wrapper {
   padding: 0 15px 80px 15px;
   text-align: center;
-}
-
-.heading h2 {
-  font-weight: normal;
 }
 
 .mode {
