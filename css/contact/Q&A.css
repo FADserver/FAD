@@ -114,26 +114,26 @@
 }
 /* ここまで */
 
-.QaA_imag {
+.QaA_img {
   width: 70%;
   display: block;
   margin: auto;
   border: 2px solid #8C8C8C;
 }
-.QaA_imag2 {
+.QaA_img2 {
   height: 500px;
   display: block;
   margin: auto;
   border: 2px solid #8C8C8C;
 }
 @media all and (max-width: 834px) {
-  .QaA_imag {
+  .QaA_img {
     width: 98%;
     display: block;
     margin: auto;
     border: 2px solid #8C8C8C;
   }
-  .QaA_imag2 {
+  .QaA_img2 {
     height: 500px;
     display: block;
     margin: auto;
