@@ -18,7 +18,6 @@
 .browser tr:nth-child(odd){
   padding: 10px;
   background: #00000, 0.1;
-  background-color: #f4f4f4;
   white-space: nowrap;
 }
 
