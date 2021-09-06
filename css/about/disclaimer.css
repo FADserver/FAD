@@ -12,7 +12,6 @@
 .browser th,.browser td{
   border: solid 1px #333333;
   padding: 10px;
-  background: #ffffff, 0.1;
   white-space: nowrap;
 }
 
