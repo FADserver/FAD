@@ -10,12 +10,15 @@
 }
 
 .browser th,.browser td{
-  border: solid 1px;
-  padding: 10px 5px 10px 5px;
-  text-align: center;
+  padding: 10px;
+  white-space: nowrap;
 }
+
 .browser tr:nth-child(odd){
-  background-color: #f4f4f4;
+  padding: 10px;
+  border-top: 1px solid #f4f4f4;
+  border-left: 1px solid #f4f4f4;
+  white-space: nowrap;
 }
 
 .icon::before {
