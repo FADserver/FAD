@@ -1,7 +1,13 @@
- * {
+* {
   box-sizing: border-box;
   -webkit-appearance: none;
   -webkit-text-size-adjust: 100%;
+}
+p {
+  line-height: 2;
+  font-size: 15px;
+  color: #333333;
+  overflow-wrap: break-word;
 }
 body {
   margin: 0;
