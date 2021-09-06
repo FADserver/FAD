@@ -19,6 +19,7 @@
   <title>FADサーバー | 脱出迷路MODE</title>
   <link rel="stylesheet" type="text/css" href="../../css/common.css">
   <link rel="stylesheet" type="text/css" href="../../css/mode/mode_common.css">
+  <link rel="stylesheet" type="text/css" href="../../css/mode/maze.css">
   <link rel="stylesheet" type="text/css" href="../../css/frame.css">
   <link rel="icon" href="../../icon/favicon.ico">
   <link rel="apple-touch-icon" sizes="57x57" href="../../icon/apple-icon-57x57.png">
@@ -121,13 +122,13 @@
 
         <div class="normal_margin">
           <h2 class="normal_tytle">ルール</h2>
-          <ol>
-            <li>最初に鬼を一人決めてから始めます。</li>
+          <ol class="process">
+            <li>最初に「<span class="big">鬼</span>」を一人決めてから始めます。鬼抽選所は、待機室のネザーブロックの所です。</li>
             <li>ゲーム時間は1回30分</li>
-            <li>逃走者はダンジョン内のチェストのお助けアイテムを駆使して鬼から逃げます。</li>
+            <li>「<span class="big">逃走者</span>」はダンジョン内のチェストのお助けアイテムを駆使して鬼から逃げます。</li>
             <li>鬼は逃走者を倒します。</li>
-            <li>MPは1秒で1増えます。</li>
-            <li>開始時にランダムで鬼の強さや脱出ピッケルの値段が決められます。</li>
+            <li>「<span class="big">MP</span>」は1秒で1増えます。</li>
+            <li>開始時にランダムで鬼の強さや脱出ピッケルの値段が決められます。下はその表です。</li>
           </ol>
           <div class="table-wrap">
             <table class="level_table">
@@ -189,7 +190,7 @@
           </div>
 
           <h3 class="role">逃走者</h3>
-          <ol>
+          <ol class="process">
             <li>ゲーム開始時に「<span class="big"> 鍵 </span><img class="icon" src="../../image/kye.jpg">」、「<span class="big"> MENU </span>
               <img class="icon" src="../../image/MENU.jpg">」、「<span class="big"> TNT破壊ツール </span><img class="icon" src="../../image/TNT.jpg">」が配られます。
             </li>
@@ -206,19 +207,21 @@
             </li>
           </ol>
           <p>
-            <br>
             <br>「鍵<img class="icon" src="../../image/kye.jpg">」・・・ダンジョン内にあるチェストをあけることができます。中にはいろいろなお助けアイテムを入手できます！
             <br>
             <br>「MENU<img class="icon" src="../../image/MENU.jpg">」・・・銃の弾丸が買えます！
-            <br>左から「<span class="big"> 弾丸1個 </span>」、「<span class="big"> 弾丸4個 </span>」、「<span class="big"> 弾丸16個 </span>」、「
-            <span class="big"> 今のMPで買える最高個数 </span>」が買えます。
-            <br><img class="mode_img" src="../../image/run_menu.png">
-            <br>
-            <br>「TNT破壊ツール<img class="icon" src="../../image/TNT.jpg">」・・・ダンジョンの中にあるTNT部屋のTNTを破壊できます！
+          </p>
+            <div class="menu">
+              <p>「MENU」を持って左クリックすると、スキル獲得画面が現れます。ここでMPを消費して弾丸と交換することができます。
+              <br>左から「<span class="big"> 弾丸1個 </span>」、「<span class="big"> 弾丸4個 </span>」、「<span class="big"> 弾丸16個 </span>」、「<span class="big"> 今のMPで買える最高個数 </span>」と交換できます。
+              <br><img class="mode_img" src="../../image/run_menu.png">
+            </p>
+            </div>
+            <p>「TNT破壊ツール<img class="icon" src="../../image/TNT.jpg">」・・・ダンジョンの中にあるTNT部屋のTNTを破壊できます！
             <br>
           </p>
           <h3 class="role">鬼</h3>
-          <p>「MENU<img class="icon" src="../../image/MENU.jpg">」・・・お助けアイテムが買えます！
+          <p>「MENU<img class="icon" src="../../image/MENU.jpg">」・・・持って左クリックすると、スキル獲得画面が現れます。ここでMPを消費してお助けアイテムと交換することができます。
             <br>左から「<span class="big"> 壱里眼 </span>」、「<span class="big"> 強力な自然繊維 </span>」、「<span class="big"> 壁抜け </span>」、「
             <span
               class="big"> 村人移動 </span>」が買えます。
