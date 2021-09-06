@@ -56,79 +56,6 @@
 }
 /* ここまで */
 
-/* ↓ アコーディオンボックス ↓ */
-.acbox{
-  width: auto;
-  font-size:0px; /* ラベルと開く部分を分離する時は数値を入れる */
-  margin:10px 0 10px 0; /* ボックス全体の位置調整 */
-}
-
-.acbox label{
-  width: 100%;
-  font-size: 16px; /* ラベルの文字サイズ */
-  font-weight: bold;
-  text-align: center;
-  background: #3D4073; /* ラベルの背景色 */
-  position: relative;
-  display: block;
-  padding:8px;
-  border-radius: 4px; /* ラベルの角の丸み */
-  cursor: pointer;
-  color: #fff;
-}
-
-.acbox label:hover{
-  background: #060940; /* ラベルにマウスを乗せた時の背景色 */
-}
-
-.acbox input{
-  display: none;
-}
-
-.acbox label:after{
-  color: #fff;
-  content:"▼"; /* ラベルのアイコン */
-  position: absolute;
-  top: 50%;
-  right: 15px;
-  margin-top: -14px;
-}
-
-.acbox input:checked ~ label::after {
-  content:"▲"; /* ラベルをクリックした後のアイコン */
-}
-
-.acbox div{
-  height: 0px;
-  overflow: hidden;
-  opacity: 0;
-  transition: 0.15s; /* 開閉スピードの設定 */
-}
-
-.acbox input:checked ~ div{
-  height: auto;
-  padding: 18px; /* 開いた部分の枠内の余白 */
-  border-radius: 0px;
-  background: #F3F4F5; /* 開いた部分の背景色 */
-  opacity: 1;
-}
-
-.acbox input:checked ~ label {
-  background: #3D4073; /* クリック後のラベルの背景色 */
-}
-
-.acbox-under{
-  font-size: 15px; /* 開いた部分の文字サイズ */
-  color: #333333; /* 開いた部分の文字色 */
-}
-
-.acbox-under ol {
-  margin: 0px !important;
-  padding: 0 !important;
-  padding-left: 10px !important;
-}
-/* ↑ アコーディオンボックス ↑ */
-
 /* h2設定 */
 .h2_QA {
   margin-top: 100px;
@@ -343,7 +270,7 @@
   border-bottom: solid 2px #c80021;
   padding: 10px 0;
   font-size: 15px;
-  text-align: center;
+  text-align: left;
 }
 .version_table td{
   border-bottom: solid 2px #ddd;
@@ -380,4 +307,7 @@
 }
 .Microsoft-Edge::before {
   content: "\f282";
+}
+.Internet-Explorer::before {
+  content: "\f26b";
 }
