@@ -204,7 +204,6 @@ a.anchor{
   border-spacing: 0;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  padding-bottom: 3px;
   font-size: 15px;
   color: #333333;
 }
