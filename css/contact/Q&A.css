@@ -260,7 +260,7 @@
   color: #333333;
 }
 .version_table th{
-  min-width: 210px;
+  min-width: 240px;
   border-bottom: solid 2px #c80021;
   padding: 10px 0;
   font-size: 15px;
@@ -301,4 +301,13 @@
 }
 .Internet-Explorer::before {
   content: "\f26b";
+}
+.Windows::before {
+  content: "\f17a";
+}
+.Apple::before {
+  content: "\f179";
+}
+.Android::before {
+  content: "\f17b";
 }
