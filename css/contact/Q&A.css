@@ -266,6 +266,9 @@
   font-size: 15px;
   text-align: left;
 }
+.version_table th:first-child {
+  min-width: 200px !important;
+}
 .version_table td{
   border-bottom: solid 2px #ddd;
   padding: 10px 0;
