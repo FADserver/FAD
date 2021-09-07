@@ -459,7 +459,7 @@ h1:before {
   height: 100%;
   position: fixed;
   top: 0;
-  padding-bottom: 5.3em;
+  padding-bottom: 5em;
   /* メニュー自体を画面外へ */
   left: 100%;
   z-index: 70;
@@ -684,7 +684,7 @@ input {
   text-align: center;
   height: 70px;
   bottom: 0;
-  padding-bottom: 5.3em;
+  padding-bottom: 5em;
   /* メニュー自体を画面外へ */
   left: 100%;
   z-index: 100;
