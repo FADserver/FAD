@@ -730,9 +730,12 @@ input {
   font-variant: normal;
   -webkit-font-smoothing: antialiased;
   font-size: 23px;
+  transition: all 0.3s;
+}
+.follow-me_margin {
+  padding: 0;
   margin: 0;
   padding: 9px 15px 10px 0;
-  transition: all 0.3s;
 }
 
 .hamburger-follow-me li a[href*="facebook.com"]::before             { content: "\f09a"; }
