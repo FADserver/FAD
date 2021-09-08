@@ -14,7 +14,7 @@
 }
 @media all and (max-width: 670px) {
   .mode_img {
-    width: 300px;
+    width: 100%;
     border: 2px solid #8C8C8C;
   }
   .mode_img2 {
@@ -24,7 +24,7 @@
 }
 @media all and (max-width: 414px) {
   .mode_img {
-    width: 350px;
+    width: 100%;
     border: 2px solid #8C8C8C;
   }
   .mode_img2 {
@@ -34,7 +34,7 @@
 }
 @media all and (max-width: 375px) {
   .mode_img {
-    width: 300px;
+    width: 100%;
     border: 2px solid #8C8C8C;
   }
   .mode_img2 {
@@ -44,7 +44,7 @@
 }
 @media all and (max-width: 320px) {
   .mode_img {
-    width: 250px;
+    width: 100%;
     border: 2px solid #8C8C8C;
   }
   .mode_img2 {
@@ -54,23 +54,13 @@
 }
 @media all and (max-width: 280px) {
   .mode_img {
-    width: 200px;
+    width: 100%;
     border: 2px solid #8C8C8C;
   }
   .mode_img2 {
     width: 190px;
     border: 2px solid #8C8C8C;
   }
-}
-
-.img_center {
-  width: 70% !important;;
-  display: block !important;
-  margin: 0 auto !important;
-  margin-top: 20px !important;
-}
-.div_center {
-  text-align: center;
 }
 
 .icon {

@@ -170,16 +170,6 @@ a {
 }
 /* ↑ テーブルのscroll分かりやすくするやつ ↑ */
 
-/* ↓ 画像の説明 ↓ */
-.img-frame p {
-  text-align: center;
-  color: #8C8C8C;
-  font-size: 13px !important;
-  margin-top: 0;
-  padding-top: 0;
-}
-/* ↑ 画像の説明 ↑ */
-
 header {
   height: 65px;
   width: 100%;
@@ -188,6 +178,23 @@ header {
   top: 0;
   z-index: 100;
 }
+
+/* ↓ 画像説明 ↓ */
+.img-frame {
+  width: 100% !important;
+  text-align: center;
+}
+.img-frame p {
+  width: 95%;
+  font-size: 13px;
+  color: #8C8C8C;
+  line-height: 1;
+  padding: 0;
+  margin: 0 auto;
+  padding-top: 8px;
+  margin-bottom: 20px;
+}
+/* ↑ 画像説明 ↑ */
 
 /* ↓ ポップアップ ↓ */
 /* ↑ ポップアップ ↑ */
@@ -885,8 +892,8 @@ footer a:hover {
 
 .footer-1::before {
   white-space:pre-wrap;
-  font-size: 11px;
-  line-height: 1 !important;
+  font-size: 10px;
+  line-height: 1;
   content: "■ このホームページに掲載されている一切の文書・図版・写真等を、手段や形態を問わず複製、転載することを禁じます。\A■ このホームページにある要素を直リンクしないでください。\A© 2019-2021 Full Automatic Dungeon-server. All Right Reserved.";
 }
 
