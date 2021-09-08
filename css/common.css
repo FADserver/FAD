@@ -170,6 +170,14 @@ a {
 }
 /* ↑ テーブルのscroll分かりやすくするやつ ↑ */
 
+/* ↓ 画像の説明 ↓ */
+.img-frame p {
+  text-align: center;
+  color: #8C8C8C;
+  font-size: 13px !important;
+}
+/* ↑ 画像の説明 ↑ */
+
 header {
   height: 65px;
   width: 100%;
