@@ -218,13 +218,11 @@
   background-image: url("../../image/JapanMinecraftServer.png");
 }
 
-.ol {
-  margin: 7px 0 0 24px;
-}
-.ol ol, .supplement {
+.ol, .supplement {
   font-size: 13px;
   margin: 0;
   padding: 0;
+  marfgin: 0 7px 0 24px;
   line-height: 1.5;
 }
 
