@@ -6,6 +6,8 @@ table {
 table th,td {
   padding: 10px 15px;
   border: 1px solid #ddd;
+  font-size: 15px;
+  color: #333333;
   line-height: 2;
 }
 
