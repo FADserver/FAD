@@ -15,7 +15,7 @@ table th {
   text-align: left;
 }
 
-@media all and (max-width:479px) {
+@media all and (max-width: 768px) {
   table th,td {
     width: auto;
     display: block;
