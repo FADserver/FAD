@@ -116,7 +116,7 @@
 
 .QaA_img {
   width: 100%;
-  max-width: 500px;
+  max-width: 800px;;
   display: block;
   margin: auto;
   border: 2px solid #8C8C8C;
@@ -134,13 +134,6 @@
     margin: auto;
     border: 2px solid #8C8C8C;
   }
-}
-
-.normal_margin ol {
-  line-height: 2.0;
-  margin: 0;
-  padding: 0;
-  padding-left: 5px;
 }
 
 /* SNSラベル */
@@ -218,16 +211,27 @@
   background-image: url("../../image/JapanMinecraftServer.png");
 }
 
-.ol, .supplement {
+.supplement {
   font-size: 13px;
   margin: 0;
   padding: 0;
-  marfgin: 0 7px 0 24px;
-  line-height: 1.5;
+  margin: 7px 0 0 24px !important;
+  line-height: 2;
+}
+.browser_ol {
+  padding: 0;
+  margin: 0;
+  margin: 7px 0 0 20px !important;
+  line-height: 2;
+}
+.acbox-under ol {
+  padding: 0;
+  margin: 0;
+  line-height: 2;
 }
 
-.tejunn {
-  margin-left: 24px;
+.Q4 {
+  margin-left: 24px !important;
 }
 
 .btn-social-flat-text::after {

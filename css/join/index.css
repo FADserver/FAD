@@ -1,5 +1,11 @@
+.join_margin {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .normal_margin img {
-  width: 70%;
+  width: 100%;
   display: block;
   margin: auto;
   border: 2px solid #8C8C8C;
@@ -161,46 +167,3 @@ a.anchor{
   opacity: 1;
 }
 /* ↑ ボタン ↑ */
-
-@media all and (max-width: 750px) {
-  .normal_margin img {
-    width: 98%;
-    display: block;
-    margin: auto;
-    border: 2px solid #8C8C8C;
-  }
-  .normal_margin p {
-    line-height: 1.5;
-    font-size: 16px;
-    display: inline;
-  }
-}
-
-@media all and (max-width: 768px) {
-  .normal_margin img {
-    width: 98%;
-    display: block;
-    margin: auto;
-    border: 2px solid #8C8C8C;
-  }
-  .normal_margin p {
-    line-height: 1.5;
-    font-size: 16px;
-    display: inline;
-  }
-}
-
-@media all and (max-width: 670px) {
-  .normal_margin img {
-    width: 98%;
-    display: block;
-    margin: auto;
-    border: 2px solid #8C8C8C;
-  }
-  .normal_margin p {
-    line-height: 3;
-    font-size: 16px;
-    display: inline;
-    color: #333333;
-  }
-}
