@@ -228,6 +228,10 @@
   line-height: 1.5;
 }
 
+.tejunn {
+  margin-left: 24px;
+}
+
 .btn-social-flat-text::after {
   content: "　\f35d";
   font-family: "Font Awesome 5 Free";
