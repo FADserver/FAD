@@ -115,7 +115,8 @@
 /* ここまで */
 
 .QaA_img {
-  width: 98%;
+  width: 100%;
+  max-width: 500px;
   display: block;
   margin: auto;
   border: 2px solid #8C8C8C;
@@ -127,12 +128,6 @@
   border: 2px solid #8C8C8C;
 }
 @media all and (min-width: 1200px) {
-  .QaA_img {
-    width: 100%;
-    display: block;
-    margin: auto;
-    border: 2px solid #8C8C8C;
-  }
   .QaA_img2 {
     height: 500px;
     display: block;
