@@ -128,7 +128,7 @@
 }
 @media all and (min-width: 1200px) {
   .QaA_img {
-    width: 73%;
+    width: 100%;
     display: block;
     margin: auto;
     border: 2px solid #8C8C8C;
