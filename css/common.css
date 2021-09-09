@@ -86,6 +86,30 @@ a {
   color:#8C8C8C;
 }
 
+/* ↓ 画像説明 ↓ */
+.img-frame {
+  width: 100% !important;
+  text-align: center;
+}
+.img-frame p {
+  width: 95%;
+  font-size: 13px !important;
+  color: #8C8C8C !important;
+  line-height: 1 !important;
+  padding: 0;
+  margin: 0 auto;
+  padding-top: 8px;
+  margin-bottom: 20px;
+}
+/* ↑ 画像説明 ↑ */
+.normal_img {
+  width: 100%;
+  max-width: 800px;
+  display: block;
+  margin: auto;
+  border: 2px solid #8C8C8C;
+}
+
 /* ↓ アコーディオンボックス ↓ */
 .acbox{
   width: auto;
@@ -178,23 +202,6 @@ header {
   top: 0;
   z-index: 100;
 }
-
-/* ↓ 画像説明 ↓ */
-.img-frame {
-  width: 100% !important;
-  text-align: center;
-}
-.img-frame p {
-  width: 95%;
-  font-size: 13px !important;
-  color: #8C8C8C !important;
-  line-height: 1 !important;
-  padding: 0;
-  margin: 0 auto;
-  padding-top: 8px;
-  margin-bottom: 20px;
-}
-/* ↑ 画像説明 ↑ */
 
 /* ↓ ポップアップ ↓ */
 /* ↑ ポップアップ ↑ */
