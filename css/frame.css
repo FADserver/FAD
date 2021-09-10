@@ -297,10 +297,10 @@
     margin: 0 auto;
   }
   .youtube-archive {
-    max-width: 210px;
-    min-width: 210px;
-    max-height: 120px;
-    min-height: 120px;
+    max-width: 224px;
+    min-width: 224px;
+    max-height: 126px;
+    min-height: 126px;
     margin: 0 auto;
   }
   #parent {
@@ -308,13 +308,13 @@
   }
   #child1 {
     flex-grow: 1;
-    width: calc(100% - 270px);
+    width: calc(100% - 280px);
   }
   #child2 {
     flex-grow: 1;
     padding: 0 10px 10px 10px;
-    min-width: 270px;
-    max-width: 270px;
+    min-width: 280px;
+    max-width: 280px;
   }
   #child3 {
     display: none;
@@ -332,10 +332,10 @@
     margin: 0 auto;
   }
   .youtube-archive {
-    max-width: 210px;
-    min-width: 210px;
-    max-height: 120px;
-    min-height: 120px;
+    max-width: 224px;
+    min-width: 224px;
+    max-height: 126px;
+    min-height: 126px;
     margin: 0 auto;
   }
   #parent {
@@ -343,13 +343,13 @@
   }
   #child1 {
     flex-grow: 1;
-    width: calc(100% - 270px);
+    width: calc(100% - 280px);
   }
   #child2 {
     flex-grow: 1;
     padding: 0 10px 10px 10px;
-    min-width: 270px;
-    max-width: 270px;
+    min-width: 280px;
+    max-width: 280px;
   }
   #child3 {
     display: none;
@@ -369,10 +369,10 @@
     margin: 0 auto;
   }
   .youtube-archive {
-    max-width: 326px;
-    min-width: 326px;
-    max-height: 185px;
-    min-height: 185px;
+    max-width: 344px;
+    min-width: 344px;
+    max-height: 193px;
+    min-height: 193px;
     margin: 0 auto;
   }
   #parent {

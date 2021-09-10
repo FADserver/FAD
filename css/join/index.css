@@ -6,14 +6,14 @@
 
 /* ↓ 番号 ↓ */
 .join_ol {
-  counter-reset:list;
+  counter-reset: list;
   list-style-type:none;
   font-size: 15px;
   padding: 0px;
 }
 .join_ol li{
   position:relative;
-  line-height: 30px;
+  line-height: 2;
   margin: 7px 0 7px 40px;
   padding-left: 10px;
   font-size:15px;
@@ -30,6 +30,7 @@
   color: #fff;
   line-height:30px;
   z-index:1;
+  font-weight: bold;
 }
 .join_ol li:after{
   content:"";
@@ -46,7 +47,16 @@
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+@media all and (min-width: 768px) {
+  .join_ol li {
+    margin: 7px 0 7px 0;
+  }
+  .join_tytle {
+    margin-left: -40px;
+  }
+}
 /* ↑ 番号 ↑ */
+
 
 .normal_margin img {
   width: 100%;
