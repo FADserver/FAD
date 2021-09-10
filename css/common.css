@@ -627,6 +627,9 @@ input {
   top: 16px;
   transition: all 0.3s;
 }
+.menu ul li a i {
+  font-weight: bold;
+}
 
 .menu-label::before {
   content: "";
@@ -658,6 +661,21 @@ input {
 
 .menu ul li a {
   font-size: 15px;
+}
+
+.menu-AweSomeFont {
+  margin-right: 10px;
+}
+
+.menu-li-content {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.menu-li-small {
+  font-size: 12px;
+  margin-left: 10px;
+  font-weight: normal;
 }
 /* まとめるやつ */
 
