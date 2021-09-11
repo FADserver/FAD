@@ -189,7 +189,7 @@
   padding: 10px;
   margin: 0 0 0 -20px;
   width: calc(100% + 20px);
-  font-size: 20px;
+  font-size: 22px;
   color: white;
   background: #ff6868;
 }
@@ -303,6 +303,9 @@
     min-height: 126px;
     margin: 0 auto;
   }
+  .youtube {
+    font-size: 21px;
+  }
   #parent {
     display: flex;
   }
@@ -337,6 +340,9 @@
     max-height: 126px;
     min-height: 126px;
     margin: 0 auto;
+  }
+  .youtube {
+    font-size: 21px;
   }
   #parent {
     display: flex;
