@@ -92,6 +92,10 @@
   clear: left;
 }
 
+.news-frame {
+  width: 100%;
+}
+
 @media all and (max-width: 1000px) {
   .mode {
     width: 50%;
