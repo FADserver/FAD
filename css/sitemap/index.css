@@ -1,17 +1,35 @@
-.sitemap {
-  margin-top: 60px;
-  margin-left: 2%;
-  margin-right: 2%;
+.sitemap_tytle {
+  border-left: 3px solid #3D4073;
+  border-bottom: 1px solid #8C8C8C;
+  color: #333333;
+  width: 100%;
+  margin: 0;
+  padding-left: 10px;
 }
-.sitemap p {
+.section {
+  width: 100%;
+  margin: 10px 0 10px 0;
+}
+ul li {
+  color: #333333;
   line-height: 2;
-  font-size: 15px;
-  color: #333333;
-  overflow-wrap: break-word;
 }
-.about_tytle {
-  padding: 1rem 2rem;
-  border-left: 5px solid #000000;
-  background: #f4f4f4;
-  color: #333333;
+
+@media all and (min-width: 768px) {
+  .section {
+    width: calc(50% - 10px);
+    flex-wrap: nowrap;
+  }
+  .right {
+    float: right;
+    margin-left: 5px;
+  }
+  .left {
+    float: left;
+    margin-right: 5px;
+  }
+  .clear {
+    clear: both;
+  }
 }
+
