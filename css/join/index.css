@@ -1,6 +1,6 @@
 .join_margin {
   width: 100%;
-  max-width: 800px;
+  max-width: 840px;
   margin: 0 auto;
 }
 
@@ -46,14 +46,6 @@
   -o-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-}
-@media all and (min-width: 835px) {
-  .join_ol li {
-    margin: 7px 0 7px 0;
-  }
-  .join_tytle {
-    margin-left: -40px;
-  }
 }
 /* ↑ 番号 ↑ */
 
