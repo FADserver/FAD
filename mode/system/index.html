@@ -19,6 +19,7 @@
   <title>FADサーバー | FADシステム</title>
   <link rel="stylesheet" type="text/css" href="../../css/common.css">
   <link rel="stylesheet" type="text/css" href="../../css/mode/mode_common.css">
+  <link rel="stylesheet" type="text/css" href="../../css/mode/system.css">
   <link rel="stylesheet" type="text/css" href="../../css/frame.css">
   <link rel="icon" href="../../icon/favicon.ico">
   <link rel="apple-touch-icon" sizes="57x57" href="../../icon/apple-icon-57x57.png">
@@ -109,13 +110,14 @@
         <h1 id="top"><span>FADシステム</span></h1>
 
         <div id="update-day">
-          <p id="released">2021.8.12</p><p id="updated">2021.9.3</p>
+          <p id="released">2021.8.12</p><p id="updated">2021.9.12</p>
         </div>
 
         <div class="normal_margin">
           <h2 class="normal_tytle">自動生成</h2>
-          <p>FADサーバーは <span class="big">皆様が作成した部屋</span> を用いて部屋の配置やその中にあるチェストの中身などを <span class="big">全自動で生成するダンジョン</span> です！</p>
-          <br>その通りは、FAD脱出迷路MODEでは．．． <span class="big">部屋：124! × ゴールの場所：25ヶ所 = 3.76×10²⁰⁸</span> 通り！
+          <p>FADサーバーは <span class="big">皆様が作成した部屋</span> を用いて部屋の配置やその中にあるチェストの中身などを <span class="big">全自動で生成するダンジョン</span> です！
+          <br>その通りは、FAD脱出迷路MODEでは．．． <span class="big">部屋：124! × ゴールの場所：25ヶ所 = 3.76×10²⁰⁸</span> 通り！</p>
+
           <h2 class="normal_tytle">ロビーでの詰まり防止機能</h2>
           <p>ロビーで遊んでいて詰んだ時は、手持ちのダイアモンドをクリックしてみましょう！ロビーに戻れます。これで遠くまで行ってもすぐ帰ってこれます！</p>
           <br>
@@ -123,6 +125,92 @@
             <img class="normal_img" src="../../image/diamond.jpg">
             <p>強制帰還ダイヤモンド</p>
           </div>
+
+          <h2 class="normal_tytle">導入プラグイン</h2>
+          <p>FADサーバーでは、バニラではできないことをプラグインを導入し、可能にしています。MODと違い、ご利用者様は何もしなくてもプラグインを使用することができます。一部非表示のプラグインがあります。</p>
+          <h3>プラグイン一覧</h3>
+          <div class="table-wrap">
+           <table class="command_table">
+              <tr>
+                <th>プラグイン名</th>
+                <th>用途 / 使い方</th>
+             </tr>
+              <tr>
+                <td><a class="a_blank" targe="_blank" href="https://dev.bukkit.org/projects/autosaveworld">Auto Save World</a></td>
+                <td>－</td>
+              </tr>
+             <tr>
+                <td>Chairs</td>
+                <td>階段ブロックに右クリックすることで座ることができます。</td>
+              </tr>
+              <tr>
+                <td><a class="a_blank" targe="_blank" href="https://dev.bukkit.org/projects/crackshot">Crack Shot</a></td>
+                <td>マイクラ内で銃を使うことができます。</td>
+              </tr>
+              <tr>
+                <td><a class="a_blank" targe="_blank" href="https://dev.bukkit.org/projects/holographic-displays">Holographic Displays</a></td>
+                <td>浮いている案内板を作成します。</td>
+              </tr>
+              <tr>
+                <td><a class="a_blank" targe="_blank" href="https://dev.bukkit.org/projects/imageonmap">Image On Map</a></td>
+                <td>地図に画像を貼り付けます。</td>
+              </tr>
+              <tr>
+                <td><a class="a_blank" targe="_blank" href="https://www.spigotmc.org/resources/lunachat.82293/?__cf_chl_jschl_tk__=pmd_ZVQJYL3.gEFSke9zrwTXnp4dGDxG1tKtjncCQ9Yn.R0-1631372718-0-gqNtZGzNAfujcnBszQll">Luna Chat</a></td>
+                <td>ローマ字で送ったチャットを日本語にします。逃走者と鬼のチャットを分けます。</td>
+              </tr>
+              <tr>
+                <td><a class="a_blank" targe="_blank" href="https://dev.bukkit.org/projects/shopkeepers">shop keepers</a></td>
+                <td>任意の物を売る村人を召喚するプラグイン</td>
+              </tr>
+              <tr>
+                <td><a class="a_blank" targe="_blank" href="https://dev.bukkit.org/projects/worldguard">World Guard</a></td>
+                <td>土地の保護・設定</td>
+              </tr>
+              <tr>
+                <td>Maze</td>
+                <td>完全自作プラグイン。FADの主要なプラグイン。MPやスコアなど結構いろいろ管轄</td>
+              </tr>
+              <tr>
+                <td>Maze Admin</td>
+                <td>完全自作プラグイン。管理者・運営者用コマンドを管轄</td>
+              </tr>
+              <tr>
+                <td>Signboard Of FAD</td>
+                <td>完全自作プラグイン。看板とかのコマンドを管轄</td>
+              </tr>
+            </table>
+         </div>
+         <h3>コマンド</h3>
+         <div class="table-wrap">
+          <table class="command_table">
+            <tr>
+              <th>コマンド</th>
+              <th>動作</th>
+              <th>使えるMODE</th>
+            </tr>
+            <tr>
+              <td>/fad info</td>
+              <td>いろいろな情報が見られる本を入手できます</td>
+              <td>全MODE</td>
+            </tr>
+            <tr>
+              <td>/fad clear</td>
+              <td>本を削除します。</td>
+              <td>全MODE</td>
+            </tr>
+            <tr>
+              <td>/fad time</td>
+              <td>どれくらいFADサーバーにいるか表示します。各MODE別です。</td>
+              <td>全MODE</td>
+            </tr>
+            <tr>
+              <td>/fad atm &lt;in / out&gt; &lt; (数字) / all&gt;</td>
+              <td>スコアとエメラルドを交換できます。inで預入、outで引き出し、(数字)で任意の数、allで全額です。</td>
+              <td>脱出迷路MODE</td>
+            </tr>
+          </table>
+         </div>
 
           <h2 class="normal_tytle">Crack Shot</h2>
           <p><a class="a_blank" href="https://dev.bukkit.org/projects/crackshot" targrt="_blank">Crack Shot</a>を導入しているので誰でもMinecraftで銃が使えます！

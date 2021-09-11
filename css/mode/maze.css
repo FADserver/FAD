@@ -1,25 +1,25 @@
 /* ↓ テーブル ↓ */
 .level_table {
-    display: block;
-    white-space: nowrap;
-    border-spacing: 0;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    font-size: 15px;
-    color: #333333;
-  }
-  .level_table th{
-    min-width: 120px;
-    border-bottom: solid 2px #fb5144;
-    padding: 10px 0;
-    font-size: 15px;
-  }
-  .level_table td{
-    border-bottom: solid 2px #ddd;
-    text-align: center;
-    padding: 10px 0;
-    font-size: 15px;
-  }
+  display: block;
+  white-space: nowrap;
+  border-spacing: 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  font-size: 15px;
+  color: #333333;
+}
+.level_table th{
+  min-width: 120px;
+  border-bottom: solid 2px #fb5144;
+  padding: 10px 0;
+  font-size: 15px;
+}
+.level_table td{
+  border-bottom: solid 2px #ddd;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 15px;
+}
 
 .potion_table, .gun_table {
   width: 100%;

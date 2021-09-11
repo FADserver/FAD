@@ -1,0 +1,29 @@
+h3 {
+  border-left: 3px solid #3D4073;
+  border-bottom: 1px solid #8C8C8C;
+  padding-left: 10px;
+}
+/* ↓ テーブル ↓ */
+.command_table {
+  display: block;
+  white-space: nowrap;
+  border-spacing: 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  font-size: 15px;
+  color: #333333;
+  text-align: left;
+}
+.command_table th{
+  min-width: 120px;
+  border-bottom: solid 2px #fb5144;
+  padding: 10px;
+  font-size: 15px;
+}
+.command_table td{
+  border-bottom: solid 2px #ddd;
+  padding: 10px;
+  font-size: 15px;
+  word-break: break-all;
+}
+/* ↑ テーブル ↑ */

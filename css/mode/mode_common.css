@@ -156,27 +156,6 @@ a.anchor{
   color: #8C8C8C;
 }
 
-/* ↓ テーブル ↓ */
-.command_table {
-  overflow: auto;
-  overflow-y: hidden;
-  width: 750px;
-  border-spacing: 0;
-  margin: 0 auto;
-}
-.command_table th{
-  border-bottom: solid 2px #fb5144;
-  padding: 10px 0;
-  font-size: 15px;
-}
-.command_table td{
-  border-bottom: solid 2px #ddd;
-  text-align: center;
-  padding: 10px 0;
-  font-size: 15px;
-}
-/* ↑ テーブル ↑ */
-
 /* ↓ ゲーム手順箇条書き ↓ */
 .process {
   list-style-type: decimal-leading-zero;
