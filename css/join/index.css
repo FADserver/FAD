@@ -47,7 +47,7 @@
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-@media all and (min-width: 768px) {
+@media all and (min-width: 835px) {
   .join_ol li {
     margin: 7px 0 7px 0;
   }
