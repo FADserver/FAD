@@ -237,6 +237,14 @@
   color: #333333;
 }
 
+.youtube-archive {
+  transition: 0.3s ease;
+}
+.youtube-archive:hover {
+  opacity: 0.7;
+  transition: 0.3s ease;
+}
+
 .message-wrapper {
   padding:0 15px 80px 15px;
   text-align: center;

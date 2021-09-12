@@ -50,7 +50,7 @@
 /* ↑ 番号 ↑ */
 
 
-.normal_margin img {
+.normal_margin img, .normal_margin source {
   width: 100%;
   display: block;
   margin: auto;
