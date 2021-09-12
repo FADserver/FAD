@@ -99,6 +99,7 @@
 /* ↓ newsプレリリース ↓ */
 .cp_box {
 	position: relative;
+  display: block;
 }
 #gradation {
 	position: absolute;
@@ -147,9 +148,6 @@
 }
 .clear-1 {
   margin-bottom: 150px;
-}
-.clear-2 {
-  margin-bottom: 600px;
 }
 
 .news-tytle {
