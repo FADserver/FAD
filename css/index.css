@@ -149,9 +149,6 @@
 .clear-1 {
   margin-bottom: 150px;
 }
-.clear-2 {
-  height: 740px;
-}
 
 .news-tytle {
   margin: 0 auto;
@@ -177,10 +174,6 @@
     width: 50%;
     margin-bottom: 50px;
   }
-
-  .fad-mode {
-    height: 590px;
-  }
 }
 
 @media all and (max-width: 750px) {
@@ -190,12 +183,6 @@
 
   .heading h2 {
     font-size: 20px;
-  }
-}
-
-@media all and (max-width: 768px) {
-  .fad-mode {
-    height: 950px;
   }
 }
 
@@ -212,10 +199,6 @@
     width: 100%;
   }
 
-  .twitter {
-    margin-top: 10px;
-  }
-
   .top-wrapper {
     text-align: left;
   }
@@ -230,10 +213,6 @@
 
   .mode {
     width: 100%;
-  }
-
-  .fad-mode {
-    height: 1300px;
   }
 
   .message-wrapper .btn {
