@@ -9,9 +9,10 @@ p {
   color: #333333;
   overflow-wrap: break-word;
 }
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
 body {
   margin: 0;
-  font-family: "Hiragino Kaku Gothic ProN";
+  font-family: 'Noto Sans JP', sans-serif;
 }
 a {
   text-decoration: none;
