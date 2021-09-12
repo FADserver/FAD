@@ -89,7 +89,7 @@
 }
 
 .clear {
-  clear: left;
+  clear: both;
 }
 
 .news-frame {
