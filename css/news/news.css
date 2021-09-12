@@ -23,7 +23,7 @@
   text-decoration: none;
   color: #333333;
   border-bottom: 1px solid #CCC;
-  padding: 20px 20px;
+  padding: 20px 10px;
 }
 .item:first-child {
   border-top: 1px solid #CCC;
@@ -113,7 +113,7 @@
   /*タブ切り替えの中身のスタイル*/
   .tab_content {
     display: none;
-    padding: 20px 20px 0;
+    padding: 20px 10px 0 10px;
     clear: both;
     overflow: hidden;
   }
