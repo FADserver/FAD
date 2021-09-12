@@ -34,6 +34,7 @@
 }
 
 .fad-mode {
+  height: 580px;
   padding-bottom: 80px;
   padding-left: 5%;
   padding-right: 5%;
@@ -173,6 +174,10 @@
     width: 50%;
     margin-bottom: 50px;
   }
+
+  .fad-mode {
+    height: 590px;
+  }
 }
 
 @media all and (max-width: 750px) {
@@ -182,6 +187,12 @@
 
   .heading h2 {
     font-size: 20px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .fad-mode {
+    height: 950px;
   }
 }
 
@@ -198,6 +209,10 @@
     width: 100%;
   }
 
+  .twitter {
+    margin-top: 10px;
+  }
+
   .top-wrapper {
     text-align: left;
   }
@@ -212,6 +227,10 @@
 
   .mode {
     width: 100%;
+  }
+
+  .fad-mode {
+    height: 1300px;
   }
 
   .message-wrapper .btn {
