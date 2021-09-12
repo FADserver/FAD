@@ -124,6 +124,7 @@
 	color: #ffffff;
 	border-radius: 20px;
 	background-color: #060940;
+  text-align: center;
 }
 .cp::after {
   font-family: "Font AweSome 5 Free";
