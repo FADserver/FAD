@@ -222,5 +222,5 @@ a.anchor{
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   content: "\f0da";
-  
+  margin: 0 5px;
 }
