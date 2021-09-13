@@ -10,7 +10,7 @@
   width: 100%;
   margin: 10px 0 10px 0;
 }
-ul li {
+.normal_margin ul li {
   color: #333333;
   line-height: 2;
 }
