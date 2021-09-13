@@ -213,3 +213,13 @@ a.anchor{
   opacity: 1;
 }
 /* ↑ ボタン ↑ */
+
+.arrow::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  content: "\f0da";
+}
