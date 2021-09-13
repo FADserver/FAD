@@ -40,6 +40,11 @@
   width: 100%;
 }
 
+.img-JMS {
+  min-width: 100%;
+  max-width: 100%;
+}
+
 .info-icon::before, .update-icon::before, .open-icon::before, .ip-address-icon::before {
   color: white;
   font-family: "Font Awesome 5 Free";
