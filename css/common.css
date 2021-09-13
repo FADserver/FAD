@@ -156,14 +156,14 @@ a {
   color: #333333;
 }
 
-.acbox div{
+.acbox-under{
   height: 0px;
   overflow: hidden;
   opacity: 0;
   transition: 0.15s; /* 開閉スピードの設定 */
 }
 
-.acbox input:checked ~ div{
+.acbox input:checked ~ .acbox-under{
   height: auto;
   padding: 18px; /* 開いた部分の枠内の余白 */
   border-radius: 0px;
