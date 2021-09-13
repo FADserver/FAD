@@ -101,6 +101,7 @@
   text-align: center;
   margin: 10px 0 0 0 !important;
   padding: 0 !important;
+  fonr-size: 35px !important;
 }
 .rules {
   font-size: 11px !important;
@@ -299,10 +300,6 @@
   .twitter {
     display: none;
   }
-
-  .ip-address_p {
-    font-size: 28px !important;
-  }
 }
 /* ↑ 768px未満用 ↑ */
 /* ↓ 768px 834px用 ↓ */
@@ -339,10 +336,6 @@
   #child3 {
     display: none;
   }
-
-  .ip-address_p {
-    font-size: 35px !important;
-  }
 }
 @media all and (width: 834px){
   .container {
@@ -377,10 +370,6 @@
   #child3 {
     display: none;
   }
-
-  .ip-address_p {
-    font-size: 35px !important;
-  }
 }
 /* ↑ 768px 834px用 ↑ */
 /* ↓ 834px以上用 ↓ */
@@ -414,16 +403,12 @@
   #child3 {
     display: none;
   }
-
-  .ip-address_p {
-    font-size: 35px !important;
-  }
 }
 /* ↑ 768px以上用 ↑ */
 
 /* ↓ お知らせバナー ↓ */
 #news-bar {
-  display: block;
+  display: none;
 }
 .news-banner-margin {
   position: relative;
@@ -454,8 +439,8 @@
 
 .news-banner_p::before {
   color: white;
-  font-family: "Font Awesome 5 Brands";
-  font-weight: 400;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
@@ -463,14 +448,6 @@
   font-size: 15px;
   margin-right: 10px;
   margin-left: 7px;
-}
-
-/* Opera対応連絡 */
-.news-banner-margin {
-  background-color: #FF1B2D;
-}
-.news-banner_p::before {
-  content: "\f26a";
 }
 
 /* 緊急連絡 */
