@@ -317,9 +317,6 @@
     min-height: 126px;
     margin: 0 auto;
   }
-  .youtube {
-    font-size: 22px;
-  }
   #parent {
     display: flex;
   }
@@ -350,9 +347,6 @@
     max-height: 126px;
     min-height: 126px;
     margin: 0 auto;
-  }
-  .youtube {
-    font-size: 22px;
   }
   #parent {
     display: flex;
