@@ -43,6 +43,7 @@
   margin-top: 3px;
   width: 100%;
   max-width: 50px;
+  min-width:50px;
 }
 
 @media all and (min-width: 834px) {
