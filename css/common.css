@@ -78,7 +78,7 @@ a {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   font-size: 10px;
-  padding: 0 5px;
+  padding: 0 3px;
 }
 .a_blank:hover, .a_blank:hover::after, .a:hover {
   color:#8C8C8C;
