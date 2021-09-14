@@ -54,3 +54,23 @@
   margin-left: 24px;
 }
 /* ↑ 余白 ↑ */
+
+.role {
+  position: relative;/*相対位置*/
+  padding: 0.5em 0.5em 0.5em 1.5em;/*アイコン分のスペース*/
+  line-height: 1.4;/*行高*/
+  color: #333333;/*文字色*/
+  border-top: dotted 1px gray;
+  border-bottom: dotted 1px gray;
+  background: #f4f4f4;
+}
+.role:before {
+  font-family: "Font Awesome 5 Free";/*忘れずに*/
+  content: "\f138";/*アイコンのユニコード*/
+  font-weight: 900;
+  position: absolute;/*絶対位置*/
+  font-size: 1em;/*サイズ*/
+  left: 0.25em;/*アイコンの位置*/
+  top: 0.5em;/*アイコンの位置*/
+  color: #333333; /*アイコン色*/
+}
