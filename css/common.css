@@ -912,10 +912,6 @@ footer a:hover {
   color: #8C8C8C;
 }
 
-.footer-p {
-  color: #8C8C8C;
-}
-
 .footer_logo {
   color: #8C8C8C;
   font-size: 12px;
@@ -927,7 +923,7 @@ footer a:hover {
   width: 125px;
 }
 
-.footer-1::before {
+.footer-1 {
   font-size: 13px !important;
   line-height: 1 !important;
 }
