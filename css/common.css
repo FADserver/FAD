@@ -344,15 +344,13 @@ h1:before {
   opacity: 0.6;
   z-index: 5;
 }
-.page_top a {
-  transition: 0.3s;
-}
 .page_top a{
   position: relative;
   display: block;
   width: 90px;
   height: 90px;
   text-decoration: none;
+  transition: 0.3s;
 }
 .page_top a::before{
   font-family: 'Font Awesome 5 Free';
