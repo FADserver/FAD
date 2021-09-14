@@ -887,7 +887,7 @@ input {
 .sns_icon[href*="twitter.com"]:hover::before        { background-color: #55acee; }
 .sns_icon[href*="youtube.com"]:hover::before        { background-color: #cd201f; }
 .sns_icon[href*="/lin.ee"]:hover::before            { background-color: #00C300; }
-.contact:hover::before                                    { background-color: #1d1c1c; }
+.contact:hover::before                              { background-color: #1d1c1c; }
 
 .sns_p {
   color: #333333;
@@ -929,9 +929,8 @@ footer a:hover {
 
 .footer-1::before {
   white-space:pre-wrap;
-  font-size: 10px;
+  font-size: 13px;
   line-height: 1;
-  content: "■ このホームページに掲載されている一切の文書・図版・写真等を、手段や形態を問わず複製、転載することを禁じます。\A■ このホームページにある要素を直リンクしないでください。\A© 2019-2021 Full Automatic Dungeon-server. All Right Reserved.";
 }
 
 footer {
