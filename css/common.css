@@ -924,8 +924,9 @@ footer a:hover {
 }
 
 .footer-1 {
-  font-size: 13px !important;
-  line-height: 1 !important;
+  font-size: 13px;
+  line-height: 2;
+  color: #8C8C8C;
 }
 
 footer {
