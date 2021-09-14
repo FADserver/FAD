@@ -10,10 +10,6 @@
   width: 100%;
   margin: 10px 0 10px 0;
 }
-.normal_margin ul li {
-  color: #333333;
-  line-height: 2;
-}
 
 @media all and (min-width: 768px) {
   .section {

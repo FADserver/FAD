@@ -115,17 +115,16 @@ a.anchor{
   position: absolute;
   font-family: "Font Awesome 5 Free",'Quicksand','Avenir','Arial',sans-serif;
   font-weight: 900;
-  content: '　\f0a7\ POINT　';
+  content: "\f0a7\ POINT";
   background: #80c8d1;
   color: #fff;
   left: 0px;
   bottom: 100%;
   border-radius: 5px 5px 0 0;
-  padding: 5px 7px 3px;
-  font-size: 0.7em;
+  padding: 5px 20px;
   line-height: 1;
   letter-spacing: 0.05em;
-  font-size: 15px;;
+  font-size: 15px;
 }
 
 .join_content p {
@@ -190,9 +189,10 @@ a.anchor{
 }
 
 .join_message::after {
-  content: "　\f56d";
+  content: "\f56d";
   color: #ffffff;
   font-size: 20px;
+  padding-left: 10px;
 }
 
 .join_message:active {
@@ -222,5 +222,5 @@ a.anchor{
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   content: "\f0da";
-  margin: 0 5px;
+  padding: 0 5px;
 }

@@ -1,159 +1,50 @@
 .mode_img2 {
   width: 500px;
-  border: 2px solid #8C8C8C;
+  border: 1px solid #8C8C8C;
 }
 @media all and (max-width: 768px) and (max-width: 1024px) {
   .mode_img2 {
     width: 390px;
-    border: 2px solid #8C8C8C;
+    border: 1px solid #8C8C8C;
   }
 }
 @media all and (max-width: 670px) {
   .mode_img2 {
     width: 290px;
-    border: 2px solid #8C8C8C;
+    border: 1px solid #8C8C8C;
   }
 }
 @media all and (max-width: 414px) {
   .mode_img2 {
     width: 340px;
-    border: 2px solid #8C8C8C;
+    border: 1px solid #8C8C8C;
   }
 }
 @media all and (max-width: 375px) {
   .mode_img2 {
     width: 290px;
-    border: 2px solid #8C8C8C;
+    border: 1px solid #8C8C8C;
   }
 }
 @media all and (max-width: 320px) {
   .mode_img2 {
     width: 240px;
-    border: 2px solid #8C8C8C;
+    border: 1px solid #8C8C8C;
   }
 }
 @media all and (max-width: 280px) {
   .mode_img2 {
     width: 190px;
-    border: 2px solid #8C8C8C;
+    border: 1px solid #8C8C8C;
   }
 }
 
 .icon {
-  width: 30px !important;;
+  width: 30px !important;
   display: inline !important;
   margin-right: 5px;
   margin-left: 5px;
   vertical-align: middle;
-}
-
-
-/* ↓ 目次 ↓ */
-.mode_content p {
-  font-size: 20px !important;
-  line-height: 2 !important;
-  color: #333333;
-}
-
-.mode_content {
-  counter-reset:number; /*数字をリセット*/
-  list-style-type: none!important; /*数字を一旦消す*/
-  padding:0.5em;
-  background: #f5f8ff;
-}
-.mode_content li {
-  position: relative;
-  padding-left: 30px;
-  line-height: 1.5em;
-  padding: 0.5em 0.5em 0.5em 30px;
-}
-
-.mode_content li:before{
-  /* 以下数字をつける */
-  position: absolute;
-  counter-increment: number;
-  content: counter(number);
-  /*以下数字のデザイン変える*/
-  display:inline-block;
-  background: #3D4073;
-  color: white;
-  font-family: 'Avenir','Arial Black','Arial',sans-serif;
-  font-weight:bold;
-  font-size: 15px;
-  border-radius: 50%;
-  left: 0;
-  width: 25px;
-  height: 25px;
-  line-height: 25px;
-  text-align: center;
-  /*以下 上下中央寄せのため*/
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-a.anchor{
-  display: block;
-  padding-top: 70px;
-  margin-top: -70px;
-}
-
-.role {
-  position: relative;/*相対位置*/
-  padding: 0.5em 0.5em 0.5em 1.5em;/*アイコン分のスペース*/
-  line-height: 1.4;/*行高*/
-  color: #333333;/*文字色*/
-  border-top: dotted 1px gray;
-  border-bottom: dotted 1px gray;
-  background: #f4f4f4;
-}
-.role:before {
-  font-family: "Font Awesome 5 Free";/*忘れずに*/
-  content: "\f138";/*アイコンのユニコード*/
-  font-weight: 900;
-  position: absolute;/*絶対位置*/
-  font-size: 1em;/*サイズ*/
-  left: 0.25em;/*アイコンの位置*/
-  top: 0.5em;/*アイコンの位置*/
-  color: #333333; /*アイコン色*/
-}
-/* ↑ 目次 ↑ */
-
-/* ↓ ポイント ↓ */
-.point_tytle {
-  position: relative;
-  border-top: solid 2px #80c8d1;
-  border-bottom: solid 2px #80c8d1;
-  background: #f4f4f4;
-  line-height: 1.4;
-  padding: 0.4em 0.5em;
-  margin: 2em 0 3em;
-  font-size: 15px;
-}
-
-.point_tytle:after {
-  /*タブ*/
-  position: absolute;
-  font-family: "Font Awesome 5 Free",'Quicksand','Avenir','Arial',sans-serif;
-  font-weight: 900;
-  content: '　\f0a7\ POINT　';
-  background: #80c8d1;
-  color: #fff;
-  left: 0px;
-  bottom: 100%;
-  border-radius: 5px 5px 0 0;
-  padding: 5px 7px 3px;
-  font-size: 0.7em;
-  line-height: 1;
-  letter-spacing: 0.05em;
-  font-size: 15px;;
-}
-/* ↑ ポイント ↑ */
-
-.mode a {
-  color: #333333;
-}
-.mode a:hover {
-  color: #8C8C8C;
 }
 
 /* ↓ ゲーム手順箇条書き ↓ */
@@ -185,9 +76,10 @@ a.anchor{
 }
 
 .mode_message::after {
-  content: "　\f56d";
+  content: "\f56d";
   color: #ffffff;
   font-size: 20px;
+  padding-left: 10px;
 }
 
 .mode_message:active {

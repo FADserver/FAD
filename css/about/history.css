@@ -1,211 +1,211 @@
 .cp_timeline01 {
-	position: relative;
-	width: 100%;
-	margin: 3em auto;
-	padding: 1em 0;
-	list-style-type: none;
+  position: relative;
+  width: 100%;
+  margin: 3em auto;
+  padding: 1em 0;
+  list-style-type: none;
 }
 .cp_timeline01:before {
-	position: absolute;
-	left: 50%;
-	top: 0;
-	content: '';
-	display: block;
-	width: 6px;
-	height: 100%;
-	margin-left: -3px;
-	background: rgba(128,222,234 ,1);
-	z-index: 5;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  content: '';
+  display: block;
+  width: 6px;
+  height: 100%;
+  margin-left: -3px;
+  background: rgba(128,222,234 ,1);
+  z-index: 5;
 }
 .cp_timeline01 li {
-	padding: 1em 0;
+  padding: 1em 0;
 }
 .cp_timeline01 li:after {
-	content: '';
-	display: block;
-	height: 0;
-	clear: both;
-	visibility: hidden;
+  content: '';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
 }
 .cp_timeline01 li:nth-child(odd) .timeline_item {
-	position: relative;
-	width: calc(50% - 29px);
-	float: left;
-	text-align: right;
+  position: relative;
+  width: calc(50% - 29px);
+  float: left;
+  text-align: right;
 }
 .cp_timeline01 li:nth-child(even) .timeline_item {
-	position: relative;
-	width: calc(50% - 29px);
-	float: right;
+  position: relative;
+  width: calc(50% - 29px);
+  float: right;
 }
 .cp_timeline01 li .timeline_item .flag_cont {
-	position: relative;
-	display: inline-block;
-	text-align: center;
+  position: relative;
+  display: inline-block;
+  text-align: center;
 }
 .cp_timeline01 li .timeline_item .flag {
-	position: relative;
-	display: inline;
-	background: #060940;
-	color: #ffffff;
-	padding: 6px 10px;
-	border-radius: 5px;
-	font-weight: bold;
-	text-align: left;
+  position: relative;
+  display: inline;
+  background: #060940;
+  color: #ffffff;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: left;
 }
 .cp_timeline01 li:nth-child(odd) .timeline_item .flag {
-	-webkit-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
-	        box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+  -webkit-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+          box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
 }
 .cp_timeline01 li:nth-child(even) .timeline_item .flag {
-	-webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
-	        box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+  -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+          box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
 }
 .cp_timeline01 li:nth-child(odd) .timeline_item .flag_cont:before,
 .cp_timeline01 li:nth-child(even) .timeline_item .flag_cont:before {
-	position: absolute;
-	top: 10px;
-	right: -41px;
-	content: ' ';
-	display: block;
-	width: 12px;
-	height: 12px;
-	margin-top: -10px;
-	background: rgba(0,188,212 ,1);
-	border-radius: 12px;
-	border: 6px solid #060940;
-	z-index: 10;
+  position: absolute;
+  top: 10px;
+  right: -41px;
+  content: ' ';
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin-top: -10px;
+  background: rgba(0,188,212 ,1);
+  border-radius: 12px;
+  border: 6px solid #060940;
+  z-index: 10;
 }
 .cp_timeline01 li:nth-child(even) .timeline_item .flag_cont:before {
-	left: -41px;
+  left: -41px;
 }
 .cp_timeline01 li:nth-child(odd) .timeline_item .flag_cont:after,
 .cp_timeline01 li:nth-child(even) .timeline_item .flag_cont:after {
-	position: absolute;
-	top: 12px;
-	right: -39px;
-	content: ' ';
-	display: block;
-	width: 16px;
-	height: 16px;
-	margin-top: -10px;
-	border-radius: 10px;
-	border: 2px solid rgba(255,255,255 ,1);
-	z-index: 10;
+  position: absolute;
+  top: 12px;
+  right: -39px;
+  content: ' ';
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin-top: -10px;
+  border-radius: 10px;
+  border: 2px solid rgba(255,255,255 ,1);
+  z-index: 10;
 }
 .cp_timeline01 li:nth-child(even) .timeline_item .flag_cont:after {
-	left: -39px;
+  left: -39px;
 }
 .cp_timeline01 li:nth-child(odd) .timeline_item .flag:after {
-	content: '';
-	position: absolute;
-	left: 100%;
-	top: 50%;
-	height: 0;
-	width: 0;
-	margin-top: -6px;
-	border: solid transparent;
-	border-left-color: #060940;
-	border-width: 6px;
+  content: '';
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  height: 0;
+  width: 0;
+  margin-top: -6px;
+  border: solid transparent;
+  border-left-color: #060940;
+  border-width: 6px;
 }
 .cp_timeline01 li:nth-child(even) .timeline_item .flag:after {
-	content: '';
-	position: absolute;
-	right: 100%;
-	top: 50%;
-	height: 0;
-	width: 0;
-	margin-top: -6px;
-	border: solid transparent;
-	border-right-color: #060940;
-	border-width: 6px;
+  content: '';
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  height: 0;
+  width: 0;
+  margin-top: -6px;
+  border: solid transparent;
+  border-right-color: #060940;
+  border-width: 6px;
 }
 .cp_timeline01 li .timeline_item .time {
-	display: block;
-	margin-top: 1em;
-	padding: 4px 6px;
-	font-size: 0.8em;
-	line-height: 2;
-	color: rgba(255,87,34 ,1);
-	text-align: right;
+  display: block;
+  margin-top: 1em;
+  padding: 4px 6px;
+  font-size: 0.8em;
+  line-height: 2;
+  color: rgba(255,87,34 ,1);
+  text-align: right;
 }
 .cp_timeline01 li:nth-child(even) .timeline_item .time {
-	text-align: left;
+  text-align: left;
 }
 .cp_timeline01 li .timeline_item .desc {
-	margin: 1em 0.75em 0 0;
-	font-size: 15px;
-	line-height: 2;
-	margin: 1em 1em 0 1em;
-	padding: 1em;
-	background: rgba(178,235,242 ,0.7);
-	border-radius: 6px;
+  margin: 1em 0.75em 0 0;
+  font-size: 15px;
+  line-height: 2;
+  margin: 1em 1em 0 1em;
+  padding: 1em;
+  background: rgba(178,235,242 ,0.7);
+  border-radius: 6px;
 }
 .desc {
   text-align: left;
 }
 @media only screen and (max-width:768px) {
-	.cp_timeline01 {
-		width: 100%;
-		padding: 4em 0 1em 0;
-	}
-	.cp_timeline01 li {
-		padding: 2em 0;
-	}
-	.cp_timeline01 li:nth-child(odd) .timeline_item,
-	.cp_timeline01 li:nth-child(even) .timeline_item {
-		float: none;
-		width: 100%;
-		text-align: center;
-	}
-	.cp_timeline01 li .timeline_item .flag_cont {
-		text-align: center;
-	}
-	.cp_timeline01 li .timeline_item .flag {
-		z-index: 15;
-	}
-	.cp_timeline01 li:nth-child(odd) .timeline_item .flag_cont:before,
-	.cp_timeline01 li:nth-child(even) .timeline_item .flag_cont:before {
-		top: -30px;
-		right: calc(50% - 12px);
-		left: calc(50% - 12px);
-	}
-	.cp_timeline01 li:nth-child(odd) .timeline_item .flag_cont:after,
-	.cp_timeline01 li:nth-child(even) .timeline_item .flag_cont:after {
-		top: -28px;
-		right: calc(50% - 10px);
-		left: calc(50% - 10px);
-	}
-	.cp_timeline01 li:nth-child(odd) .timeline_item .flag:after,
-	.cp_timeline01 li:nth-child(even) .timeline_item .flag:after {
-		content: '';
-		position: absolute;
-		left: 50%;
-		top: -6px;
-		height: 0;
-		width: 0;
-		margin-left: -6px;
-		border: solid transparent;
-		border-bottom-color: #060940;
-		border-width: 6px;
-		pointer-events: none;
-	}
-	.cp_timeline01 li .flag_cont {
-		display: block;
-		position: relative;
-		margin: 4px 0 0 0;
-		z-index: 14;
-	}
-	.cp_timeline01 li:nth-child(odd) .timeline_item .time,
-	.cp_timeline01 li:nth-child(even) .timeline_item .time {
-		float: none;
-		text-align: center;
-		background: #ffffff;
-	}
-	.cp_timeline01 li .timeline_item .desc {
-		position: relative;
-		z-index: 15;
-	}
+  .cp_timeline01 {
+    width: 100%;
+    padding: 4em 0 1em 0;
+  }
+  .cp_timeline01 li {
+    padding: 2em 0;
+  }
+  .cp_timeline01 li:nth-child(odd) .timeline_item,
+  .cp_timeline01 li:nth-child(even) .timeline_item {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .cp_timeline01 li .timeline_item .flag_cont {
+    text-align: center;
+  }
+  .cp_timeline01 li .timeline_item .flag {
+    z-index: 15;
+  }
+  .cp_timeline01 li:nth-child(odd) .timeline_item .flag_cont:before,
+  .cp_timeline01 li:nth-child(even) .timeline_item .flag_cont:before {
+    top: -30px;
+    right: calc(50% - 12px);
+    left: calc(50% - 12px);
+  }
+  .cp_timeline01 li:nth-child(odd) .timeline_item .flag_cont:after,
+  .cp_timeline01 li:nth-child(even) .timeline_item .flag_cont:after {
+    top: -28px;
+    right: calc(50% - 10px);
+    left: calc(50% - 10px);
+  }
+  .cp_timeline01 li:nth-child(odd) .timeline_item .flag:after,
+  .cp_timeline01 li:nth-child(even) .timeline_item .flag:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: -6px;
+    height: 0;
+    width: 0;
+    margin-left: -6px;
+    border: solid transparent;
+    border-bottom-color: #060940;
+    border-width: 6px;
+    pointer-events: none;
+  }
+  .cp_timeline01 li .flag_cont {
+    display: block;
+    position: relative;
+    margin: 4px 0 0 0;
+    z-index: 14;
+  }
+  .cp_timeline01 li:nth-child(odd) .timeline_item .time,
+  .cp_timeline01 li:nth-child(even) .timeline_item .time {
+    float: none;
+    text-align: center;
+    background: #ffffff;
+  }
+  .cp_timeline01 li .timeline_item .desc {
+    position: relative;
+    z-index: 15;
+  }
   .desc {
     text-align: left;
   }

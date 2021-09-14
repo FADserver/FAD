@@ -70,7 +70,7 @@
 }
 
 .btn-social-flat-text::after {
-  content: "　\f35d";
+  content: "\f35d";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   display: inline-block;
@@ -80,5 +80,6 @@
   -webkit-font-smoothing: antialiased;
   display: inline;
   font-size: 10px;
+  padding-left: 10px;
 }
 /* SNSラベル */

@@ -10,12 +10,6 @@
 }
 
 /* Q&Aスタイル */
-.QaA p {
-  line-height: 2;
-  color: #333333;
-  margin: 0;
-}
-
 .faq__dt {
   position: relative;
   padding-left: 24px;
@@ -294,14 +288,11 @@
   white-space: nowrap;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  font-size: 15px;
-  color: #333333;
 }
 .version_table th{
   min-width: 240px;
   border-bottom: solid 2px #c80021;
   padding: 10px 0;
-  font-size: 15px;
   text-align: left;
 }
 .version_table th:first-child {
@@ -310,7 +301,6 @@
 .version_table td{
   border-bottom: solid 2px #ddd;
   padding: 10px 0;
-  font-size: 15px;
   text-align: left;
 }
 .none {

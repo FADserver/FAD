@@ -5,8 +5,6 @@
   white-space: nowrap;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  font-size: 15px;
-  color: #333333;
 }
 
 .browser th,.browser td{
