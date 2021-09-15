@@ -43,7 +43,6 @@
 .img-JMS {
   min-width: 100%;
   max-width: 100%;
-  transition: 0.3s ease;
 }
 
 .info-icon::before, .update-icon::before, .open-icon::before, .ip-address-icon::before {
@@ -214,7 +213,7 @@
 .youtube-archive {
   transition: 0.3s ease;
 }
-.youtube-archive:hover, .img-JMS:hover {
+.youtube-archive:hover {
   background-color: rgba(255, 255, 255, 0.2);
   transition: 0.3s ease;
 }
