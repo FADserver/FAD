@@ -485,7 +485,7 @@ h1:before {
   height: 100%;
   position: fixed;
   top: 0;
-  padding-bottom: 70px;
+  padding-bottom: 80px;
   /* メニュー自体を画面外へ */
   left: 100%;
   z-index: 70;
@@ -728,9 +728,8 @@ input {
   position: fixed;
   width: 87%;
   text-align: center;
-  height: 70px;
+  height: 80px;
   bottom: 0;
-  padding-bottom: 30px;
   /* メニュー自体を画面外へ */
   left: 100%;
   z-index: 100;
@@ -742,12 +741,14 @@ input {
   left: 13%;/*メニューを画面内へ*/
 }
 .hamburger-follow-me {
+  padding: 0;
+  margin: 0;
+}
+.hamburger-follow-me li {
   list-style: none;
   overflow: hidden;
   margin: 0;
   padding: 0;
-}
-.hamburger-follow-me li {
   display: inline;
 }
 .hamburger-follow-me li a::before {
@@ -760,15 +761,14 @@ input {
   -webkit-font-smoothing: antialiased;
   font-size: 23px;
   transition: all 0.3s;
-}
-.hamburger-follow-me-margin {
   margin: 0;
-  margin-right: 10px;
-}
-.follow-me_margin {
   padding: 0;
+}
+.hamburger-follow-me li {
+  margin-right: 30px;
+}
+.hamburger-follow-me li:last-child {
   margin: 0;
-  padding: 9px 15px 10px 0;
 }
 
 .hamburger-follow-me li a[href*="facebook.com"]::before             { content: "\f09a"; }
@@ -798,7 +798,7 @@ input {
 .hamburger-sns_p::before {
   content: "＼ follow me! ／";
   color: #333333;
-  font-size: 15px;
+  font-size: 18px;
 }
 /* SNS */
 /* ここまで */
