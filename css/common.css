@@ -963,6 +963,7 @@ footer {
   display: block;
   padding: 0 20px;
   text-align: center;
+  color: #333333;
 }
 .nav a:hover {
   color: #8C8C8C;
