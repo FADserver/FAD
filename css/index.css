@@ -99,33 +99,23 @@
 
 /* ↓ newsプレリリース ↓ */
 .cp_box {
-	position: relative;
+  position: relative;
   display: block;
 }
-#gradation {
-	position: absolute;
-	z-index: 1;
-	bottom: 0;
-	width: 100%;
-	height: 250px; /* グラデーションの高さ */
-	text-align: center;
-	/* 以下グラデーションは背景を自身のサイトに合わせて設定してください */
-	background: linear-gradient(to bottom, rgba(250, 252, 252, 0) 0%, rgba(250, 252, 252, 0.95) 90%);
-}
 .cp {
-	line-height: 2.5rem;
-	position: absolute;
-	z-index: 2;
-	bottom: 20px;
-	left: 50%;
-	width: 16rem;
-	transform: translate(-50%, 0);
-	letter-spacing: 0.05em;
-	color: #ffffff;
-	border-radius: 20px;
-	background-color: #060940;
+  line-height: 2.5rem;
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  width: 16rem;
+  transform: translate(-50%, 0);
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  border-radius: 20px;
+  background-color: #060940;
   text-align: center;
   transition: 0.5s ease;
+  margin-top: 10px;
 }
 .cp::after {
   font-family: "Font AweSome 5 Free";
@@ -134,16 +124,12 @@
   font-variant: normal;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
-	content: "\f054";
+  content: "\f054";
   margin-left: 10px;
 }
 .cp:hover {
   opacity: 0.7;
   transition: 0.2s ease;
-}
-.cp_box .cp_container {
-	overflow: hidden;
-	height: 600px; /* 開く前に見えている部分の高さ */
 }
 
 .news_a {
@@ -172,7 +158,12 @@
   display: block;
   color: #333333;
 }
-
+.news-list li {
+  display: none;
+}
+.news-list li:nth-child(1), .news-list li:nth-child(2), .news-list li:nth-child(3) {
+  display: block;
+}
 /* ↑ newsプレリリース ↑ */
 
 @media all and (max-width: 1000px) {
