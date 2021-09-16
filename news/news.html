@@ -16,9 +16,9 @@
   </script>
   <meta name="google-site-verification" content="tM6OhG06tjVq45exqgC2VTiGWzlAYUfrsjqhTrYrydQ" />
 
-  <title>FADサーバー | お知らせ</title>
+  <title>FADサーバー | 重要なお知らせ</title>
   <link rel="stylesheet" type="text/css" href="../css/common.css">
-  <link rel="stylesheet" type="text/css" href="../css/news/news.css">
+  <link rel="stylesheet" type="text/css" href="../css/news/index.css">
   <link rel="stylesheet" type="text/css" href="../css/frame.css">
   <link rel="icon" href="../icon/favicon.ico">
   <link rel="apple-touch-icon" sizes="57x57" href="../icon/apple-icon-57x57.png">
@@ -38,18 +38,12 @@
   <meta name="msapplication-TileImage" content="../icon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
-  <meta name="twitter:card" content="summary" />
-  <!--カードの種類-->
-  <meta name="twitter:site" content="@FADserver" />
-  <!--ユーザーネーム-->
-  <meta property="og:url" content="https://fadserver.github.io/FAD/news/news.html" />
-  <!--URL-->
-  <meta property="og:title" content="FADサーバー　お知らせ" />
-  <!--タイトル-->
-  <meta property="og:description" content="FADサーバー関係のお知らせです。" />
-  <!--要約-->
-  <meta property="og:image" content="https://fadserver.github.io/FAD/image/logo.png" />
-  <!--画像のURL-->
+  <meta name="twitter:card" content="summary" /> <!--カードの種類-->
+  <meta name="twitter:site" content="@FADserver" /> <!--ユーザーネーム-->
+  <meta property="og:url" content="https://fadserver.github.io/FAD/news/index.html" /> <!--URL-->
+  <meta property="og:title" content="FADサーバー　お知らせ" /> <!--タイトル-->
+  <meta property="og:description" content="FADサーバー関係の重要お知らせです。" /> <!--要約-->
+  <meta property="og:image" content="https://fadserver.github.io/FAD/image/logo.png" /> <!--画像のURL-->
 
   <script src="https://kit.fontawesome.com/eb72676e1c.js" crossorigin="anonymous"></script>
 
@@ -77,15 +71,15 @@
       </li>
       <!-- 2つめ -->
       <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-        <a itemprop="item" href="https://fadserver.github.io/FAD/news/news.html">
-            <span itemprop="name">お知らせ</span>
+        <a itemprop="item" href="https://fadserver.github.io/FAD/news/index.html">
+            <span itemprop="name">重要なお知らせ</span>
         </a>
         <meta itemprop="position" content="2" />
       </li>
     </ol>
   </div>
 
-  <div class="page_top"><a href="news.html#top"></a></div>
+  <div class="page_top"><a href="index.html#top"></a></div>
 
   <!--ヘッダーの内容があった場所-->
   <div id="header"></div>
@@ -101,38 +95,26 @@
     <div id="parent">
       <div id="child1">
 
-        <h1 id="top"><span>お知らせ</span></h1>
+        <h1 id="top"><span>重要なお知らせ</span></h1>
 
         <div id="update-day">
-          <p id="released">2021.9.11</p>
-          <p id="updated">2021.9.14</p>
+          <p id="released">2021.8.4</p><p id="updated">2021.9.5</p>
         </div>
 
         <div class="normal_margin">
+          <ul class="news-list">
+            <li><a class="a_nounder" href="pdf/No.000010.pdf" target="_blank">免責事項改正について（2021/9/5）<span class="size">909KB</span></a></li>
+            <li><a class="a_nounder" href="pdf/No.000009.pdf" target="_blank">免責事項改正について（2021/9/1）<span class="size">908KB</span></a></li>
+            <li><a class="a_nounder" href="pdf/No.000008.pdf" target="_blank">規約等の表記改善について（2021/8/25）<span class="size">1.14MB</span></a></li>
+            <li><a class="a_nounder" href="pdf/No.000007.pdf" target="_blank">免責事項改正について（2021/8/22）<span class="size">826KB</span></a></li>
+            <li><a class="a_nounder" href="pdf/No.000006.pdf" target="_blank">免責事項改正について（2021/8/19）<span class="size">835KB</span></a></li>
+            <li><a class="a_nounder" href="pdf/No.000005.pdf" target="_blank">FADサーバー利用規約について（2021/8/9）<span class="size">668KB</span></a></li>
+            <li><a class="a_nounder" href="pdf/No.000004.pdf" target="_blank">リソースパック利用約款改正について（2021/8/7）<span class="size">764KB</span></a></li>
+            <li><a class="a_nounder" href="pdf/No.000003.pdf" target="_blank">免責事項の制定について（2021/8/6）<span class="size">641KB</span></a></li>
+            <li><a class="a_nounder" href="pdf/No.000002.pdf" target="_blank">プライバシーポリシーの制定について（2021/8/4）<span class="size">725KB</span></a></li>
+            <li><a class="a_nounder" href="pdf/No.000001.pdf" target="_blank">公式サイトの移動について（2021/8/4）<span class="size">444KB</span></a></li>
+          </ul>
 
-          <div class="tabs">
-            <input id="y2021" type="radio" name="tab_item" checked>
-            <label class="tab_item" for="y2021">2021年</label>
-
-            <input id="y2022" type="radio" name="tab_item">
-            <label class="tab_item" for="y2022">2022年</label>
-
-            <div class="tab_content" id="y2021_content">
-
-              <div id="latest-news"></div>
-              <script>
-              $(document).ready(function(){
-                $("#latest-news").load("latest-news.html");
-              });
-              </script>
-
-            </div>
-
-            <div class="tab_content" id="y2022_content">
-              まだ来てないよ。
-            </div>
-
-          </div>
         </div>
       </div>
 
