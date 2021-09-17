@@ -48,7 +48,7 @@
   transition: .3s ease-in-out;
 }
 .img-JMS:hover {
-  opacity: .2;
+  opacity: 0.2;
 }
 
 .info-icon::before, .update-icon::before, .open-icon::before, .ip-address-icon::before {
