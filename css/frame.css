@@ -47,7 +47,7 @@
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease;
 }
-.img-JMS {
+.img-JMS:hover {
   opacity: 0.2;
   transition: 0.3s ease;
 }
