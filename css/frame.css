@@ -43,9 +43,6 @@
 .img-JMS {
   min-width: 100%;
   max-width: 100%;
-  opacity: 1;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease;
 }
 
 .info-icon::before, .update-icon::before, .open-icon::before, .ip-address-icon::before {
@@ -213,7 +210,9 @@
   color: #333333;
 }
 
-.youtube-archive {
+.youtube-archive, .img-JMS {
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease;
 }
 .youtube-archive:hover, .img-JMS:hover {
