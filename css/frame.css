@@ -43,6 +43,12 @@
 .img-JMS {
   min-width: 100%;
   max-width: 100%;
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease;
+}
+.img-JMS {
+  
 }
 
 .info-icon::before, .update-icon::before, .open-icon::before, .ip-address-icon::before {
@@ -210,13 +216,11 @@
   color: #333333;
 }
 
-.youtube-archive, .img-JMS {
-  opacity: 1;
-  -webkit-transition: 0.3s ease-in-out;
+.youtube-archive {
   transition: 0.3s ease;
 }
-.youtube-archive:hover, .img-JMS:hover {
-  opacity: 0.2;
+.youtube-archive:hover {
+  background-color: rgba(256, 256, 256, 0.2)
   transition: 0.3s ease;
 }
 
