@@ -9,6 +9,13 @@
   margin-left: 10%;
 }
 
+h3 {
+  border-left: 3px solid #060940;
+  border-bottom: 1px solid #8C8C8C;
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+
 /* SNSラベル */
 .btn-social-flat { 
   color: #484848;
@@ -32,7 +39,7 @@
 
 .btn-social-flat-text {
   display: inline-block;
-  width: 200px;
+  width: 230px;
   text-align: center;
 }
 .btn-social-flat-text-want {
