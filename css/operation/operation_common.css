@@ -63,6 +63,9 @@ h3 {
 .btn-social-flat-icon--want {
   background: #00448C;
 }
+.btn-social-flat-icon--discord {
+  background: #5865F2;
+}
 .btn-social-flat-icon--twitter::before {
   content: "\f099";
 }
@@ -74,6 +77,9 @@ h3 {
 }
 .btn-social-flat-icon--twitch::before {
   content: "\f1e8";
+}
+.btn-social-flat-icon--discord::before {
+  content: "\f392";
 }
 
 .btn-social-flat-text::after {
