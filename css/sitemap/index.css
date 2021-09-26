@@ -84,6 +84,13 @@
   background-size:contain;
   background-image: url("../../image/JapanMinecraftServer.png");
 }
+.sitemap__minecraft::before {
+  content: "　";
+  background: center;
+  background-repeat:  no-repeat;
+  background-size:contain;
+  background-image: url("../../image/minecraft.png");
+}
 
 @media all and (min-width: 768px) {
   .section {
