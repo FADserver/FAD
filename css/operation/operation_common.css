@@ -43,6 +43,9 @@ h3 {
   width: 230px;
   text-align: center;
 }
+.btn-social-flat-text:hover {
+  color: #8C8C8C;
+}
 .btn-social-flat-text-want {
   display: inline-block;
   width: 290px;
