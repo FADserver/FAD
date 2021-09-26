@@ -1,17 +1,10 @@
-.news-list {
+.news-list{
+  list-style: none outside;
+  margin: 0;
   padding: 0;
 }
-.news-list li,.news-list ol li {
-  border-left: solid 6px #1fa67a;/*左側の線*/
-  border-bottom: solid 2px #dadada;/*下に灰色線*/
-  background: whitesmoke;
-  margin-bottom: 25px;/*下のバーとの余白*/
-  padding: 0.5em;
-  list-style-type: none;/*ポチ消す*/
-  font-weight: bold;
-}
 
-.a_nounder::before {
+.a-2::before {
   content: " \f1c1";
   color: #EC1C24;
   font-family: "Font Awesome 5 Free";
@@ -20,10 +13,122 @@
   font-variant: normal;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
-  font-size: 25px;
-  padding-right: 10px;
+  font-size: 15px;
+  padding-right: 4px;
 }
 
-.size {
-  font-size: 11px;
+.item_div{
+  display: flex;
+  flex-wrap: nowrap;
+  text-decoration: none;
+  color: #333333;
+  border-bottom: 1px solid #CCC;
+  padding: 20px 10px;
+}
+.item:first-child {
+  border-top: 1px solid #CCC;
+}
+.news-list .item .date{
+  margin: 0;
+  min-width: 140px;
+  font-size: 15px;
+  color: #333333;
+  padding: 0 20px 0 0;
+}
+.news-list .item .category, .news-list .item .category-2{
+  margin: 0;
+  min-width: 140px;
+  padding: 0 20px 0 0;
+}
+.news-list .item .category span, .news-list .item .category-2 span{
+  width: 100px;
+  color: #FFF;
+  text-align: center;
+  display: inline-block;
+  padding: 5px 20px;
+  font-size: 12px;
+  line-height: 1;
+}
+.news-list .item .category span {
+  background: #999;
+}
+.news-list .item .category-2 span{
+  background: #980003;
+}
+.news-list .item .title{
+  margin: 0;
+  width: 100%;
+}
+.img-frame {
+  display: block;
+}
+
+@media screen and (max-width: 768px){
+  .item_div{
+    flex-wrap: wrap;
+  }
+  .news-list .item .date{
+    min-width: 100px;
+  }
+  .news-list .item .title{
+    margin-top: 10px;
+  }
+}
+
+/*タブ切り替え全体のスタイル*/
+.tabs {
+  margin-top: 50px;
+  padding-bottom: 40px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*タブのスタイル*/
+.tab_item {
+  /* ↓ これをcalac(100%/n) n年分 にする ↓ */
+  width: calc(100%/2);
+  height: 50px;
+  border-bottom: 3px solid #060940;
+  background-color: #d9d9d9;
+  line-height: 50px;
+  font-size: 15px;
+  text-align: center;
+  color: #565656;
+  display: block;
+  float: left;
+  text-align: center;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.tab_item:hover {
+  opacity: 0.75;
+}
+
+/*ラジオボタンを全て消す*/
+input[name="tab_item"] {
+  display: none;
+}
+
+/*タブ切り替えの中身のスタイル*/
+.tab_content {
+  display: none;
+  padding: 20px 10px 0 10px;
+  clear: both;
+  overflow: hidden;
+}
+
+/*選択されているタブのコンテンツのみを表示*/
+#y2021:checked ~ #y2021_content,
+#y2022:checked ~ #y2022_content,
+#y2023:checked ~ #y2023_content {
+  display: block;
+}
+
+/*選択されているタブのスタイルを変える*/
+.tabs input:checked + .tab_item {
+  background-color: #060940;
+  color: #fff;
 }
