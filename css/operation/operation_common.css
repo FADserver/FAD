@@ -27,6 +27,7 @@ h3 {
   background: #eaeef1;
   text-decoration: none;
   margin: 5px;
+  border-radius: 5px;
 }
 
 .btn-social-flat-icon {
@@ -36,6 +37,7 @@ h3 {
   text-align: center;
   color: white;
   font-size: 15px;
+  border-radius: 3px;
 }
 
 .btn-social-flat-text {
@@ -43,7 +45,7 @@ h3 {
   width: 230px;
   text-align: center;
 }
-.btn-social-flat-text:hover {
+.btn-social-flat:hover {
   color: #8C8C8C;
 }
 .btn-social-flat-text-want {

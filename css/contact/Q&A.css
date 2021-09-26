@@ -2,12 +2,6 @@
   margin-top: 100px;
   color: #333333;
 }
-.btn-social-flat-text {
-  color: #333333;
-}
-.btn-social-flat-text:hover {
-  color: #8C8C8C;
-}
 
 /* Q&Aスタイル */
 .faq__dt {
@@ -177,6 +171,7 @@
   background: #eaeef1;
   text-decoration: none;
   margin: 5px;
+  border-radius: 5px;
 }
 
 .btn-social-flat-icon, .btn-social-flat-icon2 {
@@ -185,6 +180,7 @@
   height: 25px;
   text-align: center;
   color: white;
+  border-radius: 5px;
 }
 .btn-social-flat-icon::before {
   display: inline-block;
@@ -195,6 +191,9 @@
   display: inline-block;
   width: 200px;
   text-align: center;
+}
+.btn-social-flat:hover {
+  color: #8C8C8C;
 }
 
 .btn-social-flat-icon--twitter {
