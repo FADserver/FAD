@@ -1,0 +1,16 @@
+.box {
+  border: 1px solid #8C8C8C;
+  padding: 10px;
+}
+.box p {
+  margin: 0;
+}
+.container ol {
+  counter-reset: section;
+  list-style-type: none;
+}
+.container li:before {
+  counter-increment: section;
+  content: counters(section, ".") ".";
+  padding-right: 5px;
+}

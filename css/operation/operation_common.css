@@ -102,3 +102,57 @@ h3 {
   padding-left: 10px;
 }
 /* SNSラベル */
+
+/* ↓ ライセンス ↓ */
+.license_div {
+  position: relative;
+  margin: 0 auto;
+  width: 200px;
+  height: 70px;
+}
+.license1, .license2, .license3, .license4 {
+  display: inline-block;
+  color: #333333;
+  font-size: 40px;
+}
+.license_div p {
+  margin: 0;
+  padding: 0;
+}
+.license_div p a {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.license1::before {
+  content: "\f25e";
+  margin-right: 10px;
+}
+.license2::before {
+  content: "\f4e7";
+  margin-right: 10px;
+}
+.license3::before {
+  content: "\f4ea";
+  margin-right: 10px;
+}
+.license4::before {
+  content: "\f4ef";
+}
+
+.license-list li:nth-child(1)::before {
+  content: "\f4e7";
+  margin-right: 10px;
+  font-size: 20px;
+}
+.license-list li:nth-child(2)::before {
+  content: "\f4ea";
+  margin-right: 10px;
+  font-size: 20px;
+}
+.license-list li:nth-child(3)::before {
+  content: "\f4ef";
+  margin-right: 10px;
+  font-size: 20px;
+}
+/* ↑ ライセンス ↑ */
