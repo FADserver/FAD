@@ -5,12 +5,3 @@
 .box p {
   margin: 0;
 }
-.container ol {
-  counter-reset: section;
-  list-style-type: none;
-}
-.container li:before {
-  counter-increment: section;
-  content: counters(section, ".") ".";
-  padding-right: 5px;
-}
