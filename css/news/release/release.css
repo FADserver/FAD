@@ -29,7 +29,7 @@ h1::before {
   display: none;
 }
 
-.normal_margin h2, .normal_margin h3, .normal_margin h4, .normal_margin h5, .normal_margin h6 {
+.h {
   border-left: 3px solid #060940;
   border-bottom: 1px solid #8C8C8C;
   padding-left: 10px;
