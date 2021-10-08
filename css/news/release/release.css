@@ -40,14 +40,14 @@ h2, h3, h4, h5, h6 {
 #pdf {
   text-align: right;
 }
-.btn {
+#pdf .btn {
   text-align: right;
   width: 150px;
   height: 35px;
   margin: 0;
   margin-top: 10px;
 }
-.btn, a.btn, button.btn {
+#pdf .btn, #pdf a.btn, #pdf button.btn {
   font-size: 18px;
   font-weight: 700;
   line-height: 1.5;
@@ -68,7 +68,7 @@ h2, h3, h4, h5, h6 {
   color: #212529;
   border-radius: 0.5rem;
 }
-a.btn-flat {
+#pdf a.btn-flat {
   overflow: hidden;
   padding: 3px;
   color: #fff;
@@ -76,14 +76,14 @@ a.btn-flat {
   background: #000;
 }
 
-a.btn-flat span {
+#pdf a.btn-flat span {
   position: absolute;
   width: 150px;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
 }
-a.btn-flat span::before {
+#pdf a.btn-flat span::before {
   content: "\f1c1";
   color: #FFFFFF;
   font-family: "Font Awesome 5 Free";
@@ -96,7 +96,7 @@ a.btn-flat span::before {
   padding-right: 10px;
 }
 
-a.btn-flat:before {
+#pdf a.btn-flat:before {
   position: absolute;
   top: 0;
   left: 0;
@@ -110,7 +110,7 @@ a.btn-flat:before {
   background: #EC1C24;
 }
 
-a.btn-flat:hover:before {
+#pdf a.btn-flat:hover:before {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
   -webkit-transform: translateX(0%);
