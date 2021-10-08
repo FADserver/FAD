@@ -35,6 +35,7 @@ h2, h3, h4, h5, h6 {
   padding-left: 10px;
   padding-bottom: 5px;
   color: #333333;
+  font-size: max(16px);
 }
 
 #pdf {
