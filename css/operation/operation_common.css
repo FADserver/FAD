@@ -72,6 +72,9 @@ h3 {
 .btn-social-flat-icon--discord {
   background: #5865F2;
 }
+.btn-social-flat-icon--amazon {
+  background: #FF9900;
+}
 .btn-social-flat-icon--twitter::before {
   content: "\f099";
 }
@@ -86,6 +89,9 @@ h3 {
 }
 .btn-social-flat-icon--discord::before {
   content: "\f392";
+}
+.btn-social-flat-icon--amazon::before {
+  content: "\f270";
 }
 
 .btn-social-flat-text::after {

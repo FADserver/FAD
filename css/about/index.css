@@ -15,6 +15,75 @@ table th {
   text-align: left;
 }
 
+.sns-icon::before {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  margin: 5px 0;
+  margin-right: 10px;
+  border-radius: 50%;
+  font-size: 15px;
+
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  color: #ffffff;
+}
+.sns-icon-2 {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  margin: 5px 0;
+  margin-right: 10px;
+  border-radius: 100%;
+  font-size: 15px;
+  background: #F1F1F1;
+}
+.about__twitter::before {
+  background:#1da1f3;
+}
+.about__line::before {
+  background:#00C300;
+}
+.about__wiki::before {
+  background: #61C6F6;
+}
+.about__twitter::before {
+  content: "\f099";
+}
+.about__line::before {
+  content: "\f3c0";
+}
+.about__wiki::before {
+  content: "★";
+  color: #FEFC56;
+}
+.about__jms::before {
+  content: "　";
+  background: center;
+  background-repeat:  no-repeat;
+  background-size:contain;
+  background-image: url("../../image/JapanMinecraftServer.png");
+}
+.about__fad::before {
+  content: "　";
+  background: center;
+  background-repeat:  no-repeat;
+  background-size:contain;
+  background-image: url("../../icon/favicon-32x32.png");
+}
+.about_span {
+  line-height: 2;
+  font-size: 15px;
+  color: #333333;
+  overflow-wrap: break-word;
+}
+
 @media all and (max-width: 768px) {
   table th,td {
     width: auto;
