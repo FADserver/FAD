@@ -124,7 +124,7 @@
 .my_modal_overlay{
   display: none;
   position: fixed;
-  z-index: 0;
+  z-index: 1000;
   right: 0;
   bottom: 0;
   min-width: 100%;
