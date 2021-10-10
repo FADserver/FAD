@@ -1,20 +1,63 @@
-.sitemap_tytle {
-  border-left: 3px solid #3D4073;
-  border-bottom: 1px solid #8C8C8C;
+/* ↓ ライセンス ↓ */
+.license_div {
+  position: relative;
+  margin: 0 auto;
+  width: 200px;
+  height: 70px;
+}
+.license1, .license2, .license3, .license4 {
+  display: inline-block;
   color: #333333;
-  width: 100%;
+  font-size: 40px;
+}
+.license_div p {
   margin: 0;
-  padding-left: 10px;
+  padding: 0;
 }
-.section {
-  width: 100%;
-  margin: 10px 0 10px 0;
+.license_div p a {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
+.license1::before {
+  content: "\f25e";
+  margin-right: 10px;
+}
+.license2::before {
+  content: "\f4e7";
+  margin-right: 10px;
+}
+.license3::before {
+  content: "\f4ea";
+  margin-right: 10px;
+}
+.license4::before {
+  content: "\f4ef";
+}
+
+.license-list li:nth-child(1)::before {
+  content: "\f4e7";
+  margin-right: 10px;
+  font-size: 20px;
+}
+.license-list li:nth-child(2)::before {
+  content: "\f4ea";
+  margin-right: 10px;
+  font-size: 20px;
+}
+.license-list li:nth-child(3)::before {
+  content: "\f4ef";
+  margin-right: 10px;
+  font-size: 20px;
+}
+/* ↑ ライセンス ↑ */
+
 /* ↓ モーダル ↓ */
 /* ボタン（デザインはお好みで） */
 .my_modal_btn{
-  display: block;
+  display: inline-block;
   width: 152px;
+  line-height: 2;
   font-size: 15px;
   text-align: center;
   border-radius: 5px;
@@ -22,8 +65,14 @@
   color: #FFFFFF;
   cursor: pointer;
 }
+.no-margin {
+  margin-bottom: 0;
+}
 .my_modal_btn:hover {
   text-decoration: underline;
+}
+.amazon {
+  margin-right: 10px;
 }
 
 /* チェックボックスを非表示 */
@@ -142,7 +191,7 @@
 }
 /* ↑ モーダル ↑ */
 
-.sns-icon::before {
+.amazon-icon::before {
   display: inline-block;
   width: 30px;
   height: 30px;
@@ -160,89 +209,9 @@
   -webkit-font-smoothing: antialiased;
   color: #ffffff;
 }
-.sns-icon-2 {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  margin: 5px 0;
-  margin-right: 10px;
-  border-radius: 100%;
-  font-size: 15px;
-  background: #F1F1F1;
-}
-.sitemap__twitter::before {
-  background:#1da1f3;
-}
-.sitemap__youtube::before {
-  background:#cd201f;
-}
-.sitemap__line::before {
-  background:#00C300;
-}
-.sitemap__twitch::before {
-  background: #9146FF;
-}
-.sitemap__discord::before {
-  background: #5865F2;
-}
-.sitemap__wiki::before {
-  background: #61C6F6;
-}
-.sitemap__amazon::before {
+.major__amazon::before {
   background: #FF9900;
 }
-.sitemap__twitter::before {
-  content: "\f099";
-}
-.sitemap__youtube::before {
-  content: "\f167"
-}
-.sitemap__line::before {
-  content: "\f3c0";
-}
-.sitemap__twitch::before {
-  content: "\f1e8";
-}
-.sitemap__discord::before {
-  content: "\f392";
-}
-.sitemap__amazon::before {
+.major__amazon::before {
   content: "\f270";
-}
-.sitemap__wiki::before {
-  content: "★";
-  color: #FEFC56;
-}
-.sitemap__jms::before {
-  content: "　";
-  background: center;
-  background-repeat:  no-repeat;
-  background-size:contain;
-  background-image: url("../../image/JapanMinecraftServer.png");
-}
-.sitemap__minecraft::before {
-  content: "　";
-  background: center;
-  background-repeat:  no-repeat;
-  background-size:contain;
-  background-image: url("../../image/minecraft.png");
-}
-
-@media all and (min-width: 768px) {
-  .section {
-    width: calc(50% - 10px);
-    flex-wrap: nowrap;
-  }
-  .right {
-    float: right;
-    margin-left: 5px;
-  }
-  .left {
-    float: left;
-    margin-right: 5px;
-  }
-  .clear {
-    clear: both;
-  }
 }
