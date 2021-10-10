@@ -14,7 +14,9 @@ table th {
   width: 15%;
   text-align: left;
 }
-
+a {
+  word-break: break-all;
+}
 .sns-icon::before {
   display: inline-block;
   width: 30px;
