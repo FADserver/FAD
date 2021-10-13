@@ -341,13 +341,13 @@ h1:before {
   /*フォルダアイコン*/
   content: '\f07b';
 }
-.breadcrumb li:first-child a:before {
-  /*家アイコン*/
-  content: '\f015';
-}
 .breadcrumb li:last-child a:before {
   /*紙アイコン*/
   content: '\f15b';
+}
+.breadcrumb li:first-child a:before {
+  /*家アイコン*/
+  content: '\f015';
 }
 
 
