@@ -57,12 +57,6 @@
   border: 2px solid #8C8C8C;
 }
 
-a.anchor{
-  display: block;
-  padding-top: 70px;
-  margin-top: -70px;
-}
-
 .join_tytle {
   position: relative;
   overflow: hidden;

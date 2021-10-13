@@ -94,6 +94,12 @@ a {
   color:#8C8C8C;
 }
 
+a.anchor{
+  display: block;
+  padding-top: 70px;
+  margin-top: -70px;
+}
+
 /* ↓ 画像説明 ↓ */
 .img-frame {
   width: 100% !important;
@@ -319,19 +325,31 @@ h1:before {
   font-size: 12px
 }
 
-.breadcrumb li:first-child a:before {
-  /*家アイコン*/
+.breadcrumb li a:before {
   font-family: "Font Awesome 5 Free";
-  content: '\f015';
+  content: '\f07b';
   font-weight: 900;
   display: inline-block;
   font-style: normal;
   font-variant: normal;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
-  font-size: 1.1em;
   color: #f3948f;
+  margin-right: 3px;
 }
+.breadcrumb li a:before {
+  /*フォルダアイコン*/
+  content: '\f07b';
+}
+.breadcrumb li:first-child a:before {
+  /*家アイコン*/
+  content: '\f015';
+}
+.breadcrumb li:last-child a:before {
+  /*紙アイコン*/
+  content: '\f15b';
+}
+
 
 .breadcrumb li a:hover {
   text-decoration: underline;
