@@ -387,10 +387,14 @@
 }
 
 .supplement {
-  font-size: 13px;
   margin: 0;
   padding: 0;
   margin: 7px 0 0 24px !important;
+}
+.supplement li {
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
   line-height: 2;
 }
 .browser_ol {
