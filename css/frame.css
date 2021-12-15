@@ -417,7 +417,7 @@
   font-variant: normal;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
-  font-size: 15px;
+  font-size: 16px;
   margin-right: 10px;
   margin-left: 7px;
 }
@@ -460,11 +460,11 @@
 .news-banner_p {
   text-align: center;/*一応BOX内の文字も中央寄せ*/
   line-height: 1.5;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: bold;
   color: #ffffff;
 }
 .news-bar-margin-bottom {
-  margin-bottom: -40px;
+  margin-bottom: -48px;
 }
 /* ↑ お知らせバナー ↑ */
