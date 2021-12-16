@@ -194,11 +194,11 @@
   margin-right: 10px;
 }
 
-.a_blank_open, .a_sidebar {
+.a_blank_open, .a_sidebar, .a_sidebar_blank {
   color:#FFFFFF;
   text-decoration: underline;
 }
-.a_blank_open::after {
+.a_blank_open::after, .a_sidebar_blank::after {
   content: " \f35d  ";
   color: #FFFFFF;
   font-family: "Font Awesome 5 Free";
@@ -212,7 +212,7 @@
 .a_blank_open:hover, .a_blank_open:hover::after {
   color:#FF0000;
 }
-.a_sidebar:hover {
+.a_sidebar:hover, .a_sidebar_blank:hover, .a_sidebar_blank:hover::after {
   color: #333333;
 }
 
