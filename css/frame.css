@@ -453,9 +453,11 @@
   left: 50%;
   transform : translate(-50%,-50%);
   /* スクロール */
+  /*
   overflow: auto;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
+  */
 }
 .news-banner_p {
   text-align: center;/*一応BOX内の文字も中央寄せ*/
@@ -463,6 +465,9 @@
   font-size: 16px;
   font-weight: bold;
   color: #ffffff;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  padding: 0px 10px;
 }
 .news-bar-margin-bottom {
   margin-bottom: -48px;
