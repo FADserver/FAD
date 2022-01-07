@@ -45,7 +45,6 @@
   font-size: 1px;
   background: #F1F1F1;
   content: "　";
-  background: center;
   background-repeat:  no-repeat;
   background-size:contain;
   background-image: url("../../icon/favicon-32x32.png");
@@ -83,6 +82,19 @@
     font-size: 16px;
     margin: 0;
   }
+  .cp_qa label.cp_tabitem[for*='1']:before { 
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    text-align: center;
+    border-radius: 100%;
+    font-size: 1px;
+    background: #F1F1F1;
+    content: "　";
+    background-repeat:  no-repeat;
+    background-size:contain;
+    background-image: url("../../icon/favicon-32x32.png");
+   }
 }
 @media screen and (max-width: 400px) {
   .cp_qa label.cp_tabitem {
