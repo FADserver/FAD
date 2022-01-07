@@ -124,37 +124,36 @@
 }
 /* ＋アイコン */
 .cp_qa .cp_qain .cp_plus {
-  font-size: 2em;
-  line-height: 100%;
-  position: absolute;
-  z-index: 5;
-  margin-top: 3px;
-  margin-left: 10px;
-  -webkit-transition: 0.2s ease;
-          transition: 0.2s ease;
-  cursor: pointer;
+	font-size: 2em;
+	line-height: 100%;
+	position: absolute;
+	z-index: 5;
+	margin-top: 3px;
+	margin-left: 10px;
+	-webkit-transition: 0.2s ease;
+	        transition: 0.2s ease;
 }
 
 /* 答え */
 .cp_qa .cp_qain .cp_actab-content {
-  position: relative;
-  overflow: hidden;
-  height: 0;
-  margin: 0 10px 0 48px;
-  padding: 14px 0;
-  -webkit-transition: 0.4s ease;
-          transition: 0.4s ease;
-  opacity: 0;
+	position: relative;
+	overflow: hidden;
+	height: 0;
+	margin: 0 10px 0 48px;
+	padding: 14px 0;
+	-webkit-transition: 0.4s ease;
+	        transition: 0.4s ease;
+	opacity: 0;
 }
 /* 質問を開いた時の仕様 */
 .cp_qa .cp_qain .cp_actab input[type=checkbox]:checked ~ .cp_actab-content {
-  height: auto;
-  opacity: 1;
+	height: auto;
+	opacity: 1;
 }
 /* 質問をクリックした時の▼アイコンの動き */
-.cp_qa .cp_qain .cp_actab input[type=checkbox]:checked ~ label[for*='cp_tabfour'] .cp_plus {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+.cp_qa .cp_qain .cp_actab input[type=checkbox]:checked ~ .cp_plus {
+	-webkit-transform: rotate(45deg);
+	        transform: rotate(45deg);
 }
 /* 説明文 */
 .cp_explain {
