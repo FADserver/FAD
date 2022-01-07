@@ -30,8 +30,6 @@
 }
 .cp_qa label.cp_tabitem:before {
   margin-right: 10px;
-}
-.cp_tabitem::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-style: normal;
@@ -40,13 +38,11 @@
 }
 .cp_qa label.cp_tabitem[for*='1']:before { 
   display: inline-block;
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
   text-align: center;
-  margin: 5px 0;
-  margin-right: 10px;
   border-radius: 100%;
-  font-size: 15px;
+  font-size: 1px;
   background: #F1F1F1;
   content: "　";
   background: center;
@@ -64,7 +60,7 @@
 .cp_qa input:checked + label {
   color: #555555;
   border: 1px solid #dddddd;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
 }
 /* --ブロックのバーの色 */
 .cp_qa input:checked + label[for*='1'] {
@@ -84,7 +80,7 @@
     font-size: 0;
   }
   label:before {
-    font-size: 18px;
+    font-size: 16px;
     margin: 0;
   }
 }
@@ -168,6 +164,7 @@
 .headline2_QA {
   position: relative;
   padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   text-align: center;
   border: 2px solid #000;
   background: #fff;
