@@ -74,21 +74,21 @@
   border-top: 5px solid #CFE5F7;
 }
 @media screen and (max-width: 650px) {
-	.cp_qa label.cp_tabitem {
-		font-size: 0;
-	}
-	label:before {
-		font-size: 18px;
-		margin: 0;
-	}
+  .cp_qa label.cp_tabitem {
+    font-size: 0;
+  }
+  label:before {
+    font-size: 18px;
+    margin: 0;
+  }
 }
 @media screen and (max-width: 400px) {
-	.cp_qa label.cp_tabitem {
-		padding: 15px;
-	}
-	.cp_qa label.cp_tabitem:before {
-		margin-right: 0px;
-	}
+  .cp_qa label.cp_tabitem {
+    padding: 15px;
+  }
+  .cp_qa label.cp_tabitem:before {
+    margin-right: 0px;
+  }
 }
 /* QAブロック */
 .cp_qa #cp_conttab1:checked ~ #cp_content1,
@@ -118,36 +118,36 @@
 }
 /* ＋アイコン */
 .cp_qa .cp_qain .cp_plus {
-	font-size: 2em;
-	line-height: 100%;
-	position: absolute;
-	z-index: 5;
-	margin-top: 3px;
-	margin-left: 10px;
-	-webkit-transition: 0.2s ease;
-	        transition: 0.2s ease;
+  font-size: 2em;
+  line-height: 100%;
+  position: absolute;
+  z-index: 5;
+  margin-top: 3px;
+  margin-left: 10px;
+  -webkit-transition: 0.2s ease;
+          transition: 0.2s ease;
 }
 
 /* 答え */
 .cp_qa .cp_qain .cp_actab-content {
-	position: relative;
-	overflow: hidden;
-	height: 0;
-	margin: 0 10px 0 48px;
-	padding: 14px 0;
-	-webkit-transition: 0.4s ease;
-	        transition: 0.4s ease;
-	opacity: 0;
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  margin: 0 10px 0 48px;
+  padding: 14px 0;
+  -webkit-transition: 0.4s ease;
+          transition: 0.4s ease;
+  opacity: 0;
 }
 /* 質問を開いた時の仕様 */
 .cp_qa .cp_qain .cp_actab input[type=checkbox]:checked ~ .cp_actab-content {
-	height: auto;
-	opacity: 1;
+  height: auto;
+  opacity: 1;
 }
 /* 質問をクリックした時の▼アイコンの動き */
 .cp_qa .cp_qain .cp_actab input[type=checkbox]:checked ~ .cp_plus {
-	-webkit-transform: rotate(45deg);
-	        transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 /* 説明文 */
 .cp_explain {
