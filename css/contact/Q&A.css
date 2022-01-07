@@ -36,18 +36,18 @@
   font-variant: normal;
   text-rendering: auto;
 }
-.cp_qa label.cp_tabitem[for*='1']:before { 
+/*.cp_qa label.cp_tabitem[for*='1']:before { 
   display: inline-block;
   width: 16px;
   height: 16px;
   text-align: center;
   border-radius: 100%;
-  content: ' ';
-  background: #F1F1F1;
-  background-repeat:  no-repeat;
+  background: #FFFFFF;
+  background-repeat: no-repeat;
   background-size:contain;
   background-image: url("../../icon/favicon-32x32.png");
- }
+ }*/
+.cp_qa label.cp_tabitem[for*='1']:before { content: '\f129'; }
 .cp_qa label.cp_tabitem[for*='2']:before { content: '\f108'; }
 .cp_qa label.cp_tabitem[for*='3']:before { content: '\f07b'; }
 .cp_qa label.cp_tabitem[for*='4']:before { content: '\f2bd'; }
@@ -58,7 +58,7 @@
 .cp_qa input:checked + label {
   color: #555555;
   border: 1px solid #dddddd;
-  border-bottom: 3px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
 }
 /* --ブロックのバーの色 */
 .cp_qa input:checked + label[for*='1'] {
@@ -74,21 +74,21 @@
   border-top: 5px solid #CFE5F7;
 }
 @media screen and (max-width: 650px) {
-  .cp_qa label.cp_tabitem {
-    font-size: 0;
-  }
-  label:before {
-    font-size: 16px;
-    margin: 0;
-  }
+	.cp_qa label.cp_tabitem {
+		font-size: 0;
+	}
+	label:before {
+		font-size: 18px;
+		margin: 0;
+	}
 }
 @media screen and (max-width: 400px) {
-  .cp_qa label.cp_tabitem {
-    padding: 15px;
-  }
-  .cp_qa label.cp_tabitem:before {
-    margin-right: 0px;
-  }
+	.cp_qa label.cp_tabitem {
+		padding: 15px;
+	}
+	.cp_qa label.cp_tabitem:before {
+		margin-right: 0px;
+	}
 }
 /* QAブロック */
 .cp_qa #cp_conttab1:checked ~ #cp_content1,
