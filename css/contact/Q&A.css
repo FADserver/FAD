@@ -297,11 +297,11 @@
 }
 
 /* チェックボックスを非表示 */
-#my_modal1{
+#my_modal1, #my_modal2{
   display: none;
 }
 /* モーダル */
-.my_modal_body1{
+.my_modal_body1, .my_modal_body2{
   display: none;
   position: fixed;
   z-index: 100000;
@@ -321,7 +321,7 @@
   max-height: calc(100% - 20%);
 }
 @media all and (min-width: 768px) {
-  .my_modal_body1 {
+  .my_modal_body1, .my_modal_body2 {
     max-height: calc(100% - 50%);
   }
 }
@@ -407,7 +407,7 @@
 }
 
 /* チェック時オーバーレイとコンテンツを表示 */
-#my_modal1:checked ~ .my_modal_body1, #my_modal1:checked ~ .my_modal_overlay{
+#my_modal1:checked ~ .my_modal_body1, #my_modal1:checked ~ .my_modal_overlay, #my_modal2:checked ~ .my_modal_body2, #my_modal2:checked ~ .my_modal_overlay{
   display: block;
 }
 /* ↑ モーダル ↑ */
