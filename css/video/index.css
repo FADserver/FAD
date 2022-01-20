@@ -123,19 +123,20 @@
 /* ↑ 詳細情報 ↑ */
 
 
-.youtube_viedo {
+.youtube_video {
   transition: 0.3s ease;
   position: absolute;
   top: 0;
   left: 0;
 }
-.youtube_viedo:hover {
+.youtube_video:hover {
   background-color: rgba(255, 255, 255, 0.2);
   transition: 0.3s ease;
 }
 .youtube_window_video {
   position: relative;
   margin-top: 10px;
+  height: 179.53px;
 }
 .video_thumbnail {
   position: absolute;
