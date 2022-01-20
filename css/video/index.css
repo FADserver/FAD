@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 .video_list {
   display: inline-block;
-  padding: 10PX;
+  padding: 10px;
   width: 364px;
   border: 1px solid #000000;
   margin: 10px;
@@ -254,5 +254,25 @@
   .video-flame {
     width: 404px;
     margin: auto;
+  }
+}
+@media all and (max-width: 834px) {
+  .video-flame {
+    width: 370px;
+    margin: auto;
+  }
+  .youtube-archive {
+    max-width: 308px;
+    min-width: 308px;
+    max-height: 178px;
+    min-height: 178px;
+    transition: 0.3s ease;
+  }
+  .video_list {
+    display: inline-block;
+    padding: 10px;
+    width: 330px;
+    border: 1px solid #000000;
+    margin: 10px;
   }
 }
