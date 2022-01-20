@@ -2,7 +2,7 @@
 .video_list {
   display: inline-block;
   padding: 10px;
-  width: 364px;
+  width: 340px;
   border: 1px solid #000000;
   margin: 10px;
 }
@@ -122,16 +122,26 @@
 }
 /* ↑ 詳細情報 ↑ */
 
-.youtube_window {
+
+.youtube_viedo {
+  transition: 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.youtube_viedo:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: 0.3s ease;
+}
+.youtube_window_video {
   position: relative;
   margin-top: 10px;
 }
-.youtube-archive {
-  transition: 0.3s ease;
-}
-.youtube-archive:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  transition: 0.3s ease;
+.video_thumbnail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 320px;
 }
 
 .delete {
@@ -241,37 +251,46 @@
 }
 
 .video-flame {
-  width: 1182px;
+  width: 1108px;
   margin: auto;
 }
 @media all and (max-width: 1663px) {
   .video-flame {
-    width: 793px;
+    width: 744px;
     margin: auto;
   }
 }
 @media all and (max-width: 1250px) {
   .video-flame {
-    width: 404px;
+    width: 380px;
     margin: auto;
   }
 }
 @media all and (max-width: 834px) {
   .video-flame {
-    width: 370px;
+    width: 345px;
     margin: auto;
   }
-  .youtube-archive {
-    max-width: 308px;
-    min-width: 308px;
-    max-height: 178px;
-    min-height: 178px;
+  .youtube_video {
+    position: absolute;
+    max-width: 288px;
+    min-width: 288px;
+    max-height: 162px;
+    min-height: 162px;
     transition: 0.3s ease;
+  }
+  .youtube_window_video {
+    max-width: 288px;
+    min-width: 288px;
+    max-height: 162px;
+    min-height: 162px;
+    position: relative;
+    margin-top: 10px;
   }
   .video_list {
     display: inline-block;
     padding: 10px;
-    width: 330px;
+    width: 310px;
     border: 1px solid #000000;
     margin: 10px;
   }
