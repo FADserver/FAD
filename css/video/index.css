@@ -227,7 +227,6 @@
   display: block;
   height: 0;
   opacity: 0;
-  padding: 0 10px;
   transition: .5s;
   visibility: hidden;
 }
@@ -243,7 +242,6 @@
 .acd-check:checked + .acd-label + .acd-content{
   height: auto;
   opacity: 1;
-  padding: 10px;
   visibility: visible;
 }
 
@@ -288,24 +286,24 @@
 }
 
 .video-flame {
-  width: 1108px;
+  width: 1088px;
   margin: auto;
 }
 @media all and (max-width: 1663px) {
   .video-flame {
-    width: 744px;
+    width: 724px;
     margin: auto;
   }
 }
 @media all and (max-width: 1250px) {
   .video-flame {
-    width: 380px;
+    width: 360px;
     margin: auto;
   }
 }
 @media all and (max-width: 834px) {
   .video-flame {
-    width: 345px;
+    width: 327px;
     margin: auto;
   }
   .youtube_video {
