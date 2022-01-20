@@ -73,21 +73,13 @@
 .cp_qa input:checked + label[for*='4'] {
   border-top: 5px solid #CFE5F7;
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1110px) {
   .cp_qa label.cp_tabitem {
     font-size: 0;
   }
   label:before {
     font-size: 18px;
     margin: 0;
-  }
-}
-@media screen and (max-width: 400px) {
-  .cp_qa label.cp_tabitem {
-    padding: 15px;
-  }
-  .cp_qa label.cp_tabitem:before {
-    margin-right: 0px;
   }
 }
 /* QAブロック */

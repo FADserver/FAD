@@ -35,6 +35,14 @@ a {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
 }
+.AweSomeFont-Free2 {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
 .AweSomeFont-Brands {
   font-family: "Font Awesome 5 Brands";
   font-weight: 400;
@@ -74,6 +82,7 @@ a {
 .a_blank, .a {
   color:#333333;
   text-decoration: underline;
+  transition: 0.3s ease;
 }
 .a_blank::after {
   content: "\f35d";
@@ -86,15 +95,19 @@ a {
   -webkit-font-smoothing: antialiased;
   font-size: 10px;
   padding: 0 3px;
+  transition: 0.3s ease;
 }
 .a_blank:hover, .a_blank:hover::after, .a:hover {
   color:#8C8C8C;
+  transition: 0.3s ease;
 }
 .a_nounder {
   color: #333333;
+  transition: 0.3s ease;
 }
 .a_nounder:hover, .a_nounder:hover::after {
   color:#8C8C8C;
+  transition: 0.3s ease;
 }
 
 a.anchor{
