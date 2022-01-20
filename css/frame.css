@@ -105,7 +105,7 @@
   left: 0;
   border: none;
   border-bottom: solid 15px transparent;
-  border-right: solid 20px #060940;
+  border-right: solid 20px #000946;
 }
 .ip-address-icon::before {
   content: "\f108";

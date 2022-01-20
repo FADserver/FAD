@@ -22,7 +22,7 @@
   text-align: center;
   border-collapse: collapse;
   border-spacing: 0;
-  border-top: solid 1px #060940;
+  border-top: solid 1px #000946;
 }
 .potion_table tr:nth-child(2n), .gun_table tr:nth-child(n) {
   background: #ffffff;

@@ -84,8 +84,8 @@
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   text-align: center;
-  border: 2px solid #000;
-  background: #fff;
+  border: 2px solid #000000;
+  background: #ffffff;
   width: 90%;
   margin: 0 auto;
 }
@@ -101,9 +101,9 @@
   left: calc(50% - 40px);
   width: 80px;
   height: 80px;
-  border: 2px solid #000;
+  border: 2px solid #000000;
   border-radius: 50%;
-  background: #fff;
+  background: #ffffff;
 }
 
 .headline2_news:after {
@@ -111,7 +111,7 @@
   left: 0;
   width: 80%;
   height: 100%;
-  background: #fff;
+  background: #ffffff;
 }
 
 .headline2_news i {
@@ -149,7 +149,7 @@
   /* ↓ これをcalac(100%/n) n年分 にする ↓ */
   width: calc(100%/2);
   height: 50px;
-  border-bottom: 3px solid #060940;
+  border-bottom: 3px solid #000946;
   background-color: #d9d9d9;
   line-height: 50px;
   font-size: 15px;
@@ -188,6 +188,6 @@ input[name="tab_item"] {
 
 /*選択されているタブのスタイルを変える*/
 .tabs input:checked + .tab_item {
-  background-color: #060940;
+  background-color: #000946;
   color: #fff;
 }

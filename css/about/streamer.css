@@ -1,10 +1,10 @@
 .streamer_a_blank, .streamer_a {
-  color:#060940;
+  color:#000946;
   text-decoration: underline;
 }
 .streamer_a_blank::after {
   content: " \f35d ";
-  color: #060940;
+  color: #000946;
   font-size: 10px;
 }
 .streamer_a_blank:hover, .streamer_a_blank:hover::after, .streamer_a:hover {
@@ -21,7 +21,7 @@
   position: relative;
   padding: 0.5em 1em 0.5em 2.3em;
   margin-bottom:5px;
-  color: #060940;
+  color: #000946;
   font-size: 15px;
   font-weight: bold;
   border-bottom: 1px solid #3D4073;
@@ -91,7 +91,7 @@
 }
 
 .streamer_a {
-  color: #060940!important;
+  color: #000946!important;
 }
 .streamer_a:hover {
   color: #8C8C8C!important;
