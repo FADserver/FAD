@@ -5,6 +5,7 @@
   width: 340px;
   border: 1px solid #000000;
   margin: 10px;
+  background: #FFFFFF;
 }
 
 .category {
@@ -15,7 +16,7 @@
 }
 .date_icon::before {
   content: "\f017";
-  margin: 0px 10px 0px 10px;
+  margin-right: 5px;
   font-size: 20px;
 }
 .date {
@@ -39,6 +40,9 @@
   display: inline-block;
   text-align: center;
   float: right;
+}
+.category_type {
+  font-size: 10px;
 }
 .archive_icon::before {
   content: "\f187";
@@ -79,6 +83,7 @@
   font-weight: bold;
 }
 
+/* ↓ 詳細情報 ↓ */
 .content {
   display: flex;
   padding: 10px 0px 10px 0px;
@@ -86,13 +91,41 @@
   border-bottom: 1px solid #888888;
 }
 
-/* ↓ 詳細情報 ↓ */
 .ex {
-  width: 95px;
-  display: inline-block;
+  display: block;
+  min-width: 95px;
+  max-width: 95px;
   border-right: 1px solid #888888;
   font-size: 12px;
   padding-right: 10px;
+}
+.concrete {
+  display: block;
+  margin: 0;
+}
+.concrete p {
+  margin: 0;
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+.video_snsicon {
+  display: inline-block;
+  padding: 0px 5px;
+}
+.video_snsicon::before {
+  font-size: 20px;
+}
+.video_snsicon-twitter::before {
+  content: "\f099";
+  color: #1DA1F2;
+}
+.video_snsicon-twitch::before {
+  content: "\f1e8";
+  color: #9146FF;
+}
+.video_snsicon:hover::before {
+  color: #888888;
 }
 
 .postch_ex {
@@ -108,11 +141,7 @@
   margin-right: 5px;
 }
 .name {
-  display: inline;
-  width: 60px;
-  height: 60px;
-  font-size: 16px;
-  margin: 0;
+  text-align: left;
 }
 .ch_icon {
   width: 60px;
