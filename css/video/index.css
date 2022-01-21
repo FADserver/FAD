@@ -90,6 +90,7 @@
   font-size: 12px;
   color: #333333;
   margin-top: 16px;
+  margin-right: 10px;
 }
 .tag_icon::before {
   content: "\f02b";
@@ -98,6 +99,25 @@
   margin-right: 5px;
 }
 .tag:hover, .tag:hover span::before {
+  cursor: pointer;
+  color: #888888;
+}
+
+.person {
+  display: inline-block;
+  margin: 0;
+  font-size: 12px;
+  color: #333333;
+  margin-top: 16px;
+  margin-right: 10px;
+}
+.person_icon::before {
+  content: "\f2bd";
+  font-size: 12px;
+  color: #333333;
+  margin-right: 5px;
+}
+.person:hover, .person:hover span::before {
   cursor: pointer;
   color: #888888;
 }
@@ -207,144 +227,6 @@
   font-size: 12px;
 }
 
-/* ↓ ソート ↓ */
-.products__sort {
-  display: flex;
-  flex-flow: wrap;
-}
-/* ↓ ボタン ↓ */
-.button {
-	display: block;
-	position: relative;
-	width: 150px;
-	padding: 0.8em;
-	text-align: center;
-	text-decoration: none;
-	color: #fff;
-	border:1px solid #000946;
-	background: #000946;
-	overflow: hidden;
-	z-index: 1 !important;
-  margin: 5px;
-}
-.palyday {
-  font-size: 14px;
-}
-.button:after {
-	content:"";
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	height: 0;
-	width: 100%;
-	background : #BDE3F2;
-	opacity: 0;
-	transform: translateX(-50%) translateY(-50%) rotate(45deg);
-	transition: 0.3s;
-	z-index: -1;
-}
-.button:hover {
-  color: #000946;
-  cursor: pointer;
-}
-.button:hover:after {
-  height: 350%;
-  opacity: 1;
-}
-.button:active:after {
-  height: 450%;
-  opacity: 1;
-}
-/* ↑ ボタン ↑ */
-
-.products__wrap {
-  display: flex;
-  flex-flow: wrap;
-  margin: 25px 0 0;
-}
-.products__wrap .video_list {
-  padding: 10px;
-  width: 340px;
-  border: 1px solid #000000;
-  margin: 10px;
-  background: #FFFFFF;
-  transition: 0.5s ease;
-}
-.products .sort-radio {
-  display: none;
-}
-
-.products .sort-radio[id="play-2021-5-1"]:checked ~ .video-flame .products__wrap .play-2021-5-1 {
-  order: -1;
-  background-color: #BDE3F2;
-  transition: 0.5s ease;
-}
-.products .sort-radio[id="play-2021-5-1"]:checked ~ .products__sort .button[for="play-2021-5-1"] {
-  background-color: #BDE3F2;
-  color: #333333;
-}
-
-.products .sort-radio[id="play-2020-12-12-2"]:checked ~ .video-flame .products__wrap .play-2020-12-12-2 {
-  order: -1;
-  background-color: #BDE3F2;
-  transition: 0.5s ease;
-}
-.products .sort-radio[id="play-2020-12-12-2"]:checked ~ .products__sort .button[for="play-2020-12-12-2"] {
-  background-color: #BDE3F2;
-  color: #333333;
-}
-
-.products .sort-radio[id="play-2020-12-12-1"]:checked ~ .video-flame .products__wrap .play-2020-12-12-1 {
-  order: -1;
-  background-color: #BDE3F2;
-  transition: 0.5s ease;
-}
-.products .sort-radio[id="play-2020-12-12-1"]:checked ~ .products__sort .button[for="play-2020-12-12-1"] {
-  background-color: #BDE3F2;
-  color: #333333;
-}
-
-.products .sort-radio[id="play-2020-12-12"]:checked ~ .video-flame .products__wrap .play-2020-12-12 {
-  order: -1;
-  background-color: #BDE3F2;
-  transition: 0.5s ease;
-}
-.products .sort-radio[id="play-2020-12-12"]:checked ~ .products__sort .button[for="play-2020-12-12"] {
-  background-color: #BDE3F2;
-  color: #333333;
-}
-
-.products .sort-radio[id="play-2020-12-11"]:checked ~ .video-flame .products__wrap .play-2020-12-11 {
-  order: -1;
-  background-color: #BDE3F2;
-  transition: 0.5s ease;
-}
-.products .sort-radio[id="play-2020-12-11"]:checked ~ .products__sort .button[for="play-2020-12-11"] {
-  background-color: #BDE3F2;
-  color: #333333;
-}
-
-.products .sort-radio[id="play-movie"]:checked ~ .video-flame .products__wrap .play-movie {
-  order: -1;
-  background-color: #BDE3F2;
-  transition: 0.5s ease;
-}
-.products .sort-radio[id="play-movie"]:checked ~ .products__sort .button[for="play-movie"] {
-  background-color: #BDE3F2;
-  color: #333333;
-}
-
-.products .sort-radio[id="play-archive"]:checked ~ .video-flame .products__wrap .play-archive {
-  order: -1;
-  background-color: #BDE3F2;
-  transition: 0.5s ease;
-}
-.products .sort-radio[id="play-archive"]:checked ~ .products__sort .button[for="play-archive"] {
-  background-color: #BDE3F2;
-  color: #333333;
-}
-/* ↑ ソート ↑ */
-
 .acd-check{
   display: none;
 }
@@ -384,7 +266,7 @@
   display: block;
   height: 0;
   opacity: 0;
-  transition: 0.5s;
+  transition: 0.5s ease;
   visibility: hidden;
 }
 .acd-check:checked + .acd-label:after{
@@ -395,13 +277,78 @@
   font-variant: normal;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
+  transition: 0.5s ease;
 }
 .acd-check:checked + .acd-label + .acd-content{
   height: auto;
   opacity: 1;
   visibility: visible;
-  transition: 0.5s;
+  transition: 0.5s ease;
 }
+
+/* ↓ ソート ↓ */
+.products__sort {
+  display: flex;
+  flex-flow: wrap;
+}
+/* ↓ ボタン ↓ */
+.button {
+  display: block;
+  position: relative;
+  width: 145px;
+  padding: 0.8em;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  border:1px solid #000946;
+  background: #000946;
+  overflow: hidden;
+  z-index: 1 !important;
+  margin: 5px;
+}
+.palyday {
+  font-size: 14px;
+}
+.button:after {
+  content:"";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 0;
+  width: 100%;
+  background : #BDE3F2;
+  opacity: 0;
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  transition: 0.5s ease;
+  z-index: -1;
+}
+.button:hover {
+  cursor: pointer;
+}
+.button:active:after {
+  height: 450%;
+  opacity: 1;
+}
+/* ↑ ボタン ↑ */
+
+.products__wrap {
+  display: flex;
+  flex-flow: wrap;
+  margin: 25px 0 0;
+}
+.products__wrap .video_list {
+  padding: 10px;
+  width: 340px;
+  border: 1px solid #000000;
+  margin: 10px;
+  background: #FFFFFF;
+  transition: 0.5s ease;
+}
+.products .sort-checkbox {
+  display: none;
+}
+/* ↑ ソート ↑ */
+
 .img_date {
   width: 150px;
 }
