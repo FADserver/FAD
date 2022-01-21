@@ -268,7 +268,7 @@
   border: 1px solid #000000;
   margin: 10px;
   background: #FFFFFF;
-  transition: 0.3s ease;
+  transition: 0.5s ease;
 }
 .products .sort-radio {
   display: none;
@@ -277,9 +277,29 @@
 .products .sort-radio[id="play-2021-5-1"]:checked ~ .video-flame .products__wrap .play-2021-5-1 {
   order: -1;
   background-color: #BDE3F2;
-  transition: 0.3s ease;
+  transition: 0.5s ease;
 }
 .products .sort-radio[id="play-2021-5-1"]:checked ~ .products__sort .button[for="play-2021-5-1"] {
+  background-color: #BDE3F2;
+  color: #333333;
+}
+
+.products .sort-radio[id="play-2020-12-12-2"]:checked ~ .video-flame .products__wrap .play-2020-12-12-2 {
+  order: -1;
+  background-color: #BDE3F2;
+  transition: 0.5s ease;
+}
+.products .sort-radio[id="play-2020-12-12-2"]:checked ~ .products__sort .button[for="play-2020-12-12-2"] {
+  background-color: #BDE3F2;
+  color: #333333;
+}
+
+.products .sort-radio[id="play-2020-12-12-1"]:checked ~ .video-flame .products__wrap .play-2020-12-12-1 {
+  order: -1;
+  background-color: #BDE3F2;
+  transition: 0.5s ease;
+}
+.products .sort-radio[id="play-2020-12-12-1"]:checked ~ .products__sort .button[for="play-2020-12-12-1"] {
   background-color: #BDE3F2;
   color: #333333;
 }
@@ -287,7 +307,7 @@
 .products .sort-radio[id="play-2020-12-12"]:checked ~ .video-flame .products__wrap .play-2020-12-12 {
   order: -1;
   background-color: #BDE3F2;
-  transition: 0.3s ease;
+  transition: 0.5s ease;
 }
 .products .sort-radio[id="play-2020-12-12"]:checked ~ .products__sort .button[for="play-2020-12-12"] {
   background-color: #BDE3F2;
@@ -297,7 +317,7 @@
 .products .sort-radio[id="play-2020-12-11"]:checked ~ .video-flame .products__wrap .play-2020-12-11 {
   order: -1;
   background-color: #BDE3F2;
-  transition: 0.3s ease;
+  transition: 0.5s ease;
 }
 .products .sort-radio[id="play-2020-12-11"]:checked ~ .products__sort .button[for="play-2020-12-11"] {
   background-color: #BDE3F2;
@@ -307,7 +327,7 @@
 .products .sort-radio[id="play-movie"]:checked ~ .video-flame .products__wrap .play-movie {
   order: -1;
   background-color: #BDE3F2;
-  transition: 0.3s ease;
+  transition: 0.5s ease;
 }
 .products .sort-radio[id="play-movie"]:checked ~ .products__sort .button[for="play-movie"] {
   background-color: #BDE3F2;
@@ -317,7 +337,7 @@
 .products .sort-radio[id="play-archive"]:checked ~ .video-flame .products__wrap .play-archive {
   order: -1;
   background-color: #BDE3F2;
-  transition: 0.3s ease;
+  transition: 0.5s ease;
 }
 .products .sort-radio[id="play-archive"]:checked ~ .products__sort .button[for="play-archive"] {
   background-color: #BDE3F2;
