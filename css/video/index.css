@@ -217,7 +217,7 @@
 .button {
   display: block;
   position: relative;
-  width: 125px;
+  width: 200px;
   padding: 0.4em;
   margin-right: 10px;
   margin-bottom: 10px;
@@ -230,7 +230,7 @@
   z-index: 1 !important;
 }
 .palyday {
-  font-size: 12px;
+  font-size: 14px;
 }
 .button:after {
   content:"";
@@ -250,7 +250,7 @@
   cursor: pointer;
 }
 .button:hover:after {
-  height: 250%;
+  height: 500%;
   opacity: 1;
 }
 .button:active:after {
@@ -280,15 +280,6 @@
   background-color: #BDE3F2;
 }
 .products .sort-radio[id="play-2021-5-1"]:checked ~ .products__sort .button[for="play-2021-5-1"] {
-  background-color: #BDE3F2;
-  color: #333333;
-}
-
-.products .sort-radio[id="play-2020-12-12-2"]:checked ~ .video-flame .products__wrap .play-2020-12-12-2 {
-  order: -1;
-  background-color: #BDE3F2;
-}
-.products .sort-radio[id="play-2020-12-12-2"]:checked ~ .products__sort .button[for="play-2020-12-12-2"] {
   background-color: #BDE3F2;
   color: #333333;
 }
