@@ -37,20 +37,22 @@
   font-size: 10px;
   color: #333333;
 }
-.archive_icon::before {
-  content: "\f187";
+.archive_icon, .movie_icon {
+  font-size: 16px;
   text-align: center;
   color: #333333;
+  transition: 0.3s ease;
 }
-.movie_icon::before {
-  content: "\f008";
-  text-align: center;
-  color: #333333;
+.category-2:hover, .category-2:hover span {
+  cursor: pointer;
+  color: #888888;
+  transition: 0.3s ease;
 }
 
 .a_video ,.a_ch {
   color: #333333;
   transition: 0.3s ease;
+  font-size: 14px;
 }
 .a_video::after {
   content: "\f35d";
@@ -67,6 +69,9 @@
 .a_video:hover, .a_video:hover::after, .a_ch {
   color:#8C8C8C;
 }
+.ch_icon {
+  transition: 0.3s ease;
+}
 .ch_icon:hover {
   opacity: 0.6;
   transition: 0.3s ease;
@@ -80,6 +85,7 @@
 
 /* ↓ 詳細情報 ↓ */
 .tag {
+  display: inline-block;
   margin: 0;
   font-size: 12px;
   color: #333333;
@@ -90,6 +96,10 @@
   font-size: 12px;
   color: #333333;
   margin-right: 5px;
+}
+.tag:hover, .tag:hover span::before {
+  cursor: pointer;
+  color: #888888;
 }
 
 .content {
@@ -203,49 +213,52 @@
   display: flex;
   flex-flow: wrap;
 }
-/*   */
+/* ↓ ボタン ↓ */
 .button {
-	display: block;
-	position: relative;
-	width: 160px;
-	padding: 0.4em;
+  display: block;
+  position: relative;
+  width: 125px;
+  padding: 0.4em;
   margin-right: 10px;
-	text-align: center;
-	text-decoration: none;
-	color: #fff;
-	border:1px solid #000946;
-	background: #000946;
-	overflow: hidden;
-	z-index: 1 !important;
+  margin-bottom: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  border:1px solid #000946;
+  background: #000946;
+  overflow: hidden;
+  z-index: 1 !important;
 }
 .palyday {
   font-size: 12px;
 }
 .button:after {
-	content:"";
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	height: 0;
-	width: 100%;
-	background : #fff;
-	opacity: 0;
-	transform: translateX(-50%) translateY(-50%) rotate(45deg);
-	transition: 0.3s;
-	z-index: -1;
+  content:"";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 0;
+  width: 100%;
+  background : #fff;
+  opacity: 0;
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  transition: 0.3s;
+  z-index: -1;
 }
 .button:hover {
-	color: #000946;
+  color: #000946;
+  cursor: pointer;
 }
 .button:hover:after {
-	height: 250%;
-	opacity: 1;
+  height: 250%;
+  opacity: 1;
 }
 .button:active:after {
-	height: 350%;
-	opacity: 1;
+  height: 350%;
+  opacity: 1;
 }
-/*   */
+/* ↑ ボタン ↑ */
+
 .products__wrap {
   display: flex;
   flex-flow: wrap;
@@ -262,7 +275,7 @@
   display: none;
 }
 
-.products .sort-radio[id="play-2021-5-1"]:checked ~ .products__wrap .video_list[data-video_list-type="play-2021-5-1"] {
+.products .sort-radio[id="play-2021-5-1"]:checked ~ .video-flame .products__wrap .play-2021-5-1 {
   order: -1;
   background-color: #BDE3F2;
 }
@@ -271,7 +284,7 @@
   color: #333333;
 }
 
-.products .sort-radio[id="play-2020-12-12-2"]:checked ~ .products__wrap .video_list[data-video_list-type="play-2020-12-12-2"] {
+.products .sort-radio[id="play-2020-12-12-2"]:checked ~ .video-flame .products__wrap .play-2020-12-12-2 {
   order: -1;
   background-color: #BDE3F2;
 }
@@ -280,7 +293,7 @@
   color: #333333;
 }
 
-.products .sort-radio[id="play-2020-12-12"]:checked ~ .products__wrap .video_list[data-video_list-type="play-2020-12-12"] {
+.products .sort-radio[id="play-2020-12-12"]:checked ~ .video-flame .products__wrap .play-2020-12-12 {
   order: -1;
   background-color: #BDE3F2;
 }
@@ -289,11 +302,29 @@
   color: #333333;
 }
 
-.products .sort-radio[id="play-2020-12-11"]:checked ~ .products__wrap .video_list[data-video_list-type="play-2020-12-11"] {
+.products .sort-radio[id="play-2020-12-11"]:checked ~ .video-flame .products__wrap .play-2020-12-11 {
   order: -1;
   background-color: #BDE3F2;
 }
 .products .sort-radio[id="play-2020-12-11"]:checked ~ .products__sort .button[for="play-2020-12-11"] {
+  background-color: #BDE3F2;
+  color: #333333;
+}
+
+.products .sort-radio[id="play-movie"]:checked ~ .video-flame .products__wrap .play-movie {
+  order: -1;
+  background-color: #BDE3F2;
+}
+.products .sort-radio[id="play-movie"]:checked ~ .products__sort .button[for="play-movie"] {
+  background-color: #BDE3F2;
+  color: #333333;
+}
+
+.products .sort-radio[id="play-archive"]:checked ~ .video-flame .products__wrap .play-archive {
+  order: -1;
+  background-color: #BDE3F2;
+}
+.products .sort-radio[id="play-archive"]:checked ~ .products__sort .button[for="play-archive"] {
   background-color: #BDE3F2;
   color: #333333;
 }
@@ -417,12 +448,6 @@
   }
 }
 @media all and (max-width: 1160px) {
-  .video-flame {
-    width: 327px;
-    margin: auto;
-  }
-}
-@media all and (max-width: 834px) {
   .video-flame {
     width: 327px;
     margin: auto;

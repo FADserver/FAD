@@ -110,39 +110,45 @@
 
         <div class="normal_margin">
           <p class="remarks">再生リストは<a class="a_blank" href="https://youtube.com/playlist?list=PLZkQiHvRa22yIFxHz-Pdd4Lp1Tpev-oMn" target="_blank">こちら</a>！</p>
-          <div class="video-flame">
-            <div class="products">
-              <input class="sort-radio" type="radio" name="sort-radio" id="play-2021-5-1" />
-              <input class="sort-radio" type="radio" name="sort-radio" id="play-2020-12-12-2" />
-              <input class="sort-radio" type="radio" name="sort-radio" id="play-2020-12-12" />
-              <input class="sort-radio" type="radio" name="sort-radio" id="play-2020-12-11" />
-              <div class="products__sort">
-                <label class="button" for="play-2021-5-1">ホウプ<br><span class="palyday">2021/5/1/Sat</span></label>
-                <label class="button" for="play-2020-12-12-2">第2回<br><span class="palyday">2020/12/12/Sat</span></label>
-                <label class="button" for="play-2020-12-12">第1回<br><span class="palyday">2020/12/12/Sat</span></label>
-                <label class="button" for="play-2020-12-11">ぷろと<br><span class="palyday">2020/12/11/Fri</span></label>
-              </div>
 
+          <div class="products">
+            <input class="sort-radio" type="radio" name="sort-radio" id="play-2021-5-1" />
+            <input class="sort-radio" type="radio" name="sort-radio" id="play-2020-12-12-2" />
+            <input class="sort-radio" type="radio" name="sort-radio" id="play-2020-12-12" />
+            <input class="sort-radio" type="radio" name="sort-radio" id="play-2020-12-11" />
+            <input class="sort-radio" type="radio" name="sort-radio" id="play-archive" />
+            <input class="sort-radio" type="radio" name="sort-radio" id="play-movie" />
+            <div class="products__sort">
+              <label class="button" for="play-2021-5-1">ホウプ<br><span class="palyday">2021/5/1/Sat</span></label>
+              <label class="button" for="play-2020-12-12-2">第2回<br><span class="palyday">2020/12/12/Sat</span></label>
+              <label class="button" for="play-2020-12-12">第1回<br><span class="palyday">2020/12/12/Sat</span></label>
+              <label class="button" for="play-2020-12-11">ぷろと<br><span class="palyday">2020/12/11/Fri</span></label>
+              <label class="button" for="play-movie">動画<br><span class="palyday">編集した動画</span></label>
+              <label class="button" for="play-archive">ライブ<br>アーカイブ</label>
+            </div>
 
+            <div class="video-flame">
               <div class="products__wrap">
 
-                <div class="video_list" data-video_list-type="play-2021-5-1">
+                <div class="video_list play-archive play-2021-5-1">
                   <div class="category">
                     <div class="category-1">
                       <span class="AweSomeFont-Free2 date_icon"></span>
                       <p class="date">2021 / 5 / 1　<span class="sat">Sat</span></p>
                     </div>
-                    <div class="category-2">
-                      <span class="AweSomeFont-Free archive_icon"></span>
+                    <label for="play-archive">
+                      <div class="category-2">
+                      <span><i class="fas fa-archive .archive_icon"></i></span>
                       <br><span class="category_type">アーカイブ</span>
                     </div>
+                    </label>
                   </div>
                   <a class="tytle a_video" href="https://www.youtube.com/watch?v=5xd3KxijV-4" target="_blank">全自動生成ダンジョン配信！</a>
                   <!--https://www.youtube.com/watch?v=動画ID https://i.ytimg.com/vi/動画ID/mqdefault.jpg-->
                   <div class="youtube_window_video">
                     <a href="https://www.youtube.com/watch?v=5xd3KxijV-4" target="_blank"><img class="youtube_video" src="https://i.ytimg.com/vi/5xd3KxijV-4/mqdefault.jpg"><img class="youtube_video video_thumbnail" src="https://fadserver.github.io/FAD/image/Youtube.png"></a>
                   </div>
-                  <p class="tag"><span class="AweSomeFont-Free tag_icon"></span>第1回</p>
+                  <label for="play-2021-5-1"><span class="tag"><span class="AweSomeFont-Free tag_icon">ホウプ</span></span></label>
                   <dl class="content">
                     <dt class="postch_ex ex">投稿チャンネル</dt>
                     <dd class="postch_name concrete">
@@ -164,22 +170,25 @@
                   </dl>
                 </div>
 
-                <div class="video_list" data-video_list-type="play-2020-12-12-2">
+                <div class="video_list play-archive play-2020-12-12-2">
                   <div class="category">
                     <div class="category-1">
                       <span class="AweSomeFont-Free2 date_icon"></span>
                       <p class="date">2020 / 12 / 12　<span class="sat">Sat</span></p>
                     </div>
-                    <div class="category-2">
-                      <span class="AweSomeFont-Free archive_icon"></span>
+                    <label for="play-archive">
+                      <div class="category-2">
+                      <span><i class="fas fa-archive .archive_icon"></i></span>
                       <br><span class="category_type">アーカイブ</span>
                     </div>
+                    </label>
                   </div>
                   <a class="tytle a_video" href="https://www.youtube.com/watch?v=rNKuwyn50Wc" target="_blank">【FAD】生放送第2回　脱出迷路Ver.【マインクラフト】</a>
                   <!--https://www.youtube.com/watch?v=動画ID https://i.ytimg.com/vi/動画ID/mqdefault.jpg-->
                   <div class="youtube_window_video">
                     <a href="https://www.youtube.com/watch?v=rNKuwyn50Wc" target="_blank"><img class="youtube_video" src="https://i.ytimg.com/vi/rNKuwyn50Wc/mqdefault.jpg" alt="最新FADアーカイブ"><img class="youtube_video video_thumbnail" src="https://fadserver.github.io/FAD/image/Youtube.png"></a>
                   </div>
+                  <label for="play-2020-12-12-2"><span class="tag"><span class="AweSomeFont-Free tag_icon">第2回</span></span></label>
                   <dl class="content">
                     <dt class="postch_ex ex">投稿チャンネル</dt>
                     <dd class="postch_name concrete">
@@ -202,22 +211,25 @@
                   </dl>
                 </div>
 
-                <div class="video_list" data-video_list-type="play-2020-12-12">
+                <div class="video_list play-archive play-2020-12-12">
                   <div class="category">
                     <div class="category-1">
                       <span class="AweSomeFont-Free2 date_icon"></span>
                       <p class="date">2020 / 12 / 12　<span class="sat">Sat</span></p>
                     </div>
-                    <div class="category-2">
-                      <span class="AweSomeFont-Free archive_icon"></span>
+                    <label for="play-archive">
+                      <div class="category-2">
+                      <span><i class="fas fa-archive .archive_icon"></i></span>
                       <br><span class="category_type">アーカイブ</span>
                     </div>
+                    </label>
                   </div>
                   <a class="tytle a_video" href="https://www.youtube.com/watch?v=ZZVmmHVDfNQ" target="_blank">【FAD】生放送第１回　脱出迷路Ver.【マインクラフト】</a>
                   <!--https://www.youtube.com/watch?v=動画ID https://i.ytimg.com/vi/動画ID/mqdefault.jpg-->
                   <div class="youtube_window_video">
                     <a href="https://www.youtube.com/watch?v=ZZVmmHVDfNQ" target="_blank"><img class="youtube_video" src="https://i.ytimg.com/vi/ZZVmmHVDfNQ/mqdefault.jpg" alt="最新FADアーカイブ"><img class="youtube_video video_thumbnail" src="https://fadserver.github.io/FAD/image/Youtube.png"></a>
                   </div>
+                  <label for="play-2020-12-12"><span class="tag"><span class="AweSomeFont-Free tag_icon">第1回</span></span></label>
                   <dl class="content">
                     <dt class="postch_ex ex">投稿チャンネル</dt>
                     <dd class="postch_name concrete">
@@ -240,22 +252,25 @@
                   </dl>
                 </div>
 
-                <div class="video_list" data-video_list-type="play-2020-12-11">
+                <div class="video_list play-archive play-2020-12-11">
                   <div class="category">
                     <div class="category-1">
                       <span class="AweSomeFont-Free2 date_icon"></span>
                       <p class="date">2020 / 12 / 11　<span class="week">Fri</span></p>
                     </div>
-                    <div class="category-2">
-                      <span class="AweSomeFont-Free archive_icon"></span>
-                      <br><span class="category_type">アーカイブ</span>
-                    </div>
+                    <label for="play-archive">
+                        <div class="category-2">
+                        <span><i class="fas fa-archive .archive_icon"></i></span>
+                        <br><span class="category_type">アーカイブ</span>
+                      </div>
+                      </label>
                   </div>
                   <a class="tytle a_video" href="https://www.youtube.com/watch?v=af14T4169YQ" target="_blank">【FAD】ぷろと【マインクラフト】</a>
                   <!--https://www.youtube.com/watch?v=動画ID https://i.ytimg.com/vi/動画ID/mqdefault.jpg-->
                   <div class="youtube_window_video">
                     <a href="https://www.youtube.com/watch?v=af14T4169YQ" target="_blank"><img class="youtube_video" src="https://i.ytimg.com/vi/af14T4169YQ/mqdefault.jpg"><img class="youtube_video video_thumbnail" src="https://fadserver.github.io/FAD/image/Youtube.png"></a>
                   </div>
+                  <label for="play-2020-12-11"><span class="tag"><span class="AweSomeFont-Free tag_icon">ぷろと</span></span></label>
                   <dl class="content">
                     <dt class="postch_ex ex">投稿チャンネル</dt>
                     <dd class="postch_name concrete">
