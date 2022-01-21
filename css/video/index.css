@@ -268,8 +268,10 @@
   display: block;
   height: 0;
   opacity: 0;
-  transition: 0.5s ease;
   visibility: hidden;
+}
+.acd-content-1{
+  line-height: 1;
 }
 .acd-check:checked + .acd-label:after{
   content: '\f068';

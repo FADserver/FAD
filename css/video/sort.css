@@ -3,7 +3,7 @@
     background-color: #BDE3F2;
     transition: 0.5s ease;
   }
-  .products .sort-checkbox[id="play-2021-5-1"]:checked ~ .products__sort .button[for="play-2021-5-1"] {
+  .products .sort-checkbox[id="play-2021-5-1"]:checked ~ .products__sort .button[for="play-2021-5-1"], .products .sort-checkbox[id="play-2021-5-1"]:checked ~ .acd-content .products__sort .button[for="play-2021-5-1"] {
     background-color: #BDE3F2;
     color: #333333;
   }
@@ -13,7 +13,7 @@
     background-color: #BDE3F2;
     transition: 0.5s ease;
   }
-  .products .sort-checkbox[id="play-2020-12-12-2"]:checked ~ .products__sort .button[for="play-2020-12-12-2"] {
+  .products .sort-checkbox[id="play-2020-12-12-2"]:checked ~ .acd-content .products__sort .button[for="play-2020-12-12-2"] {
     background-color: #BDE3F2;
     color: #333333;
   }
@@ -23,7 +23,7 @@
     background-color: #BDE3F2;
     transition: 0.5s ease;
   }
-  .products .sort-checkbox[id="play-2020-12-12-1"]:checked ~ .products__sort .button[for="play-2020-12-12-1"] {
+  .products .sort-checkbox[id="play-2020-12-12-1"]:checked ~ .acd-content .products__sort .button[for="play-2020-12-12-1"] {
     background-color: #BDE3F2;
     color: #333333;
   }
@@ -33,7 +33,7 @@
     background-color: #BDE3F2;
     transition: 0.5s ease;
   }
-  .products .sort-checkbox[id="play-2020-12-12"]:checked ~ .products__sort .button[for="play-2020-12-12"] {
+  .products .sort-checkbox[id="play-2020-12-12"]:checked ~ .products__sort .button[for="play-2020-12-12"], .products .sort-checkbox[id="play-2020-12-12"]:checked ~ .acd-content .products__sort .button[for="play-2020-12-12"] {
     background-color: #BDE3F2;
     color: #333333;
   }
@@ -43,7 +43,7 @@
     background-color: #BDE3F2;
     transition: 0.5s ease;
   }
-  .products .sort-checkbox[id="play-2020-12-11"]:checked ~ .products__sort .button[for="play-2020-12-11"] {
+  .products .sort-checkbox[id="play-2020-12-11"]:checked ~ .products__sort .button[for="play-2020-12-11"], .products .sort-checkbox[id="play-2020-12-11"]:checked ~ .acd-content .products__sort .button[for="play-2020-12-11"] {
     background-color: #BDE3F2;
     color: #333333;
   }
