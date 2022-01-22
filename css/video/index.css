@@ -242,6 +242,14 @@
   position: relative;
   transition: 0.5s;
 }
+.acd-label1 {
+  line-height: 1;
+  height: 46px;
+}
+.acd-label1 span {
+  display: inline-block;
+  margin-top: 3px;
+}
 .acd-label:after{
   background: #000946;
   color: #FFFFFF;
@@ -361,6 +369,9 @@
 }
 .img_icon {
   width: 90px;
+}
+.img_person {
+  width: 250px;
 }
 .No {
   font-size: 20px;

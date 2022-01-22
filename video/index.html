@@ -114,32 +114,42 @@
           <p class="remarks">再生リストは<a class="a_blank" href="https://youtube.com/playlist?list=PLZkQiHvRa22yIFxHz-Pdd4Lp1Tpev-oMn" target="_blank">こちら</a>！</p>
 
           <input id="acd-howto" class="acd-check" type="checkbox">
-            <label class="acd-label" for="acd-howto">使い方</label>
-            <div class="acd-content">
-              <span>
+          <label class="acd-label" for="acd-howto">使い方</label>
+          <div class="acd-content">
+            <span>
                 FADミニゲームを投稿した動画やアーカイブを集めました。運営だけでなく、投稿した方全員を掲載しています。いろいろ並び変えられるので他視点もお楽しみください！
-                <br><span class="No">①</span>　FAD開催日付で並び変え
-                <br><span class="setumei"><img class="img_date" src="../image/video/date.jpg">
+            <!--    <input id="acd-ex" class="acd-check" type="checkbox">
+            <label class="acd-label acd-label1" for="acd-ex"><span>カードの見方</span></label>
+            <div class="acd-content">
+              <p>いま作ってます。</p>
+            </div>-->
+            <br><span class="No">①</span>　FAD開催日付で並び変え
+            <br><span class="setumei"><img class="img_date" src="../image/video/date.jpg">
                 <br>
                 </span>
-                <span class="No">②</span>　動画orライブアーカイブで並び変え
-                <br><span class="setumei"><img class="img_icon" src="../image/video/icon.jpg">
+            <span class="No">②</span>　動画orライブアーカイブで並び変え
+            <br><span class="setumei"><img class="img_icon" src="../image/video/icon.jpg">
                 <br>
                 </span>
-                <span class="No">③</span>　少佐.exeのライブアーカイブ基準で並び変え
-                <br><span class="setumei"><img class="img_tag" src="../image/video/tag.jpg">
+            <span class="No">③</span>　少佐.exeのライブアーカイブ基準で並び変え
+            <br><span class="setumei"><img class="img_tag" src="../image/video/tag.jpg">
                 <br>
                 </span>
-                <span class="No">④</span>　複数選択可！（or検索が可能。and検索は難かしい...）
-                <br><span class="setumei">〇〇さんか□□さんが出てる動画だけ見たい！
+                <span class="No">④</span>　参加者で並び変え
+            <br><span class="setumei"><img class="img_person" src="../image/video/person.jpg">
+              <span class="setumei"><img class="img_date" src="../image/video/persontag.jpg">
+                <br>
+                </span>
+            <span class="No">⑤</span>　複数選択可！（or検索が可能。and検索は難かしい...）
+            <br><span class="setumei">〇〇さんか□□さんが出てる動画だけ見たい！
                 <br>第△回と第∈回だけ見たい！　etc...
                 </span>
-                <p class="remarks">もっと詳しい対応表は<a class="a_blank" href="https://docs.google.com/spreadsheets/d/1uZAZUq7macV-soz_7VuY_CglGA7hIUnclFYyVnsOx_I/edit?usp=sharing" target="_blank">Googleスプレッドシート</a>から！</p>
-                <div class="delete">
-                  <p><a class="a_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSffqwfQlGgRp5ItjXIRQt1mk0rgMM5Ib2jHU4ef1bgvKSzBuA/viewform?usp=sf_link" target="_blank">削除依頼</a></p>
-                </div>
-              </span>
+            <p class="remarks">もっと詳しい対応表は<a class="a_blank" href="https://docs.google.com/spreadsheets/d/1uZAZUq7macV-soz_7VuY_CglGA7hIUnclFYyVnsOx_I/edit?usp=sharing" target="_blank">Googleスプレッドシート</a>から！</p>
+            <div class="delete">
+              <p><a class="a_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSffqwfQlGgRp5ItjXIRQt1mk0rgMM5Ib2jHU4ef1bgvKSzBuA/viewform?usp=sf_link" target="_blank">削除依頼</a></p>
             </div>
+            </span>
+          </div>
 
           <div class="products">
             <input class="sort-checkbox" type="checkbox" name="sort-checkbox" id="play-2021-5-1" />
@@ -156,9 +166,9 @@
             <input class="sort-checkbox" type="checkbox" name="sort-checkbox" id="maru190" />
 
             <div class="products__sort">
-              <label class="button" for="play-2021-5-1"><span class="palyday">2021/5/1/Sat</span></label>
-              <label class="button" for="play-2020-12-12"><span class="palyday">2020/12/12/Sat</span></label>
-              <label class="button" for="play-2020-12-11"><span class="palyday">2020/12/11/Fri</span></label>
+              <label class="button" for="play-2021-5-1"><span class="palyday">2021/5/1/Sat<br>開催</span></label>
+              <label class="button" for="play-2020-12-12"><span class="palyday">2020/12/12/Sat<br>開催</span></label>
+              <label class="button" for="play-2020-12-11"><span class="palyday">2020/12/11/Fri<br>開催</span></label>
               <label class="button" for="play-movie"><span class="palyday">動画</span></label>
               <label class="button" for="play-archive"><span class="palyday">ライブアーカイブ</span></label>
             </div>
@@ -168,10 +178,10 @@
             <label class="acd-label" for="acd-person">参加者で選択</label>
             <div class="acd-content acd-content-1">
               <div class="products__sort">
-               <label class="button" for="major-exe"><img class="ch_icon" src="https://yt3.ggpht.com/ytc/AKedOLQXGwuLrZ3cCLtU7sZ5hqHaaq4AyKbi4xiUCR2A=s88-c-k-c0x00ffffff-no-rj"><br><span class="palyday">major.exe</span></label>
-               <label class="button" for="hope"><img class="ch_icon" src="https://yt3.ggpht.com/PLbUs5TZFGjz8Wawgqz4v1u2rTxUko6rmxQlxU8xuvmN7a3iR7Tz1qpa1BuhZLFnvc-80k2KIw=s176-c-k-c0x00ffffff-no-rj-mo"><br><span class="palyday">hope</span></label>
-               <label class="button" for="huwapen"><img class="ch_icon" src="https://pbs.twimg.com/profile_images/1393444952206577666/xA0ZpUwe_400x400.jpg"><br><span class="palyday">huwapenn</span></label>
-               <label class="button" for="maru190"><img class="ch_icon" src="https://yt3.ggpht.com/ytc/AKedOLS9S6_c-XYdR37fYU_1j3QSgDV_lvchlLoRfUYJ=s88-c-k-c0x00ffffff-no-rj"><br><span class="palyday">maru190</span></label>
+                <label class="button" for="major-exe"><img class="ch_icon" src="https://yt3.ggpht.com/ytc/AKedOLQXGwuLrZ3cCLtU7sZ5hqHaaq4AyKbi4xiUCR2A=s88-c-k-c0x00ffffff-no-rj"><br><span class="palyday">major.exe</span></label>
+                <label class="button" for="hope"><img class="ch_icon" src="https://yt3.ggpht.com/PLbUs5TZFGjz8Wawgqz4v1u2rTxUko6rmxQlxU8xuvmN7a3iR7Tz1qpa1BuhZLFnvc-80k2KIw=s176-c-k-c0x00ffffff-no-rj-mo"><br><span class="palyday">hope</span></label>
+                <label class="button" for="huwapen"><img class="ch_icon" src="https://pbs.twimg.com/profile_images/1393444952206577666/xA0ZpUwe_400x400.jpg"><br><span class="palyday">huwapenn</span></label>
+                <label class="button" for="maru190"><img class="ch_icon" src="https://yt3.ggpht.com/ytc/AKedOLS9S6_c-XYdR37fYU_1j3QSgDV_lvchlLoRfUYJ=s88-c-k-c0x00ffffff-no-rj"><br><span class="palyday">maru190</span></label>
               </div>
             </div>
             <input id="acd-no" class="acd-check" type="checkbox">
@@ -196,7 +206,7 @@
                     </div>
                     <label for="play-archive">
                       <div class="category-2">
-                      <span><i class="fas fa-archive .archive_icon"></i></span>
+                      <span><i class="fas fa-archive archive_icon"></i></span>
                       <br><span class="category_type">アーカイブ</span>
                     </div>
                     </label>
@@ -238,7 +248,7 @@
                     </div>
                     <label for="play-archive">
                       <div class="category-2">
-                      <span><i class="fas fa-archive .archive_icon"></i></span>
+                      <span><i class="fas fa-archive archive_icon"></i></span>
                       <br><span class="category_type">アーカイブ</span>
                     </div>
                     </label>
@@ -282,7 +292,7 @@
                     </div>
                     <label for="play-archive">
                       <div class="category-2">
-                      <span><i class="fas fa-archive .archive_icon"></i></span>
+                      <span><i class="fas fa-archive archive_icon"></i></span>
                       <br><span class="category_type">アーカイブ</span>
                     </div>
                     </label>
@@ -326,7 +336,7 @@
                     </div>
                     <label for="play-archive">
                         <div class="category-2">
-                        <span><i class="fas fa-archive .archive_icon"></i></span>
+                        <span><i class="fas fa-archive archive_icon"></i></span>
                         <br><span class="category_type">アーカイブ</span>
                       </div>
                       </label>
