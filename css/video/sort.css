@@ -92,12 +92,12 @@
     color: #333333;
   }
 
-  .products .sort-checkbox[id="huwapen"]:checked ~ .video-flame .products__wrap .huwapen {
+  .products .sort-checkbox[id="huwapenn"]:checked ~ .video-flame .products__wrap .huwapenn {
     order: -1;
     background-color: #BDE3F2;
     transition: 0.5s ease;
   }
-  .products .sort-checkbox[id="huwapen"]:checked ~ .acd-content .products__sort .button[for="huwapen"] {
+  .products .sort-checkbox[id="huwapenn"]:checked ~ .acd-content .products__sort .button[for="huwapenn"] {
     background-color: #BDE3F2;
     color: #333333;
   }

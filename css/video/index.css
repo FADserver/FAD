@@ -132,10 +132,10 @@
 
 .ex {
   display: block;
-  min-width: 95px;
-  max-width: 95px;
+  min-width: 110px;
+  max-width: 110px;
   border-right: 1px solid #888888;
-  font-size: 12px;
+  font-size: 13px;
   padding-right: 10px;
   color: #333333;
 }
@@ -190,6 +190,11 @@
   height: 60px;
   padding: 5px;
   border-radius: 100%;
+}
+.ch_ex_setumei {
+  display: block;
+  margin-top: 8px;
+  font-size: 10px;
 }
 /* ↑ 詳細情報 ↑ */
 
