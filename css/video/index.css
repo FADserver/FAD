@@ -297,7 +297,6 @@
   visibility: visible;
   transition: 0.5s ease;
 }
-
 /* ↓ ソート ↓ */
 .products__sort {
   display: flex;
@@ -340,6 +339,13 @@
 .button:active:after {
   height: 450%;
   opacity: 1;
+}
+
+.buttun_icon {
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+  border-radius: 100%;
 }
 /* ↑ ボタン ↑ */
 
