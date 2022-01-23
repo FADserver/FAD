@@ -143,11 +143,10 @@ a.anchor{
 /* ↓ アコーディオンボックス ↓ */
 .acbox{
   width: auto;
-  font-size:0px; /* ラベルと開く部分を分離する時は数値を入れる */
-  margin:10px 0 10px 0; /* ボックス全体の位置調整 */
+  font-size: 0px; /* ラベルと開く部分を分離する時は数値を入れる */
+  margin: 10px 0 10px 0; /* ボックス全体の位置調整 */
 }
-
-.acbox label{
+.acbox > label{
   width: 100%;
   font-size: 16px; /* ラベルの文字サイズ */
   font-weight: bold;
@@ -160,16 +159,13 @@ a.anchor{
   cursor: pointer;
   color: #fff;
 }
-
-.acbox label:hover{
+.acbox > label:hover{
   background: #000946; /* ラベルにマウスを乗せた時の背景色 */
 }
-
 .acbox input{
   display: none;
 }
-
-.acbox label:after{
+.acbox > label:after{
   color: #fff;
   content:"▼"; /* ラベルのアイコン */
   position: absolute;
@@ -177,19 +173,16 @@ a.anchor{
   right: 15px;
   margin-top: -14px;
 }
-
-.acbox input:checked ~ label::after {
+.acbox > input:checked ~ label::after {
   content:"▲"; /* ラベルをクリックした後のアイコン */
   color: #333333;
 }
-
 .acbox-under{
   height: 0px;
   overflow: hidden;
   opacity: 0;
   transition: 0.15s; /* 開閉スピードの設定 */
 }
-
 .acbox input:checked ~ .acbox-under{
   height: auto;
   padding: 18px; /* 開いた部分の枠内の余白 */
@@ -197,13 +190,11 @@ a.anchor{
   background: #F3F4F5; /* 開いた部分の背景色 */
   opacity: 1;
 }
-
 .acbox input:checked ~ label {
   background: #ffffff; /* クリック後のラベルの背景色 */
   border: 1px solid #3D4073;
   color: #333333;
 }
-
 .acbox-under{
   font-size: 15px; /* 開いた部分の文字サイズ */
   color: #333333; /* 開いた部分の文字色 */

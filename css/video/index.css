@@ -234,73 +234,8 @@
   font-size: 12px;
 }
 
-.acd-check{
-  display: none;
-}
-.acd-label{
-  background: #FFFFFF;
-  color: #000946;
-  border: 1px solid #000946;
-  display: block;
-  margin-bottom: 1px;
-  padding: 10px;
-  position: relative;
-  transition: 0.5s;
-}
-.acd-label1 {
-  line-height: 1;
-  height: 46px;
-}
-.acd-label1 span {
-  display: inline-block;
-  margin-top: 3px;
-}
-.acd-label:after{
-  background: #000946;
-  color: #FFFFFF;
-  box-sizing: border-box;
-  content: '\f078';
-  display: block;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  height: 44px;
-  padding: 20px 20px;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-.acd-content{
-  background-color: #F1F1F1;
-  margin-bottom: 10px;
-  padding: 10px;
-  line-height: 2;
-  display: block;
-  height: 0;
-  opacity: 0;
-  visibility: hidden;
-}
 .acd-content-1{
   line-height: 1;
-}
-.acd-check:checked + .acd-label:after{
-  content: '\f068';
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  transition: 0.5s ease;
-}
-.acd-check:checked + .acd-label + .acd-content{
-  height: auto;
-  opacity: 1;
-  visibility: visible;
-  transition: 0.5s ease;
 }
 /* ↓ ソート ↓ */
 .products__sort {
