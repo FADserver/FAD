@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
 * {
@@ -185,7 +185,7 @@ a.anchor{
 }
 .acbox input:checked ~ .acbox-under{
   height: auto;
-  padding: 18px; /* 開いた部分の枠内の余白 */
+  padding: 18px 10px; /* 開いた部分の枠内の余白 */
   border-radius: 0px;
   background: #F3F4F5; /* 開いた部分の背景色 */
   opacity: 1;
