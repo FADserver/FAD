@@ -240,14 +240,21 @@
   color: #ffffff;
   margin: 0;
 }
-#countdown-label {
+.countdown-label {
   line-height: 1.5;
   color: #ffffff;
   margin-bottom: 5px;
 }
-#countdown_days, #countdown_hours, #countdown_min, #countdown_sec {
+.countdown_days, .countdown_hours, .countdown_min, .countdown_sec {
   font-size: 30px;
   margin: 0 5px;
+}
+.comment2 {
+  border-top: 2px solid #FFFFFF;
+}
+.comment > .tytle {
+  font-weight: bold;
+  font-size: 20px;
 }
 /* ↑ FADカウントダウン ↑ */
 

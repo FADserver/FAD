@@ -1,110 +1,169 @@
 <!DOCTYPE html>
-<div class="twitter">
-  <div class="balloon1">
-    <p>フォローしてね！</p>
-  </div>
-  <a class="twitter-timeline" data-lang="ja" data-height="900" href="https://twitter.com/FADserver?ref_src=twsrc%5Etfw">Tweets by FADserver</a>
-  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
-
-<div class="balloon1">
-  <p>サーバー開放状況</p>
-</div>
-<a href="https://minecraft.jp/servers/FAD.f5.si" target="_blank"><img class="img-JMS" src="https://minecraft.jp/servers/FAD.f5.si/banner/2/560x95.png"/></a>
-
-<div class="sidebar-wrapper">
-  <p class="ip-address"><span class="ip-address-icon"></span>サーバーアドレス</p>
-  <div class="comment">
-    <p class="ip-address_p">FAD.f5.si</p>
-    <p>参加方法が分からないときは<a class="a_sidebar" href="https://fadserver.github.io/FAD/join/#join">こちら</a>を参考にしてください。</p>
-    <p class="rules">参加するときは<a class="a_sidebar" href="https://fadserver.github.io/FAD/about/rules/server_rule">FADサーバー利用規約</a>をご確認ください。</p>
-  </div>
-</div>
-
-<div class="sidebar-wrapper">
-  <p class="info"><span class="info-icon"></span>お知らせ</p>
-  <div class="comment">
-    <p>【重要】<a class="a_sidebar_blank" href="https://fadserver.github.io/FAD/news/release/2021-12-15" target="_blank">Log4jの脆弱性について</a>を掲載しました。</p>
-    <p>当サイトはJavaScriptを用いています。無効にすると一部正常に動作しない場合があります。</p>
-    <p>今はあまり活動してません。</p>
-  </div>
-</div>
-
-<div class="sidebar-wrapper">
-  <p class="update"><span class="update-icon"></span>アップデート</p>
-  <div class="comment">
-    <p>ロビーで詰んだ時に手持ちのダイアモンドでTPできるようになりました！</p>
-    <p>サイトにサイドバーができました！</p>
-  </div>
-
-</div>
-<div class="sidebar-wrapper">
-  <p class="open"><span class="open-icon"></span>開催日</p>
-  <div class="comment">
-    <p>不定期開催です</p>
-    <!--
-    <p>第3回　2021//（土）　<a class="a_blank_open" href="" target="_blank">放送枠</a></p>
-    <p>第4回　2021//（土）　<a class="a_blank_open" href="" target="_blank">放送枠</a></p>
-    -->
-  </div>
-</div>
-
-<div class="sidebar-wrapper">
-  <p class="youtube"><span class="youtube-icon"></span>最新FADアーカイブ</p>
-  <div class="comment">
-    <p>
-      第2回　2020/12/12開催
-    </p>
-
-    <div class="countdown-timer">
-      <p id="countdown-label">FADサーバー開始まであと...
-        <br><span id="countdown_days"></span>日<span id="countdown_hours"></span>時間<span id="countdown_min"></span>分<span id="countdown_sec"></span>秒
-      </p>
-    </div>
-
-    <script language="JavaScript">
-      const goal = new Date("2020-12-12 8:40:00");//FAD開始日時入力
-        let count;
-        function countDown(goal) {
-          const now = new Date();
-          const left = goal.getTime() - now.getTime();
-          if (left > 0) {
-            const countdown_sec = Math.floor(left / 1000) % 60;
-            const countdown_min = Math.floor(left / 1000 / 60) % 60;
-            const countdown_hours = Math.floor(left / 1000 / 60 / 60) % 24;
-            const countdown_days = Math.floor(left / 1000 / 60 / 60 / 24);
-            count = { countdown_days: countdown_days, countdown_hours: countdown_hours, countdown_min: countdown_min, countdown_sec: countdown_sec };
-          } else {
-            count = { countdown_days: 0, countdown_hours: 0, countdown_min: 0, countdown_sec: 0 };
-          }
-          return count;
-        }
-        //Timer処理
-        function setCountDown() {
-          let counter = countDown(goal);
-          let end = 0;
-          const countDownTimer = setTimeout(setCountDown, 1000);
+        <div class="twitter">
+          <div class="balloon1">
+            <p>フォローしてね！</p>
+          </div>
+          <a class="twitter-timeline" data-lang="ja" data-height="900" href="https://twitter.com/FADserver?ref_src=twsrc%5Etfw">Tweets by FADserver</a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
         
-          for (let item in counter) {
-            document.getElementById(item).textContent = counter[item];
-            end += parseInt(counter[item]);
-          }
-          if (end === 0) {
-            clearTimeout(countDownTimer);
-            document.getElementById("countdown-label").textContent =
-              "今回のFADは終了しました。アーカイブをお楽しみください！";
-          }
-        }
+        <div class="balloon1">
+          <p>サーバー開放状況</p>
+        </div>
+        <a href="https://minecraft.jp/servers/FAD.f5.si" target="_blank"><img class="img-JMS" src="https://minecraft.jp/servers/FAD.f5.si/banner/2/560x95.png"/></a>
         
-        setCountDown();
-    </script>
-    <p>
-      ↓配信はこちら！↓
-    </p>
-    <div class="youtube_window">
-      <!--https://www.youtube.com/watch?v=動画ID https://i.ytimg.com/vi/動画ID/mqdefault.jpg-->
-      <a href="https://www.youtube.com/watch?v=rNKuwyn50Wc" target="_blank"><img class="youtube-archive" src="https://i.ytimg.com/vi/rNKuwyn50Wc/mqdefault.jpg" alt="最新FADアーカイブ"><img class="youtube-archive thumbnail" src="https://fadserver.github.io/FAD/image/Youtube.png"></a>
-    </div>
-    <p>アーカイブは<a class="a_blank_open" href="https://youtube.com/playlist?list=PLZkQiHvRa22yIFxHz-Pdd4Lp1Tpev-oMn" target="_blank">再生リスト</a>から！</p>
-  </div>
-</div>
+        <div class="sidebar-wrapper">
+          <p class="ip-address"><span class="ip-address-icon"></span>サーバーアドレス</p>
+          <div class="comment">
+            <p class="ip-address_p">FAD.f5.si</p>
+            <p>参加方法が分からないときは<a class="a_sidebar" href="https://fadserver.github.io/FAD/join/#join">こちら</a>を参考にしてください。</p>
+            <p class="rules">参加するときは<a class="a_sidebar" href="https://fadserver.github.io/FAD/about/rules/server_rule">FADサーバー利用規約</a>をご確認ください。</p>
+          </div>
+        </div>
+        
+        <div class="sidebar-wrapper">
+          <p class="info"><span class="info-icon"></span>お知らせ</p>
+          <div class="comment">
+            <p>【重要】<a class="a_sidebar_blank" href="https://fadserver.github.io/FAD/news/release/2021-12-15" target="_blank">Log4jの脆弱性について</a>を掲載しました。</p>
+            <p>当サイトはJavaScriptを用いています。無効にすると一部正常に動作しない場合があります。</p>
+            <p>今はあまり活動してません。</p>
+          </div>
+        </div>
+        
+        <div class="sidebar-wrapper">
+          <p class="update"><span class="update-icon"></span>アップデート</p>
+          <div class="comment">
+            <p>ロビーで詰んだ時に手持ちのダイアモンドでTPできるようになりました！</p>
+            <p>サイトにサイドバーができました！</p>
+          </div>
+        
+        </div>
+        <div class="sidebar-wrapper">
+          <p class="open"><span class="open-icon"></span>開催日</p>
+          <div class="comment">
+            <p>不定期開催です</p>
+            <!--
+            <p>第3回　2021//（土）　<a class="a_blank_open" href="" target="_blank">放送枠</a></p>
+            <p>第4回　2021//（土）　<a class="a_blank_open" href="" target="_blank">放送枠</a></p>
+            -->
+          </div>
+        </div>
+        
+        <div class="sidebar-wrapper">
+          <p class="youtube"><span class="youtube-icon"></span>最新FADアーカイブ</p>
+          <div class="comment">
+            <p class="tytle">
+              第2回　2020/12/12開催
+            </p>
+        
+            <div class="countdown-timer">
+              <p id="countdown-label1" class="countdown-label">FADサーバー開始まであと...
+                <br><span id="countdown_days1" class="countdown_days"></span>日<span id="countdown_hours1" class="countdown_hours"></span>時間<span id="countdown_min1" class="countdown_min"></span>分<span id="countdown_sec1" class="countdown_sec"></span>秒
+              </p>
+            </div>
+        
+            <script language="JavaScript">
+              const goal = new Date("2021-12-12 8:40:00");//FAD開始日時入力
+                let count;
+                function countDown(goal) {
+                  const now = new Date();
+                  const left = goal.getTime() - now.getTime();
+                  if (left > 0) {
+                    const countdown_sec1 = Math.floor(left / 1000) % 60;
+                    const countdown_min1 = Math.floor(left / 1000 / 60) % 60;
+                    const countdown_hours1 = Math.floor(left / 1000 / 60 / 60) % 24;
+                    const countdown_days1 = Math.floor(left / 1000 / 60 / 60 / 24);
+                    count = { countdown_days1: countdown_days1, countdown_hours1: countdown_hours1, countdown_min1: countdown_min1, countdown_sec1: countdown_sec1 };
+                  } else {
+                    count = { countdown_days1: 0, countdown_hours1: 0, countdown_min1: 0, countdown_sec1: 0 };
+                  }
+                  return count;
+                }
+                //Timer処理
+                function setCountDown() {
+                  let counter = countDown(goal);
+                  let end = 0;
+                  const countDownTimer = setTimeout(setCountDown, 1000);
+                
+                  for (let item in counter) {
+                    document.getElementById(item).textContent = counter[item];
+                    end += parseInt(counter[item]);
+                  }
+                  if (end === 0) {
+                    clearTimeout(countDownTimer);
+                    document.getElementById("countdown-label1").textContent =
+                      "今回のFADは終了しました。アーカイブをお楽しみください！";
+                  }
+                }
+                setCountDown();
+            </script>
+            <p>
+              ↓配信はこちら！↓
+            </p>
+            <div class="youtube_window">
+              <!--https://www.youtube.com/watch?v=動画ID https://i.ytimg.com/vi/動画ID/mqdefault.jpg-->
+              <a href="https://www.youtube.com/watch?v=rNKuwyn50Wc" target="_blank"><img class="youtube-archive" src="https://i.ytimg.com/vi/rNKuwyn50Wc/mqdefault.jpg" alt="最新FADアーカイブ"><img class="youtube-archive thumbnail" src="https://fadserver.github.io/FAD/image/Youtube.png"></a>
+            </div>
+            <p>アーカイブは<a class="a_blank_open" href="https://youtube.com/playlist?list=PLZkQiHvRa22yIFxHz-Pdd4Lp1Tpev-oMn" target="_blank">再生リスト</a>から！</p>
+          </div>
+
+          <!--
+          <div class="comment comment2">
+            <p class="tytle">
+              第2回　2020/12/12開催
+            </p>
+        
+            <div class="countdown-timer">
+              <p id="countdown-label2" class="countdown-label">FADサーバー開始まであと...
+                <br><span id="countdown_days2" class="countdown_days"></span>日<span id="countdown_hours2" class="countdown_hours"></span>時間<span id="countdown_min2" class="countdown_min"></span>分<span id="countdown_sec2" class="countdown_sec"></span>秒
+              </p>
+            </div>
+        
+            <script language="JavaScript">
+              const goal = new Date("2024-12-12 8:40:00");//FAD開始日時入力
+                let count;
+                function countDown(goal) {
+                  const now = new Date();
+                  const left = goal.getTime() - now.getTime();
+                  if (left > 0) {
+                    const countdown_sec2 = Math.floor(left / 1000) % 60;
+                    const countdown_min12= Math.floor(left / 1000 / 60) % 60;
+                    const countdown_hours2 = Math.floor(left / 1000 / 60 / 60) % 24;
+                    const countdown_days2 = Math.floor(left / 1000 / 60 / 60 / 24);
+                    count = { countdown_days2: countdown_days2, countdown_hours2: countdown_hours2, countdown_min2: countdown_min2, countdown_sec2: countdown_sec2 };
+                  } else {
+                    count = { countdown_days2: 0, countdown_hours2: 0, countdown_min2: 0, countdown_sec2: 0 };
+                  }
+                  return count;
+                }
+                //Timer処理
+                function setCountDown() {
+                  let counter = countDown(goal);
+                  let end = 0;
+                  const countDownTimer = setTimeout(setCountDown, 1000);
+                
+                  for (let item in counter) {
+                    document.getElementById(item).textContent = counter[item];
+                    end += parseInt(counter[item]);
+                  }
+                  if (end === 0) {
+                    clearTimeout(countDownTimer);
+                    document.getElementById("countdown-label2").textContent =
+                      "今回のFADは終了しました。アーカイブをお楽しみください！";
+                  }
+                }
+                setCountDown();
+            </script>
+            <p>
+              ↓配信はこちら！↓
+            </p>
+            
+
+            <div class="youtube_window">
+              <a href="https://www.youtube.com/watch?v=rNKuwyn50Wc" target="_blank"><img class="youtube-archive" src="https://i.ytimg.com/vi/rNKuwyn50Wc/mqdefault.jpg" alt="最新FADアーカイブ"><img class="youtube-archive thumbnail" src="https://fadserver.github.io/FAD/image/Youtube.png"></a>
+            </div>
+            <p>アーカイブは<a class="a_blank_open" href="https://youtube.com/playlist?list=PLZkQiHvRa22yIFxHz-Pdd4Lp1Tpev-oMn" target="_blank">再生リスト</a>から！</p>
+          </div>
+        -->
+
+        </div>
