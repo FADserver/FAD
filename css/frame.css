@@ -234,6 +234,23 @@
   left: 0;
 }
 
+/* ↓ FADカウントダウン ↓ */
+.countdown-nokori, .countdown-timer span {
+  line-height: 1;
+  color: #ffffff;
+  margin: 0;
+}
+#countdown-label {
+  line-height: 1.5;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+#countdown_days, #countdown_hours, #countdown_min, #countdown_sec {
+  font-size: 30px;
+  margin: 0 5px;
+}
+/* ↑ FADカウントダウン ↑ */
+
 .message-wrapper {
   padding:0 15px 80px 15px;
   text-align: center;
