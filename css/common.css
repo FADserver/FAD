@@ -418,8 +418,8 @@ h1:before {
 }
 /* ここまで */
 
-.logo {
-  width: 124px;
+.logo_head {
+  width: 110px;
   margin-top: 10px;
 }
 
