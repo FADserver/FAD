@@ -1,0 +1,148 @@
+.mode_img2 {
+  width: 500px;
+  border: 1px solid #8C8C8C;
+}
+@media all and (max-width: 768px) and (max-width: 1024px) {
+  .mode_img2 {
+    width: 390px;
+    border: 1px solid #8C8C8C;
+  }
+}
+@media all and (max-width: 670px) {
+  .mode_img2 {
+    width: 290px;
+    border: 1px solid #8C8C8C;
+  }
+}
+@media all and (max-width: 414px) {
+  .mode_img2 {
+    width: 340px;
+    border: 1px solid #8C8C8C;
+  }
+}
+@media all and (max-width: 375px) {
+  .mode_img2 {
+    width: 290px;
+    border: 1px solid #8C8C8C;
+  }
+}
+@media all and (max-width: 320px) {
+  .mode_img2 {
+    width: 240px;
+    border: 1px solid #8C8C8C;
+  }
+}
+@media all and (max-width: 280px) {
+  .mode_img2 {
+    width: 190px;
+    border: 1px solid #8C8C8C;
+  }
+}
+
+.icon {
+  width: 30px !important;
+  display: inline !important;
+  margin-right: 5px;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+/* ↓ ゲーム手順箇条書き ↓ */
+.process {
+  list-style-type: decimal-leading-zero;
+  display: block;
+  line-height: 2;
+  font-size: 15px;
+  color: #333333;
+}
+/* ↑ ゲーム手順箇条書き ↑ */
+
+/* ↓ ボタン ↓ */
+.ResourcePack_blank {
+  margin-top: 30px;
+}
+
+.ResourcePack-wrapper {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.mode_message {
+  padding: 15px 40px;
+  background-color: #005ECC;
+  cursor: pointer;
+  box-shadow: 0px 7px #003B7F;
+}
+
+.mode_message::after {
+  content: "\f56d";
+  color: #ffffff;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.mode_message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+.ResourcePack_btn {
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.ResourcePack_btn:hover {
+  opacity: 1;
+}
+
+/**/
+.modes_blank {
+  margin-top: 30px;
+}
+
+.modes_btn2{
+  display: inline;
+}
+.modes-wrapper {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.modes_message {
+  padding: 15px 40px;
+  background-color: #595959;
+  cursor: pointer;
+  box-shadow: 0px 7px #0D0D0D;
+}
+
+.modes_message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+.modes_btn {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  width: 270px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.modes_btn:hover {
+  opacity: 1;
+}
+
+.modes_blank br{
+  margin-bottom: 20px;
+}
+/* ↑ ボタン ↑ */

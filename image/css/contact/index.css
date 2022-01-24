@@ -1,0 +1,104 @@
+.h2_QA {
+  margin-top: 100px;
+}
+.headline2_QA {
+  position: relative;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
+  border: 2px solid #000;
+  background: #fff;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.headline2_QA:before,
+.headline2_QA:after {
+  position: absolute;
+  content: '';
+}
+
+.headline2_QA:before {
+  top: -50px;
+  left: calc(50% - 40px);
+  width: 80px;
+  height: 80px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.headline2_QA:after {
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 100%;
+  background: #fff;
+}
+
+.headline2_QA i {
+  font-size: 30px;
+  font-size: 3rem;
+  line-height: 60px;
+  position: absolute;
+  z-index: 1;
+  top: -40px;
+  left: calc(50% - 40px);
+  width: 80px;
+  height: 60px;
+  text-align: center;
+}
+
+.headline2_QA span {
+  position: relative;
+  z-index: 1;
+  color: #333333;
+}
+
+.form {
+  margin-top: 60px;
+  text-align: center;
+}
+
+@media all and (min-width: 360px) {
+  .form iframe {
+  width: 100%;
+  height: 1200px;
+  border: none;
+  }
+}
+@media all and (min-width: 411px) {
+  .form iframe {
+  width: 100%;
+  height: 950px;
+  border: none;
+  }
+}
+@media all and (min-width: 320px) {
+  .form iframe {
+  width: 100%;
+  height: 1170px;
+  border: none;
+  }
+}
+@media all and (min-width: 375px) {
+  .form iframe {
+  width: 100%;
+  height: 1060px;
+  border: none;
+  }
+}
+@media all and (min-width: 768px) {
+  .form iframe {
+  width: 100%;
+  height: 800px;
+  border: none;
+  }
+}
+@media all and (min-width: 280px) {
+  .form iframe {
+  width: 100%;
+  height: 2500px;
+  border: none;
+  }
+}
