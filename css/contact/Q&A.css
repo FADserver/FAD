@@ -495,7 +495,7 @@ h3 {
   background: center;
   background-repeat:  no-repeat;
   background-size:contain;
-  background-image: url("../../image/JapanMinecraftServer.png");
+  background-image: url("../../image/JapanMinecraftServer.svg");
 }
 .btn-social-flat-icon--amazon::before {
   content: "\f270";

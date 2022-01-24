@@ -70,7 +70,7 @@ a {
   background: center;
   background-repeat:  no-repeat;
   background-size:contain;
-  background-image: url("../../image/JapanMinecraftServer.png");
+  background-image: url("../../image/JapanMinecraftServer.svg");
 }
 .about__fad::before {
   content: "　";
