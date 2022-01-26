@@ -1,3 +1,7 @@
+.release_margin {
+  max-width: 750px;
+  margin: 0 auto;
+}
 #day, #sender {
   text-align: right;
 }
