@@ -806,7 +806,7 @@ input {
 .hamburger-follow-me li a[href*="nicovideo.jp"]::before             { content: "\f047"; font-family: blogicon; }
 .hamburger-follow-me li a[href*="twitch.tv"]::before                { content: "\f1e8"; }
 .hamburger-follow-me li a[href*="twitter.com"]::before              { content: "\f099"; }
-.hamburger-follow-me li a[href*="youtube.com"]::before              { content: "\f167"; }
+.hamburger-follow-me li a[href*="videos"]::before              { content: "\f167"; }
 .hamburger-follow-me li a[href*="lin.ee"]::before                   { content: "\f3c0"; }
 
 .hamburger-follow-me li a[href*="facebook.com"]:hover::before       { color: #3b5998; }
@@ -815,7 +815,7 @@ input {
 .hamburger-follow-me li a[href*="nicovideo.jp"]:hover::before       { color: #eaeaea; }
 .hamburger-follow-me li a[href*="twitch.tv"]:hover::before          { color: #6441a5; }
 .hamburger-follow-me li a[href*="twitter.com"]:hover::before        { color: #55acee; }
-.hamburger-follow-me li a[href*="youtube.com"]:hover::before        { color: #cd201f; }
+.hamburger-follow-me li a[href*="videos"]:hover::before        { color: #cd201f; }
 .hamburger-follow-me li a[href*="/lin.ee"]:hover::before            { color: #00C300; }
 
 .hamburger-sns_p {
@@ -904,7 +904,7 @@ input {
 .sns_icon[href*="nicovideo.jp"]::before             { content: "\f047"; font-family: blogicon; }
 .sns_icon[href*="twitch.tv"]::before                { content: "\f1e8"; }
 .sns_icon[href*="twitter.com"]::before              { content: "\f099"; }
-.sns_icon[href*="youtube.com"]::before              { content: "\f167"; }
+.sns_icon[href*="videos"]::before              { content: "\f167"; }
 .sns_icon[href*="lin.ee"]::before                   { content: "\f3c0"; }
 
 .sns_icon[href*="facebook.com"]:hover::before       { background-color: #3b5998; }
@@ -913,7 +913,7 @@ input {
 .sns_icon[href*="nicovideo.jp"]:hover::before       { background-color: #eaeaea; }
 .sns_icon[href*="twitch.tv"]:hover::before          { background-color: #6441a5; }
 .sns_icon[href*="twitter.com"]:hover::before        { background-color: #55acee; }
-.sns_icon[href*="youtube.com"]:hover::before        { background-color: #cd201f; }
+.sns_icon[href*="videos"]:hover::before        { background-color: #cd201f; }
 .sns_icon[href*="/lin.ee"]:hover::before            { background-color: #00C300; }
 .contact:hover::before                              { background-color: #1d1c1c; }
 
