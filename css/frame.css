@@ -226,12 +226,31 @@
 
 .youtube_window {
   position: relative;
+  transition: 0.3s ease;
 }
-
-.thumbnail {
+.thumbnail, .thumbnail_back {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform : translate(-50%,-50%);
+  transform : translate(-50%,-50%);
+}
+.thumbnail::before {
+  display: inline;
+  content: "\f167";
+  color: #FF0000;
+  margin: auto 0;
+  font-size: 40px;
+}
+.thumbnail_back {
+  color: #FFF;
+  font-size: 20px;
+  padding-bottom: 2.5px;
+}
+.youtube_window:hover {
+  filter: brightness(110%);
+  opacity: 0.8;
+  transition: 0.3s ease;
 }
 
 /* ↓ FADカウントダウン ↓ */
