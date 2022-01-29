@@ -345,16 +345,16 @@
 /* ↑ ソート ↑ */
 
 .img_date {
-  width: 150px;
+  max-width: 300px;
 }
 .img_tag {
-  width: 100px;
+  max-width: 200px;
 }
 .img_icon {
-  width: 90px;
+  max-width: 150px;
 }
 .img_person {
-  width: 250px;
+  max-width: 600px;
 }
 .No {
   font-size: 20px;
@@ -363,6 +363,62 @@
 .setumei {
   display: block;
   margin-left: 25px;
+}
+.small {
+  font-size: 10px;
+}
+.sort {
+  color: #337ab7;
+  font-weight: bold;
+}
+.video_card_ex_ex {
+  counter-reset:number; /*数字をリセット*/
+  list-style-type: none!important; /*数字を一旦消す*/
+  padding:0.5em;
+  border: solid 2px #000946;
+}
+.video_card_ex_ex li {
+  position: relative;
+  padding: 0.5em 0.5em 0.5em 35px;
+  line-height: 1.5em;
+}
+.video_card_ex_ex li:before{
+  /* 以下数字をつける */
+  position: absolute;
+  counter-increment: number;
+  content: counter(number);
+  /*数字のデザイン変える*/
+  display:inline-block;
+  background: #000946;
+  color: white;
+  font-family: 'Avenir','Arial Black','Arial',sans-serif;
+  font-weight:bold;
+  font-size: 15px;
+  border-radius: 50%;/*円にする*/
+  left: 0;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  /*以下 上下中央寄せのため*/
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.video_card_ex_ex li:after {/*吹き出しのちょこんと出た部分*/
+  content: '';
+  display: block;
+  position: absolute;
+  left: 20px;/*左からの位置*/
+  height: 0;
+  width: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 12px solid #000946;
+  /*以下 上下中央寄せのため*/
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .remarks {

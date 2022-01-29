@@ -108,6 +108,7 @@
 
         <div id="update-day">
           <p id="released">2022.1.20</p>
+          <p id="updated">2022.1.30</p>
         </div>
 
         <div class="normal_margin">
@@ -119,40 +120,87 @@
             <label for="ac-howto">使い方</label>
             <div class="acbox-under">
               <span>
-                FADミニゲームを投稿した動画やアーカイブを集めました。運営だけでなく、投稿した方全員を掲載しています。いろいろ並び変えられるので他視点もお楽しみください！
-            <!--    <input id="acd-ex" class="acd-check" type="checkbox">
-            <label class="acd-label acd-label1" for="acd-ex"><span>カードの見方</span></label>
-              <div class="acd-content">
-                <p>いま作ってます。</p>
-              </div>-->
-              <br>
-              <span class="No">①</span>　FAD開催日付で並び変え
-              <br><span class="setumei"><img class="img_date" src="../image/video/date.jpg"></span>
-              <br>
+                <span class="No">FADミニゲームを投稿した動画やアーカイブを集めました。運営だけでなく、投稿した方全員を掲載しています。いろいろ並び替えられるので他視点もお楽しみください！</span>
+                <br>
+                <div class="acbox">
+                  <input id="ac-video_card_ex" type="checkbox">
+                  <label for="ac-video_card_ex">凡例</label>
+                  <div class="acbox-under">
+                    <div class="img-frame">
+                      <img class="normal_img" src="../image/video/video_card_ex.png">
+                      <p>凡　例</p>
+                    </div>
+                    <ol class="video_card_ex_ex">
+                      <li>動画・アーカイブの投稿年月日</li>
+                      <li>動画なのか生放送アーカイブなのかを表しています</li>
+                      <li>タイトル</li>
+                      <li>サムネイル</li>
+                      <li>少佐.exeの生放送の回数。第〇回とか（この場合、③の「ぷろと」と➄の「ぷろと」が同じ。）</li>
+                      <li>一部の参加者のお名前<span class="small">（なぜこれがいるのかと言うと、地球がYouTubeアカウントを持っていないから）</span></li>
+                      <li>動画・アーカイブの投稿チャンネル</li>
+                      <li>投稿者のTwitterアカウントやtwitchのアカウントなど</li>
+                      <li>一部の参加者のYouTubeアカウント</li>
+                    </ol>
+                    <p><span class="sort">この色</span>の部分をクリックしてもソートできます。</p>
+                  </div>
+                </div>
+                <br>
+                <span class="No">①　FAD開催日付で並び替え</span>
+                <br>
+                  <span class="setumei">
+                    <div class="img-frame">
+                      <img class="img_date normal_img" src="../image/video/date.jpg">
+                      <p>FADの開催日付</p>
+                    </div>
+                  </span>
+                <br>
 
-              <span class="No">②</span>　動画orライブアーカイブで並び変え
-              <br><span class="setumei"><img class="img_icon" src="../image/video/icon.jpg"></span>
-              <br>
+                <span class="No">②　動画orライブアーカイブで並び替え</span>
+                <br>
+                <span class="setumei">
+                  <div class="img-frame">
+                    <img class="img_icon normal_img" src="../image/video/icon.jpg">
+                    <p>アイコン</p>
+                  </div>
+                </span>
+                <br>
 
-              <span class="No">③</span>　少佐.exeのライブアーカイブ基準で並び変え
-              <br><span class="setumei"><img class="img_tag" src="../image/video/tag.jpg"></span>
-              <br>
+                <span class="No">③　少佐.exeのライブアーカイブ基準で並び替え</span>
+                <br>
+                <span class="setumei">
+                  <div class="img-frame">
+                    <img class="img_tag normal_img" src="../image/video/tag.jpg">
+                    <p>タグ</p>
+                  </div>
+                </span>
+                <br>
 
-              <span class="No">④</span>　参加者で並び変え
-              <br>
-              <span class="setumei"><img class="img_person" src="../image/video/person.jpg"></span>
-              <span class="setumei"><img class="img_date" src="../image/video/persontag.jpg"></span>
-              <br>
+                <span class="No">④　参加者で並び替え</span>
+                <br>
+                <span class="setumei">
+                  <div class="img-frame">
+                    <img class="img_person normal_img" src="../image/video/person.jpg">
+                    <p>参加者を選択</p>
+                  </div>
+                </span>
+                <br>
+                <span class="setumei">
+                  <div class="img-frame">
+                    <img class="img_tag normal_img" src="../image/video/persontag.jpg">
+                    <p>参加者タグ</p>
+                  </div>
+                </span>
+                <br>
 
-              <span class="No">⑤</span>　複数選択可！（or検索が可能。）
-              <br>
-              <span class="setumei">〇〇さんか□□さんが出てる動画だけ見たい！
+                <span class="No">⑤　複数選択可！（or検索が可能。）</span>
+                <br>
+                <span class="setumei">〇〇さんか□□さんが出てる動画だけ見たい！
                 <br>第△回と第∈回だけ見たい！　etc...
-              </span>
-              <p class="remarks">もっと詳しい対応表は<a class="a_blank" href="https://docs.google.com/spreadsheets/d/1uZAZUq7macV-soz_7VuY_CglGA7hIUnclFYyVnsOx_I/edit?usp=sharing" target="_blank">Googleスプレッドシート</a>から！</p>
-              <div class="delete">
-                <p><a class="a_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSffqwfQlGgRp5ItjXIRQt1mk0rgMM5Ib2jHU4ef1bgvKSzBuA/viewform?usp=sf_link" target="_blank">削除依頼</a></p>
-              </div>
+                </span>
+                <p class="remarks">もっと詳しい対応表は<a class="a_blank" href="https://docs.google.com/spreadsheets/d/1uZAZUq7macV-soz_7VuY_CglGA7hIUnclFYyVnsOx_I/edit?usp=sharing" target="_blank">Googleスプレッドシート</a>から！</p>
+                <div class="delete">
+                  <p><a class="a_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSffqwfQlGgRp5ItjXIRQt1mk0rgMM5Ib2jHU4ef1bgvKSzBuA/viewform?usp=sf_link" target="_blank">削除依頼</a></p>
+                </div>
               </span>
             </div>
           </div>
