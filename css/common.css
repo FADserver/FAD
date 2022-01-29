@@ -110,6 +110,23 @@ a {
   transition: 0.3s ease;
 }
 
+h1 {
+  position: relative;
+  padding-top: 80px;
+  text-align: center;
+  color: #333333;
+}
+h1:before {
+  position: absolute;
+  bottom: -10px;
+  left: calc(50% - 30px);
+  width: 60px;
+  height: 5px;
+  content: '';
+  border-radius: 3px;
+  background: #000946;
+}
+
 a.anchor{
   display: block;
   padding-top: 70px;
@@ -132,6 +149,7 @@ a.anchor{
   margin-bottom: 20px;
 }
 /* ↑ 画像説明 ↑ */
+
 .normal_img {
   width: 100%;
   max-width: 800px;
@@ -215,6 +233,7 @@ a.anchor{
 }
 /* ↑ テーブルのscroll分かりやすくするやつ ↑ */
 
+/* ↓ ヘッダー ↓ */
 header {
   height: 65px;
   width: 100%;
@@ -223,201 +242,6 @@ header {
   top: 0;
   z-index: 100;
 }
-
-/* ↓ ポップアップ ↓ */
-/* ↑ ポップアップ ↑ */
-
-/* h1 */
-h1 {
-  position: relative;
-  padding-top: 80px;
-  text-align: center;
-  color: #333333;
-}
-
-h1:before {
-  position: absolute;
-  bottom: -10px;
-  left: calc(50% - 30px);
-  width: 60px;
-  height: 5px;
-  content: '';
-  border-radius: 3px;
-  background: #000946;
-}
-/* ここまで */
-
-/* ↓ 公開日・更新日 ↓ */
-#update-day {
-  text-align: right;
-  margin: 0 2% 0 2%;
-}
-#update-day p {
-  display: inline;
-  color: #8C8C8C;
-  font-size: 13px
-}
-#released::before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 400;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-size: 12px;
-  -webkit-font-smoothing: antialiased;
-  color: #8C8C8C;
-  margin-right: 5px;
-  content: "\f017";
-  transform: scaleX(-1);
-}
-#updated::before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-size: 12px;
-  -webkit-font-smoothing: antialiased;
-  color: #8C8C8C;
-  margin: 0 5px 0 15px;
-  content: "\f1da";
-  transform: scaleX(-1);
-}
-/* ↑ 公開日・更新日 ↑ */
-
-/* パンくずリスト */
-.pan {
-  position: relative;
-  top: 70px;
-  z-index: 2;
-  /* スクロール */
-  overflow: auto;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
-}
-
-.breadcrumb {
-  margin-top: 0;
-  margin-left: 18px;
-  padding: 0;
-  list-style: none;
-}
-
-.breadcrumb li {
-  display: inline;/*横に並ぶように*/
-  list-style: none;
-  font-weight: bold;/*太字*/
-}
-
-.breadcrumb li:after {/* ▶を表示*/
-  font-family: "Font Awesome 5 Free";
-  content: '\f054';
-  font-weight: 900;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-size: 12px;
-  -webkit-font-smoothing: antialiased;
-  padding: 0 0.2em;
-  color: #8C8C8C;
-}
-
-.breadcrumb li:last-child:after {
-  content: '';
-}
-
-.breadcrumb li a {
-  text-decoration: none;
-  color: #8C8C8C;
-  font-size: 12px
-}
-
-.breadcrumb li a:before {
-  font-family: "Font Awesome 5 Free";
-  content: '\f07b';
-  font-weight: 900;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  color: #f3948f;
-  margin-right: 3px;
-}
-.breadcrumb li a:before {
-  /*フォルダアイコン*/
-  content: '\f07b';
-}
-.breadcrumb li:last-child a:before {
-  /*紙アイコン*/
-  content: '\f15b';
-}
-.breadcrumb li:first-child a:before {
-  /*家アイコン*/
-  content: '\f015';
-}
-
-
-.breadcrumb li a:hover {
-  text-decoration: underline;
-}
-/* ここまで */
-
-/* Page TOP */
-.page_top{
-  width: 90px;
-  height: 90px;
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  opacity: 0.6;
-  z-index: 5;
-}
-.page_top a{
-  position: relative;
-  display: block;
-  width: 90px;
-  height: 90px;
-  text-decoration: none;
-  transition: 0.3s;
-}
-.page_top a::before{
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-  content: '\f102';
-  font-size: 25px;
-  color: #226B7D;
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  top: -40px;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
-  text-align: center;
-}
-.page_top a::after{
-  content: 'PAGE TOP';
-  font-size: 13px;
-  color: #fff;
-  position: absolute;
-  top: 45px;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
-  text-align: center;
-  color: #226B7D;
-}
-.page_top a:hover::before {
-  color: #90E7FC;
-}
-.page_top a:hover::after {
-  color: #90E7FC;
-}
-/* ここまで */
-
 .logo_head {
   width: 110px;
   margin-top: 10px;
@@ -427,7 +251,7 @@ h1:before {
   float: left;
 }
 
-/* ハンバーガーメニュー */
+/* ↓ ハンバーガーメニュー ↓ */
 /* ハンバーガーメニューのサイズ */
 .menu-btn {
   position: fixed;
@@ -484,7 +308,6 @@ h1:before {
   transform: rotate(-45deg);
   transition: 0.3s;
 }
-
 /* 画面外クリックで収納 */
 @keyframes fadeout { /*animation-nameで設定した値を書く*/
   0% {opacity: 0} /*アニメーション開始時は不透明度0%*/
@@ -507,7 +330,6 @@ h1:before {
 #menu-btn-check:checked ~ .out-close {
   left: 13%;/*メニューを画面内へ*/
 }
-
 /* メニュー装飾 */
 .menu-content {
   width: 87%;
@@ -525,7 +347,6 @@ h1:before {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
 }
-
 #menu-btn-check:checked ~ .menu-content {
   left: 13%;/*メニューを画面内へ*/
 }
@@ -594,18 +415,15 @@ h1:before {
 #menu-btn-check {
   display: none;
 }
-
 /* まとめるやつ */
 .menu {
   max-width: 100%;
 }
-
 .menu a {
   display: block;
   padding: 15px;
   text-decoration: none;
 }
-
 .menu-label {
   display: block;
   padding: 15px 15px 15px 10px;
@@ -618,18 +436,15 @@ h1:before {
   border-bottom: solid 1px #ffffff;
   list-style: none;
 }
-
-input {
+.hamburger-menu > input {
   display: none;
 }
-
 .menu ul {
   margin: 0;
   padding: 0;
   background : #6e73d3;
   list-style: none;
 }
-
 .menu li {
   height: 0;
   overflow: hidden;
@@ -639,13 +454,11 @@ input {
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
-
 #menu_bar01:checked ~ #links01 li,
 #menu_bar02:checked ~ #links02 li {
   height: 40px;
   opacity: 1;
 }
-
 .menu ul li a::before {
   content: "";
   width: 7px;
@@ -658,10 +471,6 @@ input {
   top: 16px;
   transition: all 0.3s;
 }
-.menu ul li a i {
-  font-weight: bold;
-}
-
 .menu-label::before {
   content: "";
   width: 7px;
@@ -689,27 +498,22 @@ input {
   background-color: #ffffff;
   transition: all 0.3s;
 }
-
 .menu ul li a {
   font-size: 15px;
 }
-
 .menu-AweSomeFont {
   margin-right: 10px;
 }
-
 .menu-li-content {
   font-weight: bold;
   font-size: 16px;
 }
-
 .menu-li-small {
   font-size: 12px;
   margin-left: 10px;
   font-weight: normal;
 }
 /* まとめるやつ */
-
 .hamburger-menu-tag {
   width: 87%;
   height: 55px;
@@ -722,7 +526,6 @@ input {
   /* アニメーション設定 */
   transition: all 0.5s;
 }
-
 .hamburger-menu-tag::before{
   position: absolute;
   font-family: 'Michroma', sans-serif;
@@ -736,7 +539,6 @@ input {
 #menu-btn-check:checked ~ .hamburger-menu-tag {
   left: 13%;/*メニューを画面内へ*/
 }
-
 .hamburger-menu-top {
   width: 87%;
   height: 60px;
@@ -751,7 +553,6 @@ input {
 #menu-btn-check:checked ~ .hamburger-menu-top {
   left: 13%;/*メニューを画面内へ*/
 }
-
 /* SNS */
 .hamburger-sns {
   position: fixed;
@@ -799,7 +600,6 @@ input {
 .hamburger-follow-me li:last-child {
   margin: 0;
 }
-
 .hamburger-follow-me li a[href*="facebook.com"]::before             { content: "\f09a"; }
 .hamburger-follow-me li a[href*="github.com"]::before               { content: "\f09b"; }
 .hamburger-follow-me li a[href*="instagram.com"]::before            { content: "\f16d"; }
@@ -830,8 +630,10 @@ input {
   font-size: 15px;
 }
 /* SNS */
-/* ここまで */
+/* ↑ ハンバーガーメニュー ↑ */
+/* ↑ ヘッダー ↑ */
 
+/* ↓ フッター ↓ */
 /* SNS */
 .sns {
   text-align: right;
@@ -1033,6 +835,176 @@ footer {
   }
 }
 /* フッターリンク */
+/* ↑ フッター ↑ */
+
+/* ↓ ポップアップ ↓ */
+/* ↑ ポップアップ ↑ */
+
+/* ↓ 公開日・更新日 ↓ */
+#update-day {
+  text-align: right;
+  margin: 0 2% 0 2%;
+}
+#update-day p {
+  display: inline;
+  color: #8C8C8C;
+  font-size: 13px
+}
+#released::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-size: 12px;
+  -webkit-font-smoothing: antialiased;
+  color: #8C8C8C;
+  margin-right: 5px;
+  content: "\f017";
+  transform: scaleX(-1);
+}
+#updated::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-size: 12px;
+  -webkit-font-smoothing: antialiased;
+  color: #8C8C8C;
+  margin: 0 5px 0 15px;
+  content: "\f1da";
+  transform: scaleX(-1);
+}
+/* ↑ 公開日・更新日 ↑ */
+
+/* ↓ パンくずリスト ↓ */
+.pan {
+  position: relative;
+  top: 70px;
+  z-index: 2;
+  /* スクロール */
+  overflow: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+.breadcrumb {
+  margin-top: 0;
+  margin-left: 18px;
+  padding: 0;
+  list-style: none;
+}
+.breadcrumb li {
+  display: inline;/*横に並ぶように*/
+  list-style: none;
+  font-weight: bold;/*太字*/
+}
+.breadcrumb li:after {/* ▶を表示*/
+  font-family: "Font Awesome 5 Free";
+  content: '\f054';
+  font-weight: 900;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-size: 12px;
+  -webkit-font-smoothing: antialiased;
+  padding: 0 0.2em;
+  color: #8C8C8C;
+}
+.breadcrumb li:last-child:after {
+  content: '';
+}
+.breadcrumb li a {
+  text-decoration: none;
+  color: #8C8C8C;
+  font-size: 12px
+}
+.breadcrumb li a:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  color: #f3948f;
+  margin-right: 3px;
+}
+.pan-folder:before {
+  /*フォルダアイコン*/
+  content: '\f07b';
+}
+.pan-paper:before {
+  /*紙アイコン*/
+  content: '\f15b';
+}
+.pan-home:before {
+  /*家アイコン*/
+  content: '\f015';
+}
+.pan-404:before {
+  /*404アイコン*/
+  content: '\f057';
+}
+.breadcrumb li a:hover {
+  text-decoration: underline;
+}
+/* ↑ パンくずリスト ↑ */
+
+/* ↓ Page TOP ↓ */
+.page_top{
+  width: 90px;
+  height: 90px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  opacity: 0.6;
+  z-index: 5;
+}
+.page_top a{
+  position: relative;
+  display: block;
+  width: 90px;
+  height: 90px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.page_top a::before{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f102';
+  font-size: 25px;
+  color: #226B7D;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -40px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+.page_top a::after{
+  content: 'PAGE TOP';
+  font-size: 13px;
+  color: #fff;
+  position: absolute;
+  top: 45px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+  color: #226B7D;
+}
+.page_top a:hover::before {
+  color: #90E7FC;
+}
+.page_top a:hover::after {
+  color: #90E7FC;
+}
+/* ↑ PageTop ↑ */
 
 /* FADサーバーで遊ぶ */
 .message {
