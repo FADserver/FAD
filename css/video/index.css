@@ -214,6 +214,7 @@
   left: 50%;
   -webkit-transform : translate(-50%,-50%);
   transform : translate(-50%,-50%);
+  transition: 0.3s ease;
 }
 .video_thumbnail::before {
   font-family: "Font Awesome 5 Brands";
@@ -240,23 +241,19 @@
   opacity: 0.8;
   transition: 0.3s ease;
 }
-.youtube_window_video:hover > a > .video_thumbnail_back {
-  display: none;
-}
-.youtube_window_video:hover > a > .video_thumbnail::before {
+.youtube_window_video:hover > a > .video_thumbnail::after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
 
   display: inline;
-  content: "VIEW \f35d";
+  content: "View \f35d";
   color: #FFFFFF;
   margin: auto 0;
   font-size: 20px;
-  transition: 0.3s ease;
+}
+.youtube_window_video:hover > a > .video_thumbnail_back,
+.youtube_window_video:hover > a > .video_thumbnail::before {
+  display: none;
 }
 
 .delete {
