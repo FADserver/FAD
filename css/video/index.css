@@ -202,7 +202,6 @@
   position: relative;
   margin-top: 10px;
   height: 179.53px;
-  transition: 0.3s ease;
 }
 .youtube_video {
   position: absolute;
@@ -217,11 +216,19 @@
   transform : translate(-50%,-50%);
 }
 .video_thumbnail::before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+
   display: inline;
   content: "\f167";
   color: #FF0000;
   margin: auto 0;
   font-size: 40px;
+  transition: 0.3s ease;
 }
 .video_thumbnail_back {
   color: #FFF;
@@ -231,6 +238,24 @@
 .youtube_window_video:hover {
   filter: brightness(110%);
   opacity: 0.8;
+  transition: 0.3s ease;
+}
+.youtube_window_video:hover > a > .video_thumbnail_back {
+  display: none;
+}
+.youtube_window_video:hover > a > .video_thumbnail::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+
+  display: inline;
+  content: "VIEW \f35d";
+  color: #FFFFFF;
+  margin: auto 0;
+  font-size: 20px;
   transition: 0.3s ease;
 }
 
