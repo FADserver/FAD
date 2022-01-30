@@ -308,6 +308,7 @@ header {
   transform: rotate(-45deg);
   transition: 0.3s;
 }
+
 /* 画面外クリックで収納 */
 @keyframes fadeout { /*animation-nameで設定した値を書く*/
   0% {opacity: 0} /*アニメーション開始時は不透明度0%*/
@@ -330,6 +331,7 @@ header {
 #menu-btn-check:checked ~ .out-close {
   left: 13%;/*メニューを画面内へ*/
 }
+
 /* メニュー装飾 */
 .menu-content {
   width: 87%;
@@ -347,6 +349,7 @@ header {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
 }
+
 #menu-btn-check:checked ~ .menu-content {
   left: 13%;/*メニューを画面内へ*/
 }
@@ -415,15 +418,18 @@ header {
 #menu-btn-check {
   display: none;
 }
+
 /* まとめるやつ */
 .menu {
   max-width: 100%;
 }
+
 .menu a {
   display: block;
   padding: 15px;
   text-decoration: none;
 }
+
 .menu-label {
   display: block;
   padding: 15px 15px 15px 10px;
@@ -436,15 +442,18 @@ header {
   border-bottom: solid 1px #ffffff;
   list-style: none;
 }
-.hamburger-menu > input {
+
+input {
   display: none;
 }
+
 .menu ul {
   margin: 0;
   padding: 0;
   background : #6e73d3;
   list-style: none;
 }
+
 .menu li {
   height: 0;
   overflow: hidden;
@@ -454,11 +463,14 @@ header {
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
+
 #menu_bar01:checked ~ #links01 li,
-#menu_bar02:checked ~ #links02 li {
-  height: 40px;
+#menu_bar02:checked ~ #links02 li,
+#menu_bar03:checked ~ #links03 li {
+  height: 50px;
   opacity: 1;
 }
+
 .menu ul li a::before {
   content: "";
   width: 7px;
@@ -471,6 +483,10 @@ header {
   top: 16px;
   transition: all 0.3s;
 }
+.menu ul li a i {
+  font-weight: bold;
+}
+
 .menu-label::before {
   content: "";
   width: 7px;
@@ -498,22 +514,27 @@ header {
   background-color: #ffffff;
   transition: all 0.3s;
 }
+
 .menu ul li a {
   font-size: 15px;
 }
+
 .menu-AweSomeFont {
   margin-right: 10px;
 }
+
 .menu-li-content {
   font-weight: bold;
   font-size: 16px;
 }
+
 .menu-li-small {
   font-size: 12px;
   margin-left: 10px;
   font-weight: normal;
 }
 /* まとめるやつ */
+
 .hamburger-menu-tag {
   width: 87%;
   height: 55px;
@@ -526,6 +547,7 @@ header {
   /* アニメーション設定 */
   transition: all 0.5s;
 }
+
 .hamburger-menu-tag::before{
   position: absolute;
   font-family: 'Michroma', sans-serif;
@@ -539,6 +561,7 @@ header {
 #menu-btn-check:checked ~ .hamburger-menu-tag {
   left: 13%;/*メニューを画面内へ*/
 }
+
 .hamburger-menu-top {
   width: 87%;
   height: 60px;
@@ -553,6 +576,7 @@ header {
 #menu-btn-check:checked ~ .hamburger-menu-top {
   left: 13%;/*メニューを画面内へ*/
 }
+
 /* SNS */
 .hamburger-sns {
   position: fixed;
@@ -600,13 +624,14 @@ header {
 .hamburger-follow-me li:last-child {
   margin: 0;
 }
+
 .hamburger-follow-me li a[href*="facebook.com"]::before             { content: "\f09a"; }
 .hamburger-follow-me li a[href*="github.com"]::before               { content: "\f09b"; }
 .hamburger-follow-me li a[href*="instagram.com"]::before            { content: "\f16d"; }
 .hamburger-follow-me li a[href*="nicovideo.jp"]::before             { content: "\f047"; font-family: blogicon; }
 .hamburger-follow-me li a[href*="twitch.tv"]::before                { content: "\f1e8"; }
 .hamburger-follow-me li a[href*="twitter.com"]::before              { content: "\f099"; }
-.hamburger-follow-me li a[href*="video"]::before              { content: "\f167"; }
+.hamburger-follow-me li a[href*="video"]::before                    { content: "\f167"; }
 .hamburger-follow-me li a[href*="lin.ee"]::before                   { content: "\f3c0"; }
 
 .hamburger-follow-me li a[href*="facebook.com"]:hover::before       { color: #3b5998; }
@@ -615,7 +640,7 @@ header {
 .hamburger-follow-me li a[href*="nicovideo.jp"]:hover::before       { color: #eaeaea; }
 .hamburger-follow-me li a[href*="twitch.tv"]:hover::before          { color: #6441a5; }
 .hamburger-follow-me li a[href*="twitter.com"]:hover::before        { color: #55acee; }
-.hamburger-follow-me li a[href*="video"]:hover::before        { color: #cd201f; }
+.hamburger-follow-me li a[href*="video"]:hover::before              { color: #cd201f; }
 .hamburger-follow-me li a[href*="/lin.ee"]:hover::before            { color: #00C300; }
 
 .hamburger-sns_p {

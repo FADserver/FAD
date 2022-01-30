@@ -1,62 +1,67 @@
 <!DOCTYPE html>
-    <header>
-    <div class="container">
-      <div class="header-left">
-        <a href="https://fadserver.github.io/FAD/"><img class="logo_head" src="https://fadserver.github.io/FAD/image/logo/logo_head.svg" alt="Full-Automatic-Dungeon"></a>
+<header>
+  <div class="container">
+    <div class="header-left">
+      <a href="https://fadserver.github.io/FAD/"><img class="logo_head" src="https://fadserver.github.io/FAD/image/logo/logo_head.svg" alt="Full-Automatic-Dungeon"></a>
+    </div>
+    <div class="hamburger-menu">
+      <input type="checkbox" id="menu-btn-check">
+      <label for="menu-btn-check" class="menu-btn"><span></span></label>
+      <label for="menu-btn-check" class="out-close"></label>
+
+      <div class="menu-content">
+        <ul>
+          <li class="menu-li"><a href="https://fadserver.github.io/FAD/"><i class="fas fa-home menu-AweSomeFont"></i>トップ</a></li>
+          <div class="menu">
+            <label class="menu-label" for="menu_bar01">FADサーバーのミニゲームモード</label>
+            <input type="checkbox" id="menu_bar01">
+            <ul id="links01">
+              <li><a href="https://fadserver.github.io/FAD/mode/system/">FADシステム</a></li>
+              <li><a href="https://fadserver.github.io/FAD/mode/maze/">脱出迷路MODE</a></li>
+              <li><a href="https://fadserver.github.io/FAD/mode/oni/">鬼ごっこMODE</a></li>
+              <li><a href="https://fadserver.github.io/FAD/mode/battle_royale/">バトロアMODE</a></li>
+            </ul>
+          </div>
+          <li class="menu-li"><a href="https://fadserver.github.io/FAD/join/">参加する</a></li>
+          <li class="menu-li"><a href="https://fadserver.github.io/FAD/news/">お知らせ</a></li>
+          <li class="menu-li"><a href="https://fadserver.github.io/FAD/news/maintenance">障害・メンテナンス情報</a></li>
+          <li class="menu-li"><a href="https://fadserver.github.io/FAD/video">Videos</a></li>
+          <div class="menu">
+            <label class="menu-label" for="menu_bar02">FADサーバーの情報</label>
+            <input type="checkbox" id="menu_bar02" />
+            <ul id="links02">
+              <li><a href="https://fadserver.github.io/FAD/about/">FADサーバー概要</a></li>
+              <li><a href="https://fadserver.github.io/FAD/about/history">沿革</a></li>
+              <li><a href="https://fadserver.github.io/FAD/operation/operations">運営紹介</a></li>
+              <li><a href="https://fadserver.github.io/FAD/about/participant">参加者の皆様へ</a></li>
+              <li><a href="https://fadserver.github.io/FAD/about/streamer">ストリーマーの皆様へ</a></li>
+              <li><a href="https://fadserver.github.io/FAD/news/news">重要なお知らせ</a></li>
+            </ul>
+
+            <label class="menu-label" for="menu_bar03">規約等</label>
+            <input type="checkbox" id="menu_bar03" />
+            <ul id="links03">
+              <li><a href="https://fadserver.github.io/FAD/about/rules/server_rule">FADサーバー利用規約</a></li>
+              <li><a href="https://fadserver.github.io/FAD/about/rules/resourcepack">リソースパック利用規約</a></li>
+              <li><a href="https://fadserver.github.io/FAD/about/rules/privacy_policy">プライバシーポリシー</a></li>
+              <li><a href="https://fadserver.github.io/FAD/about/rules/disclaimer">免責事項</a></li>
+            </ul>
+          </div>
+          <li class="menu-li"><a href="https://fadserver.github.io/FAD/contact/Q&A">Q&A</a></li>
+          <li class="menu-li"><a href="https://fadserver.github.io/FAD/contact/"><i class="fas fa-question-circle menu-AweSomeFont"></i>お問い合わせ</a></li>
+          <li class="menu-li"><a href="https://fadserver.github.io/FAD/sitemap">サイトマップ</a></li>
+        </ul>
       </div>
-      <div class="hamburger-menu">
-        <input type="checkbox" id="menu-btn-check">
-        <label for="menu-btn-check" class="menu-btn"><span></span></label>
-        <label for="menu-btn-check" class="out-close"></label>
-    
-        <div class="menu-content">
-          <ul>
-            <li class="menu-li"><a href="https://fadserver.github.io/FAD/"><i class="fas fa-home menu-AweSomeFont"></i>トップ</a></li>
-            <div class="menu">
-              <label class="menu-label" for="menu_bar01">FADサーバーのミニゲームモード</label>
-              <input type="checkbox" id="menu_bar01">
-              <ul id="links01">
-                <li><a href="https://fadserver.github.io/FAD/mode/system/">FADシステム</a></li>
-                <li><a href="https://fadserver.github.io/FAD/mode/maze/">脱出迷路MODE</a></li>
-                <li><a href="https://fadserver.github.io/FAD/mode/oni/">鬼ごっこMODE</a></li>
-                <li><a href="https://fadserver.github.io/FAD/mode/battle_royale/">バトロアMODE</a></li>
-              </ul>
-            </div>
-            <li class="menu-li"><a href="https://fadserver.github.io/FAD/join/">参加する</a></li>
-            <li class="menu-li"><a href="https://fadserver.github.io/FAD/operation/operations">運営紹介</a></li>
-            <li class="menu-li"><a href="https://fadserver.github.io/FAD/news/">お知らせ</a></li>
-            <li class="menu-li"><a href="https://fadserver.github.io/FAD/news/maintenance">障害・メンテナンス情報</a></li>
-            <div class="menu">
-              <label class="menu-label" for="menu_bar02">その他</label>
-              <input type="checkbox" id="menu_bar02" />
-              <ul id="links02">
-                <li><a href="https://fadserver.github.io/FAD/about/">FADサーバー概要</a></li>
-                <li><a href="https://fadserver.github.io/FAD/about/history">沿革</a></li>
-                <li><a href="https://fadserver.github.io/FAD/about/participant">参加者の皆様へ</a></li>
-                <li><a href="https://fadserver.github.io/FAD/about/streamer">ストリーマーの皆様へ</a></li>
-                <li><a href="https://fadserver.github.io/FAD/news/news">重要なお知らせ</a></li>
-                <li><a href="https://fadserver.github.io/FAD/about/rules/server_rule">FADサーバー利用規約</a></li>
-                <li><a href="https://fadserver.github.io/FAD/about/rules/resourcepack">リソースパック利用規約</a></li>
-                <li><a href="https://fadserver.github.io/FAD/about/rules/privacy_policy">プライバシーポリシー</a></li>
-                <li><a href="https://fadserver.github.io/FAD/about/rules/disclaimer">免責事項</a></li>
-              </ul>
-            </div>
-            <li class="menu-li"><a href="https://fadserver.github.io/FAD/video">Videos</a></li>
-            <li class="menu-li"><a href="https://fadserver.github.io/FAD/contact/Q&A">Q&A</a></li>
-            <li class="menu-li"><a href="https://fadserver.github.io/FAD/contact/"><i class="fas fa-question-circle menu-AweSomeFont"></i>お問い合わせ</a></li>
-            <li class="menu-li"><a href="https://fadserver.github.io/FAD/sitemap">サイトマップ</a></li>
-          </ul>
-        </div>
-        <div class="hamburger-menu-tag"></div>
-        <div class="hamburger-menu-top"></div>
-        <div class="hamburger-sns">
-          <p class="hamburger-sns_p"></p>
-          <ul class="hamburger-follow-me">
-            <li><a href="https://fadserver.github.io/FAD/video/" title="Videos"></a></li>
-            <li><a href="https://twitter.com/FADserver" target="_blank" title="Twitter"></a></li>
-            <li><a href="https://lin.ee/eZ3sGPj" target="_blank" title="LINE"></a></li>
-          </ul>
-        </div>
+      <div class="hamburger-menu-tag"></div>
+      <div class="hamburger-menu-top"></div>
+      <div class="hamburger-sns">
+        <p class="hamburger-sns_p"></p>
+        <ul class="hamburger-follow-me">
+          <li><a href="https://fadserver.github.io/FAD/video/" title="Videos"></a></li>
+          <li><a href="https://twitter.com/FADserver" target="_blank" title="Twitter"></a></li>
+          <li><a href="https://lin.ee/eZ3sGPj" target="_blank" title="LINE"></a></li>
+        </ul>
       </div>
     </div>
-    </header>
+  </div>
+</header>
