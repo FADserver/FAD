@@ -306,7 +306,47 @@ header {
   background-color: #FFFFFF;
   color: #00C300;
 }
-
+@media all and (max-width: 630px) {
+  .span_hashtag{
+    margin-right: 10px;
+    font-size: 15px;
+  }
+  .span_share-search {
+    font-size: 10px;
+  }
+  .sns_share::before {
+    min-width: 30px;
+    min-height: 30px;
+    margin-top: 17.5px;
+    margin-right: 15px;
+    background-color: #333333;
+    color: #FFFFFF;
+    line-height: 30px;
+    font-size: 10px;
+  }
+}
+@media all and (max-width: 486px) {
+  .span_hashtag{
+    margin-right: 10px;
+    font-size: 15px;
+  }
+  .span_share-search {
+    font-size: 10px;
+  }
+  .sns_share::before {
+    min-width: 30px;
+    min-height: 30px;
+    margin-top: 17.5px;
+    margin-right: 15px;
+    background-color: #333333;
+    color: #FFFFFF;
+    line-height: 30px;
+    font-size: 10px;
+  }
+  .span_share-search {
+    display: none;
+  }
+}
 
 /* ↓ ハンバーガーメニュー ↓ */
 /* ハンバーガーメニューのサイズ */
