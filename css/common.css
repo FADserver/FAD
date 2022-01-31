@@ -1,6 +1,7 @@
- @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
 * {
   box-sizing: border-box;
   -webkit-appearance: none;
@@ -250,6 +251,62 @@ header {
 .header-left {
   float: left;
 }
+
+.share {
+  float: right;
+  margin-right: 65px;
+}
+.span_hashtag {
+  margin-right: 40px;
+  font-size: 25px;
+  font-family: 'Oswald', sans-serif;
+}
+.a_hashtag {
+  color: #FFFFFF;
+  transition: 0.3s ease;
+}
+.a_hashtag:hover {
+  color: #1DA1F2;
+  transition: 0.3s ease;
+}
+.span_share-search {
+  color: #FFFFFF;
+  margin-right: 5px;
+  font-size: 15px;
+  font-family: 'Oswald', sans-serif;
+}
+.sns_share {
+  display: inline-block;
+}
+.sns_share::before {
+  display: inline-block;
+  min-width: 50px;
+  min-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  margin-top: 7.5px;
+  margin-right: 15px;
+  background-color: #333333;
+  color: #FFFFFF;
+  line-height: 50px;
+  font-size: 20px;
+  transition: 0.3s ease;
+}
+.twitter_share::before {
+  content: "\f099";
+}
+.twitter_share:hover::before {
+  background-color: #FFFFFF;
+  color: #1DA1F2;
+}
+.line_share::before {
+  content: "\f3c0";
+}
+.line_share:hover::before {
+  background-color: #FFFFFF;
+  color: #00C300;
+}
+
 
 /* ↓ ハンバーガーメニュー ↓ */
 /* ハンバーガーメニューのサイズ */
