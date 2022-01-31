@@ -322,7 +322,7 @@ header {
     background-color: #333333;
     color: #FFFFFF;
     line-height: 30px;
-    font-size: 10px;
+    font-size: 13px;
   }
 }
 @media all and (max-width: 486px) {
@@ -338,7 +338,7 @@ header {
     background-color: #333333;
     color: #FFFFFF;
     line-height: 30px;
-    font-size: 10px;
+    font-size: 13px;
   }
   .span_share-search {
     display: none;
@@ -353,13 +353,13 @@ header {
     background-color: #333333;
     color: #FFFFFF;
     line-height: 30px;
-    font-size: 10px;
+    font-size: 13px;
   }
   .span_share-search, .span_hashtag {
     display: none;
   }
 }
-@media all and (max-width: 240px) {
+@media all and (max-width: 265px) {
   .share {
     display: none;
   }
