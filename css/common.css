@@ -254,7 +254,7 @@ header {
 
 .share {
   float: right;
-  margin-right: 50px;
+  margin-right: 40px;
 }
 .span_hashtag {
   margin-right: 40px;
@@ -337,7 +337,7 @@ header {
     min-width: 30px;
     min-height: 30px;
     margin-top: 17.5px;
-    margin-right: 15px;
+    margin-right: 5px;
     background-color: #333333;
     color: #FFFFFF;
     line-height: 30px;
