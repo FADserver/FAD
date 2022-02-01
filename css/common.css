@@ -779,6 +779,19 @@ input {
   font-family: 'Oswald', sans-serif;
   color: #8C8C8C;
 }
+.span_share::before, .span_share::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f715";
+  font-size: 18px;
+}
+.span_share::before {
+  margin-right: 10px;
+}
+.span_share::after {
+  display: inline-block;
+  transform: scaleX(-1);
+  margin-left: 10px;
+}
 .share-btn-type1 {
   margin: 1.2em 0;
   display: flex;
