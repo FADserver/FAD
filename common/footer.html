@@ -3,26 +3,28 @@
 <div class="share">
   <span class="span_share AweSomeFont-Free">SHARE</span>
   <div class="share-btn-type1">
-    <a class="share-btn__item share-btn__item--twitter AweSomeFont-Brands" id="share-btn--twitter" href="" target="_blank" rel="noopener"></a>
-    <a class="share-btn__item share-btn__item--line AweSomeFont-Brands" id="share-btn--line" href="" target="_blank" rel="noopener"></a>
-    <div class="share-btn__item share-btn__item--copy AweSomeFont-Free" id="share-btn--copy" type="button" onclick="copyUrlTitle()">Copy</div>
+    <div class="share-btn-div"><a class="share-btn__item share-btn__item--twitter AweSomeFont-Brands" id="share-btn--twitter" href="" target="_blank" rel="noopener"></a></div>
+    <div class="share-btn-div"><a class="share-btn__item share-btn__item--line AweSomeFont-Brands" id="share-btn--line" href="" target="_blank" rel="noopener"></a></div>
+    <div class="share-btn-div">
+      <div class="share-btn__item share-btn__item--copy AweSomeFont-Free" id="share-btn--copy" type="button" onclick="copyUrlTitle()">Copy</div>
+    </div>
     <script>
       var beforeurl = location.href;
-      var url = encodeURI(beforeurl);
-      var beforetitle = document.title;
-      var title = encodeURI(beforetitle);
-
-      var target1 = document.getElementById("share-btn--twitter");
-      target1.href= "https://twitter.com/intent/tweet?text=" + title + "%0A" + "%23FADserver" + "%0A" + url;
-      var target2 = document.getElementById("share-btn--line");
-      target2.href= "https://line.me/R/msg/text/?" +  title + "%0A" + url;
-
-      function copyUrlTitle() {
-      var url = location.href;
-      var title = document.title;
-      navigator.clipboard.writeText(title + " \n " + url);
-      document.getElementById("share-btn--copy").textContent = "Copied";
-      }
+          var url = encodeURI(beforeurl);
+          var beforetitle = document.title;
+          var title = encodeURI(beforetitle);
+    
+          var target1 = document.getElementById("share-btn--twitter");
+          target1.href= "https://twitter.com/intent/tweet?text=" + title + "%0A" + "%23FADserver" + "%0A" + url;
+          var target2 = document.getElementById("share-btn--line");
+          target2.href= "https://line.me/R/msg/text/?" +  title + "%0A" + url;
+    
+          function copyUrlTitle() {
+          var url = location.href;
+          var title = document.title;
+          navigator.clipboard.writeText(title + " \n " + url);
+          document.getElementById("share-btn--copy").textContent = "Copied";
+          }
     </script>
   </div>
 </div>

@@ -797,9 +797,11 @@ input {
   display: flex;
   font-family: 'Oswald', sans-serif;
 }
-.share-btn-type1 .share-btn__item {
+.share-btn-div {
   width: calc(100% / 3);
   text-align: center;
+}
+.share-btn__item {
   transition: all 0.3s;
   font-size: 25px;
 }
@@ -873,6 +875,7 @@ input {
   .share-btn__item--copy {
     background-color: #909090;
     color: #FFFFFF;
+    height: 40px;
     margin: 0 auto;
     padding-top: 7px;
   }
