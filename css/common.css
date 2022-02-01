@@ -814,12 +814,12 @@ input {
 }
 .share-btn__item--copy {
   color: #535353;
+  font-family: 'Oswald', sans-serif;
 }
 .share-btn__item--copy::before {
   content: "\f328";
-}
-.share-btn__item--copy::after {
-  content: "Copy";
+  margin-right: 15px;
+  font-family: "Font Awesome 5 Free";
 }
 #copy-page {
   text-align: center;
@@ -828,6 +828,7 @@ input {
 .share-btn__item:hover {
   color: #8C8C8C;
   cursor: pointer;
+  transition: 0.3s ease;
 }
 @media all and (max-width: 450px) {
   .share-btn-type1 .share-btn__item {
@@ -840,7 +841,7 @@ input {
   .share-btn__item--copy::after {
     display: none;
   }
-  .share-btn__item {
+  .share-btn__item--twitter, .share-btn__item--line {
     border-radius: 50%;
     min-width: 40px;
     min-height: 40px;
@@ -858,6 +859,14 @@ input {
   }
   .share-btn__item--copy {
     background-color: #909090;
+    color: #FFFFFF;
+    margin: 0 auto;
+    padding-top: 7px;
+  }
+  .share-btn__item:hover {
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: 0.3s ease;
   }
 }
 /* ↑ シェアボタン ↑ */
