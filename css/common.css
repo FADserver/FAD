@@ -553,7 +553,7 @@ header {
   list-style: none;
 }
 
-input {
+.hamburger-menu input, .menu input {
   display: none;
 }
 
