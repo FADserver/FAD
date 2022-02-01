@@ -252,33 +252,33 @@ header {
   float: left;
 }
 
-.share {
+.header-share {
   float: right;
   margin-right: 40px;
 }
-.span_hashtag {
+.header-span_hashtag {
   margin-right: 40px;
   font-size: 25px;
   font-family: 'Oswald', sans-serif;
 }
-.a_hashtag {
+.header-a_hashtag {
   color: #FFFFFF;
   transition: 0.3s ease;
 }
-.a_hashtag:hover {
+.header-a_hashtag:hover {
   color: #1DA1F2;
   transition: 0.3s ease;
 }
-.span_share-search {
+.header-span_share-search {
   color: #FFFFFF;
   margin-right: 5px;
   font-size: 15px;
   font-family: 'Oswald', sans-serif;
 }
-.sns_share {
+.header-sns_share {
   display: inline-block;
 }
-.sns_share::before {
+.header-sns_share::before {
   display: inline-block;
   min-width: 50px;
   min-height: 50px;
@@ -292,29 +292,29 @@ header {
   font-size: 20px;
   transition: 0.3s ease;
 }
-.twitter_share::before {
+.header-twitter_share::before {
   content: "\f099";
 }
-.twitter_share:hover::before {
+.header-twitter_share:hover::before {
   background-color: #FFFFFF;
   color: #1DA1F2;
 }
-.line_share::before {
+.header-line_share::before {
   content: "\f3c0";
 }
-.line_share:hover::before {
+.header-line_share:hover::before {
   background-color: #FFFFFF;
   color: #00C300;
 }
 @media all and (max-width: 630px) {
-  .span_hashtag{
+  .header-span_hashtag{
     margin-right: 10px;
     font-size: 15px;
   }
-  .span_share-search {
+  .header-span_share-search {
     font-size: 10px;
   }
-  .sns_share::before {
+  .header-sns_share::before {
     min-width: 30px;
     min-height: 30px;
     margin-top: 17.5px;
@@ -324,11 +324,11 @@ header {
   }
 }
 @media all and (max-width: 486px) {
-  .span_hashtag{
+  .header-span_hashtag{
     margin-right: 10px;
     font-size: 15px;
   }
-  .sns_share::before {
+  .header-sns_share::before {
     min-width: 30px;
     min-height: 30px;
     margin-top: 17.5px;
@@ -336,12 +336,12 @@ header {
     line-height: 30px;
     font-size: 13px;
   }
-  .span_share-search {
+  .header-span_share-search {
     display: none;
   }
 }
 @media all and (max-width: 360px) {
-  .sns_share::before {
+  .header-sns_share::before {
     min-width: 30px;
     min-height: 30px;
     margin-top: 17.5px;
@@ -351,12 +351,12 @@ header {
     line-height: 30px;
     font-size: 13px;
   }
-  .span_share-search, .span_hashtag {
+  .header-span_share-search, .span_hashtag {
     display: none;
   }
 }
 @media all and (max-width: 265px) {
-  .share {
+  .header-share {
     display: none;
   }
 }
@@ -769,6 +769,98 @@ input {
 /* ↑ ヘッダー ↑ */
 
 /* ↓ フッター ↓ */
+/* ↓ シェアボタン ↓ */
+.share {
+  text-align: center;
+  padding-top: 20px;
+}
+.span_share {
+  font-size: 25px;
+  font-family: 'Oswald', sans-serif;
+  color: #8C8C8C;
+}
+.share-btn-type1 {
+  margin: 1.2em 0;
+  display: flex;
+  font-family: 'Oswald', sans-serif;
+}
+.share-btn-type1 .share-btn__item {
+  width: calc(100% / 3);
+  text-align: center;
+  transition: all 0.3s;
+  font-size: 25px;
+}
+.share-btn__item::after {
+  font-family: 'Oswald', sans-serif;
+  margin-left: 15px;
+}
+.share-btn__item--twitter {
+  color: #1BA1F3;
+}
+.share-btn__item--twitter::before {
+  content: "\f099";
+}
+.share-btn__item--twitter::after {
+  content: "Twitter";
+}
+.share-btn__item--line {
+  color: #00C300;
+}
+.share-btn__item--line::before {
+  content: "\f3c0";
+}
+.share-btn__item--line::after {
+  content: "LINE";
+}
+.share-btn__item--copy {
+  color: #535353;
+}
+.share-btn__item--copy::before {
+  content: "\f328";
+}
+.share-btn__item--copy::after {
+  content: "Copy";
+}
+#copy-page {
+  text-align: center;
+  outline: none;
+}
+.share-btn__item:hover {
+  color: #8C8C8C;
+  cursor: pointer;
+}
+@media all and (max-width: 450px) {
+  .share-btn-type1 .share-btn__item {
+    font-size: 18px;
+  }
+}
+@media all and (max-width: 325px) {
+  .share-btn__item--twitter::after,
+  .share-btn__item--line::after,
+  .share-btn__item--copy::after {
+    display: none;
+  }
+  .share-btn__item {
+    border-radius: 50%;
+    min-width: 40px;
+    min-height: 40px;
+    max-width: 40px;
+    max-height: 40px;
+    color: #FFFFFF;
+    padding: 10px;
+    margin: 0 auto;
+  }
+  .share-btn__item--twitter {
+    background-color: #1BA1F3;
+  }
+  .share-btn__item--line {
+    background-color: #00C300;
+  }
+  .share-btn__item--copy {
+    background-color: #909090;
+  }
+}
+/* ↑ シェアボタン ↑ */
 /* SNS */
 .sns {
   text-align: right;
