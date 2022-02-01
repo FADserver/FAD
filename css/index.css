@@ -169,6 +169,11 @@
   margin-bottom: 70px;
 }
 
+.header-share {
+  float: right;
+  margin-right: 40px;
+}
+
 @media all and (max-width: 1000px) {
   .mode {
     width: 50%;
