@@ -306,7 +306,7 @@ header {
   background-color: #FFFFFF;
   color: #00C300;
 }
-@media all and (max-width: 630px) {
+@media all and (max-width: 650px) {
   .header-span_hashtag{
     margin-right: 10px;
     font-size: 15px;
@@ -340,7 +340,7 @@ header {
     display: none;
   }
 }
-@media all and (max-width: 360px) {
+@media all and (max-width: 374px) {
   .header-sns_share::before {
     min-width: 30px;
     min-height: 30px;
@@ -355,7 +355,7 @@ header {
     display: none;
   }
 }
-@media all and (max-width: 265px) {
+@media all and (max-width: 368px) {
   .header-share {
     display: none;
   }
