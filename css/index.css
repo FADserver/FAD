@@ -165,6 +165,9 @@
   display: block;
 }
 /* ↑ newsプレリリース ↑ */
+.news_bottom_margin {
+  margin-bottom: 70px;
+}
 
 @media all and (max-width: 1000px) {
   .mode {
