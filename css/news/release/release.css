@@ -8,6 +8,18 @@
 #name {
   text-align: left;
 }
+/* 「管理者」「運営者」の間の文字間隔 */
+.post {
+  margin-right: 37px;
+}
+/* 「ホ」と「ウ」の右の文字間隔 */
+.hope {
+  margin-right: 7px;
+}
+/* 「地」の右の文字間隔 */
+.tikyu {
+  margin-right: 30px;
+}
 .right {
   display: block;
   text-align: right;
@@ -20,15 +32,13 @@
   display: block;
   text-align: center;
 }
-.bold {
-  font-weight: bold;
-}
 #tytle {
   text-align: center;
   color: #333333;
   padding: 0;
   margin: 0;
-  font-size: 200%;
+  font-weight: bold;
+  font-size: 150%;
 }
 h1::before {
   display: none;

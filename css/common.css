@@ -74,6 +74,9 @@ a {
   display: inline;
   color: #333333;
 }
+.bold {
+  font-weight: bold;
+}
 
 .torikesi {
   display: inline;
