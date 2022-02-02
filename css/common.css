@@ -853,12 +853,10 @@ header {
   }
 }
 @media all and (max-width: 325px) {
-  .share-btn__item--twitter::after,
-  .share-btn__item--line::after,
-  .share-btn__item--copy::after {
+  .share-btn__item::after {
     display: none;
   }
-  .share-btn__item--twitter, .share-btn__item--line {
+  .share-btn__item {
     border-radius: 50%;
     min-width: 40px;
     min-height: 40px;
@@ -875,16 +873,26 @@ header {
     background-color: #00C300;
   }
   .share-btn__item--copy {
-    background-color: #909090;
-    color: #FFFFFF;
-    height: 40px;
-    margin: 0 auto;
-    padding-top: 7px;
+    display: none;
   }
-  .share-btn__item:hover {
+  .share-btn__item--copy1 {
+    background-color: #909090;
+  }
+  .share-btn__item--copy1::before {
+    content: "\f328";
+  }
+  .share-btn__item--twitter:hover,.share-btn__item--line:hover {
     color: #FFFFFF;
     cursor: pointer;
     transition: 0.3s ease;
+  }
+  .share-btn__item--copy1:hover {
+    background-color: #FFFFFF;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  .share-btn__item--copy1:hover::before {
+    color: #535353;
   }
 }
 /* ↑ シェアボタン ↑ */

@@ -1,64 +1,65 @@
 <!DOCTYPE html>
 
-<div class="share">
-  <span class="span_share AweSomeFont-Free">SHARE</span>
-  <div class="share-btn-type1">
-    <div class="share-btn-div"><a class="share-btn__item share-btn__item--twitter AweSomeFont-Brands" id="share-btn--twitter" href="" target="_blank" rel="noopener"></a></div>
-    <div class="share-btn-div"><a class="share-btn__item share-btn__item--line AweSomeFont-Brands" id="share-btn--line" href="" target="_blank" rel="noopener"></a></div>
-    <div class="share-btn-div">
-      <div class="share-btn__item share-btn__item--copy AweSomeFont-Free" id="share-btn--copy" type="button" onclick="copyUrlTitle()">Copy</div>
+    <div class="share">
+      <span class="span_share AweSomeFont-Free">SHARE</span>
+      <div class="share-btn-type1">
+        <div class="share-btn-div"><a class="share-btn__item share-btn__item--twitter AweSomeFont-Brands" id="share-btn--twitter" href="" target="_blank" rel="noopener"></a></div>
+        <div class="share-btn-div"><a class="share-btn__item share-btn__item--line AweSomeFont-Brands" id="share-btn--line" href="" target="_blank" rel="noopener"></a></div>
+        <div class="share-btn-div">
+          <div class="share-btn__item share-btn__item--copy AweSomeFont-Free" id="share-btn--copy" type="button" onclick="copyUrlTitle()">Copy</div>
+          <div class="share-btn__item share-btn__item--copy1 AweSomeFont-Free" type="button" onclick="copyUrlTitle()"></div>
+        </div>
+        <script>
+          var beforeurl = location.href;
+              var url = encodeURI(beforeurl);
+              var beforetitle = document.title;
+              var title = encodeURI(beforetitle);
+        
+              var target1 = document.getElementById("share-btn--twitter");
+              target1.href= "https://twitter.com/intent/tweet?text=" + title + "%0A" + "%23FADserver" + "%0A" + url;
+              var target2 = document.getElementById("share-btn--line");
+              target2.href= "https://line.me/R/msg/text/?" +  title + "%0A" + url;
+        
+              function copyUrlTitle() {
+              var url = location.href;
+              var title = document.title;
+              navigator.clipboard.writeText(title + " \n " + url);
+              document.getElementById("share-btn--copy").textContent = "Copied";
+              }
+        </script>
+      </div>
     </div>
-    <script>
-      var beforeurl = location.href;
-          var url = encodeURI(beforeurl);
-          var beforetitle = document.title;
-          var title = encodeURI(beforetitle);
     
-          var target1 = document.getElementById("share-btn--twitter");
-          target1.href= "https://twitter.com/intent/tweet?text=" + title + "%0A" + "%23FADserver" + "%0A" + url;
-          var target2 = document.getElementById("share-btn--line");
-          target2.href= "https://line.me/R/msg/text/?" +  title + "%0A" + url;
+    <div class="message-wrapper">
+      <div class="heading">
+        <p class="catch-copy1">さぁ、あなたも完全ランダムなダンジョンへ</p>
+        <p class="catch-copy2">Let's enjoy FAD!</p>
+      </div>
+      <a href="https://fadserver.github.io/FAD/join/#join"><span class="btn message">FADサーバーで遊ぶ</span></a>
+    </div>
     
-          function copyUrlTitle() {
-          var url = location.href;
-          var title = document.title;
-          navigator.clipboard.writeText(title + " \n " + url);
-          document.getElementById("share-btn--copy").textContent = "Copied";
-          }
-    </script>
-  </div>
-</div>
-
-<div class="message-wrapper">
-  <div class="heading">
-    <p class="catch-copy1">さぁ、あなたも完全ランダムなダンジョンへ</p>
-    <p class="catch-copy2">Let's enjoy FAD!</p>
-  </div>
-  <a href="https://fadserver.github.io/FAD/join/#join"><span class="btn message">FADサーバーで遊ぶ</span></a>
-</div>
-
-<footer>
-  <hr class="footer-line">
-  <div class="footer_box">
-    <div class="sns">
-      <ul class="follow-me">
-        <li><a class="sns_icon" href="https://fadserver.github.io/FAD/video/" title="Videos"></a></li>
-        <li><a class="sns_icon" href="https://twitter.com/FADserver" target="_blank" rel="noopener" title="Twitter"></a></li>
-        <li><a class="sns_icon" href="https://lin.ee/eZ3sGPj" target="_blank" rel="noopener" title="LINE"></a></li>
-        <li><a class="contact" href="https://fadserver.github.io/FAD/contact/" title="お問い合わせ"></a></li>
-      </ul>
-    </div>
-    <ul class="nav">
-      <li><a class="border" href="https://fadserver.github.io/FAD/mode/">FADのミニゲーム</a></li>
-      <li><a class="border" href="https://fadserver.github.io/FAD/about/participant">参加者の皆様へ</a></li>
-      <li><a class="border" href="https://fadserver.github.io/FAD/about/streamer">ストリーマーの皆様へ</a></li>
-      <li><a class="border" href="https://fadserver.github.io/FAD/about/rules">規約など</a></li>
-      <li><a class="border" href="https://fadserver.github.io/FAD/contact/">お問い合わせ</a></li>
-      <li><a class="border" href="https://fadserver.github.io/FAD/contact/Q&A">Q&A</a></li>
-      <li><a href="https://fadserver.github.io/FAD/sitemap/">サイトマップ</a></li>
-    </ul>
-    <div class="footer_logo"> <a href="https://fadserver.github.io/FAD/" tytle="Full-Automatic-Dungeon" alt="Full-Automatic-Dungeon"><img src="https://fadserver.github.io/FAD/image/logo/logo_footer.svg"></a>
-      <p class="footer-1">■ このホームページに掲載されている一切の文書・図版・写真等を、手段や形態を問わず複製、転載することを禁じます。<br>■ このホームページにある要素を直リンクしないでください。<br>© 2019-2022 Full Automatic Dungeon-server. All Right Reserved.</p>
-    </div>
-  </div>
-</footer>
+    <footer>
+      <hr class="footer-line">
+      <div class="footer_box">
+        <div class="sns">
+          <ul class="follow-me">
+            <li><a class="sns_icon" href="https://fadserver.github.io/FAD/video/" title="Videos"></a></li>
+            <li><a class="sns_icon" href="https://twitter.com/FADserver" target="_blank" rel="noopener" title="Twitter"></a></li>
+            <li><a class="sns_icon" href="https://lin.ee/eZ3sGPj" target="_blank" rel="noopener" title="LINE"></a></li>
+            <li><a class="contact" href="https://fadserver.github.io/FAD/contact/" title="お問い合わせ"></a></li>
+          </ul>
+        </div>
+        <ul class="nav">
+          <li><a class="border" href="https://fadserver.github.io/FAD/mode/">FADのミニゲーム</a></li>
+          <li><a class="border" href="https://fadserver.github.io/FAD/about/participant">参加者の皆様へ</a></li>
+          <li><a class="border" href="https://fadserver.github.io/FAD/about/streamer">ストリーマーの皆様へ</a></li>
+          <li><a class="border" href="https://fadserver.github.io/FAD/about/rules">規約など</a></li>
+          <li><a class="border" href="https://fadserver.github.io/FAD/contact/">お問い合わせ</a></li>
+          <li><a class="border" href="https://fadserver.github.io/FAD/contact/Q&A">Q&A</a></li>
+          <li><a href="https://fadserver.github.io/FAD/sitemap/">サイトマップ</a></li>
+        </ul>
+        <div class="footer_logo"> <a href="https://fadserver.github.io/FAD/" tytle="Full-Automatic-Dungeon" alt="Full-Automatic-Dungeon"><img src="https://fadserver.github.io/FAD/image/logo/logo_footer.svg"></a>
+          <p class="footer-1">■ このホームページに掲載されている一切の文書・図版・写真等を、手段や形態を問わず複製、転載することを禁じます。<br>■ このホームページにある要素を直リンクしないでください。<br>© 2019-2022 Full Automatic Dungeon-server. All Right Reserved.</p>
+        </div>
+      </div>
+    </footer>
