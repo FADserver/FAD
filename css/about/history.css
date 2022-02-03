@@ -45,13 +45,14 @@
 }
 .cp_timeline01 li .timeline_item .flag {
   position: relative;
-  display: inline;
+  display: inline-block;
   background: #000946;
   color: #ffffff;
   padding: 6px 10px;
   border-radius: 5px;
   font-weight: bold;
   text-align: left;
+  line-height: 1;
 }
 .cp_timeline01 li:nth-child(odd) .timeline_item .flag {
   -webkit-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
