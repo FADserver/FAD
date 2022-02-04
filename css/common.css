@@ -254,6 +254,16 @@ header {
   margin-top: 7px;
   width: 50px;
 }
+.header_logo_2 {
+  margin-bottom: 6px;
+  height: 40px;
+  margin-left: 13px;
+}
+@media all and (max-width: 999px) {
+  .header_logo_2 {
+    display: none;
+  }
+}
 
 .header-left {
   float: left;
