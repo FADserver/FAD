@@ -250,6 +250,10 @@ header {
   width: 110px;
   margin-top: 10px;
 }
+.header_logo {
+  margin-top: 5px;
+  width: 55px;
+}
 
 .header-left {
   float: left;
@@ -1014,8 +1018,8 @@ footer a:hover {
   margin-left: 1.5%;
   margin-right: 1.5%;
 }
-.footer_logo img {
-  width: 125px;
+.logo_footer {
+  width: 300px;
 }
 
 .footer-1 {

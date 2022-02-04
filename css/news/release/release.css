@@ -21,11 +21,11 @@
 }
 /* 「ホ」と「ウ」の右の文字間隔 */
 .hope {
-  margin-right: 29px;
+  margin-right: 29.01px;
 }
 /* 「地」の右の文字間隔 */
 .tikyu {
-  margin-right: 75px;
+  margin-right: 74px;
 }
 .right {
   display: block;
