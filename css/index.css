@@ -144,8 +144,6 @@
 
 .news-tytle {
   margin: 0 auto;
-}
-.news-tytle {
   font-size: 3rem;
   position: relative;
   padding-bottom: 1.5rem;
@@ -158,10 +156,10 @@
   display: block;
   color: #333333;
 }
-.news-list li {
+.news-list .item {
   display: none;
 }
-.news-list li:nth-child(1), .news-list li:nth-child(2), .news-list li:nth-child(3) {
+.news-list .item:nth-child(1), .news-list .item:nth-child(2), .news-list .item:nth-child(3) {
   display: block;
 }
 /* ↑ newsプレリリース ↑ */
