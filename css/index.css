@@ -8,12 +8,15 @@
 }
 
 .top-wrapper {
+  position: relative;
+  top: -49px;
   padding: 180px 0 100px 0;
   background-image: url(../image/top.png);
   background-size: cover;
   color: white;
   text-align: center;
   background-position: center top 10%;
+  z-index: 0;
 }
 
 .no {

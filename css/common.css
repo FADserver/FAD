@@ -1156,13 +1156,13 @@ footer {
 
 /* ↓ パンくずリスト ↓ */
 .pan {
-  display: inline;
   position: relative;
   top: 10px;
   /* スクロール */
   overflow: auto;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
+  z-index: 1;
 }
 .breadcrumb {
   margin-top: 0;
