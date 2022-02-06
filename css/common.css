@@ -116,9 +116,7 @@ a {
 
 h1 {
   position: relative;
-  padding-top: 80px;
   text-align: center;
-  color: #333333;
 }
 h1:before {
   position: absolute;
@@ -238,20 +236,19 @@ a.anchor{
 /* ↑ テーブルのscroll分かりやすくするやつ ↑ */
 
 /* ↓ ヘッダー ↓ */
-header {
+#header {
+  display: block;
   height: 65px;
   width: 100%;
+  max-width: 1920px;
   background-color: #000946;
   position :fixed;
   top: 0;
   z-index: 100;
 }
-.logo_head {
-  width: 110px;
-  margin-top: 10px;
-}
 .header_logo {
   margin-top: 7px;
+  margin-left: 15px;
   width: 50px;
 }
 .header_logo_2 {
@@ -1159,9 +1156,9 @@ footer {
 
 /* ↓ パンくずリスト ↓ */
 .pan {
+  display: inline;
   position: relative;
-  top: 70px;
-  z-index: 2;
+  top: 10px;
   /* スクロール */
   overflow: auto;
   white-space: nowrap;

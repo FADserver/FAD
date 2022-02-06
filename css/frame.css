@@ -1,5 +1,6 @@
 #child2 {
   background-color: #F1F1F1;
+  margin-top: -48px;
 }
 
 .balloon1 {
@@ -280,6 +281,7 @@
   padding:0 15px 80px 15px;
   text-align: center;
 }
+
 /* ↓ 768px未満 スマホ用 ↓ */
 @media all and (max-width: 767px) {
   .container {
@@ -346,7 +348,7 @@
   }
   #child2 {
     flex-grow: 1;
-    padding: 0 10px 10px 10px;
+    padding: 10px;
     min-width: 280px;
     max-width: 280px;
   }
@@ -377,7 +379,7 @@
   }
   #child2 {
     flex-grow: 1;
-    padding: 0 10px 10px 10px;
+    padding: 10px;
     min-width: 280px;
     max-width: 280px;
   }
@@ -410,7 +412,7 @@
   }
   #child2 {
     flex-grow: 1;
-    padding: 0 10px 10px 10px;
+    padding: 10px;
     min-width: 400px;
     max-width: 400px;
   }
@@ -424,20 +426,19 @@
 #news-bar {
   display: block;
 }
-.news-banner-margin {
-  position: relative;
-  display: block;
+.news-banner {
+  display: inline-block;
   margin-top: 65px;
   width: 100%;
-  height: 85px;
+  height: auto;
 }
-
 .a_news-bar_blank, .a_news-bar {
   color:#ffffff;
   text-decoration: underline;
+  transition: 0.3s ease;
 }
 .a_news-bar_blank::after {
-  content: " \f35d  ";
+  content: "\f35d";
   color: #ffffff;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -446,9 +447,11 @@
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   font-size: 10px;
+  margin-right: 10px;
 }
 .a_news-bar_blank:hover, .a_news-bar_blank:hover::after, .a_news-bar:hover {
   color:#8C8C8C;
+  transition: 0.3s ease;
 }
 
 .news-banner_p::before {
@@ -465,7 +468,7 @@
 }
 
 /* 緊急連絡 */
-.news-banner-margin {
+.news-banner {
   background-color: #980003;
 }
 .news-banner_p::before {
@@ -473,7 +476,7 @@
 }
 
 /* 処分連絡 */
-/*.news-banner-margin {
+/*.news-banner {
   background-color: #223440;
 }
 .news-banner_p::before {
@@ -481,26 +484,13 @@
 }*/
 
 /* 規約変更連絡 */
-/*.news-banner-margin {
+/*.news-banner {
   background-color: #5B7876;
 }
 .news-banner_p::before {
   content: "\f02d";
 }*/
 
-.news-banner {
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  transform : translate(-50%,-50%);
-  /* スクロール */
-  /*
-  overflow: auto;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
-  */
-}
 .news-banner_p {
   text-align: center;/*一応BOX内の文字も中央寄せ*/
   line-height: 1.5;
@@ -509,9 +499,10 @@
   color: #ffffff;
   overflow-wrap: break-word;
   word-break: break-word;
-  padding: 0px 10px;
+  padding: 15px;
+  margin: 0;
 }
-.news-bar-margin-bottom {
-  margin-bottom: -48px;
+.news-banner-margin-bottom {
+  margin-bottom: -65px;
 }
 /* ↑ お知らせバナー ↑ */

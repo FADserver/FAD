@@ -73,15 +73,6 @@
 .cp_qa input:checked + label[for*='4'] {
   border-top: 5px solid #CFE5F7;
 }
-@media screen and (max-width: 1110px) {
-  .cp_qa label.cp_tabitem {
-    font-size: 0;
-  }
-  label:before {
-    font-size: 18px;
-    margin: 0;
-  }
-}
 /* QAブロック */
 .cp_qa #cp_conttab1:checked ~ #cp_content1,
 .cp_qa #cp_conttab2:checked ~ #cp_content2,
@@ -144,6 +135,17 @@
 /* 説明文 */
 .cp_explain {
   border-bottom: solid 1px #888888;
+}
+@media screen and (max-width: 1110px) and (min-width: 833px) , (max-width: 724px){
+  .cp_tabitem {
+    display: none!important;
+  }
+  #cp_content1, #cp_content2, #cp_content3, #cp_content4 {
+    display: block!important;
+  }
+  .cp_explain {
+    display: none;
+  }
 }
 /* ↑ Q&A カテゴリーごと ↑ */
 
