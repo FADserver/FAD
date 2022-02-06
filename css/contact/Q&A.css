@@ -5,147 +5,72 @@
 
 /* ↓ Q&A カテゴリーごと ↓ */
 .cp_qa {
-  margin: 0 auto;
-  background: #ffffff;
+  border-top: 1px solid #1b2538;
 }
-.cp_qa input {
-  display: none;
-}
-/* カテゴリー */
-.cp_qa #cp_content1,
-.cp_qa #cp_content2,
-.cp_qa #cp_content3,
-.cp_qa #cp_content4 {
-  display: none;
-  padding: 20px 0 0;
-  border-top: 1px solid #dddddd;
-}
-.cp_qa label.cp_tabitem {
-  display: inline-block;
-  margin: 0 0 -1px;
-  padding: 15px 25px;
-  text-align: center;
-  color: #bbbbbb;
-  border: 1px solid transparent;
-}
-.cp_qa label.cp_tabitem:before {
-  margin-right: 10px;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-}
-/*.cp_qa label.cp_tabitem[for*='1']:before { 
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  text-align: center;
-  border-radius: 100%;
-  background: #FFFFFF;
-  background-repeat: no-repeat;
-  background-size:contain;
-  background-image: url("../../icon/favicon-32x32.png");
- }*/
-.cp_qa label.cp_tabitem[for*='1']:before { content: '\f129'; }
-.cp_qa label.cp_tabitem[for*='2']:before { content: '\f108'; }
-.cp_qa label.cp_tabitem[for*='3']:before { content: '\f07b'; }
-.cp_qa label.cp_tabitem[for*='4']:before { content: '\f2bd'; }
-.cp_qa label.cp_tabitem:hover {
-  cursor: pointer;
-  color: #888888;
-}
-.cp_qa input:checked + label {
-  color: #555555;
-  border: 1px solid #dddddd;
-  border-bottom: 1px solid #ffffff;
-}
-/* --ブロックのバーの色 */
-.cp_qa input:checked + label[for*='1'] {
-  border-top: 5px solid #000946;
-}
-.cp_qa input:checked + label[for*='2'] {
-  border-top: 5px solid #4A93CD;
-}
-.cp_qa input:checked + label[for*='3'] {
-  border-top: 5px solid #9CD6F7;
-}
-.cp_qa input:checked + label[for*='4'] {
-  border-top: 5px solid #CFE5F7;
-}
-/* QAブロック */
-.cp_qa #cp_conttab1:checked ~ #cp_content1,
-.cp_qa #cp_conttab2:checked ~ #cp_content2,
-.cp_qa #cp_conttab3:checked ~ #cp_content3,
-.cp_qa #cp_conttab4:checked ~ #cp_content4 {
-  display: block;
-}
-.cp_qa .cp_qain {
-  overflow-x: hidden;
-  margin: 0 auto;
-  color: #333333;
-}
-.cp_qa .cp_qain .cp_actab {
-  padding: 20px 0;
-  border-bottom: 1px dotted #cccccc;
-}
-/* 質問 */
-.cp_qa .cp_qain label p {
-  position: relative;
-  display: block;
-  width: 100%;
-  margin: 0;
-  padding: 4px 10px 0 48px;
-  cursor: pointer;
-  font-weight: bold;
-}
-/* ＋アイコン */
-.cp_qa .cp_qain .cp_plus {
-  font-size: 2em;
-  line-height: 100%;
-  position: absolute;
-  z-index: 5;
-  margin-top: 3px;
-  margin-left: 10px;
-  -webkit-transition: 0.2s ease;
-          transition: 0.2s ease;
-}
-
-/* 答え */
-.cp_qa .cp_qain .cp_actab-content {
+.cp_qa .cp_actab {
   position: relative;
   overflow: hidden;
-  height: 0;
-  margin: 0 10px 0 48px;
-  padding: 14px 0;
-  -webkit-transition: 0.4s ease;
-          transition: 0.4s ease;
+  width: 100%;
+  margin-bottom: 1px;
+  color: #1b2538;
+}
+.cp_qa .cp_actab input {
+  position: absolute;
   opacity: 0;
 }
+/* 質問 */
+.qa_label {
+  font-weight: bold;
+  line-height: 1.6;
+  position: relative;
+  display: block;
+  margin: 0 0 0 0;
+  padding: 1em 2em 1em 1em;
+  cursor: pointer;
+  border-bottom: 1px solid #000946;
+}
+.qa_label:hover {
+  color: #3D4073;
+}
+/* 答え */
+.cp_qa .cp_actab .cp_actab-content {
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: max-height 0.5s ease;
+          transition: max-height 0.5s ease;
+  color: #ffffff;
+}
+.cp_qa .cp_actab .cp_actab-content p {
+  margin: 1em;
+}
 /* 質問を開いた時の仕様 */
-.cp_qa .cp_qain .cp_actab input[type=checkbox]:checked ~ .cp_actab-content {
-  height: auto;
-  opacity: 1;
+/* --アイコン */
+.cp_qa .cp_actab input:checked ~ .qa_label {
+  color: #3D4073;
 }
-/* 質問をクリックした時の▼アイコンの動き */
-.cp_qa .cp_qain .cp_actab input[type=checkbox]:checked ~ .cp_plus {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+/* --答えの高さ */
+.cp_qa .cp_actab input:checked ~ .cp_actab-content {
+  max-height: 9999999999999999999999999999999999999999999999999999px;
 }
-/* 説明文 */
-.cp_explain {
-  border-bottom: solid 1px #888888;
+/* 質問をクリックした時のアイコンの動き */
+.qa_label::after {
+  line-height: 1.6;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  display: block;
+  width: 3em;
+  margin-top: -12.5px;
+  -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+  text-align: center;
 }
-@media screen and (max-width: 1110px) and (min-width: 833px) , (max-width: 724px){
-  .cp_tabitem {
-    display: none!important;
-  }
-  #cp_content1, #cp_content2, #cp_content3, #cp_content4 {
-    display: block!important;
-  }
-  .cp_explain {
-    display: none;
-  }
+.cp_qa .cp_actab input[type=checkbox] + .qa_label::after {
+  content: '▼';
+}
+.cp_qa .cp_actab input[type=checkbox]:checked + .qa_label::after {
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
 }
 /* ↑ Q&A カテゴリーごと ↑ */
 
