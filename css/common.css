@@ -236,7 +236,7 @@ a.anchor{
 /* ↑ テーブルのscroll分かりやすくするやつ ↑ */
 
 /* ↓ ヘッダー ↓ */
-#header {
+header {
   display: block;
   height: 65px;
   width: 100%;
@@ -248,7 +248,7 @@ a.anchor{
 }
 .header_logo {
   margin-top: 7px;
-  margin-left: 15px;
+  margin-left: 10px;
   width: 50px;
 }
 .header_logo_2 {
