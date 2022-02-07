@@ -287,7 +287,6 @@
   .container {
     width: 100%;
     max-width: 1920px;
-    padding: 0 15px 0 15px;
     margin: 0 auto;
   }
   .youtube_window {
@@ -329,7 +328,6 @@
   .container {
     width: 100%;
     max-width: 1920px;
-    padding-left: 15px;
     margin: 0 auto;
   }
   .youtube-archive {
@@ -360,7 +358,6 @@
   .container {
     width: 100%;
     max-width: 1920px;
-    padding-left: 15px;
     margin: 0 auto;
   }
   .youtube-archive {
@@ -393,7 +390,6 @@
   .container {
     width: 100%;
     max-width: 1920px;
-    padding-left: 15px;
     margin: 0 auto;
   }
   .youtube-archive {
