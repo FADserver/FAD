@@ -1,6 +1,11 @@
 #child2 {
   background-color: #F1F1F1;
   margin-top: -48px;
+  flex-grow: 1;
+  padding: 10px;
+}
+#child3 {
+  padding: 0px 10px;
 }
 
 .balloon1 {
@@ -345,8 +350,6 @@
     width: calc(100% - 280px);
   }
   #child2 {
-    flex-grow: 1;
-    padding: 10px;
     min-width: 280px;
     max-width: 280px;
   }
@@ -375,8 +378,6 @@
     width: calc(100% - 280px);
   }
   #child2 {
-    flex-grow: 1;
-    padding: 10px;
     min-width: 280px;
     max-width: 280px;
   }
@@ -407,8 +408,6 @@
     width: calc(100% - 400px);
   }
   #child2 {
-    flex-grow: 1;
-    padding: 10px;
     min-width: 400px;
     max-width: 400px;
   }
