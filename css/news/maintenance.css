@@ -34,3 +34,19 @@
   content: "\f0da";
   padding-right: 10px;
 }
+
+.exsample .fa-exclamation-triangle {
+  margin-left: 45px;
+}
+.exsample .fa-tools {
+  margin-left: 59px;
+}
+.exsample .fa-check-square {
+  margin-left: 45px;
+}
+.exsample .fa-cog {
+  margin-left: 10px;
+}
+.exsample .fa-flag {
+  margin-left: 42px;
+}

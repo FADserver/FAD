@@ -1117,7 +1117,6 @@ footer {
 /* ↓ 公開日・更新日 ↓ */
 #update-day {
   text-align: right;
-  margin: 0 2% 0 2%;
 }
 #update-day p {
   display: inline;
@@ -1164,7 +1163,6 @@ footer {
 }
 .breadcrumb {
   margin-top: 0;
-  margin-left: 18px;
   padding: 0;
   list-style: none;
 }
