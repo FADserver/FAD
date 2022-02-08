@@ -39,6 +39,7 @@
 
 .fad-mode {
   height: 580px;
+  margin-top: -49px;
   padding-bottom: 80px;
   padding-left: 5%;
   padding-right: 5%;
@@ -183,7 +184,8 @@
   }
 
   .fad-mode {
-    height: 590px;
+    display: block;
+    height: 900px;
   }
 }
 
