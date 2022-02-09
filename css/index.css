@@ -1,5 +1,11 @@
-.FAD_SmallWord {
-  font-size: 60%;
+.logo_h1 {
+  max-width: 1000px;
+  margin-top: 20px;
+  padding: 0px 30px;
+}
+
+.pan {
+  margin-left: 15px;
 }
 
 .container {
@@ -20,8 +26,9 @@
 }
 
 .no {
+  max-width: 1920px;
+  font-size: 5vw;
   opacity: 1;
-  font-size: 45px;
   letter-spacing: 5px;
   color: #ffffff;
 }
@@ -30,11 +37,6 @@
   opacity: 1;
   font-size: 16px;
   margin-bottom: 40px;
-}
-
-.fa {
-  margin-right: 5px;
-  
 }
 
 .fad-mode {
@@ -190,10 +192,6 @@
 }
 
 @media all and (max-width: 750px) {
-  .top-wrapper h1 {
-    font-size: 32px;
-  }
-
   .heading h2 {
     font-size: 20px;
   }
@@ -224,10 +222,6 @@
 
   .top-wrapper {
     text-align: left;
-  }
-
-  .top-wrapper h1 {
-    font-size: 24px;
   }
 
   .top-wrapper p {

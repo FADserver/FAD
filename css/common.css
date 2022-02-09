@@ -677,8 +677,12 @@ header {
   font-weight: bold;
   color: #3D4073;
   font-size: 30px;
-  margin-left: 15px;
+  margin-left: 70px;
   margin-top: 5px;
+}
+.hamburger_logo {
+  width: 50px;
+  margin: 2px 0px 0px 10px;
 }
 #menu-btn-check:checked ~ .hamburger-menu-tag {
   left: 13%;/*メニューを画面内へ*/
