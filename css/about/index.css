@@ -1,6 +1,8 @@
 table {
-  width: 100%;
+  width: calc(100% - 4%);
   border-collapse: collapse;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 table th,td {
@@ -87,6 +89,11 @@ a {
 }
 
 @media all and (max-width: 768px) {
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-left: 0;
+  }
   table th,td {
     width: auto;
     display: block;

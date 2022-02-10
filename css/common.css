@@ -1121,6 +1121,7 @@ footer {
 /* ↓ 公開日・更新日 ↓ */
 #update-day {
   text-align: right;
+  margin: 35px 0 20px 0;
 }
 #update-day p {
   display: inline;
