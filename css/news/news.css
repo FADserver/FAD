@@ -11,7 +11,19 @@
   font-weight: bold;
 }
 
-.a_nounder::before {
+.page::before {
+  content: " \f15b";
+  color: #000946;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-size: 25px;
+  padding-right: 10px;
+}
+.pdf::before {
   content: " \f1c1";
   color: #EC1C24;
   font-family: "Font Awesome 5 Free";
