@@ -1057,7 +1057,7 @@ footer {
 }
 
 .footer_p {
-  font-size: 8px;
+  font-size: 10px;
   line-height: 2;
   color: #8C8C8C;
   margin-top: 20px;
@@ -1284,6 +1284,7 @@ footer {
 /* FADサーバーで遊ぶ */
 .message-wrapper {
   text-align: center;
+  margin: 15px 0;
 }
 .message {
   padding: 0 20px;
