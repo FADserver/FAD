@@ -1017,7 +1017,7 @@ footer a:hover, .fotter_bar a:hover {
 
 footer {
   padding-top: 30px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 .menu-icon {
@@ -1055,6 +1055,19 @@ footer {
 .nav a:hover {
   color: #8C8C8C;
 }
+
+.footer_p {
+  font-size: 8px;
+  line-height: 2;
+  color: #8C8C8C;
+  margin-top: 20px;
+}
+.footer_logo {
+  display: block;
+  width: 70%;
+  max-width: 500px;
+  margin: 0 auto;
+}
 /* PC */
 @media all and (min-width: 834px) {
   .nav {
@@ -1074,18 +1087,6 @@ footer {
   }
   .footer_p {
     font-size: 13px;
-    line-height: 2;
-    color: #8C8C8C;
-    margin-left: 1.5%;
-    margin-right: 1.5%;
-  }
-  .logo_footer-PC {
-    margin-left: 1.5%;
-    margin-right: 1.5%;
-    width: 300px;
-    }
-  .logo_footer-mobile {
-    display: none;
   }
 }
 /* スマホ */
@@ -1103,21 +1104,6 @@ footer {
   .nav li a {
     padding: 13px 8px;
     text-align: left;
-  }
-  .footer_p {
-    font-size: 8px;
-    line-height: 2;
-    color: #8C8C8C;
-    margin-top: 20px;
-  }
-  .logo_footer-mobile {
-    display: block;
-    width: 70%;
-    max-width: 450px;
-    margin: 0 auto;
-  }
-  .logo_footer-PC {
-    display: none;
   }
 }
 /* フッターリンク */
@@ -1232,7 +1218,7 @@ footer {
   content: '\f057';
 }
 .pan-search:before {
-  /*404アイコン*/
+  /*検索結果アイコン*/
   content: '\f002';
 }
 .breadcrumb li a:hover {
@@ -1296,21 +1282,22 @@ footer {
 /* ↑ PageTop ↑ */
 
 /* FADサーバーで遊ぶ */
-.message {
-  padding: 15px 40px;
-  background-color: #5dca88;
-  cursor: pointer;
-  box-shadow: 0px 7px #1a7940;
+.message-wrapper {
+  text-align: center;
 }
-
+.message {
+  padding: 0 20px;
+  background-color: #3D4073;
+  cursor: pointer;
+  box-shadow: 0px 7px #000946;
+}
 .message:active {
   position: relative;
   top: 7px;
   box-shadow: none;
 }
 .heading {
-  padding-top: 80px;
-  padding-bottom: 10px;
+  padding-top: 10px;
   color: #5f5d60;
 }
 .catch-copy1 {
@@ -1335,26 +1322,4 @@ footer {
 .btn:hover {
   opacity: 1;
 }
-
 /* ここまで */
-
-@media all and (max-width: 1000px) {
-  .lesson {
-    width: 50%;
-    margin-bottom: 50px;
-  }
-
-  .lesson-wrapper {
-    height: 990px;
-  }
-
-  footer {
-    text-align: left;
-  }
-}
-
-@media all and (max-width: 670px) {
-  .header-right {
-    display: none;
-  }
-}

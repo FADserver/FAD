@@ -292,17 +292,16 @@
   font-size: 20px;
 }
 /* ↑ FADカウントダウン ↑ */
-
-.message-wrapper {
-  padding:0 15px 80px 15px;
-  text-align: center;
-}
 .container {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
 }
 
+.normal_margin {
+  margin: 0px 15px;
+  margin-bottom: 15px;
+}
 /* ↓ 768px未満 スマホ用 ↓ */
 @media all and (max-width: 767px) {
   .youtube_window {
@@ -318,10 +317,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-  }
-  .normal_margin {
-    margin-top: 60px;
-    margin: 0px 15px;
   }
   #child1 {
     flex-grow: 0;
@@ -349,10 +344,6 @@
     min-height: 126px;
     margin: 0 auto;
   }
-  .normal_margin {
-    margin-top: 60px;
-    margin: 0px 15px;
-  }
   #child1 {
     flex-grow: 1;
     width: calc(100% - 280px);
@@ -372,10 +363,6 @@
     max-height: 126px;
     min-height: 126px;
     margin: 0 auto;
-  }
-  .normal_margin {
-    margin-top: 60px;
-    margin: 0px 15px;
   }
   #child1 {
     flex-grow: 1;
@@ -400,8 +387,8 @@
     margin: 0 auto;
   }
   .normal_margin {
-    margin-top: 60px;
     margin: 0px 30px;
+    margin-bottom: 30px;
   }
   #child1 {
     flex-grow: 1;
@@ -415,7 +402,7 @@
     display: none;
   }
 }
-/* ↑ 768px以上用 ↑ */
+/* ↑ 934px以上用 ↑ */
 
 /* ↓ お知らせバナー ↓ */
 #news-bar {
