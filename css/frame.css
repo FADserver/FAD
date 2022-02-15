@@ -48,7 +48,7 @@
   padding: 0;
 }
 
-.twitter {
+#child2 .twitter {
   margin: 0 auto;
   width: 100%;
 }
@@ -99,7 +99,11 @@
   background: #8C8C8C;
 }
 
-.ip-address, .info, .update, .open, .youtube {
+.sidebar-wrapper .ip-address,
+.sidebar-wrapper .info,
+.sidebar-wrapper .update,
+.sidebar-wrapper .open,
+.sidebar-wrapper .youtube {
   display: inline-block;
   position: relative;
   box-sizing: border-box;
@@ -185,10 +189,10 @@
   content: "\f073";
 }
 
-.youtube {
+.sidebar-wrapper .youtube {
   background: #ff6868;
 }
-.youtube::before {
+.sidebar-wrapper .youtube::before {
   position: absolute;
   content: '';
   top: 100%;
@@ -330,7 +334,7 @@
     width: 100%;
   }
 
-  .twitter {
+  #child2 .twitter {
     display: none;
   }
 }
