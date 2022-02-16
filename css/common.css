@@ -929,6 +929,9 @@ footer .nav a {
   display: block;
   color: #ccc;
 }
+footer .nav a .role {
+  font-size: 9px;
+}
 
 footer .nav .ttl {
   display: block;
@@ -994,7 +997,6 @@ footer .company .line::before {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   margin: 0 10px;
-  font-size: 16px;
 }
 footer .nav li li .twitter::before,
 footer .company .twitter::before {
@@ -1266,7 +1268,7 @@ footer .copyright-1 {
 /* FADサーバーで遊ぶ */
 .message-wrapper {
   text-align: center;
-  margin: 15px 0;
+  margin: 15px;
 }
 .message {
   padding: 0 20px;
@@ -1284,13 +1286,14 @@ footer .copyright-1 {
   color: #5f5d60;
 }
 .catch-copy1 {
-  font-size: 25px;
-  text-align: center;
+  font-size: 4.5vmin;
   font-weight: bold;
+  margin-bottom: 0px;
 }
 .catch-copy2 {
-  font-size: 20px;
+  font-size: 4vmin;
   font-weight: normal;
+  margin-top: 0px;
 }
 
 .btn {

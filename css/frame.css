@@ -333,10 +333,6 @@
     display: block;
     width: 100%;
   }
-
-  #child2 .twitter {
-    display: none;
-  }
 }
 /* ↑ 768px未満用 ↑ */
 /* ↓ 768px 834px用 ↓ */
