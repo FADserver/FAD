@@ -929,7 +929,7 @@ footer .nav a {
   display: block;
   color: #ccc;
 }
-footer .nav a .role {
+.footer_role {
   font-size: 9px;
 }
 
