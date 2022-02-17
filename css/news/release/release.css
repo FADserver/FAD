@@ -27,6 +27,10 @@
 .tikyu {
   margin-right: 63px;
 }
+/* 「ふ」「わ」の右の文字間隔 */
+.huwahuwa {
+  margin-right: 7.5px;
+}
 .right {
   display: block;
   text-align: right;

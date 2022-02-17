@@ -13,23 +13,23 @@
       <div class="share-btn__item share-btn__item--copy1 AweSomeFont-Free" type="button" onclick="copyUrlTitle()"></div>
     </div>
     <script>
-      var beforeurl = location.href;
-      var url = encodeURI(beforeurl);
-      var beforetitle = document.title;
-      var title = encodeURI(beforetitle);
-
-      var target1 = document.getElementById("share-btn--twitter");
-      target1.href= "https://twitter.com/intent/tweet?text=" + title + "%0A" + "%23FADserver" + "%0A" + url;
-      var target2 = document.getElementById("share-btn--line");
-      target2.href= "https://line.me/R/msg/text/?" +  title + "%0A" + url;
-
-      function copyUrlTitle() {
-        var url = location.href;
-        var title = document.title;
-        navigator.clipboard.writeText(title + " n " + url);
-        document.getElementById("share-btn--copy").textContent = "Copied";
-      }
-    </script>
+            var beforeurl = location.href;
+            var url = encodeURI(beforeurl);
+            var beforetitle = document.title;
+            var title = encodeURI(beforetitle);
+      
+            var target1 = document.getElementById("share-btn--twitter");
+            target1.href= "https://twitter.com/intent/tweet?text=" + title + "%0A" + "%23FADserver" + "%0A" + url;
+            var target2 = document.getElementById("share-btn--line");
+            target2.href= "https://line.me/R/msg/text/?" +  title + "%0A" + url;
+      
+            function copyUrlTitle() {
+              var url = location.href;
+              var title = document.title;
+              navigator.clipboard.writeText(title + " n " + url);
+              document.getElementById("share-btn--copy").textContent = "Copied";
+            }
+          </script>
   </div>
 </div>
 <div class="message-wrapper">
@@ -46,14 +46,16 @@
     <div class="cont">
       <div class="cont-item">
         <div class="nav">
-          <div class="ttl">
+          <div class="ttl ttl-1">
             <span>
               <a href="https://fadserver.github.io/FAD/operation/">運営</a>
             </span>
           </div>
           <ul>
             <li>
-              <a href="https://fadserver.github.io/FAD/operation/major_exe/"><span class="footer_role">管理者：</span>少佐.exe</a>
+              <a href="https://fadserver.github.io/FAD/operation/major_exe/">
+                <span class="footer_role">管理者：</span>少佐.exe
+              </a>
               <ul>
                 <li>
                   <a class="twitter" href="https://twitter.com/Major__exe">Twitter</a>
@@ -67,7 +69,9 @@
               </ul>
             </li>
             <li>
-              <a href="https://fadserver.github.io/FAD/operation/hopig/"><span class="footer_role">運営者：</span>ホウプ</a>
+              <a href="https://fadserver.github.io/FAD/operation/hopig/">
+                <span class="footer_role">運営者：</span>ホウプ
+              </a>
               <ul>
                 <li>
                   <a class="twitter" href="https://twitter.com/hope_Commander">Twitter</a>
@@ -75,7 +79,9 @@
               </ul>
             </li>
             <li>
-              <a href="https://fadserver.github.io/FAD/operation/huwapenn/"><span class="footer_role">運営者：</span>地球</a>
+              <a href="https://fadserver.github.io/FAD/operation/huwapenn/">
+                <span class="footer_role">運営者：</span>ふわふわ
+              </a>
               <ul>
                 <li>
                   <a class="twitter" href="https://twitter.com/huwapenn">Twitter</a>
@@ -83,17 +89,20 @@
               </ul>
             </li>
           </ul>
-          <div class="ttl">
-            <a href="https://fadserver.github.io/FAD/contact/Q&A">Q&A</a>
-          </div>
-          <div class="ttl">
-            <a href="https://fadserver.github.io/FAD/contact/">お問い合わせ</a>
-          </div>
+          <div class="ttl ttl-1">お願い</div>
+          <ul>
+            <li>
+              <a href="https://fadserver.github.io/FAD/about/streamer">ストリーマーの皆様へ</a>
+            </li>
+            <li>
+              <a href="https://fadserver.github.io/FAD/about/participant">参加者の皆様へ</a>
+            </li>
+          </ul>
         </div>
       </div>
       <div class="cont-item">
         <div class="nav">
-          <div class="ttl">FADサーバー </div>
+          <div class="ttl ttl-1">FADサーバー</div>
           <ul>
             <li>
               <a href="https://fadserver.github.io/FAD/mode/system/">FADシステムとは</a>
@@ -113,26 +122,26 @@
               </ul>
             </li>
           </ul>
-          <div class="ttl">お願い </div>
+          <div class="ttl ttl-1">その他</div>
           <ul>
             <li>
-              <a href="https://fadserver.github.io/FAD/about/streamer">ストリーマーの皆様へ</a>
+              <a href="https://fadserver.github.io/FAD/contact/Q&A">Q&A</a>
             </li>
             <li>
-              <a href="https://fadserver.github.io/FAD/about/participant">参加者の皆様へ</a>
+              <a href="https://fadserver.github.io/FAD/contact/">お問い合わせ</a>
+            </li>
+            <li>
+              <a href="https://fadserver.github.io/FAD/join/">参加方法</a>
+            </li>
+            <li>
+              <a href="https://fadserver.github.io/FAD/video/">Videos</a>
             </li>
           </ul>
-          <div class="ttl">
-            <a href="https://fadserver.github.io/FAD/join/">参加方法</a>
-          </div>
-          <div class="ttl">
-            <a href="https://fadserver.github.io/FAD/video/">Videos</a>
-          </div>
         </div>
       </div>
       <div class="cont-item">
         <div class="nav">
-          <div class="ttl">
+          <div class="ttl ttl-1">
             <a href="https://fadserver.github.io/FAD/about/rules">規約等</a>
           </div>
           <ul>
@@ -148,8 +157,9 @@
             <li>
               <a href="https://fadserver.github.io/FAD/about/rules/disclaimer">免責事項</a>
             </li>
+            <li>&nbsp;</li>
           </ul>
-          <div class="ttl">
+          <div class="ttl ttl-1">
             <span>お知らせ</span>
           </div>
           <ul>
@@ -167,7 +177,7 @@
       </div>
       <div class="cont-item">
         <div class="nav">
-          <div class="ttl">サーバー情報 </div>
+          <div class="ttl ttl-1">サーバー情報</div>
           <ul>
             <li>
               <a href="https://fadserver.github.io/FAD/about/">概要</a>
@@ -176,7 +186,7 @@
               <a href="https://fadserver.github.io/FAD/about/history">沿革</a>
             </li>
           </ul>
-          <div class="ttl">
+          <div class="ttl ttl-1">
             <a href="https://fadserver.github.io/FAD/sitemap/">サイトマップ</a>
           </div>
         </div>

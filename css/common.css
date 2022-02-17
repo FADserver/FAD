@@ -929,16 +929,23 @@ footer .nav a {
   display: block;
   color: #ccc;
 }
+footer .nav a:hover {
+  color: #8C8C8C;
+  text-decoration: underline;  
+}
 .footer_role {
   font-size: 9px;
 }
 
 footer .nav .ttl {
   display: block;
-  margin: 30px 0 0;
+  margin: 30px 10px 0 0;
   font-size: 12px;
   font-weight: bold;
   color: #ccc;
+}
+footer .nav .ttl-1 {
+  border-bottom: 1px solid #ccc;
 }
 
 footer .nav .ttl:first-child {
