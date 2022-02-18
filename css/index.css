@@ -42,24 +42,24 @@
   margin-bottom: 40px;
 }
 
-.fad-mode {
-  height: 580px;
-  margin-top: -49px;
-  padding-bottom: 80px;
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: #f7f7f7;
-  text-align: center;
-}
-
 .explain {
   color: #ffffff;
   font-weight: bold;
 }
 
+.fad-mode {
+  display: block;
+  height: 490px;
+  padding: 50px 5%;
+  margin: -49px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
 .mode {
+  display: inline;
   float: left;
-  width: 33%;
+  width: calc(100% / 3);
 }
 
 .mode-icon {
@@ -85,7 +85,29 @@
   display: inline-block;
   margin-top: 15px;
   font-size: 13px;
-  color: #504c52;
+  color: #333333;
+}
+
+@media all and (max-width: 930px) {
+  .fad-mode {
+    height: 750px;
+  }
+  
+  .mode {
+    display: inline;
+    float: left;
+    width: calc(100% / 2);
+  }
+}
+@media all and (max-width: 754px) {
+  .fad-mode {
+    height: 980px;
+  }
+  
+  .mode {
+    display: inline;
+    width: 100%
+  }
 }
 
 .clear {
@@ -100,6 +122,7 @@
 .cp_box {
   position: relative;
   display: block;
+  margin-top: 30px;
 }
 .cp {
   line-height: 2.5rem;
@@ -137,9 +160,6 @@
 .news:hover {
   opacity: 0.7;
 }
-.clear-1 {
-  margin-bottom: 150px;
-}
 
 .news-tytle {
   margin: 0 auto;
@@ -147,7 +167,6 @@
   position: relative;
   padding-bottom: 1.5rem;
   text-align: center;
-  color: #333333;
 }
 
 .news-tytle span {
@@ -169,66 +188,4 @@
 .header-share {
   float: right;
   margin-right: 40px;
-}
-
-@media all and (max-width: 1000px) {
-  .mode {
-    width: 50%;
-    margin-bottom: 50px;
-  }
-
-  .fad-mode {
-    display: block;
-    height: 900px;
-  }
-}
-
-@media all and (max-width: 750px) {
-  .heading h2 {
-    font-size: 20px;
-  }
-}
-
-@media all and (max-width: 768px) {
-  .fad-mode {
-    height: 950px;
-  }
-}
-
-@media all and (max-width: 670px) {
-  .header-right {
-    display: none;
-  }
-
-  .menu-icon {
-    display: block;
-  }
-
-  .top-wrapper .btn {
-    width: 100%;
-  }
-
-  .twitter {
-    margin-top: 10px;
-  }
-
-  .top-wrapper {
-    text-align: left;
-  }
-
-  .top-wrapper p {
-    font-size: 14px;
-  }
-
-  .mode {
-    width: 100%;
-  }
-
-  .fad-mode {
-    height: 1300px;
-  }
-
-  .message-wrapper .btn {
-    width: 70%;
-  }
 }

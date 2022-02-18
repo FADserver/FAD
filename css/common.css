@@ -216,6 +216,30 @@ a.anchor{
 }
 /* ↑ アコーディオンボックス ↑ */
 
+/* ↓ テーブル ↓ */
+.normal_table {
+  width: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+  display: block;
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.normal_table th{
+  min-width: 240px;
+  border-bottom: solid 2px #000946;
+  padding: 10px 0;
+  text-align: left;
+}
+.normal_table th:first-child {
+  min-width: 200px !important;
+}
+.normal_table td{
+  border-bottom: solid 2px #ddd;
+  padding: 10px 0;
+  text-align: left;
+}
 /* ↓ テーブルのscroll分かりやすくするやつ ↓ */
 .table-wrap {
   overflow: auto;
@@ -229,6 +253,7 @@ a.anchor{
   background-attachment: local;
 }
 /* ↑ テーブルのscroll分かりやすくするやつ ↑ */
+/* ↑ テーブル ↑ */
 
 /* ↓ ヘッダー ↓ */
 header {
