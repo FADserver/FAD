@@ -1,17 +1,17 @@
-table {
+.about_table {
   width: calc(100% - 4%);
   border-collapse: collapse;
   margin-left: 2%;
   margin-right: 2%;
 }
 
-table th,td {
+.about_table th,td {
   padding: 10px 15px;
   border: 1px solid #ddd;
   line-height: 2;
 }
 
-table th {
+.about_table th {
   background: #f4f4f4;
   width: 15%;
   text-align: left;
@@ -89,17 +89,17 @@ a {
 }
 
 @media all and (max-width: 768px) {
-  table {
+  .about_table {
     width: 100%;
     border-collapse: collapse;
     margin-left: 0;
   }
-  table th,td {
+  .about_table th,td {
     width: auto;
     display: block;
     border-top: none;
   }
-  table tr:first-child {
+  .about_table tr:first-child {
     border-top: 1px solid #d5d5d5;
   }
 }
