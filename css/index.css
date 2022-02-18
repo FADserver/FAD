@@ -48,10 +48,11 @@
 }
 
 .fad-mode {
+  width: 100%;
   display: block;
   height: 490px;
   padding: 50px 5%;
-  margin: -49px;
+  margin-top: -49px;
   background-color: #f7f7f7;
   text-align: center;
 }
@@ -92,7 +93,6 @@
   .fad-mode {
     height: 750px;
   }
-  
   .mode {
     display: inline;
     float: left;
@@ -103,7 +103,69 @@
   .fad-mode {
     height: 980px;
   }
-  
+  .mode {
+    display: inline;
+    width: 100%
+  }
+}
+@media all and (max-width: 700px) {
+  .fad-mode {
+    height: 1000px;
+  }
+  .mode {
+    display: inline;
+    width: 100%
+  }
+}
+@media all and (max-width: 591px) {
+  .fad-mode {
+    height: 1020px;
+  }
+  .mode {
+    display: inline;
+    width: 100%
+  }
+}
+@media all and (max-width: 430px) {
+  .fad-mode {
+    height: 1050px;
+  }
+  .mode {
+    display: inline;
+    width: 100%
+  }
+}
+@media all and (max-width: 394px) {
+  .fad-mode {
+    height: 1080px;
+  }
+  .mode {
+    display: inline;
+    width: 100%
+  }
+}
+@media all and (max-width: 358px) {
+  .fad-mode {
+    height: 1100px;
+  }
+  .mode {
+    display: inline;
+    width: 100%
+  }
+}
+@media all and (max-width: 349px) {
+  .fad-mode {
+    height: 1160px;
+  }
+  .mode {
+    display: inline;
+    width: 100%
+  }
+}
+@media all and (max-width: 304px) {
+  .fad-mode {
+    height: 1180px;
+  }
   .mode {
     display: inline;
     width: 100%
@@ -162,6 +224,8 @@
 }
 
 .news-tytle {
+  max-width: 100%;
+  display: block;
   margin: 0 auto;
   font-size: 3rem;
   position: relative;
