@@ -237,6 +237,7 @@
 }
 
 .youtube-archive {
+  position: relative;
   transition: 0.3s ease;
 }
 .youtube-archive:hover {
@@ -248,24 +249,17 @@
   position: relative;
   transition: 0.3s ease;
 }
-.thumbnail, .thumbnail_back {
+.thumbnail {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform : translate(-50%,-50%);
-  transform : translate(-50%,-50%);
-}
-.thumbnail::before {
   display: inline;
-  content: "\f167";
-  color: #FF0000;
-  margin: auto 0;
-  font-size: 40px;
-}
-.thumbnail_back {
-  color: #FFF;
-  font-size: 20px;
-  padding-bottom: 2.5px;
+  width: 100%;
+  height: 100%;
+  background-size: 60px auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../image/icon/icon_youtube_color.svg);
+  top: 0;
+  left: 0;
 }
 .youtube_window:hover {
   filter: brightness(110%);
