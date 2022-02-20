@@ -14,7 +14,7 @@
 .date {
   display: inline-block;
   font-size: 25px;
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue', 'cursive';
   line-height: 0;
 }
 .sat {
@@ -42,7 +42,7 @@
   color: #333333;
   transition: 0.3s ease;
 }
-.category-2:hover, .category-2:hover span {
+.category-2:hover, .category-2:hover span, .category-2:hover i {
   cursor: pointer;
   color: #888888;
   transition: 0.3s ease;
@@ -99,7 +99,7 @@
 }
 .tag:hover, .tag:hover span::before {
   cursor: pointer;
-  color: #888888;
+  color: #8C8C8C;
 }
 
 .person {
@@ -118,7 +118,7 @@
 }
 .person:hover, .person:hover span::before {
   cursor: pointer;
-  color: #888888;
+  color: #8C8C8C;
 }
 
 .content {
@@ -166,7 +166,7 @@
   color: #9146FF;
 }
 .video_snsicon:hover::before {
-  color: #888888;
+  color: #8C8C8C;
 }
 
 .postch_ex {
@@ -208,52 +208,20 @@
   top: 0;
   left: 0;
 }
-.video_thumbnail, .video_thumbnail_back {
+.video_thumbnail {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform : translate(-50%,-50%);
-  transform : translate(-50%,-50%);
-  transition: 0.3s ease;
-}
-.video_thumbnail::before {
-  font-family: "Font Awesome 5 Brands";
-  font-weight: 400;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-
   display: inline;
-  content: "\f167";
-  color: #FF0000;
-  margin: auto 0;
-  font-size: 40px;
-  transition: 0.3s ease;
-}
-.video_thumbnail_back {
-  color: #FFF;
-  font-size: 20px;
-  padding-bottom: 2.5px;
+  width: 100%;
+  height: 100%;
+  background-size: 60px auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../../image/icon/icon_youtube_color.svg);
 }
 .youtube_window_video:hover {
   filter: brightness(110%);
   opacity: 0.8;
   transition: 0.3s ease;
-}
-.youtube_window_video:hover > a > .video_thumbnail::after {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-
-  display: inline;
-  content: "View \f35d";
-  color: #FFFFFF;
-  margin: auto 0;
-  font-size: 20px;
-}
-.youtube_window_video:hover > a > .video_thumbnail_back,
-.youtube_window_video:hover > a > .video_thumbnail::before {
-  display: none;
 }
 
 .delete {
@@ -329,6 +297,7 @@
   display: flex;
   flex-flow: wrap;
   margin: 25px 0 0;
+  justify-content: center;
 }
 .products__wrap .video_list {
   padding: 10px;
@@ -371,7 +340,7 @@
   font-weight: bold;
 }
 .video_card_ex_ex {
-  counter-reset:number; /*数字をリセット*/
+  counter-reset: number; /*数字をリセット*/
   list-style-type: none!important; /*数字を一旦消す*/
   padding:0.5em;
   border: solid 2px #000946;
@@ -461,20 +430,8 @@
 }
 
 .video-flame {
-  width: 2000px;
+  width: 840px;
   margin: auto;
-}
-@media all and (max-width: 1918px) {
-  .video-flame {
-    width: 1452px;
-    margin: auto;
-  }
-}
-@media all and (max-width: 1896px) {
-  .video-flame {
-    width: 1088px;
-    margin: auto;
-  }
 }
 @media all and (max-width: 1535px) {
   .video-flame {
