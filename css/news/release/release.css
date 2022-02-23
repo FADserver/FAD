@@ -16,20 +16,21 @@
 .post1 {
   margin-right: 34px;
 }
+/* 「少」「佐」「.」「e」「x」「e」の右の文字間隔 */
 .major {
-  margin-right: 3.5px;
+  margin-right: 8.85px;
 }
 /* 「ホ」と「ウ」の右の文字間隔 */
 .hope {
-  margin-right: 21.5px;
+  margin-right: 28.7px;
 }
 /* 「地」の右の文字間隔 */
 .tikyu {
-  margin-right: 63px;
+  margin-right: 73.5px;
 }
 /* 「ふ」「わ」の右の文字間隔 */
 .huwahuwa {
-  margin-right: 7.5px;
+  margin-right: 13.8px;
 }
 .right {
   display: block;
