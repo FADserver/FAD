@@ -13,23 +13,23 @@
       <div class="share-btn__item share-btn__item--copy1 AweSomeFont-Free" type="button" onclick="copyUrlTitle()"></div>
     </div>
     <script>
-            var beforeurl = location.href;
-            var url = encodeURI(beforeurl);
-            var beforetitle = document.title;
-            var title = encodeURI(beforetitle);
-      
-            var target1 = document.getElementById("share-btn--twitter");
-            target1.href= "https://twitter.com/intent/tweet?text=" + title + "%0A" + "%23FADserver" + "%0A" + url;
-            var target2 = document.getElementById("share-btn--line");
-            target2.href= "https://line.me/R/msg/text/?" +  title + "%0A" + url;
-      
-            function copyUrlTitle() {
-              var url = location.href;
-              var title = document.title;
-              navigator.clipboard.writeText(title + " n " + url);
-              document.getElementById("share-btn--copy").textContent = "Copied";
-            }
-          </script>
+      var beforeurl = location.href;
+      var url = encodeURI(beforeurl);
+      var beforetitle = document.title;
+      var title = encodeURI(beforetitle);
+
+      var target1 = document.getElementById("share-btn--twitter");
+      target1.href= "https://twitter.com/intent/tweet?text=" + title + "%0A" + "%23FADserver" + "%0A" + url;
+      var target2 = document.getElementById("share-btn--line");
+      target2.href= "https://line.me/R/msg/text/?" +  title + "%0A" + url;
+
+      function copyUrlTitle() {
+        var url = location.href;
+        var title = document.title;
+        navigator.clipboard.writeText(title + " n " + url);
+        document.getElementById("share-btn--copy").textContent = "Copied";
+      }
+    </script>
   </div>
 </div>
 <div class="message-wrapper">
@@ -37,9 +37,7 @@
     <p class="catch-copy1">さぁ、あなたも完全ランダムなダンジョンへ</p>
     <p class="catch-copy2">Let's enjoy FAD!</p>
   </div>
-  <a href="https://fadserver.github.io/FAD/join/#join">
-    <span class="btn message">FADサーバーで遊ぶ</span>
-  </a>
+  <a href="https://fadserver.github.io/FAD/join/#join"><span class="btn message">FADサーバーで遊ぶ</span></a>
 </div>
 <footer class="outer-block footer">
   <div class="inner-block">
@@ -47,95 +45,53 @@
       <div class="cont-item">
         <div class="nav">
           <div class="ttl ttl-1">
-            <span>
-              <a href="https://fadserver.github.io/FAD/operation/">運営</a>
-            </span>
+            <span><a href="https://fadserver.github.io/FAD/operation/">運営</a></span>
           </div>
           <ul>
-            <li>
-              <a href="https://fadserver.github.io/FAD/operation/major_exe/">
-                <span class="footer_role">管理者：</span>少佐.exe
-              </a>
+            <li><a href="https://fadserver.github.io/FAD/operation/major_exe/"><span class="footer_role">管理者：</span>少佐.exe</a>
               <ul>
-                <li>
-                  <a class="twitter" href="https://twitter.com/Major__exe">Twitter</a>
-                </li>
-                <li>
-                  <a class="youtube" href="https://www.youtube.com/channel/UCTK8mNBz6xS_U81KIg79I2A">YouTube</a>
-                </li>
-                <li>
-                  <a class="twitch" href="https://www.twitch.tv/major_exe">twitch</a>
-                </li>
+                <li><a class="twitter" href="https://twitter.com/Major__exe">Twitter</a></li>
+                <li><a class="youtube" href="https://www.youtube.com/channel/UCTK8mNBz6xS_U81KIg79I2A">YouTube</a></li>
+                <li><a class="twitch" href="https://www.twitch.tv/major_exe">twitch</a></li>
               </ul>
             </li>
-            <li>
-              <a href="https://fadserver.github.io/FAD/operation/hopig/">
-                <span class="footer_role">運営者：</span>ホウプ
-              </a>
+            <li><a href="https://fadserver.github.io/FAD/operation/hopig/"><span class="footer_role">運営者：</span>ホウプ</a>
               <ul>
-                <li>
-                  <a class="twitter" href="https://twitter.com/hope_Commander">Twitter</a>
-                </li>
+                <li><a class="twitter" href="https://twitter.com/hope_Commander">Twitter</a></li>
               </ul>
             </li>
-            <li>
-              <a href="https://fadserver.github.io/FAD/operation/huwapenn/">
-                <span class="footer_role">運営者：</span>ふわふわ
-              </a>
+            <li><a href="https://fadserver.github.io/FAD/operation/huwapenn/"><span class="footer_role">運営者：</span>ふわふわ</a>
               <ul>
-                <li>
-                  <a class="twitter" href="https://twitter.com/huwapenn">Twitter</a>
-                </li>
+                <li><a class="twitter" href="https://twitter.com/huwapenn">Twitter</a></li>
               </ul>
             </li>
           </ul>
           <div class="ttl ttl-1">お願い</div>
           <ul>
-            <li>
-              <a href="https://fadserver.github.io/FAD/about/streamer">ストリーマーの皆様へ</a>
-            </li>
-            <li>
-              <a href="https://fadserver.github.io/FAD/about/participant">参加者の皆様へ</a>
-            </li>
+            <li><a href="https://fadserver.github.io/FAD/about/streamer">ストリーマーの皆様へ</a></li>
+            <li><a href="https://fadserver.github.io/FAD/about/participant">参加者の皆様へ</a></li>
           </ul>
         </div>
       </div>
       <div class="cont-item">
         <div class="nav">
-          <div class="ttl ttl-1">FADサーバー</div>
+          <div class="ttl ttl-1"><a href="https://fadserver.github.io/FAD/mode">FADサーバー</a></div>
           <ul>
-            <li>
-              <a href="https://fadserver.github.io/FAD/mode/system/">FADシステムとは</a>
-            </li>
-            <li>
-              <a href="https://fadserver.github.io/FAD/mode/">FADモード</a>
+            <li><a href="https://fadserver.github.io/FAD/mode/system/">FADシステムとは</a></li>
+            <li><a href="https://fadserver.github.io/FAD/mode/">FADモード</a>
               <ul>
-                <li>
-                  <a href="https://fadserver.github.io/FAD/mode/maze/">脱出迷路MODE</a>
-                </li>
-                <li>
-                  <a href="https://fadserver.github.io/FAD/mode/oni/">鬼ごっこMODE</a>
-                </li>
-                <li>
-                  <a href="https://fadserver.github.io/FAD/mode/battle_royale/">バトロワMODE</a>
-                </li>
+                <li><a href="https://fadserver.github.io/FAD/mode/maze/">脱出迷路MODE</a></li>
+                <li><a href="https://fadserver.github.io/FAD/mode/oni/">鬼ごっこMODE</a></li>
+                <li><a href="https://fadserver.github.io/FAD/mode/battle_royale/">バトロワMODE</a></li>
               </ul>
             </li>
           </ul>
           <div class="ttl ttl-1">その他</div>
           <ul>
-            <li>
-              <a href="https://fadserver.github.io/FAD/contact/Q&A">Q&A</a>
-            </li>
-            <li>
-              <a href="https://fadserver.github.io/FAD/contact/">お問い合わせ</a>
-            </li>
-            <li>
-              <a href="https://fadserver.github.io/FAD/join/">参加方法</a>
-            </li>
-            <li>
-              <a href="https://fadserver.github.io/FAD/video/">Videos</a>
-            </li>
+            <li><a href="https://fadserver.github.io/FAD/contact/Q&A">Q&A</a></li>
+            <li><a href="https://fadserver.github.io/FAD/contact/">お問い合わせ</a></li>
+            <li><a href="https://fadserver.github.io/FAD/join/">参加方法</a></li>
+            <li><a href="https://fadserver.github.io/FAD/video/">Videos</a></li>
           </ul>
         </div>
       </div>
@@ -145,33 +101,17 @@
             <a href="https://fadserver.github.io/FAD/about/rules">規約等</a>
           </div>
           <ul>
-            <li>
-              <a href="https://fadserver.github.io/FAD/about/rules/server_rule">FADサーバー利用規約</a>
-            </li>
-            <li>
-              <a href="https://fadserver.github.io/FAD/about/rules/resourcepack">リソースパック利用規約</a>
-            </li>
-            <li>
-              <a href="https://fadserver.github.io/FAD/about/rules/privacy_policy">プライバシーポリシー</a>
-            </li>
-            <li>
-              <a href="https://fadserver.github.io/FAD/about/rules/disclaimer">免責事項</a>
-            </li>
+            <li><a href="https://fadserver.github.io/FAD/about/rules/server_rule">FADサーバー利用規約</a></li>
+            <li><a href="https://fadserver.github.io/FAD/about/rules/resourcepack">リソースパック利用規約</a></li>
+            <li><a href="https://fadserver.github.io/FAD/about/rules/privacy_policy">プライバシーポリシー</a></li>
+            <li><a href="https://fadserver.github.io/FAD/about/rules/disclaimer">免責事項</a></li>
             <li>&nbsp;</li>
           </ul>
-          <div class="ttl ttl-1">
-            <span>お知らせ</span>
-          </div>
+          <div class="ttl ttl-1"><span>お知らせ</span></div>
           <ul>
-            <li>
-              <a href="https://fadserver.github.io/FAD/news/">お知らせ</a>
-            </li>
-            <li>
-              <a href="https://fadserver.github.io/FAD/news/news">重要なお知らせ</a>
-            </li>
-            <li>
-              <a href="https://fadserver.github.io/FAD/news/maintenance">障害・メンテナンス情報</a>
-            </li>
+            <li><a href="https://fadserver.github.io/FAD/news/">お知らせ</a></li>
+            <li><a href="https://fadserver.github.io/FAD/news/news">重要なお知らせ</a></li>
+            <li><a href="https://fadserver.github.io/FAD/news/maintenance">障害・メンテナンス情報</a></li>
           </ul>
         </div>
       </div>
@@ -179,12 +119,8 @@
         <div class="nav">
           <div class="ttl ttl-1">サーバー情報</div>
           <ul>
-            <li>
-              <a href="https://fadserver.github.io/FAD/about/">概要</a>
-            </li>
-            <li>
-              <a href="https://fadserver.github.io/FAD/about/history">沿革</a>
-            </li>
+            <li><a href="https://fadserver.github.io/FAD/about/">概要</a></li>
+            <li><a href="https://fadserver.github.io/FAD/about/history">沿革</a></li>
           </ul>
           <div class="ttl ttl-1">
             <a href="https://fadserver.github.io/FAD/sitemap/">サイトマップ</a>
