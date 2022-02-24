@@ -1,0 +1,538 @@
+.h2_QA {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+/* ↓ Q&A カテゴリーごと ↓ */
+.cp_qa {
+  border-top: 1px solid #1b2538;
+}
+.cp_qa .cp_actab {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 1px;
+  color: #1b2538;
+}
+.cp_qa .cp_actab input {
+  position: absolute;
+  opacity: 0;
+}
+/* 質問 */
+.qa_label {
+  font-weight: bold;
+  line-height: 1.6;
+  position: relative;
+  display: block;
+  margin: 0 0 0 0;
+  padding: 1em 2em 1em 1em;
+  cursor: pointer;
+  border-bottom: 1px solid #000946;
+}
+.qa_label:hover {
+  color: #3D4073;
+}
+/* 答え */
+.cp_qa .cp_actab .cp_actab-content {
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: max-height 0.5s ease;
+          transition: max-height 0.5s ease;
+  color: #ffffff;
+}
+.cp_qa .cp_actab .cp_actab-content p {
+  margin: 1em;
+}
+/* 質問を開いた時の仕様 */
+/* --アイコン */
+.cp_qa .cp_actab input:checked ~ .qa_label {
+  color: #3D4073;
+}
+/* --答えの高さ */
+.cp_qa .cp_actab input:checked ~ .cp_actab-content {
+  max-height: 9999999999999999999999999999999999999999999999999999px;
+}
+/* 質問をクリックした時のアイコンの動き */
+.qa_label::after {
+  line-height: 1.6;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  display: block;
+  width: 3em;
+  margin-top: -12.5px;
+  -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+  text-align: center;
+}
+.cp_qa .cp_actab input[type=checkbox] + .qa_label::after {
+  content: '▼';
+}
+.cp_qa .cp_actab input[type=checkbox]:checked + .qa_label::after {
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+}
+/* ↑ Q&A カテゴリーごと ↑ */
+
+/* h2設定 */
+.h2_QA {
+  margin-top: 100px;
+}
+.headline2_QA {
+  position: relative;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
+  border: 2px solid #000;
+  background: #fff;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.headline2_QA:before,
+.headline2_QA:after {
+  position: absolute;
+  content: '';
+}
+
+.headline2_QA:before {
+  top: -50px;
+  left: calc(50% - 40px);
+  width: 80px;
+  height: 80px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.headline2_QA:after {
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 100%;
+  background: #fff;
+}
+
+.headline2_QA i {
+  font-size: 30px;
+  font-size: 3rem;
+  line-height: 60px;
+  position: absolute;
+  z-index: 1;
+  top: -40px;
+  left: calc(50% - 40px);
+  width: 80px;
+  height: 60px;
+  text-align: center;
+}
+
+.headline2_QA span {
+  position: relative;
+  z-index: 1;
+  color: #333333;
+}
+/* ここまで */
+
+.QaA_img2 {
+  height: 350px;
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #8C8C8C;
+}
+@media all and (min-width: 1200px) {
+  .QaA_img2 {
+    height: 500px;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #8C8C8C;
+  }
+}
+
+/* ↓ サイドバーでTwitterを出す方法 ↓ */
+.firefox_ol {
+  counter-reset:list;
+  list-style-type:none;
+  font-size: 15px;
+  padding: 0px;
+}
+.firefox_ol li{
+  position:relative;
+  line-height: 30px;
+  margin: 7px 0 7px 40px;
+  padding-left: 10px;
+  font-size:15px;
+}
+.firefox_ol li:before{
+  counter-increment: list;
+  content: counter(list);
+  position: absolute;
+  top: 0;
+  left: -35px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  color: #fff;
+  line-height:30px;
+  z-index:1;
+}
+.firefox_ol li:after{
+  content:"";
+  position: absolute;
+  top: 3px;
+  left: -32px;
+  width: 25px;
+  height: 25px;
+  background: #000946;
+  color: #fff;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* ↑ サイドバーでTwitterを出す方法 ↑ */
+
+/* ↓ モーダル ↓ */
+/* ボタン（デザインはお好みで） */
+.my_modal_btn{
+  display: inline-block;
+  width: 152px;
+  line-height: 2;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #FF9900;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.no-margin {
+  margin-bottom: 0;
+}
+.my_modal_btn:hover {
+  text-decoration: underline;
+}
+.amazon {
+  margin-right: 10px;
+}
+
+/* チェックボックスを非表示 */
+#my_modal1, #my_modal2{
+  display: none;
+}
+/* モーダル */
+.my_modal_body1, .my_modal_body2{
+  display: none;
+  position: fixed;
+  z-index: 100000;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  display: none;
+  background-color: #FFF;
+  overflow-y: auto;
+  /* スマホ用スクロール */
+  -webkit-overflow-scrolling: touch;
+  /* お好みで */
+  width: 100%;
+  max-width: calc(100% - 5%);
+  height: 100%;
+  max-height: calc(100% - 20%);
+}
+@media all and (min-width: 768px) {
+  .my_modal_body1, .my_modal_body2 {
+    max-height: calc(100% - 50%);
+  }
+}
+
+/* モーダル内ヘッダー */
+.my_modal_header{
+  padding: 15px 10px;
+  background-color: #FF9900;
+  color: #FFF;
+  font-weight: bold;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  text-align: center;
+}
+.my_modal_header p {
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5em;
+}
+
+/* クローズアイコン */
+.my_modal_close{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  cursor: pointer;
+}
+.my_modal_close_icon{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+}
+.my_modal_close_icon span::before,
+.my_modal_close_icon span::after{
+  display: block;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 84%;
+  height: 16%;
+  margin: -8% 0 0 -42%;
+  background: #FFF;
+}
+.my_modal_close_icon span::before{
+  transform: rotate(-45deg);
+}
+.my_modal_close_icon span::after{
+  transform: rotate(45deg);
+}
+
+/* コンテンツ表示 */
+.my_modal_content{
+  padding: 5px 10px;
+}
+.my_modal_content ol {
+  padding-left: 20px;
+}
+
+/* 背景を暗くする */
+.my_modal_overlay{
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  background-color: #111;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+/* チェック時オーバーレイとコンテンツを表示 */
+#my_modal1:checked ~ .my_modal_body1, #my_modal1:checked ~ .my_modal_overlay, #my_modal2:checked ~ .my_modal_body2, #my_modal2:checked ~ .my_modal_overlay{
+  display: block;
+}
+/* ↑ モーダル ↑ */
+
+/* SNSラベル */
+h3 {
+  border-left: 3px solid #000946;
+  border-bottom: 1px solid #8C8C8C;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  color: #333333;
+}
+
+.btn-social-flat { 
+  color: #484848;
+  display: inline-block;
+  height: 25px;
+  font-size: 15px;
+  line-height: 25px;
+  background: #eaeef1;
+  text-decoration: none;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.btn-social-flat-icon, .btn-social-flat-icon2 {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+}
+.btn-social-flat-icon::before {
+  display: inline-block;
+  display: inline;
+  font-size: 15px;
+}
+.btn-social-flat-text {
+  display: inline-block;
+  width: 230px;
+  text-align: center;
+}
+.btn-social-flat:hover {
+  color: #8C8C8C;
+}
+
+.btn-social-flat-icon--twitter {
+  background:#1da1f3;
+}
+.btn-social-flat-icon--youtube {
+  background:#cd201f;
+}
+.btn-social-flat-icon--line {
+  background:#00C300;
+}
+.btn-social-flat-icon--twitch {
+  background: #9146FF;
+}
+.btn-social-flat-icon--SeesaaWiki {
+  background: #61C6F6;
+}
+.btn-social-flat-icon--JapanMinecraftServer {
+  background: #F1F1F1;
+}
+.btn-social-flat-icon--amazon {
+  background: #FF9900;
+}
+.btn-social-flat-icon--discord {
+  background: #5865F2;
+}
+
+.btn-social-flat-icon--twitter::before {
+  content: "\f099";
+}
+.btn-social-flat-icon--youtube::before {
+  content: "\f167"
+}
+.btn-social-flat-icon--line::before {
+  content: "\f3c0";
+}
+.btn-social-flat-icon--twitch::before {
+  content: "\f1e8";
+}
+.btn-social-flat-icon--SeesaaWiki::before {
+  content: "★";
+  font-size: 15px;
+  color: #FEFC56;
+}
+.btn-social-flat-icon--JapanMinecraftServer::before {
+  content: "　";
+  font-size: 15px;
+  background: center;
+  background-repeat:  no-repeat;
+  background-size:contain;
+  background-image: url("../../image/JapanMinecraftServer.svg");
+}
+.btn-social-flat-icon--amazon::before {
+  content: "\f270";
+}
+.btn-social-flat-icon--discord::before {
+  content: "\f392";
+}
+
+.supplement {
+  margin: 0;
+  padding: 0;
+  margin: 7px 0 0 24px !important;
+}
+.supplement li {
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  line-height: 2;
+}
+.browser_ol {
+  padding: 0;
+  margin: 0;
+  margin: 7px 0 0 20px !important;
+  line-height: 2;
+}
+.acbox-under ol {
+  padding: 0;
+  margin: 0;
+  line-height: 2;
+}
+
+.Q4 {
+  margin-left: 24px !important;
+}
+
+.btn-social-flat-text::after {
+  content: "　\f35d";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  display: inline;
+  font-size: 10px;
+}
+
+.none {
+  text-align: center !important;
+}
+
+
+/* SNSラベル */
+.icon::before {
+  color: #333333;
+  font-size: 18px;
+  margin-right: 10px;
+  padding-left: 3px;
+}
+.Google-Chrome::before {
+  content: "\f268";
+}
+.Mozilla-Firefox::before {
+  content: "\e007";
+}
+.safari::before {
+  content: "\f267";
+}
+.Opera::before {
+  content: "\f26a";
+}
+.Microsoft-Edge::before {
+  content: "\f282";
+}
+.Internet-Explorer::before {
+  content: "\f26b";
+}
+.Windows::before {
+  content: "\f17a";
+}
+.Apple::before {
+  content: "\f179";
+}
+.Android::before {
+  content: "\f17b";
+}
+
+.sns-icon::before {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  margin: 5px 0;
+  margin-right: 10px;
+  border-radius: 50%;
+  font-size: 15px;
+
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  color: #ffffff;
+}
+.FAQ__amazon::before {
+  background: #FF9900;
+}
+.FAQ__amazon::before {
+  content: "\f270";
+}
