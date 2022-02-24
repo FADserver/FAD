@@ -1,3 +1,7 @@
+.desc ul {
+  padding-left: 15px;
+  list-style-type: disc;
+}
 .cp_timeline01 {
   position: relative;
   width: 100%;
