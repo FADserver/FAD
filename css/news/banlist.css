@@ -1,28 +1,10 @@
 /* ↓ テーブル ↓ */
-.banlist_table {
-  width: auto;
-  border-collapse: collapse;
-  border-spacing: 0;
-  display: block;
-  white-space: nowrap;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-}
-.banlist_table th{
-  min-width: 180px;
-  border-bottom: solid 2px #c80021;
-  padding: 10px 0;
-  text-align: left;
-}
-.banlist_table th:first-child {
+.normal_table th:first-child {
   min-width: 200px !important;
 }
-
-.banlist_table th:nth-child(2) {
-  min-width: 350px;
+.normal_table th:nth-child(2) {
+  min-width: 250px;
 }
-.banlist_table td{
-  border-bottom: solid 2px #ddd;
-  padding: 10px 0;
-  text-align: left;
+.normal_table td:nth-child(2) {
+  font-size: 12px;
 }
