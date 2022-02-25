@@ -5,7 +5,7 @@
   margin-right: 2%;
 }
 
-.about_table th,td {
+.about_table th, .about_table td {
   padding: 10px 15px;
   border: 1px solid #ddd;
   line-height: 2;
@@ -94,7 +94,7 @@ a {
     border-collapse: collapse;
     margin-left: 0;
   }
-  .about_table th,td {
+  .about_table th, .about_table td {
     width: auto;
     display: block;
     border-top: none;
