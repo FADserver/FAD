@@ -2,26 +2,35 @@
   padding: 0;
 }
 .news-list li,.news-list ol li {
-  border-left: solid 6px #1fa67a;/*左側の線*/
+  border-left: solid 6px #000946;/*左側の線*/
   border-bottom: solid 2px #dadada;/*下に灰色線*/
   background: whitesmoke;
   margin-bottom: 25px;/*下のバーとの余白*/
   padding: 0.5em;
+  padding-left: 35px;
   list-style-type: none;/*ポチ消す*/
   font-weight: bold;
 }
+.news-list li {
+  position: relative;
+}
+.news-list div {
+  position: absolute;
+  left: 0.5em;
+  top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+}
 
-.page::before {
-  content: " \f15b";
-  color: #000946;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  font-size: 25px;
-  padding-right: 10px;
+.page {
+  min-width: 18.75px;
+  min-height: 25.2px;
+  background-size: auto 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../../image/icon/FAD-HTML.svg);
+
 }
 .pdf::before {
   content: " \f1c1";
@@ -33,9 +42,8 @@
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   font-size: 25px;
-  padding-right: 10px;
 }
 
-.size {
+.file-size {
   font-size: 11px;
 }
