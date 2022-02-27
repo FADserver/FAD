@@ -1,0 +1,10 @@
+/* ↓ テーブル ↓ */
+.normal_table th:first-child {
+  min-width: 200px !important;
+}
+.normal_table th:nth-child(2) {
+  min-width: 250px;
+}
+.normal_table td:nth-child(2) {
+  font-size: 12px;
+}

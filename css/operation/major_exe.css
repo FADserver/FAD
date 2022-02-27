@@ -1,0 +1,217 @@
+/* ↓ ライセンス ↓ */
+.license_div {
+  position: relative;
+  margin: 0 auto;
+  width: 200px;
+  height: 70px;
+}
+.license1, .license2, .license3, .license4 {
+  display: inline-block;
+  color: #333333;
+  font-size: 40px;
+}
+.license_div p {
+  margin: 0;
+  padding: 0;
+}
+.license_div p a {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.license1::before {
+  content: "\f25e";
+  margin-right: 10px;
+}
+.license2::before {
+  content: "\f4e7";
+  margin-right: 10px;
+}
+.license3::before {
+  content: "\f4ea";
+  margin-right: 10px;
+}
+.license4::before {
+  content: "\f4ef";
+}
+
+.license-list li:nth-child(1)::before {
+  content: "\f4e7";
+  margin-right: 10px;
+  font-size: 20px;
+}
+.license-list li:nth-child(2)::before {
+  content: "\f4ea";
+  margin-right: 10px;
+  font-size: 20px;
+}
+.license-list li:nth-child(3)::before {
+  content: "\f4ef";
+  margin-right: 10px;
+  font-size: 20px;
+}
+/* ↑ ライセンス ↑ */
+
+/* ↓ モーダル ↓ */
+/* ボタン（デザインはお好みで） */
+.my_modal_btn{
+  display: inline-block;
+  width: 152px;
+  line-height: 2;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #FF9900;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.no-margin {
+  margin-bottom: 0;
+}
+.my_modal_btn:hover {
+  text-decoration: underline;
+}
+.amazon {
+  margin-right: 10px;
+}
+
+/* チェックボックスを非表示 */
+#my_modal1{
+  display: none;
+}
+/* モーダル */
+.my_modal_body1{
+  display: none;
+  position: fixed;
+  z-index: 100000;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  display: none;
+  background-color: #FFF;
+  overflow-y: auto;
+  /* スマホ用スクロール */
+  -webkit-overflow-scrolling: touch;
+  /* お好みで */
+  width: 100%;
+  max-width: calc(100% - 5%);
+  height: 100%;
+  max-height: calc(100% - 20%);
+}
+@media all and (min-width: 768px) {
+  .my_modal_body1 {
+    max-height: calc(100% - 50%);
+  }
+}
+
+/* モーダル内ヘッダー */
+.my_modal_header{
+  padding: 15px 10px;
+  background-color: #FF9900;
+  color: #FFF;
+  font-weight: bold;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  text-align: center;
+}
+.my_modal_header p {
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5em;
+}
+
+/* クローズアイコン */
+.my_modal_close{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  cursor: pointer;
+}
+.my_modal_close_icon{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+}
+.my_modal_close_icon span::before,
+.my_modal_close_icon span::after{
+  display: block;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 84%;
+  height: 16%;
+  margin: -8% 0 0 -42%;
+  background: #FFF;
+}
+.my_modal_close_icon span::before{
+  transform: rotate(-45deg);
+}
+.my_modal_close_icon span::after{
+  transform: rotate(45deg);
+}
+
+/* コンテンツ表示 */
+.my_modal_content{
+  padding: 5px 10px;
+}
+.my_modal_content ol {
+  padding-left: 20px;
+}
+
+/* 背景を暗くする */
+.my_modal_overlay{
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  background-color: #111;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+/* チェック時オーバーレイとコンテンツを表示 */
+#my_modal1:checked ~ .my_modal_body1, #my_modal1:checked ~ .my_modal_overlay{
+  display: block;
+}
+/* ↑ モーダル ↑ */
+
+.amazon-icon::before {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  margin: 5px 0;
+  margin-right: 10px;
+  border-radius: 50%;
+  font-size: 15px;
+
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  color: #ffffff;
+}
+.major__amazon::before {
+  background: #FF9900;
+}
+.major__amazon::before {
+  content: "\f270";
+}
