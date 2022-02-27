@@ -334,6 +334,37 @@ a.anchor{
 }
 /* ↑ テーブルのscroll分かりやすくするやつ ↑ */
 /* ↑ テーブル ↑ */
+/* ↓ ボタン ↓ */
+.normal_button_wrap {
+  display: block;
+  text-align: center;
+}
+.normal_button {
+  display: inline-block;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  text-decoration: none;
+  color: #333333;
+  font-size: 18px;
+  width: 250px;
+  height: 40px;
+  font-weight: bold;
+  border: 2px solid #000946;
+  transition: 0.3s;
+  box-shadow: 5px 5px 0px 0px #000946;
+  background-color: #FFFFFF;
+  text-align: center;
+  padding: 9px;
+  margin: 10px;
+}
+.normal_button:hover {
+  box-shadow: 0 0 #000946;
+  color: #fff;
+  background-color: #000946;
+}
+/* ↑ ボタン ↑ */
 
 /* ↓ ヘッダー ↓ */
 header {
