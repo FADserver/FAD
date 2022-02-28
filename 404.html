@@ -70,17 +70,9 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   </head>
   <body>
-    <div class="page_top">
-      <a href="https://fadserver.github.io/FAD/404.html#top"></a>
-    </div>
-    <!--サイドバーの内容があった場所-->
+    <button id="page-top"></button>
+    <div id="news-bar"></div>
     <div id="header"></div>
-    <!--外部HTMLを読み込む-->
-    <script>
-      $(document).ready(function(){
-        $("#header").load("https://fadserver.github.io/FAD/common/header.html");
-      });
-    </script>
     <div class="normal_margin">
       <!-- パンくずリスト -->
       <div class="pan">
@@ -97,20 +89,14 @@
       <!-- パンくずリスト -->
       <div class="box">
         <div class="box11">
-          <p class="error_message" id="top">404エラー</p>
+          <p class="error_message">404エラー</p>
           <p class="guid">ご希望のページが見つかりませんでした。URLをご確認の上もう一度お越しください。
             <br>間違ったURLを表記しているサイトをご存知の場合は、<a class="a" href="https://fadserver.github.io/FAD/contact/">お問い合わせ</a>からご報告ください。
           </p>
         </div>
       </div>
     </div>
-    <!--サイドバーの内容があった場所-->
     <div id="footer"></div>
-    <!--外部HTMLを読み込む-->
-    <script>
-      $(document).ready(function(){
-        $("#footer").load("https://fadserver.github.io/FAD/common/footer.html");
-      });
-    </script>
+    <script type="text/javascript" src="https://fadserver.github.io/FAD/javascript/common.js"></script>
   </body>
 </html>

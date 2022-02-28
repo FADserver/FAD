@@ -82,23 +82,9 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   </head>
   <body>
+    <button id="page-top"></button>
     <div id="news-bar"></div>
-    <script>
-      $(document).ready(function(){
-        $("#news-bar").load("common/news-bar.html");
-      });
-    </script>
-    <div class="page_top">
-      <a href="index.html"></a>
-    </div>
-    <!--ヘッダーの内容があった場所-->
     <div id="header"></div>
-    <!--外部HTMLを読み込む-->
-    <script>
-      $(document).ready(function(){
-        $("#header").load("common/header.html");
-      });
-    </script>
 <!--
 ######################################################################################################################################
 ############################################     ####################################     ############################################
@@ -214,7 +200,7 @@
     <!-- パンくずリスト -->
     <div class="top-wrapper">
       <div class="container">
-        <h1 id="top">
+        <h1>
           <span class="no">全自動生成ダンジョン</span>
           <br>
           <svg class="logo_h1" viewBox="0 0 2419.3459 243.68213" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
@@ -269,13 +255,7 @@
       </div>
     </div>
     <div class="news_bottom_margin"></div>
-    <!--サイドバーの内容があった場所-->
     <div id="footer"></div>
-    <!--外部HTMLを読み込む-->
-    <script>
-      $(document).ready(function(){
-        $("#footer").load("common/footer.html");
-      });
-    </script>
+    <script type="text/javascript" src="javascript/common.js"></script>
   </body>
 </html>
