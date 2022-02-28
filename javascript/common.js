@@ -7,21 +7,21 @@ pagetopBtn.addEventListener('click', () => {
 });
 
 $(document).ready(function(){
-  $("#news-bar").load("../common/news-bar.html");
+  $("#news-bar").load("https://fadserver.github.io/FAD/common/news-bar.html");
 });
 
 $(document).ready(function(){
-  $("#header").load("../common/header.html");
+  $("#header").load("https://fadserver.github.io/FAD/common/header.html");
 });
 
 $(document).ready(function(){
-  $("#child2").load("../common/sidebar.html");
+  $("#child2").load("https://fadserver.github.io/FAD/common/sidebar.html");
 });
 
 $(document).ready(function(){
-  $("#child3").load("../common/sidebar.html");
+  $("#child3").load("https://fadserver.github.io/FAD/common/sidebar.html");
 });
 
 $(document).ready(function(){
-  $("#footer").load("../common/footer.html");
+  $("#footer").load("https://fadserver.github.io/FAD/common/footer.html");
 });
