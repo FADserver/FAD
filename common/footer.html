@@ -26,7 +26,7 @@
       function copyUrlTitle() {
         var url = location.href;
         var title = document.title;
-        navigator.clipboard.writeText(title + " n " + url);
+        navigator.clipboard.writeText(title + "\n" + url);
         document.getElementById("share-btn--copy").textContent = "Copied";
       }
     </script>
