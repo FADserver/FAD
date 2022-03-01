@@ -61,7 +61,7 @@
 .description {
   position: relative;
   padding:0.25em 1em;
-  margin-top: 50px;
+  margin-top: 10px;
   background-color: #f4f4f4;
   text-align: center;
   overflow-wrap: break-word;
@@ -133,4 +133,23 @@
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+.copy-btn_wrap {
+  text-align: right;
+}
+#copy-btn {
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 40px;
+  color: #333333;
+  transition: 0.3s ease;
+}
+#copy-btn::before {
+  content: "\f328";
+  margin-right: 5px;
+}
+#copy-btn:hover {
+  color: #8C8C8C;
+  transition: 0.3s ease;
 }

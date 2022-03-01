@@ -122,6 +122,15 @@
               <li>FADサーバーでの動画を投稿した時は、<a class="AweSomeFont-Free streamer_a_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfd74hdau6u6on39VRm68R5GS4MCQZpIEhN-vjjD8bIKQ7JrA/viewform?usp=sf_link" target="_blank" rel="noopener">FADサーバー撮ったぜ！フォーム</a>より、お知らせください。</li>
               <li>概要欄や説明文に下の文を記載してください。</li>
             </ul>
+            <div class="copy-btn_wrap">
+              <div class="AweSomeFont-Free" id="copy-btn" type="button" onclick="copyExplanatoryText()">Copy</div>
+            </div>
+            <script>
+              function copyExplanatoryText() {
+                navigator.clipboard.writeText("FADサーバーは、マインクラフトJava1.12.2で行うミニゲームです。\n毎回自動でランダムに生成されるダンジョンで鬼ごっこやミニゲームが楽しめます。\nFADサーバー公式サイト→ https://fadserver.github.io/FAD/\nFADサーバーへ参加する→ https://fadserver.github.io/FAD/join/#join\nFADサーバー公式Twitter→ https://twitter.com/FADserver\nFADサーバーへのお問い合わせ→ https://fadserver.github.io/FAD/contact/\n#FADサーバー");
+                document.getElementById("copy-btn").textContent = "Copied";
+              }
+            </script>
             <div class="description">
               <p>FADサーバーは、マインクラフトJava1.12.2で行うミニゲームです。
                 <br>毎回自動でランダムに生成されるダンジョンで鬼ごっこやミニゲームが楽しめます。
