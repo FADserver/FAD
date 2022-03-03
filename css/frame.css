@@ -300,8 +300,8 @@
   margin: 0px 15px;
   margin-bottom: 15px;
 }
-/* ↓ 768px未満 スマホ用 ↓ */
-@media all and (max-width: 767px) {
+/* ↓ スマホ用 ↓ */
+@media all and (max-width: 900px) {
   .youtube_window {
     width: 98%;
     padding-top: 56.25%;
@@ -328,51 +328,9 @@
     width: 100%;
   }
 }
-/* ↑ 768px未満用 ↑ */
-/* ↓ 768px 834px用 ↓ */
-@media all and (width: 768px){
-  .youtube-archive {
-    max-width: 224px;
-    min-width: 224px;
-    max-height: 126px;
-    min-height: 126px;
-    margin: 0 auto;
-  }
-  #child1 {
-    flex-grow: 1;
-    width: calc(100% - 280px);
-  }
-  #child2 {
-    min-width: 280px;
-    max-width: 280px;
-  }
-  #child3 {
-    display: none;
-  }
-}
-@media all and (width: 834px){
-  .youtube-archive {
-    max-width: 224px;
-    min-width: 224px;
-    max-height: 126px;
-    min-height: 126px;
-    margin: 0 auto;
-  }
-  #child1 {
-    flex-grow: 1;
-    width: calc(100% - 280px);
-  }
-  #child2 {
-    min-width: 280px;
-    max-width: 280px;
-  }
-  #child3 {
-    display: none;
-  }
-}
-/* ↑ 768px 834px用 ↑ */
-/* ↓ 834px以上用 ↓ */
-@media all and (min-width: 835px) {
+/* ↑ スマホ用 ↑ */
+/* ↓ PC用 ↓ */
+@media all and (min-width: 901px) {
   .youtube-archive {
     max-width: 344px;
     min-width: 344px;
@@ -396,7 +354,7 @@
     display: none;
   }
 }
-/* ↑ 934px以上用 ↑ */
+/* ↑ PC用 ↑ */
 
 /* ↓ お知らせバナー ↓ */
 #news-bar {
