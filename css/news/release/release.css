@@ -2,10 +2,10 @@
   max-width: 750px;
   margin: 0 auto;
 }
-#day, #sender {
+.day, .sender {
   text-align: right;
 }
-#name {
+.name {
   text-align: left;
 }
 /* 「管」「理」「運」「営」の間の文字間隔 */
@@ -44,9 +44,8 @@
   display: block;
   text-align: center;
 }
-#tytle {
+.tytle {
   text-align: center;
-  color: #333333;
   padding: 0;
   margin: 0;
   font-weight: bold;
