@@ -344,7 +344,7 @@
   }
   #child1 {
     flex-grow: 1;
-    width: calc(100% - 400px);
+    width: calc(100% - 420px);
   }
   #child2 {
     min-width: 400px;
