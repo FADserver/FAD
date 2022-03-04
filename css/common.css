@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Sharp');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
@@ -9,11 +10,6 @@
 }
 html {
   scroll-behavior: smooth;
-}
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
 }
 
 p, ul li, ol li, table {
@@ -75,7 +71,6 @@ body {
 .bold {
   font-weight: bold;
 }
-
 .torikesi {
   display: inline;
   text-decoration: line-through;
@@ -95,17 +90,13 @@ a {
   transition: 0.3s ease;
 }
 .a_blank::after {
-  content: "\f35d";
+  content: "\e89e";
   color: #333333;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
+  font-family: 'Material Icons Sharp';
   font-size: 10px;
   padding: 0 3px;
   transition: 0.3s ease;
+  vertical-align: middle;
 }
 .a_blank:hover,
 .a_blank:hover::after,
@@ -115,7 +106,6 @@ a {
   transition: 0.3s ease;
 }
 /* ↑ aタグ ↑ */
-
 /* ↓ PDFを見る ↓ */
 #pdf {
   text-align: right;
@@ -135,11 +125,11 @@ a {
   display: inline-block;
   padding: 3px;
   cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
   user-select: none;
-  -webkit-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
   transition: all 0.3s;
   text-align: center;
   vertical-align: middle;
@@ -181,9 +171,9 @@ a {
   width: 100%;
   height: 100%;
   content: '';
-  -webkit-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
-  -webkit-transform: translateX(-96%);
+    -webkit-transform: translateX(-96%);
   transform: translateX(-96%);
   background: #EC1C24;
 }
@@ -239,7 +229,6 @@ a.anchor{
   border: 2px solid #8C8C8C;
 }
 /* ↑ 画像説明 ↑ */
-
 /* ↓ アコーディオンボックス ↓ */
 .acbox{
   width: auto;
@@ -300,7 +289,6 @@ a.anchor{
   color: #333333; /* 開いた部分の文字色 */
 }
 /* ↑ アコーディオンボックス ↑ */
-
 /* ↓ テーブル ↓ */
 .normal_table {
   width: auto;
@@ -370,7 +358,6 @@ a.anchor{
   background-color: #000946;
 }
 /* ↑ ボタン ↑ */
-
 /* ↓ ヘッダー ↓ */
 header {
   display: block;
@@ -509,7 +496,6 @@ header {
     display: none;
   }
 }
-
 /* ↓ ハンバーガーメニュー ↓ */
 /* ハンバーガーメニューのサイズ */
 .menu-btn {
@@ -632,7 +618,7 @@ header {
   margin-left: 10px;
   transition: all 0.3s;
 }
-.menu-content ul li a::before {
+.menu-content ul li a::after {
   content: "";
   width: 7px;
   height: 7px;
@@ -652,7 +638,7 @@ header {
   color: #3D4073;
   transition: all 0.3s;
 }
-.menu-content ul li a:hover::before {
+.menu-content ul li a:hover::after {
   content: "";
   width: 7px;
   height: 7px;
@@ -664,20 +650,31 @@ header {
   top: 16px;
   transition: all 0.3s;
 }
-.hamburger-menu menu-content fas fa-question-circle {
+.hamburger-menu {
+  display: inline-block;
+}
+.hamburger-menu .menu-li .home::before,
+.hamburger-menu .menu-li .faq::before {
   color: #ffffff;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  font-size: 10px;
+  font-family: 'Material Icons Sharp';
+  font-size: 16px;
+  vertical-align: top;
+  margin-right: 5px;
+  transition: all 0.3s;
+}
+.hamburger-menu .menu-li .home::before {
+  content: '\e88a';
+}
+.hamburger-menu .menu-li .faq::before {
+  content: '\e887';
+}
+.hamburger-menu .menu-li .home:hover::before, .hamburger-menu .menu-li .faq:hover::before {
+  color: #3D4073;
+  transition: all 0.3s;
 }
 #menu-btn-check {
   display: none;
 }
-
 /* まとめるやつ */
 .menu {
   max-width: 100%;
@@ -792,7 +789,7 @@ header {
   margin-left: 10px;
   font-weight: normal;
 }
-/* まとめるやつ */
+/*  ↑ まとめるやつ ↑ */
 
 .hamburger-menu-tag {
   width: 87%;
@@ -1252,36 +1249,25 @@ footer .copyright-1 {
 #update-day p {
   display: inline;
   color: #8C8C8C;
-  font-size: 13px
+  font-size: 13px;
 }
-#released::before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 400;
+#released::before, #updated::before {
+  font-family: 'Material Icons Sharp';
   display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-size: 12px;
-  -webkit-font-smoothing: antialiased;
   color: #8C8C8C;
   margin-right: 5px;
-  content: "\f017";
-  transform: scaleX(-1);
+  vertical-align: top;
+}
+#released::before {
+  content: "\e8b5";
 }
 #updated::before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-size: 12px;
-  -webkit-font-smoothing: antialiased;
-  color: #8C8C8C;
-  margin: 0 5px 0 15px;
-  content: "\f1da";
-  transform: scaleX(-1);
+  content: "\e923";
+}
+#updated {
+  margin-left: 10px;
 }
 /* ↑ 公開日・更新日 ↑ */
-
 /* ↓ パンくずリスト ↓ */
 .pan {
   position: relative;
@@ -1302,13 +1288,10 @@ footer .copyright-1 {
   list-style: none;
   font-weight: bold;/*太字*/
 }
-.breadcrumb li:after {/* ▶を表示*/
-  font-family: "Font Awesome 5 Free";
-  content: '\f054';
-  font-weight: 900;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
+.breadcrumb li:after {
+  /* ▶を表示*/
+  font-family: 'Material Icons Sharp';
+  content: '\e409';
   font-size: 12px;
   -webkit-font-smoothing: antialiased;
   padding: 0 0.2em;
@@ -1320,44 +1303,40 @@ footer .copyright-1 {
 .breadcrumb li a {
   text-decoration: none;
   color: #8C8C8C;
-  font-size: 12px
+  font-size: 12px;
 }
 .breadcrumb li a:before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-size: 14px;
+  font-family: 'Material Icons Sharp';
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   color: #000946;
   margin-right: 3px;
-}
-.pan-folder:before {
-  /*フォルダアイコン*/
-  content: '\f07b';
-}
-.pan-paper:before {
-  /*紙アイコン*/
-  content: '\f15b';
+  vertical-align: bottom;
 }
 .pan-home:before {
   /*家アイコン*/
-  content: '\f015';
+  content: '\e88a';
+}
+.pan-folder:before {
+  /*フォルダアイコン*/
+  content: '\e2c7';
+}
+.pan-paper:before {
+  /*紙アイコン*/
+  content: '\e24d';
 }
 .pan-404:before {
   /*404アイコン*/
-  content: '\f057';
+  content: '\e5c9';
 }
 .pan-search:before {
   /*検索結果アイコン*/
-  content: '\f002';
+  content: '\e8b6';
 }
-.breadcrumb li a:hover {
+.breadcrumb li a:hover > span {
   text-decoration: underline;
 }
 /* ↑ パンくずリスト ↑ */
-
 /* ↓ Page TOP ↓ */
 /* ボタンのスタイル */
 #page-top {
@@ -1401,8 +1380,7 @@ footer .copyright-1 {
   }
 }
 /* ↑ PageTop ↑ */
-
-/* FADサーバーで遊ぶ */
+/* ↓ FADサーバーで遊ぶ ↓ */
 .message-wrapper {
   text-align: center;
   margin: 15px;
@@ -1432,7 +1410,6 @@ footer .copyright-1 {
   font-weight: normal;
   margin-top: 0px;
 }
-
 .btn {
   padding: 8px 24px;
   color: white;
@@ -1441,7 +1418,6 @@ footer .copyright-1 {
   border-radius: 4px;
   text-align: center;
 }
-
 .btn:hover {
   opacity: 1;
 }
