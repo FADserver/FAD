@@ -10,6 +10,11 @@
 html {
   scroll-behavior: smooth;
 }
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
 
 p, ul li, ol li, table {
   line-height: 2;
