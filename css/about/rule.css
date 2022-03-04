@@ -1,7 +1,7 @@
 .first, .second, .third, .fourth {
   line-height: 2;
   font-size: 15px;
-  color: #333333;
+  color: var(--color-text);
   overflow-wrap: break-word;
 }
 .first {

@@ -50,7 +50,7 @@
 .cp_timeline01 li .timeline_item .flag {
   position: relative;
   display: inline-block;
-  background: #000946;
+  background: var(--color-fad-main);
   color: #ffffff;
   padding: 6px 10px;
   border-radius: 5px;
@@ -78,7 +78,7 @@
   margin-top: -10px;
   background: rgba(0,188,212 ,1);
   border-radius: 12px;
-  border: 6px solid #000946;
+  border: 6px solid var(--color-fad-main);
   z-index: 10;
 }
 .cp_timeline01 li:nth-child(even) .timeline_item .flag_cont:before {
@@ -110,7 +110,7 @@
   width: 0;
   margin-top: -6px;
   border: solid transparent;
-  border-left-color: #000946;
+  border-left-color: var(--color-fad-main);
   border-width: 6px;
 }
 .cp_timeline01 li:nth-child(even) .timeline_item .flag:after {
@@ -122,7 +122,7 @@
   width: 0;
   margin-top: -6px;
   border: solid transparent;
-  border-right-color: #000946;
+  border-right-color: var(--color-fad-main);
   border-width: 6px;
 }
 .cp_timeline01 li .timeline_item .time {
@@ -191,7 +191,7 @@
     width: 0;
     margin-left: -6px;
     border: solid transparent;
-    border-bottom-color: #000946;
+    border-bottom-color: var(--color-fad-main);
     border-width: 6px;
     pointer-events: none;
   }

@@ -39,7 +39,7 @@
   left: -32px;
   width: 25px;
   height: 25px;
-  background: #000946;
+  background: var(--color-fad-main);
   color: #fff;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -54,7 +54,7 @@
   width: 100%;
   display: block;
   margin: auto;
-  border: 2px solid #8C8C8C;
+  border: 2px solid var(--color-hover);
 }
 
 .join_tytle {
@@ -90,42 +90,10 @@
   color: #fff;
 }
 
-.point_tytle {
-  color: #333333;
-  position: relative;
-  border-top: solid 2px #80c8d1;
-  border-bottom: solid 2px #80c8d1;
-  background: #f4f4f4;
-  line-height: 1.4;
-  padding: 0.4em 0.5em;
-  margin: 2em 0 3em;
-  font-size: 15px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  font-weight: bold;
-}
-
-.point_tytle:after {
-  /*タブ*/
-  position: absolute;
-  font-family: "Font Awesome 5 Free",'Quicksand','Avenir','Arial',sans-serif;
-  font-weight: 900;
-  content: "\f0a7\ POINT";
-  background: #80c8d1;
-  color: #fff;
-  left: 0px;
-  bottom: 100%;
-  border-radius: 5px 5px 0 0;
-  padding: 5px 20px;
-  line-height: 1;
-  letter-spacing: 0.05em;
-  font-size: 15px;
-}
-
 .join_content p {
   font-size: 20px !important;
   line-height: 2 !important;
-  color: #333333;
+  color: var(--color-text);
 }
 
 .join_content {
@@ -148,7 +116,7 @@
   content: counter(number);
   /*以下数字のデザイン変える*/
   display:inline-block;
-  background: #3D4073;
+  background: var(--color-fad-second);
   color: white;
   font-family: 'Avenir','Arial Black','Arial',sans-serif;
   font-weight:bold;

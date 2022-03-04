@@ -1,7 +1,7 @@
 .sitemap_tytle {
   border-left: 3px solid #3D4073;
-  border-bottom: 1px solid #8C8C8C;
-  color: #333333;
+  border-bottom: 1px solid var(--color-hover);
+  color: var(--color-text);
   width: 100%;
   margin: 0;
   padding-left: 10px;
@@ -18,7 +18,7 @@
   font-size: 15px;
   text-align: center;
   border-radius: 5px;
-  background-color: #FF9900;
+  background-color:  var(--color-logo-amazo);
   color: #FFFFFF;
   cursor: pointer;
 }
@@ -59,7 +59,7 @@
 /* モーダル内ヘッダー */
 .my_modal_header{
   padding: 15px 10px;
-  background-color: #FF9900;
+  background-color:  var(--color-logo-amazo);
   color: #FFF;
   font-weight: bold;
   position: -webkit-sticky;
@@ -172,25 +172,25 @@
   background: #F1F1F1;
 }
 .sitemap__twitter::before {
-  background:#1da1f3;
+  background: var(--color-logo-twitter);
 }
 .sitemap__youtube::before {
-  background:#cd201f;
+  background: var(--color-logo-youtube);
 }
 .sitemap__line::before {
-  background:#00C300;
+  background: var(--color-logo-line);
 }
 .sitemap__twitch::before {
-  background: #9146FF;
+  background:  var(--color-logo-twitch);
 }
 .sitemap__discord::before {
-  background: #5865F2;
+  background:  var(--color-logo-discord);
 }
 .sitemap__wiki::before {
   background: #61C6F6;
 }
 .sitemap__amazon::before {
-  background: #FF9900;
+  background:  var(--color-logo-amazon);
 }
 .sitemap__twitter::before {
   content: "\f099";

@@ -12,7 +12,7 @@
   padding: 0.5em 1em;
   margin: 2em 0;
   background: white;
-  border-top: solid 5px #060940;
+  border-top: solid 5px var(--color-fad-main);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
   width: 90%;
   text-align: center;

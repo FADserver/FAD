@@ -27,7 +27,7 @@
   width: 100%;
   color: #ffffff;
   font-size: 15px;
-  background: #333333;
+  background: var(--color-text);
 }
 .balloon1 p {
   text-align: center;
@@ -40,7 +40,7 @@
   left: 50%;
   margin-left: -15px;
   border: 15px solid transparent;
-  border-top: 15px solid #333333;
+  border-top: 15px solid var(--color-text);
 }
 
 .balloon1 p {
@@ -96,7 +96,7 @@
   margin: 0 auto;
   margin: 25px 0 0 20px;
   padding: 10px 0 3px 0;
-  background: #8C8C8C;
+  background: var(--color-hover);
 }
 
 .sidebar-wrapper .ip-address,
@@ -125,7 +125,7 @@
   left: 0;
   border: none;
   border-bottom: solid 15px transparent;
-  border-right: solid 20px #000946;
+  border-right: solid 20px var(--color-fad-main);
 }
 .ip-address-icon::before {
   content: "\f108";
@@ -199,7 +199,7 @@
   left: 0;
   border: none;
   border-bottom: solid 15px transparent;
-  border-right: solid 20px #FF0000;
+  border-right: solid 20px var(--color-logo-youtube);
 }
 .youtube-icon::before {
   content: "\f167";
@@ -230,10 +230,10 @@
   font-size: 10px;
 }
 .a_blank_open:hover, .a_blank_open:hover::after {
-  color:#FF0000;
+  color:var(--color-logo-youtube);
 }
 .a_sidebar:hover, .a_sidebar_blank:hover, .a_sidebar_blank:hover::after {
-  color: #333333;
+  color: var(--color-text);
 }
 
 .youtube-archive {
@@ -384,7 +384,7 @@
   margin-right: 10px;
 }
 .a_news-bar_blank:hover, .a_news-bar_blank:hover::after, .a_news-bar:hover {
-  color:#8C8C8C;
+  color:var(--color-hover);
   transition: 0.3s ease;
 }
 

@@ -49,10 +49,10 @@ a {
   background: #F1F1F1;
 }
 .about__twitter::before {
-  background:#1da1f3;
+  background: var(--color-logo-twitter);
 }
 .about__line::before {
-  background:#00C300;
+  background:var(--color-logo-line);
 }
 .about__wiki::before {
   background: #61C6F6;

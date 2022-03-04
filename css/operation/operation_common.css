@@ -10,11 +10,11 @@
 }
 
 h3 {
-  border-left: 3px solid #000946;
-  border-bottom: 1px solid #8C8C8C;
+  border-left: 3px solid var(--color-fad-main);
+  border-bottom: 1px solid var(--color-hover);
   padding-left: 10px;
   padding-bottom: 5px;
-  color: #333333;
+  color: var(--color-text);
 }
 
 /* SNSラベル */
@@ -46,7 +46,7 @@ h3 {
   text-align: center;
 }
 .btn-social-flat:hover {
-  color: #8C8C8C;
+  color: var(--color-hover);
 }
 .btn-social-flat-text-want {
   display: inline-block;
@@ -55,25 +55,25 @@ h3 {
 }
 
 .btn-social-flat-icon--twitter {
-  background:#1da1f3;
+  background: var(--color-logo-twitter);
 }
 .btn-social-flat-icon--youtube {
-  background:#cd201f;
+  background: var(--color-logo-youtube);
 }
 .btn-social-flat-icon--line {
-  background:#00C300;
+  background: var(--color-logo-line);
 }
 .btn-social-flat-icon--twitch {
-  background: #9146FF;
+  background:  var(--color-logo-twitch);
 }
 .btn-social-flat-icon--want {
   background: #00448C;
 }
 .btn-social-flat-icon--discord {
-  background: #5865F2;
+  background:  var(--color-logo-discord);
 }
 .btn-social-flat-icon--amazon {
-  background: #FF9900;
+  background:  var(--color-logo-amazon);
 }
 .btn-social-flat-icon--twitter::before {
   content: "\f099";

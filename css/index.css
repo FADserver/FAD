@@ -86,7 +86,7 @@
   display: inline-block;
   margin-top: 15px;
   font-size: 13px;
-  color: #333333;
+  color: var(--color-text);
 }
 
 @media all and (max-width: 930px) {
@@ -236,7 +236,7 @@
 .news-tytle span {
   font-size: 1.8rem;
   display: block;
-  color: #333333;
+  color: var(--color-text);
 }
 .news-list .item {
   display: none;

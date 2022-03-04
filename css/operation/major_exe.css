@@ -7,7 +7,7 @@
 }
 .license1, .license2, .license3, .license4 {
   display: inline-block;
-  color: #333333;
+  color: var(--color-text);
   font-size: 40px;
 }
 .license_div p {

@@ -1,19 +1,19 @@
 .h2_QA {
   margin-top: 100px;
   margin-bottom: 20px;
-  color: #333333;
+  color: var(--color-text);
 }
 
 /* ↓ Q&A カテゴリーごと ↓ */
 .cp_qa {
-  border-top: 1px solid #1b2538;
+  border-top: 1px solid var(--color-fad-main);
 }
 .cp_qa .cp_actab {
   position: relative;
   overflow: hidden;
   width: 100%;
   margin-bottom: 1px;
-  color: #1b2538;
+  color: var(--color-fad-main);
 }
 .cp_qa .cp_actab input {
   position: absolute;
@@ -28,10 +28,10 @@
   margin: 0 0 0 0;
   padding: 1em 2em 1em 1em;
   cursor: pointer;
-  border-bottom: 1px solid #000946;
+  border-bottom: 1px solid var(--color-fad-main);
 }
 .qa_label:hover {
-  color: #3D4073;
+  color: var(--color-fad-second);
 }
 /* 答え */
 .cp_qa .cp_actab .cp_actab-content {
@@ -47,7 +47,7 @@
 /* 質問を開いた時の仕様 */
 /* --アイコン */
 .cp_qa .cp_actab input:checked ~ .qa_label {
-  color: #3D4073;
+  color: var(--color-fad-second);
 }
 /* --答えの高さ */
 .cp_qa .cp_actab input:checked ~ .cp_actab-content {
@@ -130,7 +130,7 @@
 .headline2_QA span {
   position: relative;
   z-index: 1;
-  color: #333333;
+  color: var(--color-text);
 }
 /* ここまで */
 
@@ -138,14 +138,14 @@
   height: 350px;
   display: block;
   margin: 0 auto;
-  border: 2px solid #8C8C8C;
+  border: 2px solid var(--color-hover);
 }
 @media all and (min-width: 1200px) {
   .QaA_img2 {
     height: 500px;
     display: block;
     margin: 0 auto;
-    border: 2px solid #8C8C8C;
+    border: 2px solid var(--color-hover);
   }
 }
 
@@ -183,7 +183,7 @@
   left: -32px;
   width: 25px;
   height: 25px;
-  background: #000946;
+  background: var(--color-fad-main);
   color: #fff;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -334,11 +334,11 @@
 
 /* SNSラベル */
 h3 {
-  border-left: 3px solid #000946;
-  border-bottom: 1px solid #8C8C8C;
+  border-left: 3px solid var(--color-fad-main);
+  border-bottom: 1px solid var(--color-hover);
   padding-left: 10px;
   padding-bottom: 5px;
-  color: #333333;
+  color: var(--color-text);
 }
 
 .btn-social-flat { 
@@ -372,20 +372,20 @@ h3 {
   text-align: center;
 }
 .btn-social-flat:hover {
-  color: #8C8C8C;
+  color: var(--color-hover);
 }
 
 .btn-social-flat-icon--twitter {
-  background:#1da1f3;
+  background: var(--color-logo-twitter);
 }
 .btn-social-flat-icon--youtube {
-  background:#cd201f;
+  background: var(--color-logo-youtube);
 }
 .btn-social-flat-icon--line {
-  background:#00C300;
+  background: var(--color-logo-line);
 }
 .btn-social-flat-icon--twitch {
-  background: #9146FF;
+  background:  var(--color-logo-twitch);
 }
 .btn-social-flat-icon--SeesaaWiki {
   background: #61C6F6;
@@ -394,10 +394,10 @@ h3 {
   background: #F1F1F1;
 }
 .btn-social-flat-icon--amazon {
-  background: #FF9900;
+  background:  var(--color-logo-amazon);
 }
 .btn-social-flat-icon--discord {
-  background: #5865F2;
+  background:  var(--color-logo-discord);
 }
 
 .btn-social-flat-icon--twitter::before {
@@ -479,7 +479,7 @@ h3 {
 
 /* SNSラベル */
 .icon::before {
-  color: #333333;
+  color: var(--color-text);
   font-size: 18px;
   margin-right: 10px;
   padding-left: 3px;

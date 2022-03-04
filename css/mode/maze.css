@@ -4,7 +4,7 @@
   text-align: center;
   border-collapse: collapse;
   border-spacing: 0;
-  border-top: solid 1px #000946;
+  border-top: solid 1px var(--color-fad-main);
 }
 .potion_table tr:nth-child(2n), .gun_table tr:nth-child(n) {
   background: #ffffff;
@@ -14,7 +14,7 @@
 }
 .potion_table th, .potion_table td, .gun_table th, .gun_table td {
   padding: 3px;
-  border-bottom: solid 1px #3D4073;
+  border-bottom: solid 1px var(--color-fad-second);
   font-size: 13px;
 }
 .potion_table img, .gun_table img {
@@ -41,7 +41,7 @@
   position: relative;/*相対位置*/
   padding: 0.5em 0.5em 0.5em 1.5em;/*アイコン分のスペース*/
   line-height: 1.4;/*行高*/
-  color: #333333;/*文字色*/
+  color: var(--color-text);/*文字色*/
   border-top: dotted 1px gray;
   border-bottom: dotted 1px gray;
   background: #f4f4f4;
@@ -54,5 +54,5 @@
   font-size: 1em;/*サイズ*/
   left: 0.25em;/*アイコンの位置*/
   top: 0.5em;/*アイコンの位置*/
-  color: #333333; /*アイコン色*/
+  color: var(--color-text); /*アイコン色*/
 }

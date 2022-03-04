@@ -11,15 +11,61 @@
 html {
   scroll-behavior: smooth;
 }
+:root {
+  --color-fad-main: #000946;
+  --color-fad-second: #3D4073;
+  --color-text: #333333;
+  --color-hover: #8C8C8C;
 
-p, ul li, ol li, table {
+  --color-logo-twitter: #1da1f3;
+  --color-logo-youtube: #cd201f;
+  --color-logo-twitch: #9146FF;
+  --color-logo-discord: #5865F2;
+  --color-logo-amazon: #FF9900;
+  --color-logo-line: #00C300;
+
+  --color-good-icon: #ffa537;
+  --color-good-background: #fff5f0;
+  --color-good-border: var(--color-good-icon);
+  --color-term-icon: #403D39;
+  --color-term-background: #cfcdc8;
+  --color-term-border: var(--color-term-icon);
+  --color-attention-icon: #F7DA38;
+  --color-attention-background: #FDF9EE;
+  --color-attention-border: var(--color-attention-icon);
+  --color-error-icon: #F36060;
+  --color-error-background: #FFF2F0;
+  --color-error-border: var(--color-error-icon);
+  --color-blockquote-icon: #585858;
+  --color-blockquote-background: #F3F3F3;
+  --color-blockquote-border: #C4C4C4;
+}
+
+p, ul li, ol li, table, blockquote {
   line-height: 2;
   font-size: 16px;
-  color: #333333;
+  color: var(--color-text);
   overflow-wrap: break-word;
 }
+ol {
+  margin: 0
+}
 h1, h2, h3, h4, h5, h6 {
-  color: #333333;
+  color: var(--color-text);
+}
+h1 {
+  position: relative;
+  text-align: center;
+}
+h1:before {
+  position: absolute;
+  bottom: -10px;
+  left: calc(50% - 30px);
+  width: 60px;
+  height: 5px;
+  content: '';
+  border-radius: 3px;
+  background: var(--color-fad-main);
 }
 
 body {
@@ -55,9 +101,9 @@ body {
 .normal_tytle {
   position: relative;
   padding: 1rem 2rem;
-  border-left: 5px solid #000946;
+  border-left: 5px solid var(--color-fad-main);
   background: #f4f4f4;
-  color: #333333;
+  color: var(--color-text);
 }
 
 .big {
@@ -66,7 +112,7 @@ body {
   margin: 0;
   background: linear-gradient(transparent 50%, yellow 50%);
   display: inline;
-  color: #333333;
+  color: var(--color-text);
 }
 .bold {
   font-weight: bold;
@@ -81,17 +127,17 @@ a {
   text-decoration: none;
 }
 .a_blank, .a {
-  color:#333333;
+  color:var(--color-text);
   text-decoration: underline;
   transition: 0.3s ease;
 }
 .a_nounder {
-  color: #333333;
+  color: var(--color-text);
   transition: 0.3s ease;
 }
 .a_blank::after {
   content: "\e89e";
-  color: #333333;
+  color: var(--color-text);
   font-family: 'Material Icons Sharp';
   font-size: 10px;
   padding: 0 3px;
@@ -102,7 +148,7 @@ a {
 .a_blank:hover::after,
 .a:hover, .a_nounder:hover,
 .a_nounder:hover::after {
-  color:#8C8C8C;
+  color:var(--color-hover);
   transition: 0.3s ease;
 }
 /* ↑ aタグ ↑ */
@@ -185,26 +231,155 @@ a {
 }
 /* ↑ PDFを見る ↑ */
 
-h1 {
-  position: relative;
-  text-align: center;
-}
-h1:before {
-  position: absolute;
-  bottom: -10px;
-  left: calc(50% - 30px);
-  width: 60px;
-  height: 5px;
-  content: '';
-  border-radius: 3px;
-  background: #000946;
-}
-
 a.anchor{
   display: block;
   padding-top: 70px;
   margin-top: -70px;
 }
+
+/* ↓ 装飾 ↓ */
+/* ↓ 共通 ↓ */
+.decoration--good, .decoration--term, blockquote {
+  display: block;
+  position: relative;
+  line-height: 2;
+  font-size: 16px;
+  color: var(--color-text);
+  overflow-wrap: break-word;
+  justify-content: center;
+  border-radius: 3px;
+  box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.3);
+  padding: 20px 20px 20px 80px;
+  margin: 10px 0 30px 0;
+}
+.decoration--good::before, .decoration--term::before , blockquote::before {
+  display: inline-block;
+  position: absolute;
+  font-family: 'Material Icons Sharp';
+  font-size: 20px;
+  top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+  left: 20px;
+}
+.decoration--good::after, .decoration--term::after , blockquote::after {
+  display: inline-block;
+  position: absolute;
+  content: '';
+  height: 60%;
+  top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+  left: 60px;
+  opacity: 0.5;
+}
+/* ↓ GOOD ↓ */
+.decoration--good {
+  background-color: var(--color-good-background);
+}
+.decoration--good::before {
+  content: '\e817';
+  color: var(--color-good-icon);
+}
+.decoration--good::after {
+  border-right: dashed 2px var(--color-good-border);
+}
+/* ↑ GOOD ↑ */
+/* ↓ 用語解説 ↓ */
+.decoration--term {
+  background-color: var(--color-term-background);
+}
+.decoration--term span {
+  display: block;
+  font-size: 20px;
+}
+.decoration--term span::before {
+  content: '【 '
+}
+.decoration--term span::after {
+  content: ' 】'
+}
+.decoration--term::before {
+  content: '\ea19';
+  color: var(--color-term-icon);
+}
+.decoration--term::after {
+  border-right: dashed 2px var(--color-term-border);
+}
+/* ↑ 用語解説 ↑ */
+/* ↓ 引用 ↓ */
+blockquote {
+  background-color: var(--color-blockquote-background);
+}
+blockquote span {
+  display: block;
+  font-size: 12px;
+  text-align: right;
+}
+blockquote::before {
+  content: '\e244';
+  transform: translateY(-50%) scaleX(-1);
+  color: var(--color-blockquote-icon);
+}
+blockquote::after {
+  border-right: dashed 2px var(--color-blockquote-border);
+}
+/* ↑ 引用 ↑ */
+/* ↓ 共通 ↓ */
+.decoration--attention, .decoration--error {
+  display: block;
+  position: relative;
+  line-height: 2;
+  font-size: 16px;
+  color: var(--color-text);
+  overflow-wrap: break-word;
+  border: 2px solid var(--color-attention-border);
+  background-color: var(--color-attention-background);
+  padding: 38px 20px 20px 20px;
+  margin: 40px 0 30px 0;
+}
+.decoration--attention::before, .decoration--error::before {
+  display: inline;
+  position: absolute;
+  text-align: center;
+  vertical-align: middle;
+  font-family: 'Material Icons Sharp';
+  top: -25px;
+  left: 20px;
+  padding: 0 10px 0 10px;
+  content: '\e002';
+  font-size: 20px;
+  color: #FFFFFF;
+  background-color: var(--color-attention-icon);
+  border-radius: 100%;
+  border: solid 3px #FFFFFF;
+}
+/* ↑ 共通 ↑ */
+/* ↓ 注意 ↓ */
+.decoration--attention {
+  color: var(--color-text);
+  border: 2px solid var(--color-attention-border);
+  background-color: var(--color-attention-background);
+}
+.decoration--attention::before {
+  content: '\e002';
+  background-color: var(--color-attention-icon);
+}
+/* ↑ 注意 ↑ */
+/* ↓ エラー ↓ */
+.decoration--error {
+  color: var(--color-text);
+  border: 2px solid var(--color-error-border);
+  background-color: var(--color-error-background);
+}
+.decoration--error::before {
+  content: '\e5cd';
+  background-color: var(--color-error-icon);
+}
+/* ↑ エラー ↑ */
+/* ↑ 装飾 ↑ */
 
 /* ↓ 画像説明 ↓ */
 .img-frame {
@@ -214,7 +389,7 @@ a.anchor{
 .img-frame p {
   width: 95%;
   font-size: 13px !important;
-  color: #8C8C8C !important;
+  color: var(--color-hover) !important;
   line-height: 1 !important;
   padding: 0;
   margin: 0 auto;
@@ -226,7 +401,7 @@ a.anchor{
   max-width: 800px;
   display: block;
   margin: auto;
-  border: 2px solid #8C8C8C;
+  border: 2px solid var(--color-hover);
 }
 /* ↑ 画像説明 ↑ */
 /* ↓ アコーディオンボックス ↓ */
@@ -240,7 +415,7 @@ a.anchor{
   font-size: 16px; /* ラベルの文字サイズ */
   font-weight: bold;
   text-align: center;
-  background: #3D4073; /* ラベルの背景色 */
+  background: var(--color-fad-second); /* ラベルの背景色 */
   position: relative;
   display: block;
   padding:8px;
@@ -249,7 +424,7 @@ a.anchor{
   color: #fff;
 }
 .acbox > label:hover{
-  background: #000946; /* ラベルにマウスを乗せた時の背景色 */
+  background: var(--color-fad-main); /* ラベルにマウスを乗せた時の背景色 */
 }
 .acbox input{
   display: none;
@@ -264,7 +439,7 @@ a.anchor{
 }
 .acbox > input:checked ~ label::after {
   content:"▲"; /* ラベルをクリックした後のアイコン */
-  color: #333333;
+  color: var(--color-text);
 }
 .acbox-under{
   height: 0px;
@@ -281,12 +456,12 @@ a.anchor{
 }
 .acbox input:checked ~ label {
   background: #ffffff; /* クリック後のラベルの背景色 */
-  border: 1px solid #3D4073;
-  color: #333333;
+  border: 1px solid var(--color-fad-second);
+  color: var(--color-text);
 }
 .acbox-under{
   font-size: 15px; /* 開いた部分の文字サイズ */
-  color: #333333; /* 開いた部分の文字色 */
+  color: var(--color-text); /* 開いた部分の文字色 */
 }
 /* ↑ アコーディオンボックス ↑ */
 /* ↓ テーブル ↓ */
@@ -301,7 +476,7 @@ a.anchor{
 }
 .normal_table th{
   min-width: 240px;
-  border-bottom: solid 2px #000946;
+  border-bottom: solid 2px var(--color-fad-main);
   padding: 10px 0;
   text-align: left;
 }
@@ -339,23 +514,23 @@ a.anchor{
   justify-content: center;
   line-height: 1;
   text-decoration: none;
-  color: #333333;
+  color: var(--color-text);
   font-size: 18px;
   width: 250px;
   height: 40px;
   font-weight: bold;
-  border: 2px solid #000946;
+  border: 2px solid var(--color-fad-main);
   transition: 0.3s;
-  box-shadow: 5px 5px 0px 0px #000946;
+  box-shadow: 5px 5px 0px 0px var(--color-fad-main);
   background-color: #FFFFFF;
   text-align: center;
   padding: 9px;
   margin: 10px;
 }
 .normal_button:hover {
-  box-shadow: 0 0 #000946;
+  box-shadow: 0 0 var(--color-fad-main);
   color: #fff;
-  background-color: #000946;
+  background-color: var(--color-fad-main);
 }
 /* ↑ ボタン ↑ */
 /* ↓ ヘッダー ↓ */
@@ -363,7 +538,7 @@ header {
   display: block;
   height: 65px;
   width: 100%;
-  background-color: #000946;
+  background-color: var(--color-fad-main);
   position :fixed;
   top: 0;
   z-index: 100;
@@ -422,7 +597,7 @@ header {
   border-radius: 50%;
   margin-top: 7.5px;
   margin-right: 15px;
-  background-color: #333333;
+  background-color: var(--color-text);
   color: #FFFFFF;
   line-height: 50px;
   font-size: 20px;
@@ -482,7 +657,7 @@ header {
     min-height: 30px;
     margin-top: 17.5px;
     margin-right: 5px;
-    background-color: #333333;
+    background-color: var(--color-text);
     color: #FFFFFF;
     line-height: 30px;
     font-size: 13px;
@@ -508,7 +683,7 @@ header {
   justify-content: center;
   align-items: center;
   z-index: 90;
-  background-color: #3D4073;
+  background-color: var(--color-fad-second);
 }
 /* メニュー線（before、afterで3本表示する。） */
 /* 真ん中の線 */
@@ -587,7 +762,7 @@ header {
   /* メニュー自体を画面外へ */
   left: 100%;
   z-index: 70;
-  background-color: #3D4073;
+  background-color: var(--color-fad-second);
   /* アニメーション設定 */
   transition: all 0.5s;
   /* スクロール */
@@ -635,15 +810,15 @@ header {
   transition: all 0.3s;
 }
 .menu-content ul li a:hover {
-  color: #3D4073;
+  color: var(--color-fad-second);
   transition: all 0.3s;
 }
 .menu-content ul li a:hover::after {
   content: "";
   width: 7px;
   height: 7px;
-  border-top: solid 2px #3D4073;
-  border-right: solid 2px #3D4073;
+  border-top: solid 2px var(--color-fad-second);
+  border-right: solid 2px var(--color-fad-second);
   transform: rotate(45deg);
   position: absolute;
   right: 20px;
@@ -669,7 +844,7 @@ header {
   content: '\e887';
 }
 .hamburger-menu .menu-li .home:hover::before, .hamburger-menu .menu-li .faq:hover::before {
-  color: #3D4073;
+  color: var(--color-fad-second);
   transition: all 0.3s;
 }
 #menu-btn-check {
@@ -691,7 +866,7 @@ header {
   padding: 15px 15px 15px 10px;
   line-height: 1;
   color :#ffffff;
-  background : #3D4073;
+  background : var(--color-fad-second);
   cursor :pointer;
   font-size: 15px;
   /* 下線 */
@@ -758,15 +933,15 @@ header {
   content: "";
   width: 7px;
   height: 7px;
-  border-top: solid 2px #3D4073;
-  border-right: solid 2px #3D4073;
+  border-top: solid 2px var(--color-fad-second);
+  border-right: solid 2px var(--color-fad-second);
   transform: rotate(134deg);
   position: absolute;
   right: 20px;
   transition: all 0.3s;
 }
 .menu-label:hover {
-  color: #3D4073;
+  color: var(--color-fad-second);
   background-color: #ffffff;
   transition: all 0.3s;
 }
@@ -809,7 +984,7 @@ header {
   font-family: 'Michroma', sans-serif;
   content: "MENU";
   font-weight: bold;
-  color: #3D4073;
+  color: var(--color-fad-second);
   font-size: 30px;
   margin-left: 70px;
   margin-top: 5px;
@@ -825,7 +1000,7 @@ header {
 .hamburger-menu-top {
   width: 87%;
   height: 60px;
-  background-color: #3D4073;
+  background-color: var(--color-fad-second);
   position: fixed;
   /* メニュー自体を画面外へ */
   left: 100%;
@@ -866,7 +1041,7 @@ header {
   display: inline;
 }
 .hamburger-follow-me li a::before {
-  color: #333333;
+  color: var(--color-text);
   font-family: "Font Awesome 5 Brands";
   font-weight: 400;
   display: inline-block;
@@ -900,7 +1075,7 @@ header {
 .hamburger-follow-me li a[href*="nicovideo.jp"]:hover::before       { color: #eaeaea; }
 .hamburger-follow-me li a[href*="twitch.tv"]:hover::before          { color: #6441a5; }
 .hamburger-follow-me li a[href*="twitter.com"]:hover::before        { color: #55acee; }
-.hamburger-follow-me li a[href*="video"]:hover::before              { color: #cd201f; }
+.hamburger-follow-me li a[href*="video"]:hover::before              { color: var(--color-logo-youtube); }
 .hamburger-follow-me li a[href*="/lin.ee"]:hover::before            { color: #00C300; }
 
 .hamburger-sns_p {
@@ -911,7 +1086,7 @@ header {
 }
 .hamburger-sns_p::before {
   content: "＼ follow me! ／";
-  color: #333333;
+  color: var(--color-text);
   font-size: 15px;
 }
 /* SNS */
@@ -929,7 +1104,7 @@ header {
 .span_share {
   font-size: 25px;
   font-family: 'Oswald', sans-serif;
-  color: #8C8C8C;
+  color: var(--color-hover);
 }
 .span_share::before, .span_share::after {
   font-family: "Font Awesome 5 Free";
@@ -993,7 +1168,7 @@ header {
   outline: none;
 }
 .share-btn__item:hover {
-  color: #8C8C8C;
+  color: var(--color-hover);
   cursor: pointer;
   transition: 0.3s ease;
 }
@@ -1048,7 +1223,7 @@ header {
 /* ↑ シェアボタン ↑ */
 /* ↓ フッターリンク ↓ */
 footer {
-  background: #000946;
+  background: var(--color-fad-main);
   padding: 0 30px;
   margin-top: 50px;
 }
@@ -1068,7 +1243,7 @@ footer .nav a {
   color: #ccc;
 }
 footer .nav a:hover {
-  color: #8C8C8C;
+  color: var(--color-hover);
   text-decoration: underline;  
 }
 .footer_role {
@@ -1248,13 +1423,13 @@ footer .copyright-1 {
 }
 #update-day p {
   display: inline;
-  color: #8C8C8C;
+  color: var(--color-hover);
   font-size: 13px;
 }
 #released::before, #updated::before {
   font-family: 'Material Icons Sharp';
   display: inline-block;
-  color: #8C8C8C;
+  color: var(--color-hover);
   margin-right: 5px;
   vertical-align: top;
 }
@@ -1295,21 +1470,21 @@ footer .copyright-1 {
   font-size: 12px;
   -webkit-font-smoothing: antialiased;
   padding: 0 0.2em;
-  color: #8C8C8C;
+  color: var(--color-hover);
 }
 .breadcrumb li:last-child:after {
   content: '';
 }
 .breadcrumb li a {
   text-decoration: none;
-  color: #8C8C8C;
+  color: var(--color-hover);
   font-size: 12px;
 }
 .breadcrumb li a:before {
   font-family: 'Material Icons Sharp';
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
-  color: #000946;
+  color: var(--color-fad-main);
   margin-right: 3px;
   vertical-align: bottom;
 }
@@ -1354,7 +1529,7 @@ footer .copyright-1 {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #000946;
+  background-color: var(--color-fad-main);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1387,9 +1562,9 @@ footer .copyright-1 {
 }
 .message {
   padding: 0 20px;
-  background-color: #3D4073;
+  background-color: var(--color-fad-second);
   cursor: pointer;
-  box-shadow: 0px 7px #000946;
+  box-shadow: 0px 7px var(--color-fad-main);
 }
 .message:active {
   position: relative;
