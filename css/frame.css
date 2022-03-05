@@ -294,6 +294,7 @@
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
+  margin-top: 65px;
 }
 
 .normal_margin {
@@ -358,7 +359,8 @@
 
 /* ↓ お知らせバナー ↓ */
 #news-bar {
-  display: block;
+  display: none;
+  margin-bottom: -65px;
 }
 .news-banner {
   display: inline-block;

@@ -81,11 +81,7 @@
     <!--jQueryをダウンロードし、名前を付けてjsファイルを保存。scriptで呼び出し-->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   </head>
-  <body>
-    <button id="page-top"></button>
-    <div id="news-bar"></div>
-    <div id="header"></div>
-<!--
+  <!--
 ######################################################################################################################################
 ############################################     ####################################     ############################################
 #########################################          ################################          #########################################
@@ -185,21 +181,23 @@
 ##       ##     #  #  ####  ##       ####     ##       ##  ####  ##############       ####      #  ##########  #######     #  ########
 ######################################################################################################################################
 -->
-    <!-- パンくずリスト -->
-    <div class="pan">
-      <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
-        <!-- 1つめ -->
-        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <a class="pan-home" itemprop="item" href="https://fadserver.github.io/FAD/">
-            <span itemprop="name">ホーム</span>
-          </a>
-          <meta itemprop="position" content="1" />
-        </li>
-      </ol>
-    </div>
-    <!-- パンくずリスト -->
-    <div class="top-wrapper">
-      <div class="container">
+  <body>
+    <button id="page-top"></button>
+    <div id="news-bar"></div>
+    <div id="header"></div>
+    <div class="container">
+      <div class="top-wrapper">
+        <!-- パンくずリスト -->
+        <div class="pan">
+          <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <!-- 1つめ -->
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <a class="pan-home" itemprop="item" href="https://fadserver.github.io/FAD/"><span itemprop="name">ホーム</span></a>
+              <meta itemprop="position" content="1" />
+            </li>
+          </ol>
+        </div>
+        <!-- パンくずリスト -->
         <h1>
           <span class="no">全自動生成ダンジョン</span>
           <br>
@@ -209,53 +207,55 @@
             </g>
           </svg>
         </h1>
-        <p class="explain">FADは、マインクラフトJavaで行うミニゲームです。<br>毎回自動でランダムに生成されるダンジョンで鬼ごっこや、ミニゲームが楽しめます。</p>
+        <p class="explain">FADは、マインクラフトJavaで行うミニゲームです。
+          <br>毎回自動でランダムに生成されるダンジョンで鬼ごっこや、ミニゲームが楽しめます。
+        </p>
       </div>
-    </div>
-    <div class="fad-mode">
-      <h2 class="news-tytle">Let's Join FAD!<span>ミニゲーム</span></h2>
-      <div class="mode">
-        <div class="mode-icon">
-          <a href="mode/oni/">
-            <img src="image/noigokko_mode.png">
-          </a>
+      <div class="fad-mode">
+        <h2 class="news-tytle">Let's Join FAD!<span>ミニゲーム</span></h2>
+        <div class="mode">
+          <div class="mode-icon">
+            <a href="mode/oni/">
+              <img src="image/noigokko_mode.png">
+            </a>
+          </div>
+          <p class="text-contents">鬼ごっこや、氷鬼、ケイドロなど鬼と逃走者に分かれて行うミニゲームが楽しめます。</p>
         </div>
-        <p class="text-contents">鬼ごっこや、氷鬼、ケイドロなど鬼と逃走者に分かれて行うミニゲームが楽しめます。</p>
-      </div>
-      <div class="mode">
-        <div class="mode-icon">
-          <a href="mode/maze/">
-            <img src="image/maze_mode.png">
-          </a>
+        <div class="mode">
+          <div class="mode-icon">
+            <a href="mode/maze/">
+              <img src="image/maze_mode.png">
+            </a>
+          </div>
+          <p class="text-contents">鬼から逃げながら未知のダンジョンから逃げ出します。道中にあるチェストからはお助けアイテムや銃などが手に入り、脱出の手助けをします。</p>
         </div>
-        <p class="text-contents">鬼から逃げながら未知のダンジョンから逃げ出します。道中にあるチェストからはお助けアイテムや銃などが手に入り、脱出の手助けをします。</p>
-      </div>
-      <div class="mode">
-        <div class="mode-icon">
-          <a href="mode/battle_royale/">
-            <img src="image/Battle-royale_mode.png">
-          </a>
+        <div class="mode">
+          <div class="mode-icon">
+            <a href="mode/battle_royale/">
+              <img src="image/Battle-royale_mode.png">
+            </a>
+          </div>
+          <p class="text-contents">チームで別れてバトロワができます。（絶賛作成中）</p>
         </div>
-        <p class="text-contents">チームで別れてバトロワができます。（絶賛作成中）</p>
       </div>
-    </div>
-    <div class="clear"></div>
-    <div class="normal_margin">
-      <div class="cp_box">
-        <h2 class="news-tytle">NEWS<span>お知らせ</span></h2>
-        <div class="cp_container">
-          <div id="latest-news"></div>
-          <script>
+      <div class="clear"></div>
+      <div class="normal_margin">
+        <div class="cp_box">
+          <h2 class="news-tytle">NEWS<span>お知らせ</span></h2>
+          <div class="cp_container">
+            <div id="latest-news"></div>
+            <script>
             $(document).ready(function(){
               $("#latest-news").load("news/latest-news.html");
             });
           </script>
+          </div>
+          <a class="news_a cp" href="news/">一覧を見る</a>
         </div>
-        <a class="news_a cp" href="news/">一覧を見る</a>
       </div>
+      <div class="news_bottom_margin"></div>
+      <div id="footer"></div>
+      <script type="text/javascript" src="javascript/common.js"></script>
     </div>
-    <div class="news_bottom_margin"></div>
-    <div id="footer"></div>
-    <script type="text/javascript" src="javascript/common.js"></script>
   </body>
 </html>
