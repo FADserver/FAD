@@ -17,6 +17,8 @@ html {
   --color-text: #333333;
   --color-hover: #8C8C8C;
 
+  --color-major: #00448d;
+
   --color-logo-twitter: #1da1f3;
   --color-logo-youtube: #cd201f;
   --color-logo-twitch: #9146FF;
@@ -36,6 +38,8 @@ html {
   --color-error-icon: #F36060;
   --color-error-background: #FFF2F0;
   --color-error-border: var(--color-error-icon);
+  --color-chat-operator-background: #EDF1EE;
+  --color-chat-user-background: #ABE0FF;
   --color-blockquote-icon: #585858;
   --color-blockquote-background: #F3F3F3;
   --color-blockquote-border: #C4C4C4;
@@ -47,7 +51,7 @@ p, ul li, ol li, table, blockquote {
   color: var(--color-text);
   overflow-wrap: break-word;
 }
-ol {
+p, ul,  ol {
   margin: 0
 }
 h1, h2, h3, h4, h5, h6 {
@@ -267,7 +271,7 @@ a.anchor{
   display: inline-block;
   position: absolute;
   content: '';
-  height: 60%;
+  height: 70%;
   top: 50%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
@@ -379,6 +383,118 @@ blockquote::after {
   background-color: var(--color-error-icon);
 }
 /* ↑ エラー ↑ */
+/* ↓ チャット風 ↓ */
+/* ↓ 共通 ↓ */
+.decoration--chat {
+  display: block;
+  height: auto;
+  line-height: 2;
+  font-size: 16px;
+  color: var(--color-text);
+  overflow-wrap: break-word;
+  margin: 30px 0;
+}
+.decoration--chat > div {
+  display: block;
+  margin: 20px 0;
+}
+.decoration--chat > div p {
+  display: inline-block;
+  border-radius: 10px;
+  position: relative;
+  padding: 10px;
+  vertical-align: top;
+}
+.decoration--chat > div > p::before,
+.decoration--chat > div > p::after {
+  display: inline-block;
+  position: absolute;
+  content: "";
+}
+.decoration--chat-major > p::before,
+.decoration--chat-fad > p::before,
+.decoration--chat-user > p::before {
+  border: 10px solid transparent;
+  margin-top: -15px;
+  top: 33px;
+}
+/* ↑ 共通 ↑ */
+/* ↓ 少佐 ↓ */
+.decoration--chat-major > div {
+  display: inline-block;
+  position: relative;
+  content: '';
+  min-width: 80px;
+  min-height: 80px;
+  background-image: url(../image/operation/major-head-square.png);
+  background-size: contain;
+  border: 2px solid var(--color-hover);
+  border-radius: 50%;
+}
+.decoration--chat-major > div::after {
+  position: absolute;
+  content: '少佐.exe';
+  font-size: 12px;
+  top: 80px;
+  left: 12px;
+}
+.decoration--chat-major > p {
+  max-width: calc(100% - 120px);
+  background-color: var(--color-chat-operator-background);
+  margin-left: 30px;
+  text-align: left;
+}
+.decoration--chat-major > p::before {
+  left: -30px;
+  border-right: 20px solid var(--color-chat-operator-background);
+}
+/* ↑ 少佐 ↑ */
+/* ↓ FAD ↓ */
+.decoration--chat-fad > div {
+  display: inline-block;
+  position: relative;
+  content: '';
+  min-width: 80px;
+  min-height: 80px;
+  background-image: url(../image/logo/fad-square.png);
+  background-size: contain;
+  border: 2px solid var(--color-hover);
+  border-radius: 50%;
+}
+.decoration--chat-fad > div::after {
+  position: absolute;
+  content: 'FADサーバー';
+  font-size: 12px;
+  top: 80px;
+  left: 3px;
+}
+.decoration--chat-fad > p {
+  max-width: calc(100% - 120px);
+  background-color: var(--color-chat-operator-background);
+  margin-left: 30px;
+  text-align: left;
+}
+.decoration--chat-fad > p::before {
+  left: -30px;
+  border-right: 20px solid var(--color-chat-operator-background);
+}
+/* ↑ FAD ↑ */
+/* ↓ ユーザー ↓ */
+.decoration--chat-user {
+  text-align: right;
+}
+.decoration--chat-user > p {
+  max-width: calc(100% - 80px);
+  background-color: var(--color-chat-user-background);
+  text-align: right;
+  margin-right: 20px;
+}
+.decoration--chat-user > p::before {
+  left: 100%;
+  border-left: 20px solid var(--color-chat-user-background);
+}
+/* ↑ ユーザー ↑ */
+/* ↑ チャット風 ↑ */
 /* ↑ 装飾 ↑ */
 
 /* ↓ 画像説明 ↓ */

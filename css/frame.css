@@ -98,6 +98,9 @@
   padding: 10px 0 3px 0;
   background: var(--color-hover);
 }
+.sidebar-wrapper p {
+  margin: 16px 0;
+}
 
 .sidebar-wrapper .ip-address,
 .sidebar-wrapper .info,
@@ -116,7 +119,7 @@
 }
 
 .ip-address {
-  background: #3D4073;
+  background: var(--color-fad-second);
 }
 .ip-address::before {
   position: absolute;
