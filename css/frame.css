@@ -359,7 +359,7 @@
 
 /* ↓ お知らせバナー ↓ */
 #news-bar {
-  display: none;
+  display: block;
   margin-bottom: -65px;
 }
 .news-banner {
