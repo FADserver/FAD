@@ -69,14 +69,10 @@
 
 .info-icon::before, .update-icon::before, .open-icon::before, .ip-address-icon::before {
   color: white;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  font-size: 25px;
+  font-family: 'Material Icons Sharp';
+  font-size: 30px;
   margin-right: 10px;
+  vertical-align: middle;
 }
 
 .comment {
@@ -131,7 +127,7 @@
   border-right: solid 20px var(--color-fad-main);
 }
 .ip-address-icon::before {
-  content: "\f108";
+  content: "\e30c";
 }
 .ip-address_p {
   font-weight: bold !important;
@@ -157,7 +153,7 @@
   border-right: solid 20px #54a7df;
 }
 .info-icon::before {
-  content: "\f0a1";
+  content: "\ef49";
 }
 
 .update {
@@ -173,7 +169,7 @@
   border-right: solid 20px #34b445;
 }
 .update-icon::before {
-  content: "\f2f1";
+  content: "\e86a";
 }
 
 .open {
@@ -189,7 +185,7 @@
   border-right: solid 20px #F2A30F;
 }
 .open-icon::before {
-  content: "\f073";
+  content: "\ebcc";
 }
 
 .sidebar-wrapper .youtube {

@@ -1275,9 +1275,10 @@ header {
   font-family: 'Oswald', sans-serif;
 }
 .share-btn__item--copy::before {
-  content: "\f328";
-  margin-right: 15px;
-  font-family: "Font Awesome 5 Free";
+  content: "\e85d";
+  margin-right: 25px;
+  vertical-align: middle;
+  font-family: 'Material Icons Sharp';
 }
 #copy-page {
   text-align: center;

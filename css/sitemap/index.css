@@ -1,3 +1,6 @@
+ul {
+  margin: 16px 0;
+}
 .sitemap_tytle {
   border-left: 3px solid var(--color-fad-main);
   border-bottom: 1px solid var(--color-hover);
