@@ -1,9 +1,25 @@
+.discover::before {
+  content: '\e002';
+}
+.correspondence::before {
+  content: '\ea3c';
+}
+.compatible::before {
+  content: '\e834';
+}
+.maintenance::before {
+  content: '\e8b8';
+}
+.not-applicable::before {
+  content: '\e153';
+}
+
 .disclaimer {
   font-size: 11px !important;
 }
 
 /* ↓ icon ↓ */
-.maintenance_icon::before, .exsample li::before {
+.maintenance_icon::before, .exsample li::before, .postscript::before {
   color: #333333;
   font-family: 'Material Icons Sharp';
 }
@@ -29,7 +45,6 @@
 .exsample li {
   list-style-type: none;
 }
-
 .exsample li::before {
   content: "\e5df";
   padding-right: 10px;
@@ -51,6 +66,21 @@
   margin-left: 45px;
 }
 
+.postscript, .maintenance_text {
+  display: block;
+}
+.postscript {
+  font-size: 18px;
+  font-weight: bold;
+}
+.postscript::before {
+  content: '\e5cc';
+  padding-right: 10px;
+  vertical-align: top;
+}
+.maintenance_text {
+  margin-left: 28px;
+}
 .normal_tytle{
   position: relative;
 }
@@ -61,19 +91,4 @@
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
   left: 20px;
-}
-.discover::before {
-  content: '\e002';
-}
-.correspondence::before {
-  content: '\ea3c';
-}
-.compatible::before {
-  content: '\e834';
-}
-.maintenance::before {
-  content: '\e8b8';
-}
-.not-applicable::before {
-  content: '\e153';
 }
