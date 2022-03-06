@@ -72,7 +72,7 @@
   content: '\e834';
 }
 .maintenance::before {
-  content: '\f0fa';
+  content: '\e8b8';
 }
 .not-applicable::before {
   content: '\e153';
