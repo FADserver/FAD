@@ -415,8 +415,7 @@ blockquote::after {
 .decoration--chat-fad > p::before,
 .decoration--chat-user > p::before {
   border: 10px solid transparent;
-  margin-top: -15px;
-  top: 33px;
+  top: 17.6px;
 }
 /* ↑ 共通 ↑ */
 /* ↓ 少佐 ↓ */
@@ -486,7 +485,7 @@ blockquote::after {
 .decoration--chat-user > p {
   max-width: calc(100% - 80px);
   background-color: var(--color-chat-user-background);
-  text-align: right;
+  text-align: left;
   margin-right: 20px;
 }
 .decoration--chat-user > p::before {

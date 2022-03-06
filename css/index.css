@@ -21,10 +21,13 @@
   background-position: center top 10%;
 }
 .pan {
-  position: absolute;
-  top: -160px!important;
+  display: inline-block;
+  position: absolute!important;
+  top: 30px;
   left: 30px;
-  text-align: left;
+}
+.pan ol {
+  display: inline-block;
 }
 .no {
   max-width: 1920px;
