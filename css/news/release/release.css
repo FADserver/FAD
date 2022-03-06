@@ -7,6 +7,7 @@
 }
 .name {
   text-align: left;
+  margin: 16px 0;
 }
 /* 「管」「理」「運」「営」の間の文字間隔 */
 .post {
@@ -47,18 +48,18 @@
 .title {
   text-align: center;
   padding: 0;
-  margin: 0;
   font-weight: bold;
   font-size: 150%;
+  margin: 32px 0;
 }
 h1::before {
   display: none;
 }
 
 h2, h3, h4, h5, h6 {
-  border-left: 3px solid #000946;
-  border-bottom: 1px solid #8C8C8C;
+  border-left: 3px solid var(--color-fad-main);
+  border-bottom: 1px solid var(--color-hover);
   padding-left: 10px;
   padding-bottom: 5px;
-  color: #333333;
+  color: var(--color-text);
 }

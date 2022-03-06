@@ -159,6 +159,7 @@ a {
 /* ↓ PDFを見る ↓ */
 #pdf {
   text-align: right;
+  margin: 16px 0;
 }
 #pdf .btn {
   text-align: right;
