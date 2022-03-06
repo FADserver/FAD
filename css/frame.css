@@ -373,14 +373,9 @@
   transition: 0.3s ease;
 }
 .a_news-bar_blank::after {
-  content: "\f35d";
+  content: "\e89e";
   color: #ffffff;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
+  font-family: 'Material Icons Sharp';
   font-size: 10px;
   margin-right: 10px;
 }
@@ -391,15 +386,11 @@
 
 .news-banner_p::before {
   color: white;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  font-size: 16px;
+  font-family: 'Material Icons Sharp';
+  font-size: 20px;
   margin-right: 10px;
   margin-left: 7px;
+  vertical-align: middle;
 }
 
 /* 緊急連絡 */
@@ -407,7 +398,7 @@
   background-color: #980003;
 }
 .news-banner_p::before {
-  content: "\f071";
+  content: "\f083";
 }
 
 /* 処分連絡 */
@@ -415,7 +406,7 @@
   background-color: #223440;
 }
 .news-banner_p::before {
-  content: "\f24e";
+  content: "\e14b";
 }*/
 
 /* 規約変更連絡 */
@@ -423,7 +414,7 @@
   background-color: #5B7876;
 }
 .news-banner_p::before {
-  content: "\f02d";
+  content: "\e666";
 }*/
 
 .news-banner_p {
@@ -436,8 +427,5 @@
   word-break: break-word;
   padding: 15px;
   margin: 0;
-}
-.news-banner-margin-bottom {
-  margin-bottom: -65px;
 }
 /* ↑ お知らせバナー ↑ */
