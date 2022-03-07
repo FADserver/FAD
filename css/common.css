@@ -464,6 +464,10 @@ blockquote::after {
   border: 10px solid transparent;
   top: 17.6px;
 }
+.decoration--chat-major > p::before, .decoration--chat-fad > p::before {
+  left: -30px;
+  border-right: 20px solid var(--color-chat-operator-background);
+}
 /* ↑ 共通 ↑ */
 /* ↓ 少佐 ↓ */
 .decoration--chat-major > div {
@@ -490,9 +494,31 @@ blockquote::after {
   margin-left: 30px;
   text-align: left;
 }
-.decoration--chat-major > p::before {
-  left: -30px;
-  border-right: 20px solid var(--color-chat-operator-background);
+@media all and (max-width: 500px) {
+  .decoration--chat-major > div {
+    display: inline-block;
+    position: relative;
+    content: '';
+    min-width: 50px;
+    min-height: 50px;
+    background-image: url(../image/operation/major-head-square.png);
+    background-size: contain;
+    border: 2px solid var(--color-hover);
+    border-radius: 50%;
+  }
+  .decoration--chat-major > div::after {
+    position: absolute;
+    content: '少佐.exe';
+    font-size: 12px;
+    top: 50px;
+    left: -1px;
+  }
+  .decoration--chat-major > p {
+    max-width: calc(100% - 107px);
+    background-color: var(--color-chat-operator-background);
+    margin-left: 30px;
+    text-align: left;
+  }
 }
 /* ↑ 少佐 ↑ */
 /* ↓ FAD ↓ */
@@ -520,9 +546,32 @@ blockquote::after {
   margin-left: 30px;
   text-align: left;
 }
-.decoration--chat-fad > p::before {
-  left: -30px;
-  border-right: 20px solid var(--color-chat-operator-background);
+@media all and (max-width: 500px) {
+  .decoration--chat-fad > div {
+    display: inline-block;
+    position: relative;
+    content: '';
+    min-width: 50px;
+    min-height: 50px;
+    background-image: url(../image/logo/fad-square.png);
+    background-size: contain;
+    border: 2px solid var(--color-hover);
+    border-radius: 50%;
+  }
+  .decoration--chat-fad > div::after {
+    position: absolute;
+    content: '　FAD　サーバー';
+    font-size: 12px;
+    top: 50px;
+    left: -2px;
+    text-align: center;
+  }
+  .decoration--chat-fad > p {
+    max-width: calc(100% - 107px);
+    background-color: var(--color-chat-operator-background);
+    margin-left: 30px;
+    text-align: left;
+  }
 }
 /* ↑ FAD ↑ */
 /* ↓ ユーザー ↓ */
