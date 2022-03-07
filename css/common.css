@@ -122,9 +122,55 @@ body {
   font-weight: bold;
 }
 .torikesi {
-  display: inline;
   text-decoration: line-through;
 }
+
+/* ↓ STEP用 ↓ */
+.normal_step {
+  margin-bottom: 30px;
+}
+
+.normal_step-content_wrapper {
+  position: relative;
+  padding: 0 0 2em 24px;
+}
+.normal_step-content_wrapper::before {
+  position: absolute;
+  height: calc(100% - 13px);
+  border-left: solid 2px #ccc;
+  content: '';
+  top: 16px;
+  left: 8.5px;
+}
+.normal_step-content_wrapper::after {
+  position: absolute;
+  font-family: 'Material Icons Sharp';
+  content: '\e40c';
+  color: var(--color-fad-main);
+  top: 0;
+  left: 0;
+  font-size: 19px;
+}
+
+.normal_step-step_wrapper {
+  display: block;
+  color: var(--color-fad-main);
+  font-size: 16px;
+}
+body {
+  counter-reset: step 0;
+}
+.normal_step-step_wrapper::after {
+  display: inline-block;
+  counter-increment: step 1;
+  content: "STEP " counter(step) ;
+  margin-left: 3px;
+}
+
+.normal_step > :last-child::before {
+  display: none;
+}
+/* ↑ STEP用 ↑ */
 
 /* ↓ aタグ ↓ */
 a {
