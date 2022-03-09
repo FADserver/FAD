@@ -1,5 +1,6 @@
 @import url('https://use.fontawesome.com/releases/v5.15.4/css/all.css');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons+Sharp');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Round');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
@@ -597,6 +598,7 @@ blockquote::after {
 .img-frame {
   width: 100% !important;
   text-align: center;
+  margin: 16px 0;
 }
 .img-frame p {
   width: 95%;
@@ -705,6 +707,7 @@ blockquote::after {
   overflow: auto;
   background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.4)) 0 0/20px 100%, linear-gradient(to right, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.4)) right/20px 100%;
   background-repeat: no-repeat;
+  margin: 16px 0;
 }
 
 .table-wrap table {

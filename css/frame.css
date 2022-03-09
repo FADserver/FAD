@@ -358,7 +358,7 @@
 
 /* ↓ お知らせバナー ↓ */
 #news-bar {
-  display: block;
+  display: none;
   margin-bottom: -65px;
 }
 .news-banner {
@@ -375,7 +375,7 @@
 .a_news-bar_blank::after {
   content: "\e89e";
   color: #ffffff;
-  font-family: 'Material Icons Sharp';
+  font-family: 'Material Icons Round';
   font-size: 10px;
   margin-right: 10px;
 }
@@ -386,7 +386,7 @@
 
 .news-banner_p::before {
   color: white;
-  font-family: 'Material Icons Sharp';
+  font-family: 'Material Icons Round';
   font-size: 20px;
   margin-right: 10px;
   margin-left: 7px;

@@ -47,9 +47,8 @@
   background: #f4f4f4;
 }
 .role:before {
-  font-family: "Font Awesome 5 Free";/*忘れずに*/
-  content: "\f138";/*アイコンのユニコード*/
-  font-weight: 900;
+  font-family: 'Material Icons Sharp';
+  content: "\e1c4";/*アイコンのユニコード*/
   position: absolute;/*絶対位置*/
   font-size: 1em;/*サイズ*/
   left: 0.25em;/*アイコンの位置*/

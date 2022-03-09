@@ -1,6 +1,64 @@
+.process {
+  counter-reset:number; /*数字をリセット*/
+  list-style-type: none!important; /*数字を一旦消す*/
+  padding:0.5em;
+}
+.process li {
+  position: relative;
+  padding-left: 30px;
+  line-height: 1.5em;
+  padding: 0.5em 0.5em 0.5em 30px;
+}
+
+.process li:before{
+  /* 以下数字をつける */
+  position: absolute;
+  counter-increment: number;
+  content: counter(number);
+  /*以下数字のデザイン変える*/
+  display:inline-block;
+  background: var(--color-fad-second);
+  color: white;
+  font-family: 'Avenir','Arial Black','Arial',sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 50%;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  /*以下 上下中央寄せのため*/
+  top: 8px;}
+h3 {
+  border-left: 3px solid var(--color-fad-main);
+  border-bottom: 1px solid var(--color-hover);
+  padding-left: 10px;
+  padding-bottom: 5px;
+  color: var(--color-text);
+}
 .mode_img2 {
   width: 500px;
   border: 1px solid var(--color-hover);
+}
+
+.bad-list {
+  padding: 0;
+  position: relative;
+}
+.bad-list li {
+  list-style-type: none;
+  padding-left: 25px;
+}
+.bad-list::before {
+  position: absolute;
+  font-family: 'Material Icons Sharp';
+  content: '\e5cd';
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+  top: 6px;
+  left: 0;
 }
 @media all and (max-width: 768px) and (max-width: 1024px) {
   .mode_img2 {
@@ -46,16 +104,6 @@
   margin-left: 5px;
   vertical-align: middle;
 }
-
-/* ↓ ゲーム手順箇条書き ↓ */
-.process {
-  list-style-type: decimal-leading-zero;
-  display: block;
-  line-height: 2;
-  font-size: 15px;
-  color: var(--color-text);
-}
-/* ↑ ゲーム手順箇条書き ↑ */
 
 /* ↓ ボタン ↓ */
 .ResourcePack_blank {
