@@ -1,3 +1,13 @@
+.products .sort-checkbox[id="play-2022-3-27"]:checked ~ .video-flame .products__wrap .play-2022-3-27 {
+  order: -1;
+  background-color: #BDE3F2;
+  transition: 0.5s ease;
+}
+.products .sort-checkbox[id="play-2022-3-27"]:checked ~ .products__sort .button[for="play-2022-3-27"], .products .sort-checkbox[id="play-2022-3-27"]:checked ~ .acbox .acbox-under .products__sort .button[for="play-2022-3-27"] {
+  background-color: #BDE3F2;
+  color: var(--color-text);
+}
+
   .products .sort-checkbox[id="play-2021-5-1"]:checked ~ .video-flame .products__wrap .play-2021-5-1 {
     order: -1;
     background-color: #BDE3F2;
