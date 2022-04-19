@@ -22,7 +22,7 @@
   z-index: 5;
 }
 .cp_timeline01 li {
-  padding: 1em 0;
+  padding: 4px 0;
 }
 .cp_timeline01 li:after {
   content: '';
