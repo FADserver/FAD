@@ -1,3 +1,6 @@
+.desc .img-frame img {
+  max-width: 315px;
+}
 .desc ul {
   padding-left: 15px;
   list-style-type: disc;
@@ -155,7 +158,7 @@
     padding: 4em 0 1em 0;
   }
   .cp_timeline01 li {
-    padding: 2em 0;
+    padding: 8px 0;
   }
   .cp_timeline01 li:nth-child(odd) .timeline_item,
   .cp_timeline01 li:nth-child(even) .timeline_item {
